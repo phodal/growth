@@ -1,6 +1,6 @@
 # Growth NG
 
-
+[![Build Status](https://travis-ci.org/phodal/growth-ng.svg?branch=master)](https://travis-ci.org/phodal/growth-ng)
 
 
 License
