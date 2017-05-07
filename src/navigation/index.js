@@ -7,7 +7,7 @@ import AppConfig from '../constants/config';
 import AppSizes from '../theme/sizes';
 import AppStyles from '../theme/styles';
 import Community from '../containers/community/Community';
-import UserCenter from '../containers/user-center/UserCenter';
+import UserCenter from '../containers/user-center/SkillTree';
 import Discover from '../containers/discover/Discover';
 
 
@@ -47,6 +47,13 @@ export default Actions.create(
         title={'探索'}
         icon={TabIcon}
         component={Discover}
+      />
+      <Scene
+        {...navbarPropsTabs}
+        key={'skillTree'}
+        title={'技能树'}
+        icon={TabIcon}
+        component={UserCenter}
       />
       <Scene
         {...navbarPropsTabs}
