@@ -9,6 +9,8 @@ Tech Stack: React Native
 
 API Documents: [Growth NG Wiki](https://github.com/phodal/growth-ng/wiki)
 
+Basis on: [React Native Stater APP](https://github.com/mcnamee/react-native-starter-app)
+
 License
 ---
 
