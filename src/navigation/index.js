@@ -7,8 +7,9 @@ import AppConfig from '../constants/config';
 import AppSizes from '../theme/sizes';
 import AppStyles from '../theme/styles';
 import Community from '../containers/community/Community';
-import UserCenter from '../containers/user-center/SkillTree';
+import UserCenter from '../containers/user-center/UserCenter';
 import Discover from '../containers/discover/Discover';
+import SkillTree from '../containers/skill-tree/SkillTree';
 
 
 const navbarPropsTabs = {
@@ -53,7 +54,7 @@ export default Actions.create(
         key={'skillTree'}
         title={'技能树'}
         icon={TabIcon}
-        component={UserCenter}
+        component={SkillTree}
       />
       <Scene
         {...navbarPropsTabs}
