@@ -24,6 +24,14 @@
     "react-test-renderer": "16.0.0-alpha.6"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "setupFiles": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!react-native|tcomb-form-native|apsl-react-native-button,react-native-device-info|react-clone-referenced-element)"
+    ],
+    "collectCoverage": true,
+    "verbose": true
   }
 }
