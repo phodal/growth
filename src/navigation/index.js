@@ -37,28 +37,28 @@ export default Actions.create(
       <Scene
         {...navbarPropsTabs}
         key={'home'}
-        title={'HOME'}
+        title={'Growth'}
         icon={TabIcon}
         component={Home}
       />
       <Scene
         {...navbarPropsTabs}
         key={'discover'}
-        title={'Discover'}
+        title={'探索'}
         icon={TabIcon}
         component={Discover}
       />
       <Scene
         {...navbarPropsTabs}
         key={'community'}
-        title={'Community'}
+        title={'社区'}
         icon={TabIcon}
         component={Community}
       />
       <Scene
         {...navbarPropsTabs}
         key={'userCenter'}
-        title={'UserCenter'}
+        title={'用户中心'}
         icon={TabIcon}
         component={UserCenter}
       />
