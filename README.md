@@ -1,7 +1,13 @@
 # Growth NG
 
-[![Build Status](https://travis-ci.org/phodal/growth-ng.svg?branch=master)](https://travis-ci.org/phodal/growth-ng)
+[![Build Status](https://travis-ci.org/phodal/growth-ng.svg?branch=master)](https://travis-ci.org/phodal/growth-ng) 
+[![Coverage Status](https://coveralls.io/repos/github/phodal/growth-ng/badge.svg?branch=master)](https://coveralls.io/github/phodal/growth-ng?branch=master)
+[![Code Climate](https://codeclimate.com/github/phodal/growth-ng/badges/gpa.svg)](https://codeclimate.com/github/phodal/growth-ng)
 
+
+Tech Stack: React Native
+
+API Documents: [Growth NG Wiki](https://github.com/phodal/growth-ng/wiki)
 
 License
 ---
