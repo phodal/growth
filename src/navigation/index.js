@@ -2,10 +2,13 @@
 import React, { PropTypes } from 'react';
 import { Text } from 'react-native';
 import { Actions, Scene } from 'react-native-router-flux';
-import Home from '../containers/home/home';
+import Home from '../containers/home/Home';
 import AppConfig from '../constants/config';
 import AppSizes from '../theme/sizes';
 import AppStyles from '../theme/styles';
+import Community from '../containers/community/Community';
+import UserCenter from '../containers/user-center/UserCenter';
+import Discover from '../containers/discover/Discover';
 
 
 const navbarPropsTabs = {
@@ -43,21 +46,21 @@ export default Actions.create(
         key={'discover'}
         title={'Discover'}
         icon={TabIcon}
-        component={Home}
+        component={Discover}
       />
       <Scene
         {...navbarPropsTabs}
         key={'community'}
         title={'Community'}
         icon={TabIcon}
-        component={Home}
+        component={Community}
       />
       <Scene
         {...navbarPropsTabs}
         key={'userCenter'}
         title={'UserCenter'}
         icon={TabIcon}
-        component={Home}
+        component={UserCenter}
       />
     </Scene>
   </Scene>,
