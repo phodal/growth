@@ -12,8 +12,8 @@ const brand = {
 };
 
 const text = {
-  textPrimary: '#222222',
-  textSecondary: '#777777',
+  textPrimary: '#222',
+  textSecondary: '#666',
   headingPrimary: brand.brand.primary,
   headingSecondary: brand.brand.primary,
 };
