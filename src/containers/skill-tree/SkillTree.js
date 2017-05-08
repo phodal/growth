@@ -4,6 +4,7 @@ import React from 'react';
 import { WebView, StyleSheet, Platform } from 'react-native';
 import AppSizes from '../../theme/sizes';
 import AppStyles from '../../theme/styles';
+import { Actions } from 'react-native-router-flux';
 
 const styles = StyleSheet.create({
   background: {
@@ -30,8 +31,8 @@ class SkillTree extends React.PureComponent {
 
   handleMessage = (evt: any) => {
     const message = evt.nativeEvent.data;
-    // this.webview.postMessage(message);
-    this.message = message;
+    const skillId = JSON.parse(message).id;
+    Actions.skillDetail({ skillId });
   };
 
   render = () => {
@@ -53,7 +54,7 @@ class SkillTree extends React.PureComponent {
         source={source}
         automaticallyAdjustContentInsets={false}
         style={[AppStyles.container, styles.container]}
-        injectedJavaScript="document.body.style.background = 'red';window.cordova = {getAppVersion: {getVersionNumber: function(){var message = {action: 'getVersionNumber'}window.postMessage(JSON.stringify(message))}}}"
+        injectedJavaScript=""
         onNavigationStateChange={this.onNavigationStateChange}
       />
     );

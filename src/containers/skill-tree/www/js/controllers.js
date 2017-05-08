@@ -19,13 +19,6 @@ app.controller('HomeCtrl', function ($scope) {
   $scope.openSkill = function (event) {
     var id = event.srcElement.parentElement.getAttribute('id');
     window.postMessage(JSON.stringify({id: id}));
-    window.postMessage(JSON.stringify(document, window));
-
-    if(window.cordova) {
-      window.cordova.getAppVersion.getVersionNumber(function (version) {
-        window.postMessage(version);
-      });
-    }
   };
 
   $scope.canAddPoint = function () {
@@ -35,4 +28,4 @@ app.controller('HomeCtrl', function ($scope) {
   $scope.hasPoint = function (skill_id) {
 
   };
-})
+});

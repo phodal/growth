@@ -12,6 +12,7 @@ import Community from '../containers/community/Community';
 import UserCenter from '../containers/user-center/UserCenter';
 import Discover from '../containers/discover/Discover';
 import SkillTree from '../containers/skill-tree/SkillTree';
+import SkillDetailView from '../containers/skill-tree/SkillDetailView';
 
 
 const navbarPropsTabs = {
@@ -92,5 +93,13 @@ export default Actions.create(
         component={UserCenter}
       />
     </Scene>
+
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'skillDetail'}
+      title={'用户中心'}
+      component={SkillDetailView}
+    />
   </Scene>,
 );
