@@ -1,0 +1,241 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+body,
+.ionic-body {
+  -webkit-touch-callout: none;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  word-wrap: break-word;
+  font-size: 14px;
+  font-family: -apple-system;
+  font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  line-height: 20px;
+  text-rendering: optimizeLegibility;
+  -webkit-backface-visibility: hidden;
+  -webkit-user-drag: none;
+  -ms-content-zooming: none;
+}
+
+.scroll-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  margin-top: -1px;
+  padding-top: 1px;
+  margin-bottom: -1px;
+  width: auto;
+  height: auto;
+}
+
+/**
+ * Scroll is the scroll view component available for complex and custom
+ * scroll view functionality.
+ */
+.scroll {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+}
+
+.scroll-view {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin-top: -1px;
+}
+
+.scroll-view.overflow-scroll {
+  position: relative;
+}
+
+.scroll-view.scroll-x {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.scroll-view.scroll-y {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.scroll-view.scroll-xy {
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+
+.scroll-bar {
+  position: absolute;
+  z-index: 9999;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+ion-scroll {
+  width: 100%;
+  height: 100%;
+}
+
+.overflow-scroll {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.overflow-scroll.pane {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.overflow-scroll .scroll {
+  position: static;
+  height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+svg#logo {
+  width: 1200px;
+  overflow: visible;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.node rect {
+  stroke: #333;
+  fill: #fff;
+}
+
+g.node rect {
+  stroke: #bdc3c7;
+  stroke-width: 2px;
+  cursor: pointer;
+}
+
+g.node rect.inner {
+  fill: white;
+}
+
+g.node rect.outer {
+  position: absolute;
+  display: none;
+  stroke-dasharray: 4px;
+  stroke-opacity: 0.5;
+  fill: transparent;
+}
+
+g.selected rect.outer {
+  display: inline;
+}
+
+rect.selection {
+  stroke: gray;
+  stroke-dasharray: 4px;
+  stroke-opacity: 0.5;
+  fill: transparent;
+}
+
+.edgePath path {
+  stroke: gray;
+  fill: gray;
+  stroke-width: 2px;
+}
+
+.node text {
+  pointer-events: none;
+}
+
+/* disable text selection */
+svg *::selection {
+  background: transparent;
+}
+
+svg *::-moz-selection {
+  background: transparent;
+}
+
+svg *::-webkit-selection {
+  background: transparent;
+}
+
+g.has-point.node rect {
+  fill: #ffdc00 !important;
+  stroke: #387ef5;
+}
+
+.splash-img svg {
+  /* Set rules to fill background */
+  min-height: 100%;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.splash-img,
+#obturateur1 {
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+  color: #3D489E;
+}
+
+svg#splash * {
+  fill: none;
+  stroke: currentColor;
+}
+
+svg,
+div.scroll {
+  height: 100%;
+  width: auto;
+}
