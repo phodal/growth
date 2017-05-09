@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Text, View } from 'react-native';
 import SKILL_TREE_DATA from './SKILL_TREE_DATA';
-import { Actions } from 'react-native-router-flux';
 
 const filter = require('lodash.filter');
 
