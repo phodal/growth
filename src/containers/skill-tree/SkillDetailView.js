@@ -1,5 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { Text, View } from 'react-native';
+import { Card, List, ListItem } from 'react-native-elements';
+
 import SKILL_TREE_DATA from './SKILL_TREE_DATA';
 
 // eslint-disable-next-line import/no-unresolved
@@ -22,6 +24,19 @@ class SkillDetailView extends Component {
     return (
       <View>
         <Text>{ skillData.title }</Text>
+        <Card>
+          <Text>{ skillData.description }</Text>
+        </Card>
+
+        <List containerStyle={{ marginBottom: 20 }}>
+          {
+            skillData.links.map(link => (
+              <ListItem
+                title={link.label}
+              />
+            ))
+          }
+        </List>
       </View>
     );
   }
