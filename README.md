@@ -13,19 +13,22 @@
  - React Native Elements：UI 框架
  - React Native Router Flux：路由控制
  - React Native Vector Icons：图标组件 
+ - Jest：单元测试框架
+ - React Test Renderer：UI 测试框架
+
+ESLint Style: [Airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) 
 
 Join us
 ---
 
-**Setup**
+### Setup
 
 1. 安装 yarn 或者 npm
 2. 安装 react-native-cli：``yarn global add react-native-cli``
 3. 安装依赖： ``yarn install``
 4. 运行 Demo：``react-native run-ios``
 
-
-**Workflow**
+### Workflow
 
 1. 获取上游最新代码：``git pull --rebase``
 2. 添加修改功能，**小步提交**，即实现某个小功能就本地小步提交一次。如：
@@ -39,7 +42,7 @@ Join us
 5. 提交到服务器
 6. 来一个 Pull Request
 
-**提交信息规范**
+### 提交信息规范
 
 建议提交信息按如下规范：
 
@@ -64,5 +67,3 @@ License
 [![Phodal's Idea](http://brand.phodal.com/shields/idea-small.svg)](http://ideas.phodal.com/)
 
 © 2016 A [Phodal Huang](https://www.phodal.com)'s [Idea](http://github.com/phodal/ideas).  This code is distributed under the MIT license. See `LICENSE` in this directory.
-
-[待我代码编成，娶你为妻可好](http://www.xuntayizhan.com/blog/ji-ke-ai-qing-zhi-er-shi-dai-wo-dai-ma-bian-cheng-qu-ni-wei-qi-ke-hao-wan/)
