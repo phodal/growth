@@ -1,10 +1,10 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Text, View } from 'react-native';
 import SKILL_TREE_DATA from './SKILL_TREE_DATA';
 
 const filter = require('lodash.filter');
 
-class SkillDetailView extends React.PureComponent {
+class SkillDetailView extends Component {
   static componentName = 'SkillDetailView';
 
   static propTypes = {

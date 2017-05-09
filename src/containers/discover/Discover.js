@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
-class Discover extends React.PureComponent {
+class Discover extends Component {
+  static componentName = 'Discover';
+
   render = () => (
     <View>
       <Text>Discover</Text>

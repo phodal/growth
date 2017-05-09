@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ListItem from 'react-native-elements/src/list/ListItem';
 import List from 'react-native-elements/src/list/List';
 import { View } from 'react-native';
 
-class UserCenter extends React.PureComponent {
+class UserCenter extends Component {
+  static componentName = 'UserCenter';
+
   render = () => (
     <View>
       <List>

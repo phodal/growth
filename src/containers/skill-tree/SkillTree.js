@@ -1,6 +1,6 @@
 /* eslint-disable global-require */
 /* global __DEV__, require */
-import React from 'react';
+import React, { Component } from 'react';
 import { WebView, StyleSheet, Platform } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
 });
 
-class SkillTree extends React.PureComponent {
+class SkillTree extends Component {
   static componentName = 'SkillTree';
 
   constructor() {

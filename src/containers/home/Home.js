@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
-class Home extends React.PureComponent {
+class Home extends Component {
+  static componentName = 'Home';
+
   render = () => (
     <View>
       <Text>Hello</Text>

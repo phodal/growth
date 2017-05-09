@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
-class Community extends React.PureComponent {
+class Community extends Component {
+  static componentName = 'Community';
+
   render = () => (
     <View>
       <Text>Community</Text>
