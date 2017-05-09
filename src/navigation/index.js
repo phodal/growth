@@ -13,6 +13,7 @@ import UserCenter from '../containers/user-center/UserCenter';
 import Discover from '../containers/discover/Discover';
 import SkillTree from '../containers/skill-tree/SkillTree';
 import SkillDetailView from '../containers/skill-tree/SkillDetailView';
+import ComingSoonView from '../containers/ComingSoonView';
 
 
 const navbarPropsTabs = {
@@ -53,6 +54,9 @@ export default Actions.create(
         title={'Growth'}
         iconName={'md-home'}
         iconType={'ionicon'}
+        rightTitle={'购买纸质版'}
+        onRight={() => Actions.comingSoon()}
+        rightButtonTextStyle={AppStyles.navbarTitle}
         icon={TabIcon}
         component={Home}
       />
@@ -69,6 +73,9 @@ export default Actions.create(
         {...navbarPropsTabs}
         key={'skillTree'}
         title={'技能树'}
+        rightTitle={'获取专业版'}
+        onRight={() => Actions.comingSoon()}
+        rightButtonTextStyle={AppStyles.navbarTitle}
         iconName={'md-egg'}
         iconType={'ionicon'}
         icon={TabIcon}
@@ -100,6 +107,13 @@ export default Actions.create(
       key={'skillDetail'}
       title={'技能'}
       component={SkillDetailView}
+    />
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'comingSoon'}
+      title={'Coming Soon'}
+      component={ComingSoonView}
     />
   </Scene>,
 );
