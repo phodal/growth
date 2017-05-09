@@ -32,7 +32,7 @@ class SkillTree extends React.PureComponent {
   handleMessage = (evt: any) => {
     const message = evt.nativeEvent.data;
     const skillId = JSON.parse(message).id;
-    Actions.skillDetail({ skillId });
+    Actions.skillDetail({ skillId: parseInt(skillId, 10) });
   };
 
   render = () => {
