@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { Text, View } from 'react-native';
 import SKILL_TREE_DATA from './SKILL_TREE_DATA';
 
+// eslint-disable-next-line import/no-unresolved
 const filter = require('lodash.filter');
 
 class SkillDetailView extends Component {
