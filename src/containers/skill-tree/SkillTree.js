@@ -2,9 +2,10 @@
 /* global __DEV__, require */
 import React from 'react';
 import { WebView, StyleSheet, Platform } from 'react-native';
+import { Actions } from 'react-native-router-flux';
+
 import AppSizes from '../../theme/sizes';
 import AppStyles from '../../theme/styles';
-import { Actions } from 'react-native-router-flux';
 
 const styles = StyleSheet.create({
   background: {
