@@ -1,5 +1,5 @@
 language: android
-
+jdk: openjdk8
 before_install:
 - nvm install 6
 - node --version
