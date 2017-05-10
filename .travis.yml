@@ -27,6 +27,7 @@ after_script:
 branches:
   only:
   - master
+  - /v\d+\.\d+[a-z]/
 notifications:
   webhooks:
     urls:
