@@ -20,23 +20,27 @@ class SkillDetailView extends Component {
 
   render() {
     const skillData = filter(SKILL_TREE_DATA, { id: this.props.skillId })[0];
+    let skillLinkList = null;
+    if (skillData.links) {
+      skillLinkList = (<List containerStyle={{ marginBottom: 20 }}>
+        {
+          skillData.links.map(link => (
+            <ListItem
+              title={link.label}
+            />
+          ))
+        }
+      </List>);
+    }
 
     return (
       <View>
-        <Text>{ skillData.title }</Text>
-        <Card>
+        <Card
+          title={skillData.title}
+        >
           <Text>{ skillData.description }</Text>
         </Card>
-
-        <List containerStyle={{ marginBottom: 20 }}>
-          {
-            skillData.links.map(link => (
-              <ListItem
-                title={link.label}
-              />
-            ))
-          }
-        </List>
+        {skillLinkList}
       </View>
     );
   }
