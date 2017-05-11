@@ -54,6 +54,12 @@ Join us
 
 示例 2，``[SkillTree] detail: add link data``。其中的 ``SkillTree`` 表示修改的是技能树 Tab 下的内容，``detail`` 则表示修改的是详情页，``add link data`` 则表示是添加了技能的数据
 
+### 打包
+
+项目自带的 keystore 是用下面命令生成的，仅用于测试：
+
+> $ keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
+
 Documents
 ---
 
