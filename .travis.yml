@@ -1,26 +1,42 @@
-language: node_js
-node_js:
-  - "6"
+language: android
+jdk: oraclejdk8
+before_install:
+- nvm install 6
+- node --version
 
 install:
-  - npm install
-  - npm install --save-dev coveralls
+- npm install
+- npm install --save-dev coveralls
 
+android:
+  components:
+  - build-tools-23.0.1
+  - android-23
+  - extra-android-m2repository
+  - extra-google-google_play_services
+  - extra-google-m2repository
+  - addon-google_apis-google-16
 script:
-  - npm run lint
-  - npm test
+- npm run lint
+- npm test
+- cd android && ./gradlew assembleRelease
 
 after_script:
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
-
-branches:
-  only:
-    - master
+- cd ../ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 notifications:
   webhooks:
     urls:
-      - https://webhooks.gitter.im/e/8deddc25942881f178e4
-    on_success: change  # options: [always|never|change] default: always
-    on_failure: always  # options: [always|never|change] default: always
-    on_start: never     # options: [always|never|change] default: always
+    - https://webhooks.gitter.im/e/8deddc25942881f178e4
+    on_success: change
+    on_failure: always
+    on_start: never
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: R8Xmie2kh0WuGWBrF9uPzrCtNQW5noDjpQChtjSnVqapvSP/EcglDO4x//lISjmXz7izT2Qpf0NdglP9NgzcjFcz9Xf86lHQ3lf84dHj85dOlV+/0gTU9he3llrbG7MZ9XWTbBeveFwhggZr9s0lU3blTrf7H/ZYGx6yTVGnEq5bj2kHqfN67p+ZWmUimpz3uHGCkCvIjLNjpc/jtrHp7s4VtIrsRv5WTnZOD0qVOg87aoTKJna4ZIdAHQ1ROx1UpuwMgFAxicJWLPas112QsZIr3k/t8mcisFQLyQcbzpE4umFSRYG77nbYg+fVJxSTWm4plBdXff7PXzX5Sh08HdDGl8t0e5wtFIxukpi7adufjBNviAKwHUrxfgZgU6EaSIl9AYq46aCKEkGhdEluZsUcbXK8dB9bRhsaDQNT8AdLq7gaqYnopiVnRYCFOl9Ams4ZuhtipPWN5RIxMgbA7yj0Kv5asakJ42N7CWBwKRxPzvouDyTqWHnLcsCb2qvNl7Ue6NWy4n+pcg4omgENJt3yc5IKIe1fVK46PG1rA15HW4k2CloRESWiGvvo8bydHxCr8v5wMvbjz7bpicMpJp4qnI7L/fz2BJF45cEqRFIpWkxkuU0ZMDvqueUWji2jSy83LCyuztzsHbKYhs25DRRF7IxOlW5FZs37DMFZENU=
+  file: $TRAVIS_BUILD_DIR/android/app/build/outputs/apk/app-release.apk
+  on:
+    repo: phodal/growth-ng
+    tags: true
