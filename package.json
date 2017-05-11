@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "lint": "eslint --ext .jsx,.js --fix ."
+    "lint": "eslint --ext .jsx,.js --fix ./src"
   },
   "dependencies": {
     "lodash.filter": "^4.6.0",
@@ -13,7 +13,8 @@
     "react-native": "^0.42.0",
     "react-native-elements": "^0.11.2",
     "react-native-router-flux": "3.37.0",
-    "react-native-vector-icons": "~4.0.0"
+    "react-native-vector-icons": "~4.0.0",
+    "shortid": "^2.2.8"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
