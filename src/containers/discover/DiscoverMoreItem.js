@@ -22,6 +22,7 @@ class MoreItem extends Component {
         }))]),
     imageStyle: Image.propTypes.style,
     title: PropTypes.string.isRequired,
+    titleColor: PropTypes.string,
     titleStyle: Text.propTypes.style,
     onclick: PropTypes.func,
     top: PropTypes.number,
@@ -32,6 +33,7 @@ class MoreItem extends Component {
     image: '',
     imageStyle: AppStyle.discoverMoreItemImage,
     title: '',
+    titleColor: '#03a9f4',
     titleStyle: AppStyle.discoverMoreItemTitle,
     onclick: defaultClick,
     top: 0,
@@ -45,7 +47,7 @@ class MoreItem extends Component {
       <View style={this.props.imageParentStyle}>
         <Image source={this.props.image} style={this.props.imageStyle} >
           <View style={this.props.titleStyle}>
-            <Text>{this.props.title}</Text>
+            <Text style={{ color: this.props.titleColor }}>{this.props.title}</Text>
           </View>
         </Image>
       </View>
