@@ -63,7 +63,24 @@ Join us
 Documents
 ---
 
-API Documents: [Growth NG Wiki](https://github.com/phodal/growth-ng/wiki)
+** Growth 内容 API**
+
+地址：[https://github.com/GrowthStudio/growth-content](https://github.com/GrowthStudio/growth-content)    
+
+
+**探索 API**
+
+名称               |   API 地址
+------------------|-----------------
+文章合集           | https://phodal.coding.me/growth/articles/api/all.json
+学习路线           | https://phodal.coding.me/growth/awesome/api/all.json
+我的职业是前端工程师 | https://phodal.coding.me/growth/fe/api/all.json
+Growth 实战指南    | https://phodal.coding.me/growth/growth-in-action/api/all.json
+ideabook项目集     | https://phodal.coding.me/growth/ideabook/api/all.json
+练手项目           | https://phodal.coding.me/growth/project/api/all.json
+工具箱            | https://phodal.coding.me/growth/toolbox/api/all.json
+
+社区 API 文档： [Growth NG Wiki](https://github.com/phodal/growth-ng/wiki)
 
 Basis on: [React Native Stater APP](https://github.com/mcnamee/react-native-starter-app)
 
