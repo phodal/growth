@@ -1,6 +1,6 @@
-import React, {Component, PropTypes} from 'react';
-import {Text, View} from 'react-native';
-import {Card, List, ListItem} from 'react-native-elements';
+import React, { Component, PropTypes } from 'react';
+import { Text, View } from 'react-native';
+import { Card, List, ListItem } from 'react-native-elements';
 import * as shortid from 'shortid';
 
 import SKILL_TREE_DATA from './SKILL_TREE_DATA';
@@ -21,7 +21,7 @@ class SkillDetailView extends Component {
   };
 
   render() {
-    const skillData = filter(SKILL_TREE_DATA, {id: this.props.skillId})[0];
+    const skillData = filter(SKILL_TREE_DATA, { id: this.props.skillId })[0];
     let skillLinkList = null;
     if (skillData.links) {
       skillLinkList = (<View>

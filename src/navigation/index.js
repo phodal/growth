@@ -11,9 +11,21 @@ import AppColors from '../theme/colors';
 import Community from '../containers/community/Community';
 import UserCenter from '../containers/user-center/UserCenter';
 import Discover from '../containers/discover/Discover';
+import RoadmapList from '../containers/discover/roadmap-list/RoadmapList';
+import ProjectList from '../containers/discover/project-list/ProjectList';
+import ToolBoxList from '../containers/discover/toolbox-list/ToolBoxList';
+import ArticleList from '../containers/discover/article-list/ArticleList';
+import ExamList from '../containers/discover/exam-list/ExamList';
+import Solution from '../containers/discover/solution/Solution';
+import ThoughtworksBooks from '../containers/discover/thoughtworks-books/ThoughtworksBooks';
+import RecommendBooks from '../containers/discover/recommend-books/RecommendBooks';
+import RecommendArticles from '../containers/discover/recommend-articles/RecommendArticles';
+import TodoLists from '../containers/discover/todo-lists/TodoLists';
+import ChapterList from '../containers/discover/chapter-list/ChapterList';
 import SkillTree from '../containers/skill-tree/SkillTree';
 import SkillDetailView from '../containers/skill-tree/SkillDetailView';
 import ComingSoonView from '../containers/ComingSoonView';
+import GrowthWebView from '../containers/GrowthWebView';
 
 
 const navbarPropsTabs = {
@@ -115,5 +127,86 @@ export default Actions.create(
       title={'Coming Soon'}
       component={ComingSoonView}
     />
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'roadmapList'}
+      title={'学习路线'}
+      component={RoadmapList}
+    />
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'projectList'}
+      title={'练手项目'}
+      component={ProjectList}
+    />
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'toolBoxList'}
+      title={'工具箱'}
+      component={ToolBoxList}
+    />
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'articleList'}
+      title={'文章推荐'}
+      component={ArticleList}
+    />
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'examList'}
+      title={'技能测验'}
+      component={ExamList}
+    />
+    <Scene
+      {...navbarPropsTabs}
+      key={'solution'}
+      title={'解决方案'}
+      component={Solution}
+    />
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'thoughtworksBooks'}
+      title={'ThoughtWorks读书路线'}
+      component={ThoughtworksBooks}
+    />
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'recommendBooks'}
+      title={'推荐书籍'}
+      component={RecommendBooks}
+    />
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'recommendArticles'}
+      title={'推荐文章'}
+      component={RecommendArticles}
+    />
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'todoLists'}
+      title={'待办事项'}
+      component={TodoLists}
+    />
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'chapterList'}
+      title={'ChapterList'}
+      component={ChapterList}
+    />
+    <Scene
+      key={'growthWebView'}
+      component={GrowthWebView}
+    />
+
   </Scene>,
 );
