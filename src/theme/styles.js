@@ -1,4 +1,4 @@
-import { Platform } from 'react-native';
+import { Platform, Dimensions } from 'react-native';
 import Fonts from './fonts';
 import Colors from './colors';
 
@@ -46,18 +46,18 @@ export default {
     flexDirection: 'row',
     marginTop: 15,
   },
-  discoverGridDirectionLeft: {
+  discoverGridPositionLeft: {
     flex: 1,
     backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: 15,
   },
-  discoverGridDirectionRight: {
+  discoverGridPositionRight: {
     flex: 1,
     backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
+    marginLeft: 15,
   },
   discoverGridTextItem: {
     color: '#03a9f4',
@@ -74,5 +74,19 @@ export default {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  discoverOnlineItem: {
+    flex: 1,
+  },
+  discoverOnlineItemImage: {
+    flex: 7,
+    width: Dimensions.get('window').width - 30,
+    resizeMode: 'stretch',
+  },
+  discoverOnlineItemTitle: {
+    flex: 3,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'white',
   },
 };
