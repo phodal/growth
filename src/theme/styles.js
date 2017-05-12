@@ -89,4 +89,18 @@ export default {
     alignItems: 'center',
     backgroundColor: 'white',
   },
+  discoverMoreItem: {
+    flex: 1,
+  },
+  discoverMoreItemImage: {
+    flex: 7,
+    width: Dimensions.get('window').width - 30,
+    resizeMode: 'stretch',
+  },
+  discoverMoreItemTitle: {
+    flex: 3,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(255,255,255, .5)',
+  },
 };
