@@ -5,9 +5,9 @@ import Icon from '../../icon/GrowthFont';
 import OnLineReadItem from './DiscoverOnlineReadItem';
 import MoreItem from './DiscoverMoreItem';
 
-const home1 = require('../../../assetc/growth-ui/img/home-1.jpg');
-const home2 = require('../../../assetc/growth-ui/img/home-2.jpg');
-const home3 = require('../../../assetc/growth-ui/img/home-3.jpg');
+const home1 = require('../../../assets/growth-ui/img/home-1.jpg');
+const home2 = require('../../../assets/growth-ui/img/home-2.jpg');
+const home3 = require('../../../assets/growth-ui/img/home-3.jpg');
 
 const iconSize = 30;
 
