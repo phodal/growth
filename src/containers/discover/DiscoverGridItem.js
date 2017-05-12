@@ -8,7 +8,7 @@ const itemOnClickBackgroundColor = 'rgba(255,255,255, .5)';
 const LEFT = 'left';
 const RIGHT = 'right';
 
-const onclick = () => {};
+const defaultClick = () => {};
 
 class GridItem extends Component {
   static componentName = 'GridItem';
@@ -20,9 +20,9 @@ class GridItem extends Component {
     iconSize: PropTypes.number.isRequired,
     titleStyle: Text.propTypes.style,
     title: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired,
+    onclick: PropTypes.func.isRequired,
     onClickBackgroundColor: PropTypes.string.isRequired,
-    direction: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired,
   };
 
   static defaultProps = {
@@ -32,18 +32,18 @@ class GridItem extends Component {
     iconSize: iconsSize,
     titleStyle: AppStyle.discoverGridTextItem,
     title: '',
-    onClick: onclick,
+    onclick: defaultClick,
     onClickBackgroundColor: itemOnClickBackgroundColor,
-    direction: LEFT,
+    position: LEFT,
 
   };
 
   render = () => (
     <TouchableHighlight
-      onPress={this.props.onClick}
-      style={this.props.direction === RIGHT
-        ? AppStyle.discoverGridDirectionRight
-        : AppStyle.discoverGridDirectionLeft}
+      onPress={this.props.onclick}
+      style={this.props.position === RIGHT
+        ? AppStyle.discoverGridPositionRight
+        : AppStyle.discoverGridPositionLeft}
       underlayColor={this.props.onClickBackgroundColor}
     >
       <View style={this.props.gridItemStyle} >
