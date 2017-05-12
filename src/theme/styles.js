@@ -54,7 +54,7 @@ export default {
     alignItems: 'center',
     marginRight: 15,
   },
-  discoverGrideItem: {
+  discoverGridItem: {
     color: '#333',
     ...Platform.select({
       ios: {

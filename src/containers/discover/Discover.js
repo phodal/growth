@@ -24,21 +24,21 @@ class Discover extends Component {
         <View style={AppStyle.discoverFirstGrid}>
           <View style={AppStyle.discoverGridFirstItem}>
             <Icon name="icon-social" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>学习路线</Text>
+            <Text style={AppStyle.discoverGridItem}>学习路线</Text>
           </View>
           <View style={AppStyle.discoverGridLastItem}>
             <Icon name="explore-1-2" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>练手项目</Text>
+            <Text style={AppStyle.discoverGridItem}>练手项目</Text>
           </View>
         </View>
         <View style={AppStyle.discoverOtherGrid}>
           <View style={AppStyle.discoverGridFirstItem}>
             <Icon name="explore-1-3" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>工具箱</Text>
+            <Text style={AppStyle.discoverGridItem}>工具箱</Text>
           </View>
           <View style={AppStyle.discoverGridLastItem}>
             <Icon name="explore-1-4" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>在线文章</Text>
+            <Text style={AppStyle.discoverGridItem}>在线文章</Text>
           </View>
         </View>
       </View>
@@ -49,31 +49,31 @@ class Discover extends Component {
         <View style={AppStyle.discoverFirstGrid}>
           <View style={AppStyle.discoverGridFirstItem}>
             <Icon name="icon-graowth" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>技能测验</Text>
+            <Text style={AppStyle.discoverGridItem}>技能测验</Text>
           </View>
           <View style={AppStyle.discoverGridLastItem}>
             <Icon name="explore-2-2" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>解决方案</Text>
+            <Text style={AppStyle.discoverGridItem}>解决方案</Text>
           </View>
         </View>
         <View style={AppStyle.discoverOtherGrid}>
           <View style={AppStyle.discoverGridFirstItem}>
             <Icon name="explore-2-3" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>读书路线</Text>
+            <Text style={AppStyle.discoverGridItem}>读书路线</Text>
           </View>
           <View style={AppStyle.discoverGridLastItem}>
             <Icon name="explore-2-4" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>书籍列表</Text>
+            <Text style={AppStyle.discoverGridItem}>书籍列表</Text>
           </View>
         </View>
         <View style={AppStyle.discoverOtherGrid}>
           <View style={AppStyle.discoverGridFirstItem}>
             <Icon name="explore-2-5" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>文章列表</Text>
+            <Text style={AppStyle.discoverGridItem}>文章列表</Text>
           </View>
           <View style={AppStyle.discoverGridLastItem}>
             <Icon name="explore-2-6" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>待办事项</Text>
+            <Text style={AppStyle.discoverGridItem}>待办事项</Text>
           </View>
         </View>
       </View>
