@@ -6,9 +6,9 @@ import GridItem from './DiscoverGridItem';
 import OnLineRead from './DiscoverOnlineReadItem';
 import Launch from './Launch';
 
-const home1 = require('../../../assetc/growth-ui/img/home-1.jpg');
-const home2 = require('../../../assetc/growth-ui/img/home-2.jpg');
-const home3 = require('../../../assetc/growth-ui/img/home-3.jpg');
+const home1 = require('../../../assets/growth-ui/img/home-1.jpg');
+const home2 = require('../../../assets/growth-ui/img/home-2.jpg');
+const home3 = require('../../../assets/growth-ui/img/home-3.jpg');
 
 class Discover extends Component {
   static componentName = 'Discover';
@@ -59,7 +59,7 @@ class Discover extends Component {
         <MoreItem
           image={home3} title="你还需要什么功能？"
           titleBackgroundColor="rgba(255,255,255, .5)"
-          onclick={() => { Launch.openGitHub('https://github.com/phodal/growth-ng'); }}
+          onclick={() => { Launch.openGitHub('https://github.com/phodal/growth-ng/issues'); }}
         />
       </View>
     </ScrollView>

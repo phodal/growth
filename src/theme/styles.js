@@ -2,6 +2,7 @@ import { Platform, Dimensions } from 'react-native';
 import Fonts from './fonts';
 import Colors from './colors';
 
+
 export default {
   appContainer: {
     backgroundColor: '#000',

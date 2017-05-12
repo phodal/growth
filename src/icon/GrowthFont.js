@@ -1,7 +1,7 @@
 
 
 import { createIconSetFromIcoMoon } from 'react-native-vector-icons';
-import icoMoonConfig from '../../assetc/glyphmaps/growth.json';
+import icoMoonConfig from '../../assets/glyphmaps/growth.json';
 
 const Icon = createIconSetFromIcoMoon(icoMoonConfig, 'growth');
 

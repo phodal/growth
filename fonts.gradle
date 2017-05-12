@@ -4,7 +4,7 @@
 
 def config = project.hasProperty("vectoricons") ? project.vectoricons : [];
 
-def iconFontsDir = config.iconFontsDir ?: "../../assetc/fonts";
+def iconFontsDir = config.iconFontsDir ?: "../../assets/fonts";
 def iconFontNames = config.iconFontNames ?: [ "*.ttf" ];
 
 gradle.projectsEvaluated {
