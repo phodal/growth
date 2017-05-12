@@ -46,16 +46,21 @@ export default {
     flexDirection: 'row',
     marginTop: 15,
   },
-  discoverGridFirstItem: {
+  discoverGridDirectionLeft: {
     flex: 1,
-    flexDirection: 'column',
     backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: 15,
   },
-  discoverGrideItem: {
-    color: '#333',
+  discoverGridDirectionRight: {
+    flex: 1,
+    backgroundColor: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  discoverGridTextItem: {
+    color: '#03a9f4',
     ...Platform.select({
       ios: {
         marginTop: 10,
@@ -65,9 +70,8 @@ export default {
       },
     }),
   },
-  discoverGridLastItem: {
+  discoverGridItem: {
     flex: 1,
-    backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
   },
