@@ -1,7 +1,5 @@
 import 'react-native';
-import React from 'react';
 import { expect } from 'chai';
-import renderer from 'react-test-renderer';
 
 import scenes from '../../src/navigation/index';
 
