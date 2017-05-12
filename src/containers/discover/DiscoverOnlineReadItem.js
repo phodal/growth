@@ -23,8 +23,8 @@ class OnLineReadItem extends Component {
     imageStyle: Image.propTypes.style,
     title: PropTypes.string.isRequired,
     titleStyle: Text.propTypes.style,
-    onclick: PropTypes.func.isRequired,
-    top: PropTypes.number.isRequired,
+    onclick: PropTypes.func,
+    top: PropTypes.number,
   };
 
   static defaultProps = {
