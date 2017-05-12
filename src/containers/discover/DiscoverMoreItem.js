@@ -1,13 +1,12 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Text, Image, Dimensions } from 'react-native';
+import { View, Text, Image, TouchableHighlight } from 'react-native';
 import AppStyle from '../../theme/styles';
+
+const defaultClick = () => {};
 
 class MoreItem extends Component {
   static propTypes = {
-    flex: PropTypes.number,
-    marginTop: PropTypes.number,
-    imageFlex: PropTypes.number,
-    titleFlex: PropTypes.number,
+    imageParentStyle: View.propTypes.style,
     image: PropTypes.oneOfType([
       PropTypes.shape({
         uri: PropTypes.string,
@@ -21,47 +20,37 @@ class MoreItem extends Component {
           width: PropTypes.number,
           height: PropTypes.number,
         }))]),
-    imageWidth: PropTypes.number,
-    title: PropTypes.string,
-    titleBackgroundColor: PropTypes.string,
-    titleJustifyContent: PropTypes.string,
-    titleAlignItems: PropTypes.string,
-    imageResizeMode: PropTypes.string,
+    imageStyle: Image.propTypes.style,
+    title: PropTypes.string.isRequired,
+    titleStyle: Text.propTypes.style,
+    onclick: PropTypes.func.isRequired,
+    top: PropTypes.number.isRequired,
   };
+
   static defaultProps = {
-    flex: 1,
-    marginTop: 0,
-    imageFlex: 1,
-    titleFlex: 1,
+    imageParentStyle: AppStyle.discoverMoreItem,
     image: '',
-    imageWidth: Dimensions.get('window').width - 30,
-    imageResizeMode: 'stretch',
+    imageStyle: AppStyle.discoverMoreItemImage,
     title: '',
-    titleBackgroundColor: 'white',
-    titleJustifyContent: 'center',
-    titleAlignItems: 'center',
+    titleStyle: AppStyle.discoverMoreItemTitle,
+    onclick: defaultClick,
+    top: 0,
   };
+
   render = () => (
-    <View style={{ flex: this.props.flex, marginTop: this.props.marginTop }}>
-      <Image
-        source={this.props.image}
-        style={{
-          flex: this.props.imageFlex,
-          width: this.props.imageWidth,
-          resizeMode: this.props.imageResizeMode }}
-      >
-        <View
-          style={{
-            flex: this.props.titleFlex,
-            width: this.props.imageWidth,
-            backgroundColor: this.props.titleBackgroundColor,
-            justifyContent: this.props.titleJustifyContent,
-            alignItems: this.props.titleAlignItems }}
-        >
-          <Text style={AppStyle.discoverTextColor}>{this.props.title}</Text>
-        </View>
-      </Image>
-    </View>
+    <TouchableHighlight
+      onPress={this.props.onclick}
+      style={{ flex: 1, marginTop: this.props.top }}
+    >
+      <View style={this.props.imageParentStyle}>
+        <Image source={this.props.image} style={this.props.imageStyle} >
+          <View style={this.props.titleStyle}>
+            <Text>{this.props.title}</Text>
+          </View>
+        </Image>
+      </View>
+    </TouchableHighlight>
   );
 }
+
 export default MoreItem;
