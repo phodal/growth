@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import AppStyle from '../../theme/styles';
-import Icon from '../../icon/GrowthFont';
 import OnLineReadItem from './DiscoverOnlineReadItem';
 import MoreItem from './DiscoverMoreItem';
+import GridItem from './DiscoverGridItem';
 
 const home1 = require('../../../assetc/growth-ui/img/home-1.jpg');
 const home2 = require('../../../assetc/growth-ui/img/home-2.jpg');
 const home3 = require('../../../assetc/growth-ui/img/home-3.jpg');
-
-const iconSize = 30;
-
 
 class Discover extends Component {
   static componentName = 'Discover';
@@ -22,24 +19,12 @@ class Discover extends Component {
           <Text style={AppStyle.discoverTextColor}>在线资源</Text>
         </View>
         <View style={AppStyle.discoverFirstGrid}>
-          <View style={AppStyle.discoverGridFirstItem}>
-            <Icon name="icon-social" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>学习路线</Text>
-          </View>
-          <View style={AppStyle.discoverGridLastItem}>
-            <Icon name="explore-1-2" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>练手项目</Text>
-          </View>
+          <GridItem title="学习路线" iconName="icon-social" direction={'left'} />
+          <GridItem title="练手项目" iconName="explore-1-2" direction={'right'} />
         </View>
         <View style={AppStyle.discoverOtherGrid}>
-          <View style={AppStyle.discoverGridFirstItem}>
-            <Icon name="explore-1-3" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>工具箱</Text>
-          </View>
-          <View style={AppStyle.discoverGridLastItem}>
-            <Icon name="explore-1-4" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>在线文章</Text>
-          </View>
+          <GridItem title="工具箱" iconName="explore-1-3" direction={'left'} />
+          <GridItem title="在线文章" iconName="explore-1-4" direction={'right'} />
         </View>
       </View>
       <View style={{ height: 420 }}>
@@ -47,34 +32,16 @@ class Discover extends Component {
           <Text style={AppStyle.discoverTextColor}>本地资源</Text>
         </View>
         <View style={AppStyle.discoverFirstGrid}>
-          <View style={AppStyle.discoverGridFirstItem}>
-            <Icon name="icon-graowth" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>技能测验</Text>
-          </View>
-          <View style={AppStyle.discoverGridLastItem}>
-            <Icon name="explore-2-2" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>解决方案</Text>
-          </View>
+          <GridItem title="技能测验" iconName="icon-graowth" direction={'left'} />
+          <GridItem title="解决方案" iconName="explore-2-2" direction={'right'} />
         </View>
         <View style={AppStyle.discoverOtherGrid}>
-          <View style={AppStyle.discoverGridFirstItem}>
-            <Icon name="explore-2-3" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>读书路线</Text>
-          </View>
-          <View style={AppStyle.discoverGridLastItem}>
-            <Icon name="explore-2-4" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>书籍列表</Text>
-          </View>
+          <GridItem title="读书路线" iconName="explore-2-3" direction={'left'} />
+          <GridItem title="书籍列表" iconName="explore-2-4" direction={'right'} />
         </View>
         <View style={AppStyle.discoverOtherGrid}>
-          <View style={AppStyle.discoverGridFirstItem}>
-            <Icon name="explore-2-5" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>文章列表</Text>
-          </View>
-          <View style={AppStyle.discoverGridLastItem}>
-            <Icon name="explore-2-6" size={iconSize} style={AppStyle.discoverTextColor} />
-            <Text style={AppStyle.discoverGrideItem}>待办事项</Text>
-          </View>
+          <GridItem title="文章列表" iconName="explore-2-5" direction={'left'} />
+          <GridItem title="待办事项" iconName="explore-2-6" direction={'right'} />
         </View>
       </View>
       <View style={{ height: 340 }}>
