@@ -4,6 +4,7 @@ import { Card, List, ListItem } from 'react-native-elements';
 import * as shortid from 'shortid';
 
 import SKILL_TREE_DATA from './SKILL_TREE_DATA';
+import AppFonts from '../../theme/fonts'
 
 // eslint-disable-next-line import/no-unresolved
 const filter = require('lodash.filter');
@@ -23,16 +24,19 @@ class SkillDetailView extends Component {
     const skillData = filter(SKILL_TREE_DATA, { id: this.props.skillId })[0];
     let skillLinkList = null;
     if (skillData.links) {
-      skillLinkList = (<List containerStyle={{ marginBottom: 20 }}>
-        {
-          skillData.links.map(link => (
-            <ListItem
-              key={shortid.generate()}
-              title={link.label}
-            />
-          ))
-        }
-      </List>);
+      skillLinkList = (<View>
+        <Text style={{ paddingTop: 15, paddingLeft: 15, fontSize: AppFonts.h4.size }}>推荐资料</Text>
+        <List containerStyle={{ marginBottom: 20 }}>
+          {
+            skillData.links.map(link => (
+              <ListItem
+                key={shortid.generate()}
+                title={link.label}
+              />
+            ))
+          }
+        </List>
+      </View>);
     }
 
     return (
