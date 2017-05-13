@@ -19,6 +19,7 @@ class TimeLine extends Component {
     content: PropTypes.string.isRequired,
     contentStyle: Text.propTypes.style,
     hideTopLine: PropTypes.bool,
+    itemIndex: PropTypes.number,
   };
 
   static defaultProps = {
@@ -33,12 +34,13 @@ class TimeLine extends Component {
     content: '',
     contentStyle: AppStyle.timeLineContent,
     hideTopLine: false,
+    itemIndex: 0,
   };
 
   render = () => (
     <View style={this.props.selfStyle}>
       <View style={this.props.lineParentStyle}>
-        <Text style={[this.props.topLineStyle, this.props.hideTopLine ? { backgroundColor: 'transparent' } : {}]} />
+        <Text style={[this.props.topLineStyle, (this.props.hideTopLine || this.props.itemIndex === 0) ? { backgroundColor: 'transparent' } : {}]} />
         <Icon name={'circle'} size={20} style={this.props.lineIconStyle} />
         <Text style={this.props.bottomLineStyle} />
       </View>
