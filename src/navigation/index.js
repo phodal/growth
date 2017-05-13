@@ -12,6 +12,7 @@ import Community from '../containers/community/Community';
 import UserCenter from '../containers/user-center/UserCenter';
 import Discover from '../containers/discover/Discover';
 import RoadmapList from '../containers/discover/roadmap-list/RoadmapList';
+import RoadmapDetail from '../containers/discover/roadmap-detail/RoadmapDetail';
 import ProjectList from '../containers/discover/project-list/ProjectList';
 import ToolBoxList from '../containers/discover/toolbox-list/ToolBoxList';
 import ArticleList from '../containers/discover/article-list/ArticleList';
@@ -130,6 +131,11 @@ export default Actions.create(
       key={'roadmapList'}
       title={'学习路线'}
       component={RoadmapList}
+    />
+
+    <Scene
+      key={'roadmapDetail'}
+      component={RoadmapDetail}
     />
 
     <Scene
