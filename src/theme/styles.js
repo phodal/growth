@@ -104,4 +104,48 @@ export default {
     alignItems: 'center',
     backgroundColor: 'rgba(255,255,255, .5)',
   },
+  timeLine: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  timeLineParent: {
+    width: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  timeLineIcon: {
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    color: '#03a9f4',
+  },
+  timeLineTopLine: {
+    width: 2,
+    height: 20,
+    backgroundColor: '#03a9f4',
+  },
+  timeLineBottomLine: {
+    width: 2,
+    flex: 1,
+    backgroundColor: '#03a9f4',
+  },
+  timeLineCententParent: {
+    flex: 1,
+    backgroundColor: 'white',
+    marginTop: 15,
+    marginRight: 15,
+    marginBottom: 10,
+    borderRadius: 5,
+  },
+  timeLineTitle: {
+    backgroundColor: '#03a9f4',
+    height: 30,
+    lineHeight: 30,
+    color: 'white',
+    paddingLeft: 15,
+  },
+  timeLineContent: {
+    padding: 15,
+  },
+
 };
