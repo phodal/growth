@@ -4,6 +4,9 @@ const launch = {
   roadmapList: () => {
     Actions.roadmapList();
   },
+  roadmapDetail: (caption, content) => {
+    Actions.roadmapDetail({ title: caption, timeline: content });
+  },
   projectList: () => {
     Actions.projectList();
   },
