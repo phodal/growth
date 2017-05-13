@@ -7,7 +7,7 @@ import Launch from '../Launch';
 async function load(call) {
   Api.getRoadMapListData()
     .then(response => (call(response.data)))
-    .catch(error => (console.log(error)));
+    .catch(error => (error));
 }
 
 class RoadmapList extends Component {
