@@ -63,7 +63,7 @@ Join us
 Documents
 ---
 
-** Growth 内容 API**
+**Growth 内容 API**
 
 地址：[https://github.com/GrowthStudio/growth-content](https://github.com/GrowthStudio/growth-content)    
 
