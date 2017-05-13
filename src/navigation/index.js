@@ -113,7 +113,6 @@ export default Actions.create(
       />
     </Scene>
 
-
     <Scene
       {...navbarPropsTabs}
       key={'skillDetail'}
@@ -122,83 +121,71 @@ export default Actions.create(
     />
 
     <Scene
-      {...navbarPropsTabs}
       key={'comingSoon'}
       title={'Coming Soon'}
       component={ComingSoonView}
     />
 
     <Scene
-      {...navbarPropsTabs}
       key={'roadmapList'}
       title={'学习路线'}
       component={RoadmapList}
     />
 
     <Scene
-      {...navbarPropsTabs}
       key={'projectList'}
       title={'练手项目'}
       component={ProjectList}
     />
 
     <Scene
-      {...navbarPropsTabs}
       key={'toolBoxList'}
       title={'工具箱'}
       component={ToolBoxList}
     />
 
     <Scene
-      {...navbarPropsTabs}
       key={'articleList'}
       title={'文章推荐'}
       component={ArticleList}
     />
 
     <Scene
-      {...navbarPropsTabs}
       key={'examList'}
       title={'技能测验'}
       component={ExamList}
     />
     <Scene
-      {...navbarPropsTabs}
       key={'solution'}
       title={'解决方案'}
       component={Solution}
     />
 
     <Scene
-      {...navbarPropsTabs}
       key={'thoughtworksBooks'}
       title={'ThoughtWorks读书路线'}
       component={ThoughtworksBooks}
     />
 
     <Scene
-      {...navbarPropsTabs}
       key={'recommendBooks'}
       title={'推荐书籍'}
       component={RecommendBooks}
     />
 
     <Scene
-      {...navbarPropsTabs}
       key={'recommendArticles'}
       title={'推荐文章'}
       component={RecommendArticles}
     />
 
     <Scene
-      {...navbarPropsTabs}
       key={'todoLists'}
       title={'待办事项'}
       component={TodoLists}
     />
 
     <Scene
-      {...navbarPropsTabs}
       key={'chapterList'}
       title={'ChapterList'}
       component={ChapterList}
