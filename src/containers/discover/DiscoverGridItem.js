@@ -4,7 +4,7 @@ import Icon from '../../icon/GrowthFont';
 import AppStyle from '../../theme/styles';
 
 const iconsSize = 30;
-const itemOnClickBackgroundColor = 'rgba(255,255,255, .5)';
+const clickItemUnderlayColor = 'rgba(250,250,250, .9)';
 const LEFT = 'left';
 const RIGHT = 'right';
 
@@ -21,7 +21,7 @@ class GridItem extends Component {
     titleStyle: Text.propTypes.style,
     title: PropTypes.string.isRequired,
     onclick: PropTypes.func.isRequired,
-    onClickBackgroundColor: PropTypes.string.isRequired,
+    itemUnderlayColor: PropTypes.string.isRequired,
     position: PropTypes.string.isRequired,
   };
 
@@ -33,7 +33,7 @@ class GridItem extends Component {
     titleStyle: AppStyle.discoverGridTextItem,
     title: '',
     onclick: defaultClick,
-    onClickBackgroundColor: itemOnClickBackgroundColor,
+    itemUnderlayColor: clickItemUnderlayColor,
     position: LEFT,
 
   };
@@ -44,7 +44,7 @@ class GridItem extends Component {
       style={this.props.position === RIGHT
         ? AppStyle.discoverGridPositionRight
         : AppStyle.discoverGridPositionLeft}
-      underlayColor={this.props.onClickBackgroundColor}
+      underlayColor={this.props.itemUnderlayColor}
     >
       <View style={this.props.gridItemStyle} >
         <Icon name={this.props.iconName} size={this.props.iconSize} style={this.props.iconStyle} />
