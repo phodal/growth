@@ -2,7 +2,7 @@ engines:
   eslint:
     enabled: true
     config:
-      config: .eslintrc
+      config: "./.eslintrc"
     checks:
       import/extensions:
         enabled: false
