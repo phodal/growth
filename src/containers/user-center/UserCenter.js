@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import ListItem from 'react-native-elements/src/list/ListItem';
 import List from 'react-native-elements/src/list/List';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 
 class UserCenter extends Component {
   static componentName = 'UserCenter';
 
   render = () => (
-    <View>
+    <ScrollView>
       <List>
         <ListItem
           title={'我的书签'}
@@ -50,7 +50,7 @@ class UserCenter extends Component {
           leftIcon={{ name: 'work' }}
         />
       </List>
-    </View>
+    </ScrollView>
   );
 }
 
