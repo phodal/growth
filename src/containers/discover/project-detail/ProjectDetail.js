@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { ScrollView, Text, View } from 'react-native';
 import AppStyle from '../../../theme/styles';
 import AppSize from '../../../theme/sizes';
-
+import Helper from '../../../utils/helper';
 
 class RoadmapDetail extends Component {
   static componentName = 'RoadmapDetail';
@@ -41,7 +41,13 @@ class RoadmapDetail extends Component {
         <Text style={AppStyle.line} />
         <Text style={{ marginLeft: 15, marginRight: 15, marginBottom: 10 }}>{val.desc}</Text>
         <Text style={AppStyle.line} />
-        <Text style={{ marginLeft: 15, marginRight: 15, lineHeight: 20 }}>{val.link}</Text>
+        <Text
+          style={{
+            marginLeft: 15,
+            marginRight: 15,
+            lineHeight: 20 }}
+          onPress={() => { Helper.openLink(val.link); }}
+        >{val.link}</Text>
       </View>
     ));
     return (
