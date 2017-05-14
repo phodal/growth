@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Card, List, ListItem } from 'react-native-elements';
 import * as shortid from 'shortid';
 
@@ -57,7 +57,7 @@ class SkillDetailView extends Component {
     }
 
     return (
-      <View>
+      <ScrollView>
         <Card
           title={skillData.title}
         >
@@ -65,7 +65,7 @@ class SkillDetailView extends Component {
         </Card>
         {skillLinkList}
         {skillBookList}
-      </View>
+      </ScrollView>
     );
   }
 }
