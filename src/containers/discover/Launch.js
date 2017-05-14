@@ -10,6 +10,9 @@ const launch = {
   projectList: () => {
     Actions.projectList();
   },
+  projectDetail: (caption, content) => {
+    Actions.projectDetail({ title: caption, projects: content });
+  },
   toolBox: () => {
     Actions.toolBoxList();
   },
