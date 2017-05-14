@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import Api from '../../../utils/api';
 import AppSize from '../../../theme/sizes';
 import GroupList from './ProjectListItem';
