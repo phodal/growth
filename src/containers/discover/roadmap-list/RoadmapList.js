@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Text, TouchableHighlight } from 'react-native';
 import Api from '../../../utils/api';
+import AppStyle from '../../../theme/styles';
 import AppSize from '../../../theme/sizes';
 import Launch from '../Launch';
 
@@ -33,14 +34,16 @@ class RoadmapList extends Component {
         key={data.name}
         style={{ backgroundColor: 'white' }}
       >
-        <View style={{ marginLeft: 15, marginRight: 15 }}>
-          <Text style={{ flex: 1, height: 40, lineHeight: 40 }}>{data.name}</Text>
-          <Text style={{ flex: 1, height: 1, backgroundColor: 'rgba(240, 240, 240, .9)' }} />
+        <View>
+          <View style={{ marginLeft: 15, marginRight: 15, height: 40, flex: 1, justifyContent: 'center' }}>
+            <Text>{data.name}</Text>
+          </View>
+          <Text style={AppStyle.line} />
         </View>
       </TouchableHighlight>
     ));
     return (
-      <ScrollView style={{ marginTop: AppSize.navbarHeight }} >
+      <ScrollView style={{ marginTop: AppSize.navbarHeight, backgroundColor: '#E9EBEE' }} >
         {rows}
       </ScrollView>
     );

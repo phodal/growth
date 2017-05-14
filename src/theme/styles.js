@@ -143,9 +143,6 @@ export default {
     borderRadius: 5,
   },
   timeLineTitle: {
-    backgroundColor: '#03a9f4',
-    height: 30,
-    lineHeight: 30,
     color: 'white',
     paddingLeft: 15,
   },
