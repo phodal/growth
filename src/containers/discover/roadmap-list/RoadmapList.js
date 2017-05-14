@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Text, TouchableHighlight } from 'react-native';
+import Spinkit from 'react-native-spinkit';
 import Api from '../../../utils/api';
 import AppStyle from '../../../theme/styles';
 import AppSize from '../../../theme/sizes';
@@ -17,15 +18,22 @@ class RoadmapList extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      loading: true,
       rowData: [],
     };
+  }
+
+  componentDidMount() {
     load((json => (
       this.setState(
-        this.state.rowData = (
-          Array.from(new Array(json.content.length)).map(
-            (val, index) => (
-              json.content[index])))))));
+        {
+          loading: false,
+          rowData: Array.from(new Array(json.content.length)).map((val, index) => (
+        json.content[index])),
+        },
+    ))));
   }
+
   render() {
     const rows = this.state.rowData.map(data => (
       <TouchableHighlight
@@ -44,7 +52,10 @@ class RoadmapList extends Component {
     ));
     return (
       <ScrollView style={{ marginTop: AppSize.navbarHeight, backgroundColor: '#E9EBEE' }} >
-        {rows}
+        <Spinkit style={{ marginBottom: 50 }} isVisible={this.state.loading} size={50} type={'9CubeGrid'} color={'#03a9f4'} />
+        { !this.state.loading ?
+          rows : null
+        }
       </ScrollView>
     );
   }
