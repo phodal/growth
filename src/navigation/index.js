@@ -14,6 +14,7 @@ import Discover from '../containers/discover/Discover';
 import RoadmapList from '../containers/discover/roadmap-list/RoadmapList';
 import RoadmapDetail from '../containers/discover/roadmap-detail/RoadmapDetail';
 import ProjectList from '../containers/discover/project-list/ProjectList';
+import ProjectDetail from '../containers/discover/project-detail/ProjectDetail';
 import ToolBoxList from '../containers/discover/toolbox-list/ToolBoxList';
 import ArticleList from '../containers/discover/article-list/ArticleList';
 import ExamList from '../containers/discover/exam-list/ExamList';
@@ -142,6 +143,11 @@ export default Actions.create(
       key={'projectList'}
       title={'练手项目'}
       component={ProjectList}
+    />
+
+    <Scene
+      key={'projectDetail'}
+      component={ProjectDetail}
     />
 
     <Scene
