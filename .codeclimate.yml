@@ -7,5 +7,7 @@ engines:
       import/extensions:
         enabled: false
 ratings:
-   paths:
-   - "src/*/**.js"
+  paths:
+    - "src/*/**.js"
+exclude_paths:
+  - "__test__"
