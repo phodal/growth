@@ -42,7 +42,7 @@ class RoadmapDetail extends Component {
       />
     ));
     return (
-      <ScrollView style={{ marginTop: AppSize.navbarHeight }}>
+      <ScrollView style={{ marginTop: AppSize.navbarHeight, backgroundColor: '#E9EBEE' }}>
         {rows}
       </ScrollView>
     );

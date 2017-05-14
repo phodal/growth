@@ -1,4 +1,5 @@
 import { Actions } from 'react-native-router-flux';
+import Helper from '../../utils/helper';
 
 const launch = {
   roadmapList: () => {
@@ -9,6 +10,9 @@ const launch = {
   },
   projectList: () => {
     Actions.projectList();
+  },
+  projectDetail: (caption, content) => {
+    Actions.projectDetail({ title: caption, projects: content });
   },
   toolBox: () => {
     Actions.toolBoxList();
@@ -37,8 +41,8 @@ const launch = {
   chapterList: () => {
     Actions.chapterList();
   },
-  openGitHub: (url) => {
-    Actions.growthWebView({ link: url });
+  openGitHub: (link) => {
+    Helper.openLink(link);
   },
 };
 

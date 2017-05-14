@@ -25,6 +25,11 @@ export default {
     borderTopColor: Colors.border,
     borderTopWidth: 1,
   },
+  line: {
+    flex: 1,
+    height: 1,
+    backgroundColor: 'rgba(240, 240, 240, .9)',
+  },
   discoverParentStyle: {
     flex: 1,
     paddingLeft: 15,
@@ -138,9 +143,6 @@ export default {
     borderRadius: 5,
   },
   timeLineTitle: {
-    backgroundColor: '#03a9f4',
-    height: 30,
-    lineHeight: 30,
     color: 'white',
     paddingLeft: 15,
   },

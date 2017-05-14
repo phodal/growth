@@ -14,6 +14,7 @@ import Discover from '../containers/discover/Discover';
 import RoadmapList from '../containers/discover/roadmap-list/RoadmapList';
 import RoadmapDetail from '../containers/discover/roadmap-detail/RoadmapDetail';
 import ProjectList from '../containers/discover/project-list/ProjectList';
+import ProjectDetail from '../containers/discover/project-detail/ProjectDetail';
 import ToolBoxList from '../containers/discover/toolbox-list/ToolBoxList';
 import ArticleList from '../containers/discover/article-list/ArticleList';
 import ExamList from '../containers/discover/exam-list/ExamList';
@@ -26,7 +27,6 @@ import ChapterList from '../containers/discover/chapter-list/ChapterList';
 import SkillTree from '../containers/skill-tree/SkillTree';
 import SkillDetailView from '../containers/skill-tree/SkillDetailView';
 import ComingSoonView from '../containers/ComingSoonView';
-import GrowthWebView from '../containers/GrowthWebView';
 
 
 const navbarPropsTabs = {
@@ -145,6 +145,11 @@ export default Actions.create(
     />
 
     <Scene
+      key={'projectDetail'}
+      component={ProjectDetail}
+    />
+
+    <Scene
       key={'toolBoxList'}
       title={'工具箱'}
       component={ToolBoxList}
@@ -195,10 +200,6 @@ export default Actions.create(
       key={'chapterList'}
       title={'ChapterList'}
       component={ChapterList}
-    />
-    <Scene
-      key={'growthWebView'}
-      component={GrowthWebView}
     />
 
   </Scene>,
