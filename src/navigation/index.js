@@ -27,7 +27,6 @@ import ChapterList from '../containers/discover/chapter-list/ChapterList';
 import SkillTree from '../containers/skill-tree/SkillTree';
 import SkillDetailView from '../containers/skill-tree/SkillDetailView';
 import ComingSoonView from '../containers/ComingSoonView';
-import GrowthWebView from '../containers/GrowthWebView';
 
 
 const navbarPropsTabs = {
@@ -201,10 +200,6 @@ export default Actions.create(
       key={'chapterList'}
       title={'ChapterList'}
       component={ChapterList}
-    />
-    <Scene
-      key={'growthWebView'}
-      component={GrowthWebView}
     />
 
   </Scene>,
