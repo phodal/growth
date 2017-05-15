@@ -79,7 +79,8 @@ Growth 实战指南    | https://phodal.coding.me/growth/growth-in-action/api/al
 ideabook项目集     | https://phodal.coding.me/growth/ideabook/api/all.json
 练手项目           | https://phodal.coding.me/growth/project/api/all.json
 工具箱            | https://phodal.coding.me/growth/toolbox/api/all.json
-开源书列表         | https://phodal.github.io/awesome-gitbook-api/api.json
+开源书列表         | https://phodal.github.io/growth-api-gitbook/api.json
+Awesome 项目列表   | https://phodal.github.io/growth-api-awesome/api/awesomes.json
 
 社区 API 文档： [Growth NG Wiki](https://github.com/phodal/growth-ng/wiki)
 
