@@ -30,8 +30,8 @@ class SkillTree extends Component {
     this.webview = null;
   }
 
-  handleMessage = (evt: any) => {
-    const message = evt.nativeEvent.data;
+  handleMessage = (event: Object) => {
+    const message = event.nativeEvent.data;
     const skillId = JSON.parse(message).id;
     Actions.skillDetail({ skillId: parseInt(skillId, 10) });
   };

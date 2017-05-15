@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 import { Card, List, ListItem } from 'react-native-elements';
 import * as shortid from 'shortid';
 
@@ -40,7 +40,7 @@ class SkillDetailView extends Component {
     }
 
     let skillBookList = null;
-    if (skillData.links) {
+    if (skillData.books) {
       skillBookList = (<View>
         <Text style={{ paddingTop: 15, paddingLeft: 15, fontSize: AppFonts.h4.size }}>推荐书籍</Text>
         <List containerStyle={{ marginBottom: 20 }}>
@@ -57,7 +57,7 @@ class SkillDetailView extends Component {
     }
 
     return (
-      <View>
+      <ScrollView>
         <Card
           title={skillData.title}
         >
@@ -65,7 +65,7 @@ class SkillDetailView extends Component {
         </Card>
         {skillLinkList}
         {skillBookList}
-      </View>
+      </ScrollView>
     );
   }
 }
