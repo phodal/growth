@@ -40,7 +40,7 @@ class SkillDetailView extends Component {
     }
 
     let skillBookList = null;
-    if (skillData.links) {
+    if (skillData.books) {
       skillBookList = (<View>
         <Text style={{ paddingTop: 15, paddingLeft: 15, fontSize: AppFonts.h4.size }}>推荐书籍</Text>
         <List containerStyle={{ marginBottom: 20 }}>
