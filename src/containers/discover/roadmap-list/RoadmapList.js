@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Text, TouchableHighlight } from 'react-native';
-import Spinkit from 'react-native-spinkit';
 import Api from '../../../utils/api';
 import AppStyle from '../../../theme/styles';
 import AppSize from '../../../theme/sizes';
 import Launch from '../Launch';
+import Dialog from '../../../utils/dialog';
 
 async function load(call) {
   Api.getRoadMapListData()
@@ -29,9 +29,9 @@ class RoadmapList extends Component {
         {
           loading: false,
           rowData: Array.from(new Array(json.content.length)).map((val, index) => (
-        json.content[index])),
+            json.content[index])),
         },
-    ))));
+      ))));
   }
 
   render() {
@@ -50,12 +50,13 @@ class RoadmapList extends Component {
         </View>
       </TouchableHighlight>
     ));
+
     return (
       <ScrollView style={{ marginTop: AppSize.navbarHeight, backgroundColor: '#E9EBEE' }} >
-        <Spinkit style={{ marginBottom: 50 }} isVisible={this.state.loading} size={50} type={'9CubeGrid'} color={'#03a9f4'} />
+        <Dialog show={this.state.loading} />
         { !this.state.loading ?
-          rows : null
-        }
+            rows : null
+          }
       </ScrollView>
     );
   }
