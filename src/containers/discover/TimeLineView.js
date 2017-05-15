@@ -45,7 +45,7 @@ class TimeLine extends Component {
         <Text style={this.props.bottomLineStyle} />
       </View>
       <View style={this.props.cententParentStyle}>
-        <View style={{ flex: 1, height: 30, justifyContent: 'center', backgroundColor: '#03a9f4' }}>
+        <View style={AppStyle.timeLineTitleParent}>
           <Text style={this.props.titleStyle}>{this.props.title}</Text>
         </View>
         <Text style={this.props.contentStyle}>{this.props.content}</Text>

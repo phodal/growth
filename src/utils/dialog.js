@@ -1,15 +1,8 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Text, Dimensions, Modal } from 'react-native';
+import { View, Text, Modal } from 'react-native';
 import Spinkit from 'react-native-spinkit';
-
-const tips = [
-  '不要复制粘贴代码',
-  '没有人喜欢用那些超级长的方法',
-  '编码之前想一想',
-  '抽时间对代码进行重构',
-  '编码之前要想一想',
-  '不要在没有测试的情况下重构'];
-
+import AppStyle from '../theme/styles';
+import TIPS from '../../assets/TIPS';
 
 class Dialog extends Component {
   static componentName = 'Dialog';
@@ -27,8 +20,6 @@ class Dialog extends Component {
     this.state = {
       timer: setTimeout(() => (this.setState({ loading: false })), 7000),
       loading: this.props.show,
-      loadingHeight: Dimensions.get('window').height,
-      modalVisible: true,
     };
   }
 
@@ -50,10 +41,13 @@ class Dialog extends Component {
         onRequestClose={() => {}}
       >
         <View>
-          <View style={{ height: this.state.loadingHeight, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0,0,0,.1)' }}>
-            <View style={{ borderRadius: 2, flexDirection: 'row', minWidth: 180, backgroundColor: 'white', paddingLeft: 15, paddingRight: 15, paddingTop: 20, paddingBottom: 20, justifyContent: 'center', alignItems: 'center' }}>
+          <View style={AppStyle.dialogStyle}>
+            <View style={AppStyle.dialogStyleContent}>
               <Spinkit isVisible={this.state.loading} size={18} type={'FadingCircleAlt'} color={'#03a9f4'} />
-              <Text style={{ marginLeft: 10, color: '#999', minWidth: 150, maxWidth: 210 }}><Text style={{ fontWeight: 'bold' }}>Tips : </Text>{ tips[Math.ceil(Math.random() * 6) % 6]}</Text>
+              <Text style={AppStyle.dialogTextStyle}>
+                <Text style={AppStyle.dialogTextTipsStyle}>Tips : </Text>
+                {TIPS[Math.ceil(Math.random() * 6) % 6]}
+              </Text>
             </View>
           </View>
         </View>

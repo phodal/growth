@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { ScrollView, Text, View, Clipboard, TouchableHighlight, LayoutAnimation } from 'react-native';
 import AppStyle from '../../../theme/styles';
-import AppSize from '../../../theme/sizes';
 import Helper from '../../../utils/helper';
 
 class RoadmapDetail extends Component {
@@ -51,51 +50,30 @@ class RoadmapDetail extends Component {
   render() {
     const rows = this.state.rowData.map(val => (
       <TouchableHighlight
-        style={{
-          marginLeft: 15,
-          marginRight: 15,
-          marginTop: 10,
-          backgroundColor: 'white',
-          borderRadius: 5 }}
+        style={AppStyle.projectDetailItemStyle}
         key={val.name}
         onPress={() => { this.onCopyLink(val.link); }}
         underlayColor={'transparent'}
       >
         <View>
-          <View
-            style={{
-              marginLeft: 15,
-              marginRight: 15,
-              height: 40,
-              flex: 1,
-              justifyContent: 'center' }}
-          >
+          <View style={AppStyle.projectDetailItemTitleStyle}>
             <Text>{val.name}</Text>
           </View>
           <Text style={AppStyle.line} />
-          <Text style={{ marginLeft: 15, marginRight: 15, marginBottom: 10 }}>{val.desc}</Text>
+          <Text style={AppStyle.projectDetailItemDescStyle}>{val.desc}</Text>
           <Text style={AppStyle.line} />
           <Text
-            style={{
-              marginLeft: 15,
-              marginRight: 15,
-              lineHeight: 20 }}
+            style={AppStyle.projectDetailItemLinkStyle}
             onPress={() => { Helper.openLink(val.link); }}
           >{val.link}</Text>
         </View>
       </TouchableHighlight>
     ));
     return (
-      <ScrollView style={{ marginTop: AppSize.navbarHeight, backgroundColor: '#E9EBEE' }}>
+      <ScrollView style={[AppStyle.detailMarginTop, { backgroundColor: '#E9EBEE' }]}>
         <View
-          style={{
-            flex: 1,
-            justifyContent: 'center',
-            alignItems: 'center',
-            height: 40,
-            marginTop: this.state.hintTextMarginTop,
-            backgroundColor: 'rgba(0,0,0,.3)',
-          }}
+          marginTop={this.state.hintTextMarginTop}
+          style={AppStyle.projectDetailHintStyle}
         >
           <Text>链接已复制</Text>
         </View>

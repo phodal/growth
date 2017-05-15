@@ -37,9 +37,13 @@ class ProjectListItem extends Component {
 
   render() {
     const rows = this.state.rowData.map(val => (
-      <TouchableHighlight onPress={() => { Launch.projectDetail(val.name.concat('练手项目'), val.projects); }} underlayColor="rgba(250, 250, 250, .9)" key={val.name} >
+      <TouchableHighlight
+        onPress={() => { Launch.projectDetail(val.name.concat('练手项目'), val.projects); }}
+        underlayColor="rgba(250, 250, 250, .9)"
+        key={val.name}
+      >
         <View>
-          <View style={{ marginLeft: 15, flex: 1, height: 40, justifyContent: 'center' }}>
+          <View style={AppStyle.projectListContentStyle}>
             <Text>{val.name}</Text>
           </View>
           <Text style={AppStyle.line} />
@@ -47,7 +51,7 @@ class ProjectListItem extends Component {
       </TouchableHighlight>));
     return (
       <View>
-        <View style={{ paddingLeft: 15, backgroundColor: 'rgb(245,245,245)', flex: 1, height: 40, justifyContent: 'center' }}>
+        <View style={AppStyle.projectListTitleStyle}>
           <Text>{this.state.name}</Text>
         </View>
         <Text style={AppStyle.line} />
