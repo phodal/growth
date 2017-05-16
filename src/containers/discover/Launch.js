@@ -17,6 +17,9 @@ const launch = {
   toolBox: () => {
     Actions.toolBoxList();
   },
+  toolBoxDetail: (path) => {
+    Actions.toolBoxDetail({ url: path });
+  },
   articleList: () => {
     Actions.articleList();
   },
