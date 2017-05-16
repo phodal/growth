@@ -56,6 +56,23 @@ class SkillDetailView extends Component {
       </View>);
     }
 
+    let rankDescriptions = null;
+    if (skillData.rankDescriptions) {
+      rankDescriptions = (<View>
+        <Text style={{ paddingTop: 15, paddingLeft: 15, fontSize: AppFonts.h4.size }}>技能要求</Text>
+        <List containerStyle={{ marginBottom: 20 }}>
+          {
+            skillData.rankDescriptions.map(link => (
+              <ListItem
+                key={shortid.generate()}
+                title={link}
+              />
+            ))
+          }
+        </List>
+      </View>);
+    }
+
     return (
       <ScrollView>
         <Card
@@ -63,6 +80,7 @@ class SkillDetailView extends Component {
         >
           <Text>{ skillData.description }</Text>
         </Card>
+        {rankDescriptions}
         {skillLinkList}
         {skillBookList}
       </ScrollView>
