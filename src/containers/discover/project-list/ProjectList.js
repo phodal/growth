@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, View } from 'react-native';
+import { ScrollView } from 'react-native';
 import Api from '../../../utils/api';
 import AppStyle from '../../../theme/styles';
 import GroupList from './ProjectListItem';
@@ -36,10 +36,10 @@ class ProjectList extends Component {
     const rows = this.state.rowData.map((val, index) => (
       <GroupList key={val.name} content={this.state.rowData[index]} />));
     return (
-      <ScrollView style={AppStyle.detailMarginTop}>
+      <ScrollView style={[AppStyle.detailBasisStyle, { backgroundColor: '#E9EBEE' }]}>
         <Dialog show={this.state.loading} />
         {!this.state.loading ?
-          rows : <View />
+          rows : null
         }
       </ScrollView>);
   }
