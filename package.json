@@ -40,6 +40,9 @@
     "transformIgnorePatterns": [
       "node_modules/(?!react-native|tcomb-form-native|apsl-react-native-button,react-native-device-info|react-clone-referenced-element)"
     ],
+    "moduleNameMapper": {
+      "\\.html$": "<rootDir>/test/helpers/html-transform.js"
+    },
     "collectCoverage": true,
     "verbose": true
   }
