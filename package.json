@@ -37,6 +37,10 @@
     "setupFiles": [
       "<rootDir>/jest.setup.js"
     ],
+    "testMatch": [
+      "**/__tests__/**/*.test.js?(x)",
+      "**/?(*.)(spec|test).js?(x)"
+    ],
     "transformIgnorePatterns": [
       "node_modules/(?!react-native|tcomb-form-native|apsl-react-native-button,react-native-device-info|react-clone-referenced-element)"
     ],
