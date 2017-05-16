@@ -4,6 +4,12 @@ import Spinkit from 'react-native-spinkit';
 import AppStyle from '../theme/styles';
 import TIPS from '../../assets/TIPS';
 
+function hide() {
+  setTimeout(() =>
+    this.setState({ visible: false }),
+    500);
+}
+
 class Dialog extends Component {
   static componentName = 'Dialog';
 
@@ -18,14 +24,19 @@ class Dialog extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      timer: setTimeout(() => (this.setState({ loading: false })), 7000),
-      loading: this.props.show,
+      timer: setTimeout(() =>
+        this.hide(),
+        7000),
+      visible: this.props.show,
     };
+    this.hide = hide.bind(this);
   }
 
   componentWillReceiveProps(nextProps) {
-    if (!nextProps.show) clearTimeout(this.state.timer);
-    this.setState({ loading: nextProps.show });
+    if (!nextProps.show) {
+      clearTimeout(this.state.timer);
+      this.hide();
+    }
   }
 
   componentWillUnmount() {
@@ -35,7 +46,7 @@ class Dialog extends Component {
   render() {
     return (
       <Modal
-        visible={this.state.loading}
+        visible={this.state.visible}
         animationType={'fade'}
         transparent
         onRequestClose={() => {}}
@@ -43,7 +54,7 @@ class Dialog extends Component {
         <View>
           <View style={AppStyle.dialogStyle}>
             <View style={AppStyle.dialogStyleContent}>
-              <Spinkit isVisible={this.state.loading} size={18} type={'FadingCircleAlt'} color={'#03a9f4'} />
+              <Spinkit isVisible={this.state.visible} size={18} type={'FadingCircleAlt'} color={'#03a9f4'} />
               <Text style={AppStyle.dialogTextStyle}>
                 <Text style={AppStyle.dialogTextTipsStyle}>Tips : </Text>
                 {TIPS[Math.ceil(Math.random() * 6) % 6]}
@@ -53,5 +64,6 @@ class Dialog extends Component {
         </View>
       </Modal>);
   }
+
 }
 export default Dialog;
