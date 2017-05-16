@@ -8,5 +8,9 @@ class Api {
   static getRoadMapListData = () => (axios.get('awesome/api/all.json'));
 
   static getProjectListData = () => (axios.get('project/api/all.json'));
+
+  static getToolBoxData = () => (axios.get('toolbox/api/all.json'));
+
+  static getToolBoxDetailData = url => (axios.get('toolbox/'.concat(url)));
 }
 export default Api;
