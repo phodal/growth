@@ -110,6 +110,321 @@ exports[`renders correctly 1`] = `
           }
         }
       >
+        技能要求
+      </Text>
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#ffffff",
+              "borderBottomWidth": 1,
+              "borderColor": "#cbd2d9",
+              "borderTopWidth": 1,
+              "marginTop": 20,
+            },
+            Object {
+              "marginBottom": 20,
+            },
+          ]
+        }
+      >
+        <View
+          onLongPress={undefined}
+          onPress={undefined}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderBottomColor": "#ededed",
+                "borderBottomWidth": 1,
+                "paddingBottom": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+              undefined,
+            ]
+          }
+          underlayColor="white"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                  "marginLeft": 10,
+                },
+                undefined,
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flex": 0.15,
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                onPress={undefined}
+                style={
+                  Array [
+                    false,
+                    false,
+                    false,
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    },
+                    undefined,
+                  ]
+                }
+                underlayColor="white"
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#bdc6cf",
+                        "fontSize": 24,
+                      },
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                        },
+                        Array [
+                          Object {
+                            "marginRight": 8,
+                          },
+                          undefined,
+                        ],
+                      ],
+                      Object {
+                        "fontFamily": "Material Icons",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <View
+                style={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {},
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      Array [
+                        Object {
+                          "color": "#43484d",
+                          "fontSize": 17.5,
+                        },
+                        false,
+                        undefined,
+                        undefined,
+                      ],
+                    ]
+                  }
+                >
+                  理解如何创建和浏览一个基本的网页
+                </Text>
+              </View>
+              <View
+                style={undefined}
+              >
+                <View />
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLongPress={undefined}
+          onPress={undefined}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderBottomColor": "#ededed",
+                "borderBottomWidth": 1,
+                "paddingBottom": 10,
+                "paddingRight": 10,
+                "paddingTop": 10,
+              },
+              undefined,
+            ]
+          }
+          underlayColor="white"
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "flexDirection": "row",
+                  "marginLeft": 10,
+                },
+                undefined,
+              ]
+            }
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "alignItems": "center",
+                    "flex": 0.15,
+                    "justifyContent": "center",
+                  },
+                  undefined,
+                ]
+              }
+            >
+              <View
+                onPress={undefined}
+                style={
+                  Array [
+                    false,
+                    false,
+                    false,
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "transparent",
+                      "justifyContent": "center",
+                    },
+                    undefined,
+                  ]
+                }
+                underlayColor="white"
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#bdc6cf",
+                        "fontSize": 24,
+                      },
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                        },
+                        Array [
+                          Object {
+                            "marginRight": 8,
+                          },
+                          undefined,
+                        ],
+                      ],
+                      Object {
+                        "fontFamily": "Material Icons",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <View
+                style={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {},
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      undefined,
+                      Array [
+                        Object {
+                          "color": "#43484d",
+                          "fontSize": 17.5,
+                        },
+                        false,
+                        undefined,
+                        undefined,
+                      ],
+                    ]
+                  }
+                >
+                  理解网页间是如何链接的、如何设计多列布局，可以处理表单字段和媒体元素
+                </Text>
+              </View>
+              <View
+                style={undefined}
+              >
+                <View />
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 15.400000000000002,
+            "paddingLeft": 15,
+            "paddingTop": 15,
+          }
+        }
+      >
         扩展资料
       </Text>
       <View
