@@ -64,8 +64,10 @@ class SkillDetailView extends Component {
           {
             skillData.rankDescriptions.map(link => (
               <ListItem
+                hideChevron
                 key={shortid.generate()}
                 title={link}
+                leftIcon={{ name: 'av-timer' }}
               />
             ))
           }
