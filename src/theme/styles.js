@@ -31,8 +31,9 @@ export default {
     height: 1,
     backgroundColor: 'rgba(240, 240, 240, .9)',
   },
-  detailMarginTop: {
+  detailBasisStyle: {
     marginTop: Size.navbarHeight,
+    backgroundColor: '#E9EBEE',
   },
   discoverParentStyle: {
     flex: 1,
@@ -113,7 +114,7 @@ export default {
     alignItems: 'center',
     backgroundColor: 'rgba(255,255,255, .5)',
   },
-  roadmapListStyle: {
+  simpleListItemStyle: {
     marginLeft: 15,
     marginRight: 15,
     height: 40,
