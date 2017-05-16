@@ -28,6 +28,7 @@ import ChapterList from '../containers/discover/chapter-list/ChapterList';
 import SkillTree from '../containers/skill-tree/SkillTree';
 import SkillDetailView from '../containers/skill-tree/SkillDetailView';
 import ComingSoonView from '../containers/ComingSoonView';
+import Helper from '../utils/helper';
 
 
 const navbarPropsTabs = {
@@ -88,7 +89,7 @@ export default Actions.create(
         key={'skillTree'}
         title={'技能树'}
         rightTitle={'获取专业版'}
-        onRight={() => Actions.comingSoon()}
+        onRight={() => Helper.getProfessionalSkilltree()}
         rightButtonTextStyle={AppStyles.navbarTitle}
         iconName={'md-egg'}
         iconType={'ionicon'}
