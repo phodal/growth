@@ -70,7 +70,8 @@ Thanks to: [http://chase-seibert.github.io/blog/2017/01/06/appium-react-native-q
 ```
 brew install libimobiledevice --HEAD
 brew install carthage
-yarn global add appium ios-deploy wd
+# yarn global add appium ios-deploy wd
+npm install -g appium ios-deploy wd
 gem install xcpretty  # optional
 appium
 ```
