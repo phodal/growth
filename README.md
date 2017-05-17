@@ -60,6 +60,22 @@ Join us
 
 > $ keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
 
+
+### UI Test: appnium
+
+Thanks to: [http://chase-seibert.github.io/blog/2017/01/06/appium-react-native-quickstart.html](http://chase-seibert.github.io/blog/2017/01/06/appium-react-native-quickstart.html)
+
+```
+brew install libimobiledevice --HEAD
+brew install carthage
+brew install node
+npm install -g appium
+npm install wd
+npm install -g ios-deploy
+gem install xcpretty  # optional
+appium
+```
+
 Documents
 ---
 
