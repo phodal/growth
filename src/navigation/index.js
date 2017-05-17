@@ -1,13 +1,10 @@
 /* eslint-disable react/prefer-stateless-function */
-import React, { PropTypes } from 'react';
-import { View, Text } from 'react-native';
-import { Icon } from 'react-native-elements';
+import React from 'react';
 import { Actions, Scene } from 'react-native-router-flux';
 import Home from '../containers/home/Home';
 import AppConfig from '../constants/config';
 import AppSizes from '../theme/sizes';
 import AppStyles from '../theme/styles';
-import AppColors from '../theme/colors';
 import Community from '../containers/community/Community';
 import UserCenter from '../containers/user-center/UserCenter';
 import Discover from '../containers/discover/Discover';
@@ -28,6 +25,7 @@ import SkillTree from '../containers/skill-tree/SkillTree';
 import SkillDetailView from '../containers/skill-tree/SkillDetailView';
 import ComingSoonView from '../containers/ComingSoonView';
 import Helper from '../utils/helper';
+import TabIcon from '../components/TabIcon';
 
 
 const navbarPropsTabs = {
@@ -37,27 +35,6 @@ const navbarPropsTabs = {
     paddingBottom: AppSizes.tabbarHeight,
   },
 };
-
-class TabIcon extends React.Component {
-  render() {
-    return (
-      <View>
-        <Icon name={this.props.iconName} type={this.props.iconType} color={this.props.selected ? AppColors.brand.primary : '#767676'} />
-        <Text style={{ color: this.props.selected ? AppColors.brand.primary : '#767676' }}>{this.props.title}</Text>
-      </View>
-    );
-  }
-}
-
-
-TabIcon.propTypes = {
-  title: PropTypes.string.isRequired,
-  selected: PropTypes.bool,
-  iconName: PropTypes.string.isRequired,
-  iconType: PropTypes.string.isRequired };
-
-TabIcon.defaultProps = { title: 'Home', selected: false, iconName: 'home', iconType: 'ionicon' };
-
 
 export default Actions.create(
   <Scene key="root" {...AppConfig.navbarProps}>
