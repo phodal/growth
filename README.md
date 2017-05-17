@@ -67,14 +67,32 @@ Thanks to: [http://chase-seibert.github.io/blog/2017/01/06/appium-react-native-q
 
 **Setup**
 
+1. install basic libs
+
 ```
 brew install libimobiledevice --HEAD
 brew install carthage
-# yarn global add appium ios-deploy wd
+```
+
+2. install appium
+
+```
 npm install -g appium ios-deploy wd
+```
+
+3. install xcpretty
+
+```
 gem install xcpretty  # optional
+```
+
+4. test ``appium`` command
+
+```
 appium
 ```
+
+5. create ``virtualenv``
 
 ```
 virtualenv venv
@@ -82,7 +100,7 @@ virtualenv venv
 pip install -r requirements.txt
 ```
 
-**Run**
+6. run test
 
 ```
 py.test e2e/*.py
