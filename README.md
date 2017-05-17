@@ -65,13 +65,12 @@ Join us
 
 Thanks to: [http://chase-seibert.github.io/blog/2017/01/06/appium-react-native-quickstart.html](http://chase-seibert.github.io/blog/2017/01/06/appium-react-native-quickstart.html)
 
+**Setup**
+
 ```
 brew install libimobiledevice --HEAD
 brew install carthage
-brew install node
-npm install -g appium
-npm install wd
-npm install -g ios-deploy
+yarn global add appium ios-deploy wd
 gem install xcpretty  # optional
 appium
 ```
@@ -80,6 +79,12 @@ appium
 virtualenv venv
 . venv/bin/activate
 pip install -r requirements.txt
+```
+
+**Run**
+
+```
+py.test e2e/*.py
 ```
 
 Documents
