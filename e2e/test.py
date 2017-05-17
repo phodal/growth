@@ -1,27 +1,28 @@
+# coding=utf-8
 import os
 import time
+import unittest
 from appium import webdriver
 
-driver = webdriver.Remote(
-    command_executor='http://127.0.0.1:4723/wd/hub',
-    desired_capabilities={
-        'app': os.path.expanduser('/Users/phodal/learn/growth-ng/android/app/build/outputs/apk/app-release.apk'),
-        'platformName': 'Android',
-        'deviceName': 'Google Nexus 5X - 7.0.0 - API 24 - 1080x1920',
-    })
 
-# wait for app to load
-time.sleep(10)
+class AppiumTest(unittest.TestCase):
+    def setUp(self):
+        self.driver = webdriver.Remote(
+            command_executor='http://127.0.0.1:4723/wd/hub',
+            desired_capabilities={
+              'app': os.path.abspath('./android/app/build/outputs/apk/app-release.apk'),
+              'platformName': 'Android',
+              'deviceName': 'Nexus 6P API 25',
+        })
 
-# find the link with the text "Click here" and click on it
-link = driver.find_element_by_xpath('//*[@text="探索"]')
-link.click()
+    def tearDown(self):
+        self.driver.quit()
 
-# wait for the next screen to load
-time.sleep(10)
 
-# make sure the correct "Success" result is on the page
-driver.find_element_by_xpath('//*[@text="在线资源"]')
+class TestRouter(AppiumTest):
 
-# important; you will not be able to launch again if this does not happen
-driver.quit()
+    def test_goto_discover_page(self):
+        link = self.driver.find_element_by_xpath('//*[@text="探索"]')
+        link.click()
+        time.sleep(3)
+        self.driver.find_element_by_xpath('//*[@text="在线资源"]')

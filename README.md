@@ -76,6 +76,12 @@ gem install xcpretty  # optional
 appium
 ```
 
+```
+virtualenv venv
+. venv/bin/activate
+pip install -r requirements.txt
+```
+
 Documents
 ---
 
