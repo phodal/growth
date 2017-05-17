@@ -8,7 +8,7 @@ import TabIcon from '../../src/components/TabIcon';
 it('renders correctly', () => {
   // eslint-disable-next-line no-unused-vars
   const tree = renderer.create(
-    <TabIcon skillId={1} />,
+    <TabIcon />,
   );
 
   const treeJson = tree.toJSON();
