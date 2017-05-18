@@ -1,9 +1,9 @@
 language: android
 jdk: oraclejdk8
 cache: yarn
-osx_image: xcode8.3
-xcode_project: ios/growth.xcodeproj
-xcode_scheme: ios/growthTests
+#osx_image: xcode8.3
+#xcode_project: ios/growth.xcodeproj
+#xcode_scheme: ios/growthTests
 
 before_install:
 - nvm install 6
