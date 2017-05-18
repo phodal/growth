@@ -2,9 +2,17 @@ import React, { Component } from 'react';
 import ListItem from 'react-native-elements/src/list/ListItem';
 import List from 'react-native-elements/src/list/List';
 import { ScrollView } from 'react-native';
+import DeviceInfo from 'react-native-device-info';
 
 class UserCenter extends Component {
   static componentName = 'UserCenter';
+
+  constructor(render) {
+    super(render);
+    this.state = {
+      version: DeviceInfo.getVersion(),
+    };
+  }
 
   render = () => (
     <ScrollView>
@@ -48,6 +56,10 @@ class UserCenter extends Component {
         <ListItem
           title={'支持开发'}
           leftIcon={{ name: 'work' }}
+        />
+        <ListItem
+          title={'当前版本'}
+          rightTitle={this.state.version}
         />
       </List>
     </ScrollView>
