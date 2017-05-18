@@ -1,5 +1,13 @@
 /* global jest fetch */
 
+jest.mock('react-native-splash-screen', () => ({
+  hide: jest.fn(),
+}));
+
+jest.mock('react-native-device-info', () => ({
+  getVersion: jest.fn(),
+}));
+
 jest.mock('Linking', () =>
   ({
     addEventListener: jest.fn(),
