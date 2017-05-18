@@ -1,4 +1,4 @@
-import React, { Platform, Component } from 'react';
+import React, { Component } from 'react';
 import ListItem from 'react-native-elements/src/list/ListItem';
 import List from 'react-native-elements/src/list/List';
 import { ScrollView } from 'react-native';
