@@ -138,6 +138,7 @@ apply from: "../../fonts.gradle"
 
 
 dependencies {
+    compile project(':react-native-share')
     compile project(':react-native-device-info')
     compile project(':react-native-spinkit')
     compile project(':react-native-vector-icons')
