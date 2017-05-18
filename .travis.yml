@@ -32,7 +32,7 @@ android:
 script:
 - npm run lint
 - npm test
-- react-native run-ios --configuration Release
+#- react-native run-ios --configuration Release
 - cd android && ./gradlew assembleRelease
 
 after_script:
