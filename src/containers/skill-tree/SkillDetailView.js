@@ -5,8 +5,8 @@ import * as shortid from 'shortid';
 
 import SKILL_TREE_DATA from './SKILL_TREE_DATA';
 import AppFonts from '../../theme/fonts';
+import Helper from '../../utils/helper';
 
-// eslint-disable-next-line import/no-unresolved
 const filter = require('lodash.filter');
 
 class SkillDetailView extends Component {
@@ -20,6 +20,15 @@ class SkillDetailView extends Component {
     skillId: null,
   };
 
+  static openPage(link) {
+    return Helper.openLink(link);
+  }
+
+  constructor() {
+    super();
+    SkillDetailView.openPage = SkillDetailView.openPage.bind(this);
+  }
+
   render() {
     const skillData = filter(SKILL_TREE_DATA, { id: this.props.skillId })[0];
     let skillLinkList = null;
@@ -32,6 +41,7 @@ class SkillDetailView extends Component {
               <ListItem
                 key={shortid.generate()}
                 title={link.label}
+                onPress={() => SkillDetailView.openPage(link.url)}
               />
             ))
           }
@@ -49,6 +59,7 @@ class SkillDetailView extends Component {
               <ListItem
                 key={shortid.generate()}
                 title={link.label}
+                onPress={() => SkillDetailView.openPage(link.url)}
               />
             ))
           }
