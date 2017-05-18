@@ -2,6 +2,9 @@ import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Share from 'react-native-share';
+import { shallow } from 'enzyme';
+import * as chai from 'chai';
+import ListItem from 'react-native-elements/src/list/ListItem';
 
 import UserCenter from '../../../src/containers/user-center/UserCenter';
 
@@ -13,6 +16,16 @@ describe('test user center', () => {
 
     const treeJson = tree.toJSON();
     expect(treeJson).toMatchSnapshot();
+  });
+
+  it('test for onpress trigger', () => {
+    const spy = jest.spyOn(Share, 'open');
+    const wrapper = shallow(<UserCenter />);
+    chai.expect(wrapper.find(ListItem)).to.have.length(10);
+
+    chai.expect(wrapper.find({ title: '分享给好友' })).to.have.length(1);
+    wrapper.find({ title: '分享给好友' }).props().onPress()
+    expect(spy).toHaveBeenCalled();
   });
 
   it('should call share to friend function when click button', () => {
