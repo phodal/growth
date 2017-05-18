@@ -1,5 +1,6 @@
 import 'react-native';
 import React from 'react';
+import { shallow } from 'enzyme';
 
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
@@ -22,5 +23,19 @@ describe('test link', () => {
     const spy = jest.spyOn(Helper, 'openLink');
     SkillDetailView.openPage('https://www.phodal.com/');
     expect(spy).toBeCalledWith('https://www.phodal.com/');
+  });
+
+  it('test click link', () => {
+    const spy = jest.spyOn(SkillDetailView, 'openPage');
+    const wrapper = shallow(<SkillDetailView skillId={1} />);
+    wrapper.find({ title: '无处不在的html' }).props().onPress();
+    expect(spy).toHaveBeenCalled();
+  });
+
+  it('test click book', () => {
+    const spy = jest.spyOn(SkillDetailView, 'openPage');
+    const wrapper = shallow(<SkillDetailView skillId={2} />);
+    wrapper.find({ title: 'CSS禅意花园' }).props().onPress();
+    expect(spy).toHaveBeenCalled();
   });
 });
