@@ -1,9 +1,7 @@
 language: android
 jdk: oraclejdk8
 cache: yarn
-
 osx_image: xcode8.3
-language: objective-c
 xcode_project: ios/growth.xcodeproj
 xcode_scheme: ios/growthTests
 
