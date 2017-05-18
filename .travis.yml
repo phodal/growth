@@ -17,6 +17,7 @@ addons:
 
 install:
 - yarn install
+- yarn global add react-native-cli
 
 android:
   components:
