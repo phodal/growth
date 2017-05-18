@@ -5,6 +5,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 
 import SkillDetailView from '../../../src/containers/skill-tree/SkillDetailView';
+import Helper from '../../../src/utils/helper';
 
 it('renders correctly', () => {
   // eslint-disable-next-line no-unused-vars
@@ -14,4 +15,12 @@ it('renders correctly', () => {
 
   const treeJson = tree.toJSON();
   expect(treeJson).toMatchSnapshot();
+});
+
+describe('test link', () => {
+  it('should open market in browser', () => {
+    const spy = jest.spyOn(Helper, 'openLink');
+    SkillDetailView.openPage('https://www.phodal.com/');
+    expect(spy).toBeCalledWith('https://www.phodal.com/');
+  });
 });
