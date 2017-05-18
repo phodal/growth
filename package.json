@@ -19,7 +19,8 @@
     "react-native-spinkit": "^1.0.2",
     "react-native-splash-screen": "^2.0.0",
     "react-native-tab-view": "^0.0.65",
-    "react-native-vector-icons": "~4.0.0"
+    "react-native-vector-icons": "~4.0.0",
+    "shortid": "^2.2.8"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -36,8 +37,7 @@
     "jest": "19.0.2",
     "react-addons-test-utils": "15.4.2",
     "react-dom": "15.4.2",
-    "react-test-renderer": "15.4.2",
-    "shortid": "^2.2.8"
+    "react-test-renderer": "15.4.2"
   },
   "jest": {
     "preset": "react-native",
