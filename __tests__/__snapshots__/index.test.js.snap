@@ -168,13 +168,71 @@ exports[`test index renders correctly 1`] = `
                       }
                     >
                       <View>
-                        <Text
-                          accessible={true}
-                          allowFontScaling={true}
-                          ellipsizeMode="tail"
+                        <View
+                          style={
+                            Array [
+                              Object {
+                                "backgroundColor": "white",
+                                "borderColor": "#e1e8ee",
+                                "borderWidth": 1,
+                                "margin": 15,
+                                "marginBottom": 0,
+                                "padding": 15,
+                                "shadowColor": "rgba(0,0,0, .2)",
+                                "shadowOffset": Object {
+                                  "height": 0,
+                                  "width": 0,
+                                },
+                                "shadowOpacity": 1,
+                                "shadowRadius": 1,
+                              },
+                              undefined,
+                              Object {
+                                "borderRadius": 5,
+                              },
+                            ]
+                          }
                         >
-                          Hello
-                        </Text>
+                          <View
+                            style={
+                              Array [
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                                undefined,
+                                undefined,
+                              ]
+                            }
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Object {
+                                  "fontSize": 20,
+                                  "marginBottom": 20,
+                                  "marginTop": 5,
+                                }
+                              }
+                            >
+                              从零开始
+                            </Text>
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Object {
+                                  "marginBottom": 15,
+                                  "marginTop": 5,
+                                }
+                              }
+                            >
+                              从这里准备开始你的技术图谱修炼之路
+                            </Text>
+                          </View>
+                        </View>
                       </View>
                     </View>
                   </View>

@@ -51,8 +51,6 @@
       <string>Zocial.ttf</string>
       <string>growth.ttf</string>
     </array>
-    
-    
     <key>UIRequiredDeviceCapabilities</key>
     <array>
       <string>armv7</string>
