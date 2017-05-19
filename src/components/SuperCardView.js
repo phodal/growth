@@ -1,9 +1,8 @@
 import React, { PropTypes } from 'react';
 import {
   View, Text, StyleSheet, Platform,
-  TouchableHighlight,
 } from 'react-native';
-import { Icon } from 'react-native-elements';
+import { Icon, ListItem } from 'react-native-elements';
 import Accordion from 'react-native-collapsible/Accordion';
 import * as Animatable from 'react-native-animatable';
 
@@ -35,62 +34,60 @@ const SECTIONS = [
     title: 'First',
     content: 'Lorem ipsum...',
   },
-  {
-    title: 'Second',
-    content: 'Lorem ipsum...',
-  },
 ];
 
 class SuperCardView extends React.PureComponent {
 
-  static renderContent(section, i, isActive) {
+  static renderContent(section, index, isActive) {
     return (
       <Animatable.View
         duration={300}
-        transition="backgroundColor"
-        style={{ backgroundColor: (isActive ? 'rgba(255,255,255,1)' : 'rgba(245,252,255,1)') }}
+        transition="opacity"
+        style={{ backgroundColor: (isActive ? 'rgba(255,255,255,1)' : 'rgba(255,255,255,1)') }}
       >
-        <Animatable.Text
+        <Animatable.View
           duration={300}
           easing="ease-out"
+          animation={isActive ? 'zoomInUp' : ''}
         >
-          {section.content}
-        </Animatable.Text>
+          <ListItem
+            title={'hello, world'}
+          />
+          <ListItem
+            title={'开发环境'}
+          />
+        </Animatable.View>
       </Animatable.View>
     );
   }
 
-  static renderHeader() {
+  static renderHeader(section, index, isActive) {
     return (
       <Animatable.View
         duration={300}
         transition="backgroundColor"
+        style={{ backgroundColor: (isActive ? 'rgba(255,255,255,1)' : 'rgba(255,255,255,1)') }}
       >
         <View style={styles.cardContainer}>
-          <TouchableHighlight
-            underlayColor="#fff"
-            onPress={() => {}}
-          >
-            <View>
-              <View style={{ flex: 1, flexDirection: 'row' }}>
-                <View style={{ flex: 1, justifyContent: 'space-between', flexDirection: 'column', margin: 15 }}>
-                  <View style={{ height: 40 }}>
-                    <Text style={{ fontSize: 20, marginTop: 5, marginBottom: 15 }}>
-                      {this.props.title}
-                    </Text>
-                  </View>
-                  <View style={{ height: 40 }}>
-                    <Text style={{ marginTop: 5, marginBottom: 15 }}>
-                      {this.props.subTitle}
-                    </Text>
-                  </View>
+          <View>
+            <View style={{ flex: 1, flexDirection: 'row' }}>
+              <View style={{ flex: 1, justifyContent: 'space-between', flexDirection: 'column', margin: 15 }}>
+                <View style={{ height: 40 }}>
+                  <Text style={{ fontSize: 20, marginTop: 5, marginBottom: 15 }}>
+                    {this.props.title}
+                  </Text>
+                </View>
+                <View style={{ height: 40 }}>
+                  <Text style={{ marginTop: 5, marginBottom: 15 }}>
+                    {this.props.subTitle}
+                  </Text>
                 </View>
               </View>
-              <View style={{ height: 100, alignItems: 'flex-end', left: -10 }}>
-                <Icon size={100} name={this.props.iconName} type={'ionicon'} color={AppColors.brand.primary} />
-              </View>
             </View>
-          </TouchableHighlight>
+            <View style={{ height: 100, alignItems: 'flex-end', left: -10 }}>
+              <Icon size={100} name={this.props.iconName} type={'ionicon'} color={AppColors.brand.primary} />
+            </View>
+          </View>
         </View>
       </Animatable.View>
     );
