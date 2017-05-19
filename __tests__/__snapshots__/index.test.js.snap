@@ -167,69 +167,132 @@ exports[`test index renders correctly 1`] = `
                         ]
                       }
                     >
-                      <View>
+                      <View
+                        style={
+                          Object {
+                            "backgroundColor": "#fff",
+                            "borderTopLeftRadius": 6,
+                            "borderTopRightRadius": 6,
+                            "height": 100,
+                            "margin": 10,
+                          }
+                        }
+                      >
                         <View
                           style={
-                            Array [
-                              Object {
-                                "backgroundColor": "white",
-                                "borderColor": "#e1e8ee",
-                                "borderWidth": 1,
-                                "margin": 15,
-                                "marginBottom": 0,
-                                "padding": 15,
-                                "shadowColor": "rgba(0,0,0, .2)",
-                                "shadowOffset": Object {
-                                  "height": 0,
-                                  "width": 0,
-                                },
-                                "shadowOpacity": 1,
-                                "shadowRadius": 1,
-                              },
-                              undefined,
-                              Object {
-                                "borderRadius": 5,
-                              },
-                            ]
+                            Object {
+                              "borderRadius": 5,
+                              "flex": 1,
+                              "flexDirection": "row",
+                            }
                           }
                         >
                           <View
                             style={
-                              Array [
+                              Object {
+                                "flex": 1,
+                                "flexDirection": "column",
+                                "justifyContent": "space-between",
+                                "margin": 15,
+                              }
+                            }
+                          >
+                            <View
+                              style={
                                 Object {
+                                  "height": 40,
+                                }
+                              }
+                            >
+                              <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail"
+                                style={
+                                  Object {
+                                    "fontSize": 20,
+                                    "marginBottom": 15,
+                                    "marginTop": 5,
+                                  }
+                                }
+                              >
+                                从零开始
+                              </Text>
+                            </View>
+                            <View
+                              style={
+                                Object {
+                                  "height": 40,
+                                }
+                              }
+                            >
+                              <Text
+                                accessible={true}
+                                allowFontScaling={true}
+                                ellipsizeMode="tail"
+                                style={
+                                  Object {
+                                    "marginBottom": 15,
+                                    "marginTop": 5,
+                                  }
+                                }
+                              >
+                                从这里准备开始你的技术图谱修炼之路
+                              </Text>
+                            </View>
+                          </View>
+                        </View>
+                        <View
+                          style={
+                            Object {
+                              "alignItems": "flex-end",
+                              "height": 100,
+                              "left": -10,
+                            }
+                          }
+                        >
+                          <View
+                            onPress={undefined}
+                            style={
+                              Array [
+                                false,
+                                false,
+                                false,
+                                Object {
+                                  "alignItems": "center",
                                   "backgroundColor": "transparent",
+                                  "justifyContent": "center",
                                 },
-                                undefined,
                                 undefined,
                               ]
                             }
+                            underlayColor="white"
                           >
                             <Text
                               accessible={true}
-                              allowFontScaling={true}
+                              allowFontScaling={false}
                               ellipsizeMode="tail"
                               style={
-                                Object {
-                                  "fontSize": 20,
-                                  "marginBottom": 20,
-                                  "marginTop": 5,
-                                }
+                                Array [
+                                  Object {
+                                    "color": "#03a9f4",
+                                    "fontSize": 100,
+                                  },
+                                  Array [
+                                    Object {
+                                      "backgroundColor": "transparent",
+                                    },
+                                    undefined,
+                                  ],
+                                  Object {
+                                    "fontFamily": "Ionicons",
+                                    "fontStyle": "normal",
+                                    "fontWeight": "normal",
+                                  },
+                                ]
                               }
                             >
-                              从零开始
-                            </Text>
-                            <Text
-                              accessible={true}
-                              allowFontScaling={true}
-                              ellipsizeMode="tail"
-                              style={
-                                Object {
-                                  "marginBottom": 15,
-                                  "marginTop": 5,
-                                }
-                              }
-                            >
-                              从这里准备开始你的技术图谱修炼之路
+                              
                             </Text>
                           </View>
                         </View>
