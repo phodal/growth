@@ -167,29 +167,22 @@ exports[`test index renders correctly 1`] = `
                         ]
                       }
                     >
-                      <View
-                        style={
-                          Object {
-                            "backgroundColor": "#fff",
-                            "borderTopLeftRadius": 6,
-                            "borderTopRightRadius": 6,
-                            "height": 100,
-                            "margin": 10,
-                            "shadowColor": "rgba(0,0,0, .2)",
-                            "shadowOffset": Object {
-                              "height": 1,
-                              "width": 0,
-                            },
-                            "shadowOpacity": 1,
-                            "shadowRadius": 1,
-                          }
-                        }
-                      >
+                      <View>
                         <View
                           style={
                             Object {
-                              "flex": 1,
-                              "flexDirection": "row",
+                              "backgroundColor": "#fff",
+                              "borderTopLeftRadius": 6,
+                              "borderTopRightRadius": 6,
+                              "height": 100,
+                              "margin": 10,
+                              "shadowColor": "rgba(0,0,0, .2)",
+                              "shadowOffset": Object {
+                                "height": 1,
+                                "width": 0,
+                              },
+                              "shadowOpacity": 1,
+                              "shadowRadius": 1,
                             }
                           }
                         >
@@ -197,109 +190,118 @@ exports[`test index renders correctly 1`] = `
                             style={
                               Object {
                                 "flex": 1,
-                                "flexDirection": "column",
-                                "justifyContent": "space-between",
-                                "margin": 15,
+                                "flexDirection": "row",
                               }
                             }
                           >
                             <View
                               style={
                                 Object {
-                                  "height": 40,
+                                  "flex": 1,
+                                  "flexDirection": "column",
+                                  "justifyContent": "space-between",
+                                  "margin": 15,
                                 }
                               }
                             >
-                              <Text
-                                accessible={true}
-                                allowFontScaling={true}
-                                ellipsizeMode="tail"
+                              <View
                                 style={
                                   Object {
-                                    "fontSize": 20,
-                                    "marginBottom": 15,
-                                    "marginTop": 5,
+                                    "height": 40,
                                   }
                                 }
                               >
-                                从零开始
-                              </Text>
-                            </View>
-                            <View
-                              style={
-                                Object {
-                                  "height": 40,
-                                }
-                              }
-                            >
-                              <Text
-                                accessible={true}
-                                allowFontScaling={true}
-                                ellipsizeMode="tail"
+                                <Text
+                                  accessible={true}
+                                  allowFontScaling={true}
+                                  ellipsizeMode="tail"
+                                  style={
+                                    Object {
+                                      "fontSize": 20,
+                                      "marginBottom": 15,
+                                      "marginTop": 5,
+                                    }
+                                  }
+                                >
+                                  从零开始
+                                </Text>
+                              </View>
+                              <View
                                 style={
                                   Object {
-                                    "marginBottom": 15,
-                                    "marginTop": 5,
+                                    "height": 40,
                                   }
                                 }
                               >
-                                从这里准备开始你的技术图谱修炼之路
-                              </Text>
+                                <Text
+                                  accessible={true}
+                                  allowFontScaling={true}
+                                  ellipsizeMode="tail"
+                                  style={
+                                    Object {
+                                      "marginBottom": 15,
+                                      "marginTop": 5,
+                                    }
+                                  }
+                                >
+                                  从这里准备开始你的技术图谱修炼之路
+                                </Text>
+                              </View>
                             </View>
                           </View>
-                        </View>
-                        <View
-                          style={
-                            Object {
-                              "alignItems": "flex-end",
-                              "height": 100,
-                              "left": -10,
-                            }
-                          }
-                        >
                           <View
-                            onPress={undefined}
                             style={
-                              Array [
-                                false,
-                                false,
-                                false,
-                                Object {
-                                  "alignItems": "center",
-                                  "backgroundColor": "transparent",
-                                  "justifyContent": "center",
-                                },
-                                undefined,
-                              ]
+                              Object {
+                                "alignItems": "flex-end",
+                                "height": 100,
+                                "left": -10,
+                              }
                             }
-                            underlayColor="white"
                           >
-                            <Text
-                              accessible={true}
-                              allowFontScaling={false}
-                              ellipsizeMode="tail"
+                            <View
+                              onPress={undefined}
                               style={
                                 Array [
+                                  false,
+                                  false,
+                                  false,
                                   Object {
-                                    "color": "#03a9f4",
-                                    "fontSize": 100,
+                                    "alignItems": "center",
+                                    "backgroundColor": "transparent",
+                                    "justifyContent": "center",
                                   },
-                                  Array [
-                                    Object {
-                                      "backgroundColor": "transparent",
-                                    },
-                                    undefined,
-                                  ],
-                                  Object {
-                                    "fontFamily": "Ionicons",
-                                    "fontStyle": "normal",
-                                    "fontWeight": "normal",
-                                  },
+                                  undefined,
                                 ]
                               }
+                              underlayColor="white"
                             >
-                              
-                            </Text>
+                              <Text
+                                accessible={true}
+                                allowFontScaling={false}
+                                ellipsizeMode="tail"
+                                style={
+                                  Array [
+                                    Object {
+                                      "color": "#03a9f4",
+                                      "fontSize": 100,
+                                    },
+                                    Array [
+                                      Object {
+                                        "backgroundColor": "transparent",
+                                      },
+                                      undefined,
+                                    ],
+                                    Object {
+                                      "fontFamily": "Ionicons",
+                                      "fontStyle": "normal",
+                                      "fontWeight": "normal",
+                                    },
+                                  ]
+                                }
+                              >
+                                
+                              </Text>
+                            </View>
                           </View>
                         </View>
                       </View>
