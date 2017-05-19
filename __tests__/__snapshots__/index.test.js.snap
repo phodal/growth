@@ -175,13 +175,19 @@ exports[`test index renders correctly 1`] = `
                             "borderTopRightRadius": 6,
                             "height": 100,
                             "margin": 10,
+                            "shadowColor": "rgba(0,0,0, .2)",
+                            "shadowOffset": Object {
+                              "height": 1,
+                              "width": 0,
+                            },
+                            "shadowOpacity": 1,
+                            "shadowRadius": 1,
                           }
                         }
                       >
                         <View
                           style={
                             Object {
-                              "borderRadius": 5,
                               "flex": 1,
                               "flexDirection": "row",
                             }
