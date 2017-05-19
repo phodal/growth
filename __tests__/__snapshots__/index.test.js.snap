@@ -199,7 +199,7 @@ exports[`test index renders correctly 1`] = `
                               <View
                                 style={
                                   Object {
-                                    "backgroundColor": "rgba(255,255,255,1)",
+                                    "backgroundColor": "rgba(238, 238, 238, 1.0)",
                                   }
                                 }
                               >
@@ -359,7 +359,7 @@ exports[`test index renders correctly 1`] = `
                                 <View
                                   style={
                                     Object {
-                                      "backgroundColor": "rgba(255,255,255,1)",
+                                      "backgroundColor": "rgba(238, 238, 238, 1.0)",
                                       "opacity": 1,
                                     }
                                   }
@@ -368,271 +368,281 @@ exports[`test index renders correctly 1`] = `
                                     style={Object {}}
                                   >
                                     <View
-                                      onLongPress={undefined}
-                                      onPress={undefined}
                                       style={
-                                        Array [
-                                          Object {
-                                            "backgroundColor": "transparent",
-                                            "borderBottomColor": "#ededed",
-                                            "borderBottomWidth": 1,
-                                            "paddingBottom": 10,
-                                            "paddingRight": 10,
-                                            "paddingTop": 10,
-                                          },
-                                          undefined,
-                                        ]
+                                        Object {
+                                          "backgroundColor": "#fff",
+                                          "marginLeft": 10,
+                                          "marginRight": 10,
+                                        }
                                       }
-                                      underlayColor="white"
                                     >
                                       <View
+                                        onLongPress={undefined}
+                                        onPress={undefined}
                                         style={
                                           Array [
                                             Object {
-                                              "flexDirection": "row",
-                                              "marginLeft": 10,
+                                              "backgroundColor": "transparent",
+                                              "borderBottomColor": "#ededed",
+                                              "borderBottomWidth": 1,
+                                              "paddingBottom": 10,
+                                              "paddingRight": 10,
+                                              "paddingTop": 10,
                                             },
                                             undefined,
                                           ]
                                         }
+                                        underlayColor="white"
                                       >
                                         <View
                                           style={
-                                            Object {
-                                              "flex": 1,
-                                              "justifyContent": "center",
-                                            }
+                                            Array [
+                                              Object {
+                                                "flexDirection": "row",
+                                                "marginLeft": 10,
+                                              },
+                                              undefined,
+                                            ]
                                           }
                                         >
                                           <View
-                                            style={undefined}
-                                          >
-                                            <Text
-                                              accessible={true}
-                                              allowFontScaling={true}
-                                              ellipsizeMode="tail"
-                                              style={
-                                                Array [
-                                                  Object {},
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  Array [
-                                                    Object {
-                                                      "color": "#43484d",
-                                                      "fontSize": 17.5,
-                                                    },
-                                                    Object {
-                                                      "marginLeft": 10,
-                                                    },
-                                                    undefined,
-                                                    undefined,
-                                                  ],
-                                                ]
-                                              }
-                                            >
-                                              hello, world
-                                            </Text>
-                                          </View>
-                                          <View
-                                            style={undefined}
-                                          >
-                                            <View />
-                                          </View>
-                                        </View>
-                                        <View
-                                          style={
-                                            Object {
-                                              "alignItems": "flex-end",
-                                              "flex": 0.15,
-                                              "justifyContent": "center",
-                                            }
-                                          }
-                                        >
-                                          <View
-                                            onPress={undefined}
                                             style={
-                                              Array [
-                                                false,
-                                                false,
-                                                false,
-                                                Object {
-                                                  "alignItems": "center",
-                                                  "backgroundColor": "transparent",
-                                                  "justifyContent": "center",
-                                                },
-                                                undefined,
-                                              ]
+                                              Object {
+                                                "flex": 1,
+                                                "justifyContent": "center",
+                                              }
                                             }
-                                            underlayColor="white"
                                           >
-                                            <Text
-                                              accessible={true}
-                                              allowFontScaling={false}
-                                              ellipsizeMode="tail"
+                                            <View
+                                              style={undefined}
+                                            >
+                                              <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail"
+                                                style={
+                                                  Array [
+                                                    Object {},
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    Array [
+                                                      Object {
+                                                        "color": "#43484d",
+                                                        "fontSize": 17.5,
+                                                      },
+                                                      Object {
+                                                        "marginLeft": 10,
+                                                      },
+                                                      undefined,
+                                                      undefined,
+                                                    ],
+                                                  ]
+                                                }
+                                              >
+                                                hello, world
+                                              </Text>
+                                            </View>
+                                            <View
+                                              style={undefined}
+                                            >
+                                              <View />
+                                            </View>
+                                          </View>
+                                          <View
+                                            style={
+                                              Object {
+                                                "alignItems": "flex-end",
+                                                "flex": 0.15,
+                                                "justifyContent": "center",
+                                              }
+                                            }
+                                          >
+                                            <View
+                                              onPress={undefined}
                                               style={
                                                 Array [
+                                                  false,
+                                                  false,
+                                                  false,
                                                   Object {
-                                                    "color": "#bdc6cf",
-                                                    "fontSize": 28,
+                                                    "alignItems": "center",
+                                                    "backgroundColor": "transparent",
+                                                    "justifyContent": "center",
                                                   },
-                                                  Array [
-                                                    Object {
-                                                      "backgroundColor": "transparent",
-                                                    },
-                                                    undefined,
-                                                  ],
-                                                  Object {
-                                                    "fontFamily": "Material Icons",
-                                                    "fontStyle": "normal",
-                                                    "fontWeight": "normal",
-                                                  },
+                                                  undefined,
                                                 ]
                                               }
+                                              underlayColor="white"
                                             >
-                                              
-                                            </Text>
+                                              <Text
+                                                accessible={true}
+                                                allowFontScaling={false}
+                                                ellipsizeMode="tail"
+                                                style={
+                                                  Array [
+                                                    Object {
+                                                      "color": "#bdc6cf",
+                                                      "fontSize": 28,
+                                                    },
+                                                    Array [
+                                                      Object {
+                                                        "backgroundColor": "transparent",
+                                                      },
+                                                      undefined,
+                                                    ],
+                                                    Object {
+                                                      "fontFamily": "Material Icons",
+                                                      "fontStyle": "normal",
+                                                      "fontWeight": "normal",
+                                                    },
+                                                  ]
+                                                }
+                                              >
+                                                
+                                              </Text>
+                                            </View>
                                           </View>
                                         </View>
                                       </View>
-                                    </View>
-                                    <View
-                                      onLongPress={undefined}
-                                      onPress={undefined}
-                                      style={
-                                        Array [
-                                          Object {
-                                            "backgroundColor": "transparent",
-                                            "borderBottomColor": "#ededed",
-                                            "borderBottomWidth": 1,
-                                            "paddingBottom": 10,
-                                            "paddingRight": 10,
-                                            "paddingTop": 10,
-                                          },
-                                          undefined,
-                                        ]
-                                      }
-                                      underlayColor="white"
-                                    >
                                       <View
+                                        onLongPress={undefined}
+                                        onPress={undefined}
                                         style={
                                           Array [
                                             Object {
-                                              "flexDirection": "row",
-                                              "marginLeft": 10,
+                                              "backgroundColor": "transparent",
+                                              "borderBottomColor": "#ededed",
+                                              "borderBottomWidth": 1,
+                                              "paddingBottom": 10,
+                                              "paddingRight": 10,
+                                              "paddingTop": 10,
                                             },
                                             undefined,
                                           ]
                                         }
+                                        underlayColor="white"
                                       >
                                         <View
                                           style={
-                                            Object {
-                                              "flex": 1,
-                                              "justifyContent": "center",
-                                            }
+                                            Array [
+                                              Object {
+                                                "flexDirection": "row",
+                                                "marginLeft": 10,
+                                              },
+                                              undefined,
+                                            ]
                                           }
                                         >
                                           <View
-                                            style={undefined}
-                                          >
-                                            <Text
-                                              accessible={true}
-                                              allowFontScaling={true}
-                                              ellipsizeMode="tail"
-                                              style={
-                                                Array [
-                                                  Object {},
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  undefined,
-                                                  Array [
-                                                    Object {
-                                                      "color": "#43484d",
-                                                      "fontSize": 17.5,
-                                                    },
-                                                    Object {
-                                                      "marginLeft": 10,
-                                                    },
-                                                    undefined,
-                                                    undefined,
-                                                  ],
-                                                ]
-                                              }
-                                            >
-                                              开发环境
-                                            </Text>
-                                          </View>
-                                          <View
-                                            style={undefined}
-                                          >
-                                            <View />
-                                          </View>
-                                        </View>
-                                        <View
-                                          style={
-                                            Object {
-                                              "alignItems": "flex-end",
-                                              "flex": 0.15,
-                                              "justifyContent": "center",
-                                            }
-                                          }
-                                        >
-                                          <View
-                                            onPress={undefined}
                                             style={
-                                              Array [
-                                                false,
-                                                false,
-                                                false,
-                                                Object {
-                                                  "alignItems": "center",
-                                                  "backgroundColor": "transparent",
-                                                  "justifyContent": "center",
-                                                },
-                                                undefined,
-                                              ]
+                                              Object {
+                                                "flex": 1,
+                                                "justifyContent": "center",
+                                              }
                                             }
-                                            underlayColor="white"
                                           >
-                                            <Text
-                                              accessible={true}
-                                              allowFontScaling={false}
-                                              ellipsizeMode="tail"
+                                            <View
+                                              style={undefined}
+                                            >
+                                              <Text
+                                                accessible={true}
+                                                allowFontScaling={true}
+                                                ellipsizeMode="tail"
+                                                style={
+                                                  Array [
+                                                    Object {},
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    undefined,
+                                                    Array [
+                                                      Object {
+                                                        "color": "#43484d",
+                                                        "fontSize": 17.5,
+                                                      },
+                                                      Object {
+                                                        "marginLeft": 10,
+                                                      },
+                                                      undefined,
+                                                      undefined,
+                                                    ],
+                                                  ]
+                                                }
+                                              >
+                                                开发环境
+                                              </Text>
+                                            </View>
+                                            <View
+                                              style={undefined}
+                                            >
+                                              <View />
+                                            </View>
+                                          </View>
+                                          <View
+                                            style={
+                                              Object {
+                                                "alignItems": "flex-end",
+                                                "flex": 0.15,
+                                                "justifyContent": "center",
+                                              }
+                                            }
+                                          >
+                                            <View
+                                              onPress={undefined}
                                               style={
                                                 Array [
+                                                  false,
+                                                  false,
+                                                  false,
                                                   Object {
-                                                    "color": "#bdc6cf",
-                                                    "fontSize": 28,
+                                                    "alignItems": "center",
+                                                    "backgroundColor": "transparent",
+                                                    "justifyContent": "center",
                                                   },
-                                                  Array [
-                                                    Object {
-                                                      "backgroundColor": "transparent",
-                                                    },
-                                                    undefined,
-                                                  ],
-                                                  Object {
-                                                    "fontFamily": "Material Icons",
-                                                    "fontStyle": "normal",
-                                                    "fontWeight": "normal",
-                                                  },
+                                                  undefined,
                                                 ]
                                               }
+                                              underlayColor="white"
                                             >
-                                              
-                                            </Text>
+                                              <Text
+                                                accessible={true}
+                                                allowFontScaling={false}
+                                                ellipsizeMode="tail"
+                                                style={
+                                                  Array [
+                                                    Object {
+                                                      "color": "#bdc6cf",
+                                                      "fontSize": 28,
+                                                    },
+                                                    Array [
+                                                      Object {
+                                                        "backgroundColor": "transparent",
+                                                      },
+                                                      undefined,
+                                                    ],
+                                                    Object {
+                                                      "fontFamily": "Material Icons",
+                                                      "fontStyle": "normal",
+                                                      "fontWeight": "normal",
+                                                    },
+                                                  ]
+                                                }
+                                              >
+                                                
+                                              </Text>
+                                            </View>
                                           </View>
                                         </View>
                                       </View>

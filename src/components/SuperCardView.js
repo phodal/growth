@@ -43,19 +43,23 @@ class SuperCardView extends React.PureComponent {
       <Animatable.View
         duration={300}
         transition="opacity"
-        style={{ backgroundColor: (isActive ? 'rgba(255,255,255,1)' : 'rgba(255,255,255,1)') }}
+        style={{ backgroundColor: (isActive ? 'rgba(238, 238, 238, 1.0)' : 'rgba(238, 238, 238, 1.0)') }}
       >
         <Animatable.View
           duration={300}
           easing="ease-out"
           animation={isActive ? 'zoomInUp' : ''}
         >
-          <ListItem
-            title={'hello, world'}
-          />
-          <ListItem
-            title={'开发环境'}
-          />
+          <View
+            style={{ backgroundColor: '#fff', marginLeft: 10, marginRight: 10 }}
+          >
+            <ListItem
+              title={'hello, world'}
+            />
+            <ListItem
+              title={'开发环境'}
+            />
+          </View>
         </Animatable.View>
       </Animatable.View>
     );
@@ -66,7 +70,7 @@ class SuperCardView extends React.PureComponent {
       <Animatable.View
         duration={300}
         transition="backgroundColor"
-        style={{ backgroundColor: (isActive ? 'rgba(255,255,255,1)' : 'rgba(255,255,255,1)') }}
+        style={{ backgroundColor: (isActive ? 'rgba(238, 238, 238, 1.0)' : 'rgba(238, 238, 238, 1.0)') }}
       >
         <View style={styles.cardContainer}>
           <View>
