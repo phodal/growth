@@ -6,6 +6,10 @@ import Dialog from '../../src/utils/dialog';
 
 it('renders correctly', () => {
   // eslint-disable-next-line no-unused-vars
+  const mockMath = Object.create(global.Math);
+  mockMath.random = () => 0.5;
+  global.Math = mockMath;
+
   const tree = renderer.create(
     <Dialog show />,
   );

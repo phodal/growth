@@ -53,7 +53,6 @@ class SuperCardView extends React.PureComponent {
         <Animatable.Text
           duration={300}
           easing="ease-out"
-          animation={isActive ? 'zoomIn' : false}
         >
           {section.content}
         </Animatable.Text>
@@ -61,7 +60,7 @@ class SuperCardView extends React.PureComponent {
     );
   }
 
-  static renderHeader(section, index, isActive) {
+  static renderHeader() {
     return (
       <Animatable.View
         duration={300}
