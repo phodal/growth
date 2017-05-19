@@ -74,7 +74,7 @@ exports[`renders correctly 1`] = `
           >
             Tips : 
           </Text>
-          编码之前想一想
+          抽时间对代码进行重构
         </Text>
       </View>
     </View>
