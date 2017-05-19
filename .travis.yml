@@ -30,7 +30,9 @@ script:
 #- cd android && ./gradlew assembleRelease
 
 after_script:
-- cd ../ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+#- cd ../ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+
 
 notifications:
   webhooks:
