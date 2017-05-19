@@ -8,6 +8,8 @@ jest.mock('react-native-device-info', () => ({
   getVersion: jest.fn(),
 }));
 
+jest.mock('ScrollView', () => jest.genMockFromModule('ScrollView'));
+
 jest.mock('Linking', () =>
   ({
     addEventListener: jest.fn(),
