@@ -16,23 +16,24 @@ addons:
 install:
 - yarn install
 
-#android:
-#  components:
-#  - build-tools-23.0.1
-#  - android-23
-#  - extra-android-m2repository
-#  - extra-google-google_play_services
-#  - extra-google-m2repository
-#  - addon-google_apis-google-16
 script:
 - npm run lint
 - npm test
-#- cd android && ./gradlew assembleRelease
 
 after_script:
-#- cd ../ && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
+before_deploy:
+- bash ci/.travis-android-license-bugfix.sh
+- echo y | android update sdk --no-ui --all --filter ${ANDROID_EMULATOR},${ANDROID_PKGS},build-tools-23.0.1
+- echo y | android update sdk -u -a -t tools
+- echo y | android update sdk -u -a -t platform-tools
+- echo y | android update sdk -u -a -t build-tools-23.0.1
+- echo y | android update sdk -u -a -t android-23
+- echo y | android update sdk -u -a -t android-25
+- echo y | android update sdk -u -a -t extra-google-m2repository
+- echo y | android update sdk -u -a -t extra-android-m2repository
+- cd android && ./gradlew assembleRelease
 
 notifications:
   webhooks:
@@ -41,12 +42,13 @@ notifications:
     on_success: change
     on_failure: always
     on_start: never
-#deploy:
-#  provider: releases
-#  skip_cleanup: true
-#  api_key:
-#    secure: R8Xmie2kh0WuGWBrF9uPzrCtNQW5noDjpQChtjSnVqapvSP/EcglDO4x//lISjmXz7izT2Qpf0NdglP9NgzcjFcz9Xf86lHQ3lf84dHj85dOlV+/0gTU9he3llrbG7MZ9XWTbBeveFwhggZr9s0lU3blTrf7H/ZYGx6yTVGnEq5bj2kHqfN67p+ZWmUimpz3uHGCkCvIjLNjpc/jtrHp7s4VtIrsRv5WTnZOD0qVOg87aoTKJna4ZIdAHQ1ROx1UpuwMgFAxicJWLPas112QsZIr3k/t8mcisFQLyQcbzpE4umFSRYG77nbYg+fVJxSTWm4plBdXff7PXzX5Sh08HdDGl8t0e5wtFIxukpi7adufjBNviAKwHUrxfgZgU6EaSIl9AYq46aCKEkGhdEluZsUcbXK8dB9bRhsaDQNT8AdLq7gaqYnopiVnRYCFOl9Ams4ZuhtipPWN5RIxMgbA7yj0Kv5asakJ42N7CWBwKRxPzvouDyTqWHnLcsCb2qvNl7Ue6NWy4n+pcg4omgENJt3yc5IKIe1fVK46PG1rA15HW4k2CloRESWiGvvo8bydHxCr8v5wMvbjz7bpicMpJp4qnI7L/fz2BJF45cEqRFIpWkxkuU0ZMDvqueUWji2jSy83LCyuztzsHbKYhs25DRRF7IxOlW5FZs37DMFZENU=
-#  file: $TRAVIS_BUILD_DIR/android/app/build/outputs/apk/app-release.apk
-#  on:
-#    repo: phodal/growth-ng
-#    tags: true
+
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: R8Xmie2kh0WuGWBrF9uPzrCtNQW5noDjpQChtjSnVqapvSP/EcglDO4x//lISjmXz7izT2Qpf0NdglP9NgzcjFcz9Xf86lHQ3lf84dHj85dOlV+/0gTU9he3llrbG7MZ9XWTbBeveFwhggZr9s0lU3blTrf7H/ZYGx6yTVGnEq5bj2kHqfN67p+ZWmUimpz3uHGCkCvIjLNjpc/jtrHp7s4VtIrsRv5WTnZOD0qVOg87aoTKJna4ZIdAHQ1ROx1UpuwMgFAxicJWLPas112QsZIr3k/t8mcisFQLyQcbzpE4umFSRYG77nbYg+fVJxSTWm4plBdXff7PXzX5Sh08HdDGl8t0e5wtFIxukpi7adufjBNviAKwHUrxfgZgU6EaSIl9AYq46aCKEkGhdEluZsUcbXK8dB9bRhsaDQNT8AdLq7gaqYnopiVnRYCFOl9Ams4ZuhtipPWN5RIxMgbA7yj0Kv5asakJ42N7CWBwKRxPzvouDyTqWHnLcsCb2qvNl7Ue6NWy4n+pcg4omgENJt3yc5IKIe1fVK46PG1rA15HW4k2CloRESWiGvvo8bydHxCr8v5wMvbjz7bpicMpJp4qnI7L/fz2BJF45cEqRFIpWkxkuU0ZMDvqueUWji2jSy83LCyuztzsHbKYhs25DRRF7IxOlW5FZs37DMFZENU=
+  file: $TRAVIS_BUILD_DIR/android/app/build/outputs/apk/app-release.apk
+  on:
+    repo: phodal/growth-ng
+    tags: true
