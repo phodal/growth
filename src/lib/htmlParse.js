@@ -1,4 +1,4 @@
-import htmlparser from './htmlparser2';
+import htmlparser from 'htmlparser2-without-node-native';
 
 const blockTagArr = ['div', 'p', 'img', 'address',
   'blockquote', 'dir', 'dl', 'iframe',

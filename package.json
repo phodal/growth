@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
+    "events": "^1.1.1",
+    "htmlparser2-without-node-native": "^3.9.0",
     "lodash.filter": "^4.6.0",
     "marked": "^0.3.6",
     "react": "15.4.2",
