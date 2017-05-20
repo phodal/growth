@@ -1,8 +1,7 @@
-import { Platform, Dimensions } from 'react-native';
+import { Platform, Dimensions, Image } from 'react-native';
 import Fonts from './fonts';
 import Colors from './colors';
 import Size from './sizes';
-
 
 export default {
   appContainer: {
@@ -31,8 +30,9 @@ export default {
     height: 1,
     backgroundColor: 'rgba(240, 240, 240, .9)',
   },
-  detailMarginTop: {
+  detailBasisStyle: {
     marginTop: Size.navbarHeight,
+    backgroundColor: '#E9EBEE',
   },
   discoverParentStyle: {
     flex: 1,
@@ -113,7 +113,7 @@ export default {
     alignItems: 'center',
     backgroundColor: 'rgba(255,255,255, .5)',
   },
-  roadmapListStyle: {
+  simpleListItemStyle: {
     marginLeft: 15,
     marginRight: 15,
     height: 40,
@@ -210,6 +210,38 @@ export default {
     height: 40,
     backgroundColor: 'rgba(0,0,0,.3)',
   },
+  h: {
+    width: Dimensions.get('window').width - 30,
+    textAlign: 'center',
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginTop: 15,
+  },
+  blockquote: {
+    flex: 1,
+    alignItems: 'center',
+    borderLeftWidth: 3,
+    borderLeftColor: '#dadada',
+    paddingLeft: 15,
+    marginTop: 15,
+  },
+  img: {
+    width: Dimensions.get('window').width - 30,
+    height: Dimensions.get('window').width - 30,
+    resizeMode: Image.resizeMode.contain,
+  },
+  a: {
+    color: '#111',
+    textDecorationLine: 'underline',
+  },
+  pre: {
+    flex: 1,
+    marginTop: 15,
+    borderLeftWidth: 3,
+    borderLeftColor: '#dadada',
+    paddingLeft: 15,
+    backgroundColor: '#f9f9f7',
+  },
   dialogStyle: {
     height: Dimensions.get('window').height,
     justifyContent: 'center',
@@ -238,3 +270,4 @@ export default {
     fontWeight: 'bold',
   },
 };
+

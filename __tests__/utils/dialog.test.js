@@ -2,7 +2,7 @@ import 'react-native';
 import React from 'react';
 
 import renderer from 'react-test-renderer';
-import Dialog from '../../src/utils/dialog';
+import Dialog from '../../src/components/dialog';
 
 it('renders correctly', () => {
   // eslint-disable-next-line no-unused-vars

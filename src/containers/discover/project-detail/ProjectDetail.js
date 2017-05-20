@@ -24,9 +24,7 @@ class RoadmapDetail extends Component {
     this.state = {
       rowData: Array.from(
         new Array(this.props.projects.length))
-        .map((val, index) => (
-          this.props.projects[index]
-        )),
+        .map((val, index) => (this.props.projects[index])),
       hintTextMarginTop: -40,
       timer: {},
     };
@@ -43,7 +41,9 @@ class RoadmapDetail extends Component {
     clearTimeout(this.state.timer);
     this.setState({
       hintTextMarginTop: 0,
-      timer: setTimeout(() => { this.setState({ hintTextMarginTop: -40 }); }, 3000) });
+      timer: setTimeout(
+        () => this.setState({ hintTextMarginTop: -40 }),
+        3000) });
   }
 
 
@@ -70,7 +70,7 @@ class RoadmapDetail extends Component {
       </TouchableHighlight>
     ));
     return (
-      <ScrollView style={[AppStyle.detailMarginTop, { backgroundColor: '#E9EBEE' }]}>
+      <ScrollView style={AppStyle.detailBasisStyle}>
         <View
           marginTop={this.state.hintTextMarginTop}
           style={AppStyle.projectDetailHintStyle}

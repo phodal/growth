@@ -57,7 +57,8 @@ class Discover extends Component {
           <Text style={AppStyle.discoverTextColor}>更多</Text>
         </View>
         <MoreItem
-          image={home3} title="你还需要什么功能？"
+          image={home3}
+          title="你还需要什么功能？"
           titleBackgroundColor="rgba(255,255,255, .5)"
           onclick={() => { Launch.openGitHub('https://github.com/phodal/growth-ng/issues'); }}
         />

@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "backgroundColor": "#E9EBEE",
+      "marginTop": 64,
+    }
+  }
+>
+  <View>
+    <Modal
+      animationType="fade"
+      hardwareAccelerated={false}
+      onRequestClose={[Function]}
+      transparent={true}
+      visible={true}
+    >
+      <View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "rgba(0,0,0,.1)",
+              "height": 1334,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderRadius": 2,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "minWidth": 180,
+                "paddingBottom": 20,
+                "paddingLeft": 15,
+                "paddingRight": 15,
+                "paddingTop": 20,
+              }
+            }
+          >
+            <RNSpinkit
+              color="#03a9f4"
+              size={18}
+              style={
+                Array [
+                  Object {
+                    "height": 18,
+                    "width": 18,
+                  },
+                  undefined,
+                ]
+              }
+              type="FadingCircleAlt"
+            />
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "color": "#999",
+                  "marginLeft": 10,
+                  "maxWidth": 210,
+                  "minWidth": 150,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "fontWeight": "bold",
+                  }
+                }
+              >
+                Tips : 
+              </Text>
+              不要复制粘贴代码
+            </Text>
+          </View>
+        </View>
+      </View>
+    </Modal>
+  </View>
+</RCTScrollView>
+`;
