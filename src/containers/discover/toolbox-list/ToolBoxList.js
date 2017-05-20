@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
 import AppStyle from '../../../theme/styles';
 import Api from '../../../utils/api';
-import Dialog from '../../../utils/dialog';
+import Dialog from '../../../components/dialog';
 import SimpleListItem from '../SimpleListItem';
 import Launch from '../Launch';
 

@@ -3,7 +3,7 @@ import { ScrollView } from 'react-native';
 import Api from '../../../utils/api';
 import AppStyle from '../../../theme/styles';
 import Launch from '../Launch';
-import Dialog from '../../../utils/dialog';
+import Dialog from '../../../components/dialog';
 import SimpleListItem from '../SimpleListItem';
 
 async function load(call) {

@@ -3,7 +3,7 @@ import { ScrollView } from 'react-native';
 import Api from '../../../utils/api';
 import AppStyle from '../../../theme/styles';
 import GroupList from './ProjectListItem';
-import Dialog from './../../../utils/dialog';
+import Dialog from '../../../components/dialog';
 
 async function load(call) {
   Api.getProjectListData()
