@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { ScrollView } from 'react-native';
 import Api from '../../../utils/api';
 import AppStyle from '../../../theme/styles';
@@ -14,6 +14,13 @@ async function load(call) {
 class ProjectList extends Component {
   static componentName = 'ProjectList';
 
+  static propTypes = {
+    dialogContent: PropTypes.string,
+  };
+
+  static defaultProps = {
+    dialogContent: '',
+  };
 
   constructor(props) {
     super(props);
@@ -37,7 +44,7 @@ class ProjectList extends Component {
       <GroupList key={val.name} content={this.state.rowData[index]} />));
     return (
       <ScrollView style={[AppStyle.detailBasisStyle, { backgroundColor: '#E9EBEE' }]}>
-        <Dialog show={this.state.loading} />
+        <Dialog show={this.state.loading} content={this.props.dialogContent} />
         {!this.state.loading ?
           rows : null
         }

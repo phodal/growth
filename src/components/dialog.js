@@ -15,10 +15,12 @@ class Dialog extends Component {
 
   static propTypes = {
     show: PropTypes.bool,
+    content: PropTypes.string,
   };
 
   static defaultProps = {
     show: false,
+    content: '',
   };
 
   constructor(props) {
@@ -57,7 +59,7 @@ class Dialog extends Component {
               <Spinkit isVisible={this.state.visible} size={18} type={'FadingCircleAlt'} color={'#03a9f4'} />
               <Text style={AppStyle.dialogTextStyle}>
                 <Text style={AppStyle.dialogTextTipsStyle}>Tips : </Text>
-                {TIPS[Math.ceil(Math.random() * 6) % 6]}
+                {this.props.content ? this.props.content : TIPS[Math.ceil(Math.random() * 6) % 6]}
               </Text>
             </View>
           </View>

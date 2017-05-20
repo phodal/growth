@@ -29,10 +29,12 @@ class ToolBoxDetail extends Component {
 
   static propTypes = {
     url: PropTypes.string.isRequired,
+    dialogContent: PropTypes.string,
   };
 
   static defaultProps = {
     url: '',
+    dialogContent: '',
   };
 
   constructor(props) {
@@ -55,7 +57,7 @@ class ToolBoxDetail extends Component {
   render() {
     return (
       <ScrollView style={[AppStyle.detailBasisStyle, { backgroundColor: 'white' }]}>
-        <Dialog show={this.state.loading} />
+        <Dialog show={this.state.loading} content={this.props.dialogContent} />
         <HtmlView value={this.state.html} />
       </ScrollView>
     );

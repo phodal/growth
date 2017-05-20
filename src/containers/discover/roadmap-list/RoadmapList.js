@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { ScrollView } from 'react-native';
 import Api from '../../../utils/api';
 import AppStyle from '../../../theme/styles';
@@ -14,6 +14,14 @@ async function load(call) {
 
 class RoadmapList extends Component {
   static componentName = 'RoadmapList';
+
+  static propTypes = {
+    dialogContent: PropTypes.string,
+  };
+
+  static defaultProps = {
+    dialogContent: '',
+  };
 
   constructor(props) {
     super(props);
@@ -45,7 +53,7 @@ class RoadmapList extends Component {
 
     return (
       <ScrollView style={AppStyle.detailBasisStyle} >
-        <Dialog show={this.state.loading} />
+        <Dialog show={this.state.loading} content={this.props.dialogContent} />
         { !this.state.loading ?
             rows : null
           }
