@@ -1,13 +1,27 @@
 import React, { Component, PropTypes } from 'react';
-import { ScrollView, Text } from 'react-native';
+import { ScrollView } from 'react-native';
 import AppStyle from '../../../theme/styles';
 import Api from '../../../utils/api';
-import Dialog from '../../../utils/dialog';
+import Dialog from '../../../components/dialog';
+import HtmlView from '../../../components/htmlview/HtmlView';
 
+const marked = require('marked');
+
+
+marked.setOptions({
+  renderer: new marked.Renderer(),
+  gfm: true,
+  tables: true,
+  breaks: false,
+  pedantic: false,
+  sanitize: false,
+  smartLists: true,
+  smartypants: false,
+});
 async function load(url, call) {
   Api.getToolBoxDetailData(url)
     .then(response => call(response.data))
-    .catch(error => console.error(error));
+    .catch(error => (error));
 }
 
 class ToolBoxDetail extends Component {
@@ -25,28 +39,27 @@ class ToolBoxDetail extends Component {
     super(props);
     this.state = {
       loading: true,
-      rowData: '',
+      html: '',
     };
   }
 
   componentDidMount() {
-    load(this.props.url, json => (
+    load(this.props.url, (json) => {
       this.setState({
         loading: false,
-        rowData: JSON.stringify(json),
-      })
-    ));
+        html: marked(json),
+      });
+    });
   }
 
   render() {
     return (
-      <ScrollView style={AppStyle.detailBasisStyle}>
+      <ScrollView style={[AppStyle.detailBasisStyle, { backgroundColor: 'white' }]}>
         <Dialog show={this.state.loading} />
-        <Text>
-          {this.state.rowData}
-        </Text>
+        <HtmlView value={this.state.html} />
       </ScrollView>
     );
   }
 }
+
 export default ToolBoxDetail;
