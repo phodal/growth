@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
-import { ScrollView, View, Text, TouchableHighlight } from 'react-native';
+import React, { Component, PropTypes } from 'react';
+import { ScrollView } from 'react-native';
 import Api from '../../../utils/api';
 import AppStyle from '../../../theme/styles';
 import Launch from '../Launch';
-import Dialog from '../../../utils/dialog';
+import Dialog from '../../../components/dialog';
+import SimpleListItem from '../SimpleListItem';
 
 async function load(call) {
   Api.getRoadMapListData()
@@ -13,6 +14,14 @@ async function load(call) {
 
 class RoadmapList extends Component {
   static componentName = 'RoadmapList';
+
+  static propTypes = {
+    dialogContent: PropTypes.string,
+  };
+
+  static defaultProps = {
+    dialogContent: '',
+  };
 
   constructor(props) {
     super(props);
@@ -35,26 +44,18 @@ class RoadmapList extends Component {
 
   render() {
     const rows = this.state.rowData.map(data => (
-      <TouchableHighlight
-        onPress={() => { Launch.roadmapDetail(data.name.concat('学习路线'), data.timeline); }}
-        underlayColor="rgba(250, 250, 250, .9)"
+      <SimpleListItem
         key={data.name}
-        style={{ backgroundColor: 'white' }}
-      >
-        <View>
-          <View style={AppStyle.roadmapListStyle}>
-            <Text>{data.name}</Text>
-          </View>
-          <Text style={AppStyle.line} />
-        </View>
-      </TouchableHighlight>
+        text={data.name}
+        click={() => { Launch.roadmapDetail(data.name.concat('学习路线'), data.timeline); }}
+      />
     ));
 
     return (
-      <ScrollView style={[AppStyle.detailMarginTop, { backgroundColor: '#E9EBEE' }]} >
-        <Dialog show={this.state.loading} />
+      <ScrollView style={AppStyle.detailBasisStyle} >
+        <Dialog show={this.state.loading} content={this.props.dialogContent} />
         { !this.state.loading ?
-            rows : <View />
+            rows : null
           }
       </ScrollView>
     );

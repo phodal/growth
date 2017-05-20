@@ -13,6 +13,7 @@ import RoadmapDetail from '../containers/discover/roadmap-detail/RoadmapDetail';
 import ProjectList from '../containers/discover/project-list/ProjectList';
 import ProjectDetail from '../containers/discover/project-detail/ProjectDetail';
 import ToolBoxList from '../containers/discover/toolbox-list/ToolBoxList';
+import ToolBoxDetail from '../containers/discover/toolbox-detail/ToolBoxDetail';
 import ArticleList from '../containers/discover/article-list/ArticleList';
 import ExamList from '../containers/discover/exam-list/ExamList';
 import Solution from '../containers/discover/solution/Solution';
@@ -108,74 +109,94 @@ export default Actions.create(
     <Scene
       key={'roadmapList'}
       title={'学习路线'}
+      duration={0}
       component={RoadmapList}
     />
 
     <Scene
       key={'roadmapDetail'}
+      duration={0}
       component={RoadmapDetail}
     />
 
     <Scene
       key={'projectList'}
+      duration={0}
       title={'练手项目'}
       component={ProjectList}
     />
 
     <Scene
       key={'projectDetail'}
+      duration={0}
       component={ProjectDetail}
     />
 
     <Scene
       key={'toolBoxList'}
+      duration={0}
       title={'工具箱'}
       component={ToolBoxList}
     />
 
     <Scene
+      key={'toolBoxDetail'}
+      duration={0}
+      title={'工具箱'}
+      component={ToolBoxDetail}
+    />
+
+    <Scene
       key={'articleList'}
+      duration={0}
       title={'文章推荐'}
       component={ArticleList}
     />
 
     <Scene
       key={'examList'}
+      duration={0}
       title={'技能测验'}
       component={ExamList}
     />
     <Scene
       key={'solution'}
+      duration={0}
       title={'解决方案'}
       component={Solution}
     />
 
     <Scene
       key={'thoughtworksBooks'}
+      duration={0}
       title={'ThoughtWorks读书路线'}
       component={ThoughtworksBooks}
     />
 
     <Scene
       key={'recommendBooks'}
+      duration={0}
       title={'推荐书籍'}
       component={RecommendBooks}
     />
 
     <Scene
       key={'recommendArticles'}
+      duration={0}
       title={'推荐文章'}
       component={RecommendArticles}
     />
 
     <Scene
       key={'todoLists'}
+      duration={0}
       title={'待办事项'}
       component={TodoLists}
     />
 
     <Scene
       key={'chapterList'}
+      duration={0}
       title={'ChapterList'}
       component={ChapterList}
     />

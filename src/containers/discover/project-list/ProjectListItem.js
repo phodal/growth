@@ -30,8 +30,8 @@ class ProjectListItem extends Component {
     super(props);
     this.state = {
       name: this.props.content.name,
-      rowData: Array.from(new Array(this.props.content.subdomains.length)).map(
-        (val, index) => (this.props.content.subdomains[index])) };
+      rowData: Array.from(new Array(this.props.content.subdomains.length))
+        .map((val, index) => (this.props.content.subdomains[index])) };
   }
 
 
@@ -41,6 +41,7 @@ class ProjectListItem extends Component {
         onPress={() => { Launch.projectDetail(val.name.concat('练手项目'), val.projects); }}
         underlayColor="rgba(250, 250, 250, .9)"
         key={val.name}
+        style={{ backgroundColor: 'white' }}
       >
         <View>
           <View style={AppStyle.projectListContentStyle}>

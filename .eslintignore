@@ -1,1 +1,2 @@
 src/containers/skill-tree/www/**/*.js
+src/lib/*.js

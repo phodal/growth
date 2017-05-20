@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Image
+  source={
+    Object {
+      "uri": "https://facebook.github.io/react/img/logo_og.png",
+    }
+  }
+  style={
+    Object {
+      "height": 720,
+      "resizeMode": "contain",
+      "width": 720,
+    }
+  }
+/>
+`;
