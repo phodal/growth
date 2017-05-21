@@ -269,5 +269,9 @@ export default {
   dialogTextTipsStyle: {
     fontWeight: 'bold',
   },
+  userCenterBasisStyle: {
+    marginTop: Size.navbarHeight,
+    backgroundColor: '#E9EBEE',
+  },
 };
 
