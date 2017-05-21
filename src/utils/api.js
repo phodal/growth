@@ -12,5 +12,9 @@ class Api {
   static getToolBoxData = () => (axios.get('toolbox/api/all.json'));
 
   static getToolBoxDetailData = url => (axios.get('toolbox/'.concat(url)));
+
+  static getArticleListData = () => (axios.get('articles/api/all.json'));
+
+  static getArticleDetailData = url => (axios.get('articles/'.concat(url)));
 }
 export default Api;
