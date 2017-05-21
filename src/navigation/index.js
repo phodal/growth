@@ -15,6 +15,7 @@ import ProjectDetail from '../containers/discover/project-detail/ProjectDetail';
 import ToolBoxList from '../containers/discover/toolbox-list/ToolBoxList';
 import ToolBoxDetail from '../containers/discover/toolbox-detail/ToolBoxDetail';
 import ArticleList from '../containers/discover/article-list/ArticleList';
+import ArticleDetail from '../containers/discover/article-detail/ArticleDetail';
 import ExamList from '../containers/discover/exam-list/ExamList';
 import Solution from '../containers/discover/solution/Solution';
 import ThoughtworksBooks from '../containers/discover/thoughtworks-books/ThoughtworksBooks';
@@ -151,6 +152,13 @@ export default Actions.create(
       duration={0}
       title={'文章推荐'}
       component={ArticleList}
+    />
+
+    <Scene
+      key={'articleDetail'}
+      duration={0}
+      title={'文章详情'}
+      component={ArticleDetail}
     />
 
     <Scene
