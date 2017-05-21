@@ -13,7 +13,7 @@ const contributors = [{
   description: 'Placeholder 1',
 }];
 
-const Label = props => (
+export const Label = props => (
   <View style={{ paddingLeft: 20, marginTop: 12, marginBottom: -6 }}>
     <Text style={{ fontSize: 14 }}>
       {props.text}
