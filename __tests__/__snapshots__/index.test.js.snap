@@ -709,61 +709,85 @@ exports[`test index renders correctly 1`] = `
                       </Text>
                     </View>
                     <View
-                      accessibilityComponentType={undefined}
-                      accessibilityLabel={undefined}
-                      accessibilityTraits={undefined}
-                      accessible={true}
-                      hitSlop={undefined}
-                      isTVSelectable={true}
-                      onLayout={undefined}
-                      onResponderGrant={[Function]}
-                      onResponderMove={[Function]}
-                      onResponderRelease={[Function]}
-                      onResponderTerminate={[Function]}
-                      onResponderTerminationRequest={[Function]}
-                      onStartShouldSetResponder={[Function]}
                       style={
-                        Object {
-                          "height": 37,
-                          "left": 2,
-                          "opacity": 1,
-                          "padding": 8,
-                          "position": "absolute",
-                          "top": 20,
-                          "width": 100,
-                        }
+                        Array [
+                          Object {
+                            "height": 37,
+                            "left": 2,
+                            "padding": 8,
+                            "position": "absolute",
+                            "top": 20,
+                            "width": 100,
+                          },
+                          Object {
+                            "alignItems": "flex-start",
+                          },
+                        ]
                       }
-                      testID="leftNavButton"
-                      tvParallaxProperties={undefined}
                     >
-                      <Text
+                      <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
                         accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
+                        hasTVPreferredFocus={undefined}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Array [
                             Object {
-                              "color": "rgb(0, 122, 255)",
-                              "fontSize": 17,
-                              "textAlign": "left",
+                              "backgroundColor": "transparent",
                             },
-                            Object {
-                              "color": "#ffffff",
-                              "fontFamily": "HelveticaNeue",
-                              "fontSize": 14,
-                              "fontWeight": "bold",
-                            },
-                            Object {
-                              "color": "#ffffff",
-                              "fontFamily": "HelveticaNeue",
-                              "fontSize": 14,
-                              "fontWeight": "bold",
-                            },
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ],
                           ]
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
-                        用户中心
-                      </Text>
+                        <Text
+                          accessible={true}
+                          allowFontScaling={false}
+                          ellipsizeMode="tail"
+                          style={
+                            Array [
+                              Object {
+                                "color": "#fff",
+                                "fontSize": 24,
+                              },
+                              Array [
+                                Object {
+                                  "backgroundColor": "transparent",
+                                },
+                                undefined,
+                              ],
+                              Object {
+                                "fontFamily": "Ionicons",
+                                "fontStyle": "normal",
+                                "fontWeight": "normal",
+                              },
+                            ]
+                          }
+                        >
+                          
+                        </Text>
+                      </View>
                     </View>
                     <View
                       accessibilityComponentType={undefined}

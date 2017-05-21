@@ -50,8 +50,7 @@ export default Actions.create(
         iconName={'md-home'}
         iconType={'ionicon'}
         leftTitle={'用户中心'}
-        onLeft={() => Actions.userCenter()}
-        leftButtonTextStyle={AppStyles.navbarTitle}
+        renderLeftButton={() => Helper.gotoUserCenter()}
         rightTitle={'购买纸质版'}
         onRight={() => Actions.comingSoon()}
         rightButtonTextStyle={AppStyles.navbarTitle}

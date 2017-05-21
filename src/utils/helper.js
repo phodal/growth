@@ -1,4 +1,7 @@
+import React from 'react';
 import { Platform, Linking } from 'react-native';
+import { Icon } from 'react-native-elements';
+import { Actions } from 'react-native-router-flux';
 
 class Helper {
   static openLink(link) {
@@ -22,6 +25,15 @@ class Helper {
         Linking.openURL(url);
       }
     });
+  }
+
+  static gotoUserCenter() {
+    return (
+      <Icon
+        name={'md-person'} type={'ionicon'} color={'#fff'}
+        onPress={() => Actions.userCenter()}
+      />
+    );
   }
 }
 export default Helper;
