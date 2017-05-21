@@ -167,7 +167,7 @@ class HtmlView extends React.Component {
   render() {
     if (this.state.element) {
       return (
-        <View style={{ flex: 1, paddingLeft: 15, paddingRight: 15, marginBottom: 15, backgroundColor: 'white' }}>
+        <View style={{ flex: 1, paddingLeft: 15, paddingRight: 15, paddingBottom: 15, backgroundColor: 'white' }}>
           {this.state.element}
         </View>);
     }
