@@ -13,6 +13,6 @@ describe('router test', () => {
     expect(tabs[1]).toBe('discover');
     expect(tabs[2]).toBe('skillTree');
     expect(tabs[3]).toBe('community');
-    expect(tabs[4]).toBe('userCenter');
+    expect(tabs[4]).toBe('practises');
   });
 });
