@@ -106,6 +106,14 @@ pip install -r requirements.txt
 py.test e2e/*.py
 ```
 
+
+Release && Deploy
+---
+
+```
+brew cask install fastlane	
+```
+
 Documents
 ---
 

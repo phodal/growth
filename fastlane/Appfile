@@ -1,0 +1,2 @@
+json_key_file "/Users/fdhuang/keys/7a153890bd89.json" # Path to the json secret file - Follow https://github.com/fastlane/supply#setup to get one
+package_name "ren.growth" # e.g. com.krausefx.app

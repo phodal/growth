@@ -1,0 +1,9 @@
+Growth is a app to help you become awesome developer:
+
+We design those for you:
+ 
+ - full web developer learn, development, deploy, manitance introduction
+ - skill roadmap 
+ - book roadmap
+ - web solution
+ - how to test and refactor
