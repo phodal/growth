@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Actions } from 'react-native-router-flux';
 import ListItem from 'react-native-elements/src/list/ListItem';
 import List from 'react-native-elements/src/list/List';
 import { ScrollView } from 'react-native';
@@ -41,6 +42,7 @@ class UserCenter extends Component {
         <ListItem
           title={'关于'}
           leftIcon={{ name: 'info' }}
+          onPress={Actions.aboutUs}
         />
         <ListItem
           title={'分享给好友'}
