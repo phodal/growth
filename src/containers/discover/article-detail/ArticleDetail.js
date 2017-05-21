@@ -3,23 +3,26 @@ import { ScrollView } from 'react-native';
 import AppStyle from '../../../theme/styles';
 import Api from '../../../utils/api';
 import Dialog from '../../../components/dialog';
-import SimpleListItem from '../SimpleListItem';
-import Launch from '../Launch';
+import HtmlView from '../../../components/htmlview/HtmlView';
 
-async function load(call) {
-  Api.getArticleListData()
+const marked = require('marked');
+
+async function load(path, call) {
+  Api.getArticleDetailData(path)
     .then(response => call(response.data))
     .catch(error => error);
 }
 
-class ArticleList extends Component {
-  static componentName = 'ArticleList';
+class ArticleDetail extends Component {
+  static componentName = 'ArticleDetail';
 
   static propTypes = {
+    uri: PropTypes.string.isRequired,
     dialogContent: PropTypes.string,
   };
 
   static defaultProps = {
+    uri: '',
     dialogContent: '',
   };
 
@@ -27,28 +30,26 @@ class ArticleList extends Component {
     super(props);
     this.state = {
       loading: true,
-      rowData: [],
+      rowData: null,
     };
   }
 
   componentDidMount() {
-    load((json => (
+    load(this.props.uri, json => (
       this.setState({
         loading: false,
-        rowData: Array.from(new Array(json.content.length))
-          .map((val, index) => (json.content[index])),
+        rowData: marked(json),
       })
-    )));
-  }
-  render() {
-    const rows = this.state.rowData.map((val, index) => (
-      <SimpleListItem text={val.title} click={() => Launch.articleDetail(val.path)} key={'key'.concat(index)} />
     ));
+  }
+
+  render() {
     return (
       <ScrollView style={AppStyle.detailBasisStyle}>
         <Dialog show={this.state.loading} content={this.props.dialogContent} />
-        {rows}
-      </ScrollView>);
+        <HtmlView value={this.state.rowData} />
+      </ScrollView>
+    );
   }
 }
-export default ArticleList;
+export default ArticleDetail;

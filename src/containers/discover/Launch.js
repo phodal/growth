@@ -23,6 +23,9 @@ const launch = {
   articleList: () => {
     Actions.articleList();
   },
+  articleDetail: (path) => {
+    Actions.articleDetail({ uri: path });
+  },
   examList: () => {
     Actions.examList();
   },
