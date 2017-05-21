@@ -28,6 +28,7 @@ import SkillDetailView from '../containers/skill-tree/SkillDetailView';
 import ComingSoonView from '../containers/ComingSoonView';
 import Helper from '../utils/helper';
 import TabIcon from '../components/TabIcon';
+import Practises from '../containers/practises/Practises';
 
 
 const navbarPropsTabs = {
@@ -47,6 +48,9 @@ export default Actions.create(
         title={'Growth'}
         iconName={'md-home'}
         iconType={'ionicon'}
+        leftTitle={'用户中心'}
+        onLeft={() => Actions.userCenter()}
+        leftButtonTextStyle={AppStyles.navbarTitle}
         rightTitle={'购买纸质版'}
         onRight={() => Actions.comingSoon()}
         rightButtonTextStyle={AppStyles.navbarTitle}
@@ -85,14 +89,22 @@ export default Actions.create(
       />
       <Scene
         {...navbarPropsTabs}
-        key={'userCenter'}
-        title={'用户中心'}
-        iconName={'md-person'}
+        key={'practises'}
+        title={'练习'}
+        iconName={'md-bonfire'}
         iconType={'ionicon'}
         icon={TabIcon}
-        component={UserCenter}
+        component={Practises}
       />
     </Scene>
+
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'userCenter'}
+      title={'用户中心'}
+      component={UserCenter}
+    />
 
     <Scene
       {...navbarPropsTabs}
