@@ -2,9 +2,10 @@
 import React, { PureComponent } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
-const filter = require('lodash.filter');
-
 import ForumContainer from './forum/ForumContainers';
+
+// const filter = require('lodash.filter');
+
 
 const styles = StyleSheet.create({
   container: {
