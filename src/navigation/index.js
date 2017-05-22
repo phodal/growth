@@ -30,6 +30,7 @@ import ComingSoonView from '../containers/ComingSoonView';
 import Helper from '../utils/helper';
 import TabIcon from '../components/TabIcon';
 import Practises from '../containers/practises/Practises';
+import GrEditor from '../components/GrEditor';
 
 
 const navbarPropsTabs = {
@@ -94,6 +95,9 @@ export default Actions.create(
         iconName={'md-bonfire'}
         iconType={'ionicon'}
         icon={TabIcon}
+        rightTitle={'编辑器'}
+        onRight={() => Actions.grEditor()}
+        rightButtonTextStyle={AppStyles.navbarTitle}
         component={Practises}
       />
     </Scene>
@@ -226,6 +230,14 @@ export default Actions.create(
       duration={0}
       title={'关于'}
       component={AboutUs}
+    />
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'grEditor'}
+      duration={500}
+      title={'编辑器'}
+      component={GrEditor}
     />
 
   </Scene>,
