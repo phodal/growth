@@ -2,8 +2,9 @@
 import React, { PureComponent } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
-const filter = require('lodash.filter');
+import { Divider } from 'react-native-elements';
 
+import Colors from '../../theme/colors';
 import ForumContainer from './forum/ForumContainers';
 
 const styles = StyleSheet.create({
@@ -30,10 +31,27 @@ class Community extends PureComponent {
   renderHeader = props => <TabBar {...props} />;
 
   renderElement(topic) {
-    return (<View>
-      <Text>{topic.attributes.title}</Text>
-      <Text>{topic.attributes.lastTime}</Text>
-      <Text>{topic.attributes.commentsCount - 1}</Text>
+    let sticky = '';
+    if (topic.attributes.isSticky) {
+      sticky = '置顶';
+    }
+    return (<View
+      style={{
+        height: 64,
+        backgroundColor: '#fff',
+      }}
+    >
+      <View style={{ margin: 8 }}>
+        <Text numberOfLines={1} style={{ fontSize: 15 }}>{topic.attributes.title}</Text>
+      </View>
+      <View style={{ flex: 1, flexDirection: 'row', margin: 5 }}>
+        <View style={{ marginLeft: 5, marginRight: 10 }}>
+          <Text style={{ color: Colors.brand.primary }}>{sticky}</Text>
+        </View>
+        <View><Text>{topic.attributes.lastTime}</Text></View>
+        <View style={{ alignItems: 'flex-end' }}><Text>{topic.attributes.commentsCount}</Text></View>
+      </View>
+      <Divider style={{ backgroundColor: '#eee' }} />
     </View>
     );
   }
