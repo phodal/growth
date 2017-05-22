@@ -24,10 +24,21 @@ const styles = StyleSheet.create({
 class GrEditor extends Component {
   static componentName = 'GrEditor';
 
+  static runCode() {
+    this.webview.postMessage({
+      action: 'runCode',
+    });
+  }
+
   constructor() {
     super();
     this.webview = null;
   }
+
+  handleMessage = (event: Object) => {
+    const message = event.nativeEvent.data;
+    console.log(message);
+  };
 
   render = () => {
     let source;
@@ -44,6 +55,7 @@ class GrEditor extends Component {
         }}
         startInLoadingState
         source={source}
+        onMessage={this.handleMessage}
         automaticallyAdjustContentInsets={false}
         style={[AppStyles.container, styles.container]}
         injectedJavaScript=""

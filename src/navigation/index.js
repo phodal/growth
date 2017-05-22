@@ -237,6 +237,9 @@ export default Actions.create(
       key={'grEditor'}
       duration={500}
       title={'编辑器'}
+      rightTitle={'Run'}
+      rightButtonTextStyle={AppStyles.navbarTitle}
+      onRight={() => GrEditor.runCode()}
       component={GrEditor}
     />
 
