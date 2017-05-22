@@ -668,6 +668,13 @@ exports[`test index renders correctly 1`] = `
                       "paddingTop": 0,
                       "position": "absolute",
                       "right": 0,
+                      "shadowColor": "rgba(0,0,0, .2)",
+                      "shadowOffset": Object {
+                        "height": 1,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 1,
+                      "shadowRadius": 1,
                       "top": 0,
                     }
                   }

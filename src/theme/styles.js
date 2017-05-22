@@ -10,6 +10,17 @@ export default {
   navbar: {
     backgroundColor: Colors.brand.primary,
     borderBottomWidth: 0,
+    ...Platform.select({
+      ios: {
+        shadowColor: 'rgba(0,0,0, .2)',
+        shadowOffset: { height: 1, width: 0 },
+        shadowOpacity: 1,
+        shadowRadius: 1,
+      },
+      android: {
+        elevation: 1,
+      },
+    }),
   },
   navbarTitle: {
     color: '#ffffff',
