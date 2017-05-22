@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
+import ForumContainer from './forum/ForumContainers';
 
 const styles = StyleSheet.create({
   container: {
@@ -8,7 +9,6 @@ const styles = StyleSheet.create({
   },
 });
 
-const FirstRoute = () => <View style={[styles.container, { backgroundColor: '#ff4081' }]} />;
 const SecondRoute = () => <View style={[styles.container, { backgroundColor: '#673ab7' }]} />;
 
 class Community extends PureComponent {
@@ -26,8 +26,13 @@ class Community extends PureComponent {
 
   renderHeader = props => <TabBar {...props} />;
 
+  renderElement = data =>
+    <View>
+      <Text>{data.attributes.title}</Text>
+    </View>;
+
   renderScene = SceneMap({
-    1: FirstRoute,
+    1: () => <ForumContainer url={'https://forum.growth.ren/api/discussions'} element={data => this.renderElement(data)} />,
     2: SecondRoute,
   });
 
