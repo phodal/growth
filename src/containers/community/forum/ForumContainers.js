@@ -73,8 +73,7 @@ class ForumContainer extends Component {
           canLoadMoreContent: true,
         });
       }
-    }).catch((error) => {
-      console.log(error);
+    }).catch(() => {
       this.setState({
         data: [],
         loadingMore: false,
