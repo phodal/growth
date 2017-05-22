@@ -69,7 +69,7 @@ class SuperCardView extends React.PureComponent {
     return (
       <Animatable.View
         duration={300}
-        transition="backgroundColor"
+        transition="opacity"
         style={{ backgroundColor: (isActive ? 'rgba(238, 238, 238, 1.0)' : 'rgba(238, 238, 238, 1.0)') }}
       >
         <View style={styles.cardContainer}>

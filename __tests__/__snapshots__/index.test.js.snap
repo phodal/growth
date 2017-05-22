@@ -200,6 +200,7 @@ exports[`test index renders correctly 1`] = `
                                 style={
                                   Object {
                                     "backgroundColor": "rgba(238, 238, 238, 1.0)",
+                                    "opacity": 1,
                                   }
                                 }
                               >
