@@ -1,6 +1,6 @@
 /* eslint-disable no-undef,consistent-return */
 import React, { Component, PropTypes } from 'react';
-import { ActivityIndicator } from 'react-native';
+import { View, ActivityIndicator } from 'react-native';
 import ForumView from './ForumView';
 
 class ForumContainer extends Component {
@@ -95,11 +95,15 @@ class ForumContainer extends Component {
     const { loading, originDataUrl, data, canLoadMoreContent, element } = this.state;
 
     if (loading) {
-      return (<ActivityIndicator
-        animating
-        size={'large'}
-        color={'#000'}
-      />);
+      return (<View
+        style={{ marginTop: 20 }}
+      >
+        <ActivityIndicator
+          animating
+          size={'large'}
+          color={'#000'}
+        />
+      </View>);
     }
 
     return (
