@@ -1,4 +1,4 @@
-import { Platform, Dimensions, Image } from 'react-native';
+import { Platform, Dimensions } from 'react-native';
 import Fonts from './fonts';
 import Colors from './colors';
 import Size from './sizes';
@@ -235,11 +235,6 @@ export default {
     borderLeftColor: '#dadada',
     paddingLeft: 15,
     marginTop: 15,
-  },
-  img: {
-    width: Dimensions.get('window').width - 30,
-    height: Dimensions.get('window').width - 30,
-    resizeMode: Image.resizeMode.contain,
   },
   a: {
     color: '#111',
