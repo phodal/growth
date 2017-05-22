@@ -1,7 +1,6 @@
 /* eslint-disable global-require */
 import React, { Component } from 'react';
 import { WebView, StyleSheet, Platform } from 'react-native';
-import { Actions } from 'react-native-router-flux';
 
 import AppSizes from '../theme/sizes';
 import AppStyles from '../theme/styles';
