@@ -36,7 +36,7 @@ class ForumView extends Component {
 
   componentWillMount() {
     // TODO: check componentWillReceiveProps problem
-    if (this.props.data.length > 0 && this.state.dataSource.getRowCount() < 1) {
+    if (this.props.data && this.props.data.length > 0 && this.state.dataSource.getRowCount() < 1) {
       this.setState({
         dataSource: this.getUpdatedDataSource(this.props),
         canLoadMoreContent: this.props.canLoadMoreContent,

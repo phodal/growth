@@ -1,5 +1,7 @@
 /* global jest fetch */
 
+fetch = jest.fn(() => new Promise(resolve => resolve()));
+
 jest.mock('react-native-splash-screen', () => ({
   hide: jest.fn(),
 }));
