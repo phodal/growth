@@ -4,6 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
 import { Icon, Divider } from 'react-native-elements';
 
+
 import Colors from '../../theme/colors';
 import ForumContainer from './forum/ForumContainers';
 

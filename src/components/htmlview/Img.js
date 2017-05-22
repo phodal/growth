@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
-import { Image } from 'react-native';
-import AppStyle from '../../theme/styles';
+import { Image, Dimensions } from 'react-native';
 
+const maxWidth = Dimensions.get('window').width - 30;
 class Img extends Component {
   static componentName = 'Img';
 
@@ -14,11 +14,29 @@ class Img extends Component {
     uri: '',
     component: null,
   };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      imgWidth: maxWidth,
+      imgHeight: 100,
+    };
+  }
+
+  componentDidMount() {
+    Image.getSize(this.props.uri, (width, height) => {
+      this.setState({
+        imgHeight: (maxWidth / width) * height,
+      });
+    });
+  }
   render() {
-    return (<Image
-      source={{ uri: this.props.uri }}
-      style={AppStyle.img}
-    >{this.props.component}</Image>);
+    return (
+      <Image
+        source={{ uri: this.props.uri }}
+        style={{ height: this.state.imgHeight, width: this.state.imgWidth }}
+      >{this.props.component}</Image>
+    );
   }
 }
 export default Img;

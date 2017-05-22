@@ -61,6 +61,7 @@ const htmlToElement = (rawHtml, done) => {
               <P
                 margintop={getmarginTop(node)}
                 component={domToElement(node.children)}
+                childrenName={node.children[0].name}
                 key={getKey(index)}
               />);
           case 'ul':
