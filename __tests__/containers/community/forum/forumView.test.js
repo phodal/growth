@@ -1,4 +1,3 @@
-import { Text } from 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import ForumView from '../../../../src/containers/community/forum/ForumView';
@@ -7,7 +6,7 @@ describe('test user center', () => {
   it('renders correctly', () => {
     const tree = renderer.create(
       <ForumView
-        data={undefined}
+        data={[]}
         canLoadMoreContent={false}
         onLoadMoreAsync={() => {}}
         reFetch={() => {}}
