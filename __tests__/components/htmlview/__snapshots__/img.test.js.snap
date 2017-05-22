@@ -9,8 +9,7 @@ exports[`renders correctly 1`] = `
   }
   style={
     Object {
-      "height": 720,
-      "resizeMode": "contain",
+      "height": 100,
       "width": 720,
     }
   }
