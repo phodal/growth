@@ -154,4 +154,3 @@ ENV/
 
 # mypy
 .mypy_cache/
-src/components/GrEditor

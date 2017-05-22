@@ -1,0 +1,3 @@
+[submodule "src/components/GrEditor"]
+	path = src/components/GrEditor
+	url = https://github.com/phodal/GrEditor
