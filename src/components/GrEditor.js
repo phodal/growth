@@ -1,6 +1,7 @@
 /* eslint-disable global-require */
 import React, { Component } from 'react';
 import { WebView, StyleSheet, Platform } from 'react-native';
+import EditorWebViewServices from '../utils/EditorWebViewServices';
 
 import AppSizes from '../theme/sizes';
 import AppStyles from '../theme/styles';
@@ -24,7 +25,7 @@ class GrEditor extends Component {
   static componentName = 'GrEditor';
 
   static runCode() {
-    this.webview.postMessage({
+    EditorWebViewServices.getWebview().postMessage({
       action: 'runCode',
     });
   }
@@ -51,6 +52,7 @@ class GrEditor extends Component {
       <WebView
         ref={(webview) => {
           this.webview = webview;
+          EditorWebViewServices.setWebview(webview);
         }}
         startInLoadingState
         source={source}
