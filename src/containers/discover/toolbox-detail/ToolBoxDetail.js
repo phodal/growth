@@ -7,23 +7,6 @@ import HtmlView from '../../../components/htmlview/HtmlView';
 
 const marked = require('marked');
 
-
-marked.setOptions({
-  renderer: new marked.Renderer(),
-  gfm: true,
-  tables: true,
-  breaks: false,
-  pedantic: false,
-  sanitize: false,
-  smartLists: true,
-  smartypants: false,
-});
-async function load(url, call) {
-  Api.getToolBoxDetailData(url)
-    .then(response => call(response.data))
-    .catch(error => (error));
-}
-
 class ToolBoxDetail extends Component {
   static componentName = 'ToolBoxDetail';
 
@@ -46,12 +29,10 @@ class ToolBoxDetail extends Component {
   }
 
   componentDidMount() {
-    load(this.props.url, (json) => {
-      this.setState({
+    Api.get(Api.TOOLBOX_DETAIL.concat(this.props.url))
+      .then(response => this.setState({
         loading: false,
-        html: marked(json),
-      });
-    });
+        html: marked(response.data) }));
   }
 
   render() {

@@ -43,9 +43,9 @@ class RoadmapDetail extends Component {
       hintTextMarginTop: 0,
       timer: setTimeout(
         () => this.setState({ hintTextMarginTop: -40 }),
-        3000) });
+        3000),
+    });
   }
-
 
   render() {
     const rows = this.state.rowData.map(val => (

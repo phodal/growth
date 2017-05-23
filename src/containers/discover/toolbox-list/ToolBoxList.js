@@ -6,12 +6,6 @@ import Dialog from '../../../components/dialog';
 import SimpleListItem from '../SimpleListItem';
 import Launch from '../Launch';
 
-async function load(call) {
-  Api.getToolBoxData()
-    .then(response => (call(response.data)))
-    .catch(error => error);
-}
-
 class ToolBoxList extends Component {
   static componentName = 'ToolBoxList';
 
@@ -32,18 +26,18 @@ class ToolBoxList extends Component {
   }
 
   componentDidMount() {
-    load(json => (
-      this.setState({
+    Api.get(Api.TOOLBOX_LIST)
+      .then(response => this.setState({
         loading: false,
-        rowData: Array.from(new Array(json.content.length))
-        .map((val, index) => json.content[index]) })
-     ));
+        rowData: Array.from(new Array(response.data.content.length))
+          .map((val, index) =>
+            response.data.content[index]) }));
   }
 
   render() {
-    const rows = this.state.rowData.map(val => (
+    const rows = this.state.rowData.map((val, index) => (
       <SimpleListItem
-        key={val.title}
+        key={'key'.concat(index)}
         text={val.title}
         click={() => { Launch.toolBoxDetail(val.path); }}
       />
@@ -51,8 +45,9 @@ class ToolBoxList extends Component {
     return (<ScrollView style={AppStyle.detailBasisStyle}>
       <Dialog show={this.state.loading} content={this.props.dialogContent} />
       {
-        !this.state.loading ?
-        rows : null
+        !this.state.loading
+          ? rows
+          : null
       }
     </ScrollView>);
   }

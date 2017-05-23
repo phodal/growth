@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { ScrollView } from 'react-native';
 import TimeLine from '../TimeLineView';
-import AppSize from '../../../theme/sizes';
+import AppStyle from '../../../theme/styles';
 
 const parse = (value, re) => (value.replace(re, '\r\n'));
 
@@ -42,7 +42,7 @@ class RoadmapDetail extends Component {
       />
     ));
     return (
-      <ScrollView style={{ marginTop: AppSize.navbarHeight, backgroundColor: '#E9EBEE' }}>
+      <ScrollView style={AppStyle.detailBasisStyle}>
         {rows}
       </ScrollView>
     );
