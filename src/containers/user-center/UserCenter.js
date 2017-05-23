@@ -64,14 +64,17 @@ class UserCenter extends Component {
       </List>
       <List>
         <ListItem
+          hideChevron
           title={'微信公众号'}
           leftIcon={{ name: 'code' }}
+          subtitle={'phodal-weixin'}
         />
         <ListItem
           title={'支持开发'}
           leftIcon={{ name: 'work' }}
         />
         <ListItem
+          hideChevron
           title={'当前版本'}
           rightTitle={this.state.version}
         />
