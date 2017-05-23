@@ -51,5 +51,4 @@ const launch = {
     Helper.openLink(link);
   },
 };
-
 export default launch;

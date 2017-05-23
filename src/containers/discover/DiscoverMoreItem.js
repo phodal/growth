@@ -2,8 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import { View, Text, Image, TouchableHighlight } from 'react-native';
 import AppStyle from '../../theme/styles';
 
-const defaultClick = () => {};
-
 class MoreItem extends Component {
   static propTypes = {
     imageParentStyle: View.propTypes.style,
@@ -35,7 +33,7 @@ class MoreItem extends Component {
     title: '',
     titleColor: '#03a9f4',
     titleStyle: AppStyle.discoverMoreItemTitle,
-    onclick: defaultClick,
+    onclick: () => {},
     top: 0,
   };
 
@@ -54,5 +52,4 @@ class MoreItem extends Component {
     </TouchableHighlight>
   );
 }
-
 export default MoreItem;

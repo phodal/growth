@@ -35,7 +35,6 @@ class Img extends Component {
 
   componentWillUnmount() {
     this.state.notdestroy = false;
-    console.log('componentWillUnmount');
   }
   render() {
     return (
