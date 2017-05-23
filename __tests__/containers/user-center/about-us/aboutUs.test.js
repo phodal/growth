@@ -6,7 +6,7 @@ import { shallow } from 'enzyme';
 import * as chai from 'chai';
 import ListItem from 'react-native-elements/src/list/ListItem';
 
-import AboutUs, { Label } from '../../../src/containers/user-center/AboutUs';
+import AboutUs, { Label } from '../../../../src/containers/user-center/about-us/AboutUs';
 
 describe('test user center / about us', () => {
   it('renders correctly', () => {

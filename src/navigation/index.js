@@ -7,7 +7,7 @@ import AppSizes from '../theme/sizes';
 import AppStyles from '../theme/styles';
 import Community from '../containers/community/Community';
 import UserCenter from '../containers/user-center/UserCenter';
-import AboutUs from '../containers/user-center/AboutUs';
+import AboutUs from '../containers/user-center/about-us/AboutUs';
 import Discover from '../containers/discover/Discover';
 import RoadmapList from '../containers/discover/roadmap-list/RoadmapList';
 import RoadmapDetail from '../containers/discover/roadmap-detail/RoadmapDetail';

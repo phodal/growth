@@ -1,7 +1,7 @@
 import React from 'react';
 import { Linking, ScrollView, Text, View } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
-import AppStyle from '../../theme/styles';
+import AppStyle from '../../../theme/styles';
 
 const contributors = [{
   avatar: 'https://facebook.github.io/react/img/logo_og.png',
