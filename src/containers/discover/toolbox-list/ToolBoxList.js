@@ -3,8 +3,8 @@ import { ScrollView } from 'react-native';
 import AppStyle from '../../../theme/styles';
 import Api from '../../../utils/api';
 import Dialog from '../../../components/dialog';
-import SimpleListItem from '../SimpleListItem';
-import Launch from '../Launch';
+import SimpleListItem from '../../../components/discover/view/SimpleListItem';
+import Launch from '../../../components/discover/Launch';
 
 class ToolBoxList extends Component {
   static componentName = 'ToolBoxList';

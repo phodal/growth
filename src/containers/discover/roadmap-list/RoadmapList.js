@@ -2,9 +2,9 @@ import React, { Component, PropTypes } from 'react';
 import { ScrollView } from 'react-native';
 import Api from '../../../utils/api';
 import AppStyle from '../../../theme/styles';
-import Launch from '../Launch';
+import Launch from '../../../components/discover/Launch';
 import Dialog from '../../../components/dialog';
-import SimpleListItem from '../SimpleListItem';
+import SimpleListItem from '../../../components/discover/view/SimpleListItem';
 
 class RoadmapList extends Component {
   static componentName = 'RoadmapList';

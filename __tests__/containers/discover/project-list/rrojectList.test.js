@@ -2,7 +2,7 @@ import 'react-native';
 import React, {} from 'react';
 import renderer from 'react-test-renderer';
 import ProjectList from '../../../../src/containers/discover/project-list/ProjectList';
-import TIPS from '../../../../assets/TIPS';
+import TIPS from '../../../../assets/data/TIPS';
 
 it('renders correctly', () => {
   const projectList = renderer.create(

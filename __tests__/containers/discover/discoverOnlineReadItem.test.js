@@ -1,7 +1,7 @@
 import 'react-native';
 import React, {} from 'react';
 import renderer from 'react-test-renderer';
-import DiscoverOnlineReadItem from '../../../src/containers/discover/DiscoverOnlineReadItem';
+import DiscoverOnlineReadItem from '../../../src/components/discover/view/DiscoverOnlineReadItem';
 
 const home1 = require('../../../assets/growth-ui/img/home-1.jpg');
 

@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { TouchableHighlight, View, Text } from 'react-native';
-import AppStyle from '../../theme/styles';
+import AppStyle from '../../../theme/styles';
 
 class SimpleListItem extends Component {
   static componentName = 'SimpleListItem';

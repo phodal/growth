@@ -2,7 +2,7 @@ import 'react-native';
 import React, {} from 'react';
 import renderer from 'react-test-renderer';
 import ToolBoxDetail from '../../../../src/containers/discover/toolbox-detail/ToolBoxDetail';
-import TIPS from '../../../../assets/TIPS';
+import TIPS from '../../../../assets/data/TIPS';
 
 it('renders correctly', () => {
   const toolBoxDetail = renderer.create(

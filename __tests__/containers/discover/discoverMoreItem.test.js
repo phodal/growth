@@ -1,7 +1,7 @@
 import 'react-native';
 import React, {} from 'react';
 import renderer from 'react-test-renderer';
-import DiscoverMoreItem from '../../../src/containers/discover/DiscoverMoreItem';
+import DiscoverMoreItem from '../../../src/components/discover/view/DiscoverMoreItem';
 
 const home3 = require('../../../assets/growth-ui/img/home-3.jpg');
 

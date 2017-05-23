@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { ScrollView } from 'react-native';
 import Api from '../../../utils/api';
 import AppStyle from '../../../theme/styles';
-import GroupList from './ProjectListItem';
+import GroupList from '../../../components/discover/view/ProjectListItem';
 import Dialog from '../../../components/dialog';
 
 class ProjectList extends Component {

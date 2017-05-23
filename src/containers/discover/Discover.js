@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import AppStyle from '../../theme/styles';
-import MoreItem from './DiscoverMoreItem';
-import GridItem from './DiscoverGridItem';
-import OnLineRead from './DiscoverOnlineReadItem';
-import Launch from './Launch';
+import MoreItem from '../../components/discover/view/DiscoverMoreItem';
+import GridItem from '../../components/discover/view/DiscoverGridItem';
+import OnLineRead from '../../components/discover/view/DiscoverOnlineReadItem';
+import Launch from '../../components/discover/Launch';
 
 const home1 = require('../../../assets/growth-ui/img/home-1.jpg');
 const home2 = require('../../../assets/growth-ui/img/home-2.jpg');

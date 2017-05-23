@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { ScrollView } from 'react-native';
+import AppStyle from '../../../theme/styles';
 
 class ExamList extends Component {
   static componentName = 'ExamList';
   render = () => (
-    <Text>ExamList</Text>
+    <ScrollView style={AppStyle.detailBasisStyle}>ExamList</ScrollView>
   );
 }
 export default ExamList;
