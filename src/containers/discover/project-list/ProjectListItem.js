@@ -6,7 +6,6 @@ import Launch from '../Launch';
 class ProjectListItem extends Component {
   static componentName = 'ProjectListItem';
 
-
   static propTypes = {
     content: PropTypes.shape(
       PropTypes.string.isRequired,
@@ -33,7 +32,6 @@ class ProjectListItem extends Component {
       rowData: Array.from(new Array(this.props.content.subdomains.length))
         .map((val, index) => (this.props.content.subdomains[index])) };
   }
-
 
   render() {
     const rows = this.state.rowData.map(val => (

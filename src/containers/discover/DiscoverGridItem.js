@@ -8,8 +8,6 @@ const clickItemUnderlayColor = 'rgba(250,250,250, .9)';
 const LEFT = 'left';
 const RIGHT = 'right';
 
-const defaultClick = () => {};
-
 class GridItem extends Component {
   static componentName = 'GridItem';
 
@@ -32,7 +30,7 @@ class GridItem extends Component {
     iconSize: iconsSize,
     titleStyle: AppStyle.discoverGridTextItem,
     title: '',
-    onclick: defaultClick,
+    onclick: () => {},
     itemUnderlayColor: clickItemUnderlayColor,
     position: LEFT,
 
@@ -52,7 +50,5 @@ class GridItem extends Component {
       </View>
     </TouchableHighlight>
   );
-
 }
-
 export default GridItem;

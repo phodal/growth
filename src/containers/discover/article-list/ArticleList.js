@@ -6,12 +6,6 @@ import Dialog from '../../../components/dialog';
 import SimpleListItem from '../SimpleListItem';
 import Launch from '../Launch';
 
-async function load(call) {
-  Api.getArticleListData()
-    .then(response => call(response.data))
-    .catch(error => error);
-}
-
 class ArticleList extends Component {
   static componentName = 'ArticleList';
 
@@ -32,14 +26,13 @@ class ArticleList extends Component {
   }
 
   componentDidMount() {
-    load((json => (
-      this.setState({
+    Api.get(Api.ARTICLE_LIST)
+      .then(response => this.setState({
         loading: false,
-        rowData: Array.from(new Array(json.content.length))
-          .map((val, index) => (json.content[index])),
-      })
-    )));
+        rowData: Array.from(new Array(response.data.content.length))
+          .map((val, index) => (response.data.content[index])) }));
   }
+
   render() {
     const rows = this.state.rowData.map((val, index) => (
       <SimpleListItem text={val.title} click={() => Launch.articleDetail(val.path)} key={'key'.concat(index)} />

@@ -2,8 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import { View, Text, Image, TouchableHighlight } from 'react-native';
 import AppStyle from '../../theme/styles';
 
-const defaultClick = () => {};
-
 class OnLineReadItem extends Component {
   static propTypes = {
     imageParentStyle: View.propTypes.style,
@@ -33,7 +31,7 @@ class OnLineReadItem extends Component {
     imageStyle: AppStyle.discoverOnlineItemImage,
     title: '',
     titleStyle: AppStyle.discoverOnlineItemTitle,
-    onclick: defaultClick,
+    onclick: () => {},
     top: 0,
   };
 
@@ -51,5 +49,4 @@ class OnLineReadItem extends Component {
     </TouchableHighlight>
   );
 }
-
 export default OnLineReadItem;

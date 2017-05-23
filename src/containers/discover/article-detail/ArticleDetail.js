@@ -7,12 +7,6 @@ import HtmlView from '../../../components/htmlview/HtmlView';
 
 const marked = require('marked');
 
-async function load(path, call) {
-  Api.getArticleDetailData(path)
-    .then(response => call(response.data))
-    .catch(error => error);
-}
-
 class ArticleDetail extends Component {
   static componentName = 'ArticleDetail';
 
@@ -35,12 +29,10 @@ class ArticleDetail extends Component {
   }
 
   componentDidMount() {
-    load(this.props.uri, json => (
-      this.setState({
+    Api.get(Api.ARTICLE_DETAIL.concat(this.props.uri))
+      .then(response => this.setState({
         loading: false,
-        rowData: marked(json),
-      })
-    ));
+        rowData: marked(response.data) }));
   }
 
   render() {

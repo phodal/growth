@@ -5,16 +5,14 @@ axios.defaults.baseURL = 'https://phodal.coding.me/growth/';
 axios.defaults.headers.common = ['token'];
 
 class Api {
-  static getRoadMapListData = () => (axios.get('awesome/api/all.json'));
+  static ROADMAP_LIST = 'awesome/api/all.json';
+  static PROJECT_LIST = 'project/api/all.json';
+  static TOOLBOX_LIST = 'toolbox/api/all.json';
+  static TOOLBOX_DETAIL = 'toolbox/';
+  static ARTICLE_LIST = 'articles/api/all.json';
+  static ARTICLE_DETAIL = 'articles/';
 
-  static getProjectListData = () => (axios.get('project/api/all.json'));
+  static get = url => axios.get(url);
 
-  static getToolBoxData = () => (axios.get('toolbox/api/all.json'));
-
-  static getToolBoxDetailData = url => (axios.get('toolbox/'.concat(url)));
-
-  static getArticleListData = () => (axios.get('articles/api/all.json'));
-
-  static getArticleDetailData = url => (axios.get('articles/'.concat(url)));
 }
 export default Api;

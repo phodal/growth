@@ -6,12 +6,6 @@ import Launch from '../Launch';
 import Dialog from '../../../components/dialog';
 import SimpleListItem from '../SimpleListItem';
 
-async function load(call) {
-  Api.getRoadMapListData()
-    .then(response => (call(response.data)))
-    .catch(error => (error));
-}
-
 class RoadmapList extends Component {
   static componentName = 'RoadmapList';
 
@@ -32,14 +26,13 @@ class RoadmapList extends Component {
   }
 
   componentDidMount() {
-    load((json => (
-      this.setState(
-        {
+    Api.get(Api.ROADMAP_LIST)
+      .then(response => (
+        this.setState({
           loading: false,
-          rowData: Array.from(new Array(json.content.length)).map((val, index) => (
-            json.content[index])),
-        },
-      ))));
+          rowData: Array.from(new Array(response.data.content.length))
+            .map((val, index) => (
+            response.data.content[index])) })));
   }
 
   render() {
@@ -54,8 +47,10 @@ class RoadmapList extends Component {
     return (
       <ScrollView style={AppStyle.detailBasisStyle} >
         <Dialog show={this.state.loading} content={this.props.dialogContent} />
-        { !this.state.loading ?
-            rows : null
+        {
+          !this.state.loading
+            ? rows
+            : null
           }
       </ScrollView>
     );
