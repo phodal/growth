@@ -55,9 +55,11 @@ class Community extends PureComponent {
       <View style={{ margin: 8 }}>
         <Text numberOfLines={1} style={{ fontSize: 15 }}>{topic.attributes.title}</Text>
       </View>
-      <View style={{ flex: 1, flexDirection: 'row', margin: 8 }}>
-        {sticky}
-        <View><Text style={{ color: '#333' }}>{topic.attributes.lastTime}</Text></View>
+      <View style={{ flex: 1, flexDirection: 'row', margin: 8, justifyContent: 'space-between' }}>
+        <View style={{ flex: 1, flexDirection: 'row' }}>
+          {sticky}
+          <View><Text style={{ color: '#333' }}>{topic.attributes.lastTime}</Text></View>
+        </View>
         <View style={{ flexDirection: 'row' }}>
           <Icon style={{ marginLeft: 5, marginRight: 5 }} name={'ios-chatboxes-outline'} type={'ionicon'} color={'#333'} />
           <Text>{topic.attributes.commentsCount}</Text>
