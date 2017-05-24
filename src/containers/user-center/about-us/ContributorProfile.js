@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linking, ScrollView, Text, View } from 'react-native';
+import { Linking, ScrollView } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
 import AppStyle from '../../../theme/styles';
 import Label from './Label';
@@ -53,6 +53,7 @@ const ContributorProfile = props => (
 );
 
 ContributorProfile.propTypes = {
+  // TODO: use flowtype?
   // eslint-disable-next-line
   contributor: React.PropTypes.object.isRequired,
 };
