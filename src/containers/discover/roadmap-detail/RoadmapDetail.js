@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { ScrollView } from 'react-native';
-import TimeLine from '../../../components/discover/toadmap-detail/view/TimeLineView';
+import TimeLine from '../../../components/discover/roadmap-detail/view/TimeLineView';
 import AppStyle from '../../../theme/styles';
 
 const parse = (value, re) => (value.replace(re, '\r\n'));
