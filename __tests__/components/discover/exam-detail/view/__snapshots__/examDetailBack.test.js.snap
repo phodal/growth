@@ -58,7 +58,7 @@ exports[`renders correctly 1`] = `
         }
       }
     >
-      bakc
+      back
     </Text>
   </View>
 </View>
