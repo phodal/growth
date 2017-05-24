@@ -13,7 +13,7 @@ class ExamDetailBack extends Component {
           onPress={() => Actions.pop()}
           style={AppStyle.examDetailBackStyle}
         >
-          <Text style={{ color: '#03a9f4' }}>bakc</Text>
+          <Text style={{ color: '#03a9f4' }}>back</Text>
         </TouchableHighlight>
       </View>
     );
