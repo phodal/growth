@@ -18,6 +18,7 @@ import ToolBoxDetail from '../containers/discover/toolbox-detail/ToolBoxDetail';
 import ArticleList from '../containers/discover/article-list/ArticleList';
 import ArticleDetail from '../containers/discover/article-detail/ArticleDetail';
 import ExamList from '../containers/discover/exam-list/ExamList';
+import ExamDetail from '../containers/discover/exam-detail/ExamDetail';
 import Solution from '../containers/discover/solution/Solution';
 import ThoughtworksBooks from '../containers/discover/thoughtworks-books/ThoughtworksBooks';
 import RecommendBooks from '../containers/discover/recommend-books/RecommendBooks';
@@ -183,6 +184,14 @@ export default Actions.create(
       title={'技能测验'}
       component={ExamList}
     />
+
+    <Scene
+      key={'examDetail'}
+      duration={0}
+      hideNavBar
+      component={ExamDetail}
+    />
+
     <Scene
       key={'solution'}
       duration={0}
