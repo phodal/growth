@@ -1,8 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test user center / about us renders correctly 1`] = `null`;
-
-exports[`test user center / about us test for rendering Label 1`] = `
+exports[`test user center / about us / label renders correctly 1`] = `
 <View
   style={
     Object {

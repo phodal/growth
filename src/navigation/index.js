@@ -7,7 +7,8 @@ import AppSizes from '../theme/sizes';
 import AppStyles from '../theme/styles';
 import Community from '../containers/community/Community';
 import UserCenter from '../containers/user-center/UserCenter';
-import AboutUs from '../containers/user-center/AboutUs';
+import AboutUs from '../containers/user-center/about-us/AboutUs';
+import ContributorProfile from '../containers/user-center/about-us/ContributorProfile';
 import Discover from '../containers/discover/Discover';
 import RoadmapList from '../containers/discover/roadmap-list/RoadmapList';
 import RoadmapDetail from '../containers/discover/roadmap-detail/RoadmapDetail';
@@ -227,9 +228,14 @@ export default Actions.create(
 
     <Scene
       key={'aboutUs'}
-      duration={0}
       title={'关于'}
       component={AboutUs}
+    />
+
+    <Scene
+      key={'contributorProfile'}
+      title={'Contributor Profile'}
+      component={ContributorProfile}
     />
 
     <Scene

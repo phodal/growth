@@ -1,29 +1,31 @@
 import React from 'react';
-import { Linking, ScrollView, Text, View } from 'react-native';
+import { Linking, ScrollView } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
-import AppStyle from '../../theme/styles';
+import { Actions } from 'react-native-router-flux';
+import AppStyle from '../../../theme/styles';
+import Label from './Label';
 
 const contributors = [{
-  avatar: 'https://facebook.github.io/react/img/logo_og.png',
-  name: 'Name Placeholder',
-  description: 'Placeholder',
+  nickname: 'nickname',
+  duty: 'duty',
+  bio: 'bio',
+  profile: {
+    github: 'github',
+    weibo: 'weibo',
+    zhihu: 'zhihu',
+    blog: 'https://example.org',
+  },
 }, {
-  avatar: 'https://facebook.github.io/react/img/logo_og.png',
-  name: 'Name Placeholder 1',
-  description: 'Placeholder 1',
+  nickname: 'nickname-1',
+  duty: 'duty-1',
+  bio: 'bio-1',
+  profile: {
+    github: 'github-1',
+  },
 }];
 
-export const Label = props => (
-  <View style={{ paddingLeft: 20, marginTop: 12, marginBottom: -6 }}>
-    <Text style={{ fontSize: 14 }}>
-      {props.text}
-    </Text>
-  </View>
-);
-
-Label.propTypes = {
-  text: React.PropTypes.string.isRequired,
-};
+const avatarOnGitHub = user =>
+  `https://avatars.githubusercontent.com/${user}?v=3&s=40`;
 
 const AboutUs = () => (
   <ScrollView style={AppStyle.userCenterBasisStyle}>
@@ -48,10 +50,11 @@ const AboutUs = () => (
     <List>
       {contributors.map(contributor =>
         <ListItem
-          key={contributor.name}
-          title={contributor.name}
-          subtitle={contributor.description}
-          avatar={{ uri: contributor.avatar }}
+          key={contributor.nickname}
+          title={contributor.nickname}
+          subtitle={contributor.bio}
+          avatar={{ uri: avatarOnGitHub(contributor.profile.github) }}
+          onPress={() => Actions.contributorProfile({ contributor })}
           roundAvatar
           hideChevron
         />,
