@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { View, Text, TouchableHighlight } from 'react-native';
-import Icon from '../../icon/GrowthFont';
-import AppStyle from '../../theme/styles';
+import Icon from '../../../icon/GrowthFont';
+import AppStyle from '../../../theme/styles';
 
 const iconsSize = 30;
 const clickItemUnderlayColor = 'rgba(250,250,250, .9)';

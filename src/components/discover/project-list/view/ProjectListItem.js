@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { Text, View, TouchableHighlight } from 'react-native';
-import AppStyle from '../../../theme/styles';
-import Launch from '../Launch';
+import AppStyle from '../../../../theme/styles';
+import Launch from '../../Launch';
 
 class ProjectListItem extends Component {
   static componentName = 'ProjectListItem';

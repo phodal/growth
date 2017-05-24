@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { View, Text, Image, TouchableHighlight } from 'react-native';
-import AppStyle from '../../theme/styles';
+import AppStyle from '../../../theme/styles';
 
-class OnLineReadItem extends Component {
+class MoreItem extends Component {
   static propTypes = {
     imageParentStyle: View.propTypes.style,
     image: PropTypes.oneOfType([
@@ -20,17 +20,19 @@ class OnLineReadItem extends Component {
         }))]),
     imageStyle: Image.propTypes.style,
     title: PropTypes.string.isRequired,
+    titleColor: PropTypes.string,
     titleStyle: Text.propTypes.style,
     onclick: PropTypes.func,
     top: PropTypes.number,
   };
 
   static defaultProps = {
-    imageParentStyle: AppStyle.discoverOnlineItem,
+    imageParentStyle: AppStyle.discoverMoreItem,
     image: '',
-    imageStyle: AppStyle.discoverOnlineItemImage,
+    imageStyle: AppStyle.discoverMoreItemImage,
     title: '',
-    titleStyle: AppStyle.discoverOnlineItemTitle,
+    titleColor: '#03a9f4',
+    titleStyle: AppStyle.discoverMoreItemTitle,
     onclick: () => {},
     top: 0,
   };
@@ -41,12 +43,13 @@ class OnLineReadItem extends Component {
       style={{ flex: 1, marginTop: this.props.top }}
     >
       <View style={this.props.imageParentStyle}>
-        <Image source={this.props.image} style={this.props.imageStyle} />
-        <View style={this.props.titleStyle}>
-          <Text>{this.props.title}</Text>
-        </View>
+        <Image source={this.props.image} style={this.props.imageStyle} >
+          <View style={this.props.titleStyle}>
+            <Text style={{ color: this.props.titleColor }}>{this.props.title}</Text>
+          </View>
+        </Image>
       </View>
     </TouchableHighlight>
   );
 }
-export default OnLineReadItem;
+export default MoreItem;

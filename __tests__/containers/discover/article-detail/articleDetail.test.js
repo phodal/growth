@@ -2,7 +2,7 @@ import 'react-native';
 import React, {} from 'react';
 import renderer from 'react-test-renderer';
 import ArticleDetail from '../../../../src/containers/discover/article-detail/ArticleDetail';
-import TIPS from '../../../../assets/TIPS';
+import TIPS from '../../../../assets/data/TIPS';
 
 it('renders correclty', () => {
   const articleDetail = renderer.create(

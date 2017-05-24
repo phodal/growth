@@ -221,6 +221,25 @@ export default {
     height: 40,
     backgroundColor: 'rgba(0,0,0,.3)',
   },
+  examDetailIndicatorStyle: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    padding: 8,
+  },
+  examDetailContentStyle: {
+    flex: 1,
+    alignItems: 'center',
+    paddingLeft: 15,
+    paddingRight: 15,
+    marginTop: 50,
+  },
+  examDetailBackStyle: {
+    width: 60,
+    height: 30,
+    marginRight: 15,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   h: {
     width: Dimensions.get('window').width - 30,
     textAlign: 'center',

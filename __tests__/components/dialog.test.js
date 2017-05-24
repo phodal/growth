@@ -5,7 +5,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 
 import Dialog from '../../src/components/dialog';
-import TIPS from '../../assets/TIPS';
+import TIPS from '../../assets/data/TIPS';
 
 it('renders correctly', () => {
   // eslint-disable-next-line no-unused-vars

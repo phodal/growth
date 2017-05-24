@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { View, Text, Modal } from 'react-native';
 import Spinkit from 'react-native-spinkit';
 import AppStyle from '../theme/styles';
-import TIPS from '../../assets/TIPS';
+import TIPS from '../../assets/data/TIPS';
 
 function hide() {
   setTimeout(() =>
