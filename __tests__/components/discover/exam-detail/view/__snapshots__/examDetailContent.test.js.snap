@@ -2,25 +2,26 @@
 
 exports[`renders correctly 1`] = `
 <View
+  onMoveShouldSetResponder={[Function]}
+  onMoveShouldSetResponderCapture={[Function]}
+  onResponderEnd={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderReject={[Function]}
+  onResponderRelease={[Function]}
+  onResponderStart={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  onStartShouldSetResponderCapture={[Function]}
   style={
     Object {
+      "backgroundColor": "rgba(0,0,0,0)",
       "flex": 1,
     }
   }
 >
   <View
-    onMoveShouldSetResponder={[Function]}
-    onMoveShouldSetResponderCapture={[Function]}
-    onResponderEnd={[Function]}
-    onResponderGrant={[Function]}
-    onResponderMove={[Function]}
-    onResponderReject={[Function]}
-    onResponderRelease={[Function]}
-    onResponderStart={[Function]}
-    onResponderTerminate={[Function]}
-    onResponderTerminationRequest={[Function]}
-    onStartShouldSetResponder={[Function]}
-    onStartShouldSetResponderCapture={[Function]}
     style={
       Object {
         "alignItems": "center",
