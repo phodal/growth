@@ -17,18 +17,25 @@ class ExamDetailContent extends Component {
       PropTypes.string,
     ),
     onIndexChangeListener: PropTypes.func,
+    test: PropTypes.bool,
   };
 
   static defaultProps = {
     quizs: [],
     onIndexChangeListener: () => {},
+    test: false,
   };
 
   constructor(props) {
     super(props);
     this.state = {
-      randomIndex: Math.floor(Math.random() * (this.props.quizs.length - 9)),
-      text: this.props.quizs[Math.floor(Math.random() * (this.props.quizs.length - 9))],
+      randomIndex: this.props.test
+        ? 0
+        : Math.floor(Math.random() * (this.props.quizs.length - 9)),
+      text: this.props.quizs[
+        this.props.test
+          ? 0
+          : Math.floor(Math.random() * (this.props.quizs.length - 9))],
       index: 0,
     };
   }

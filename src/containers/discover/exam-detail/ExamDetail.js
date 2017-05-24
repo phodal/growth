@@ -37,10 +37,12 @@ class ExamDetail extends Component {
     quizs: PropTypes.arrayOf(
       PropTypes.string,
     ),
+    test: PropTypes.bool,
   };
 
   static defaultProps = {
     quizs: [],
+    test: false,
   };
 
   constructor(props) {
@@ -57,6 +59,7 @@ class ExamDetail extends Component {
         <Content
           quizs={this.props.quizs}
           onIndexChangeListener={position => this.setState({ index: position })}
+          test={this.props.test}
         />
       </View>
     );
