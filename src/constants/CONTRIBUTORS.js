@@ -1,6 +1,6 @@
-const CONTRIBUTORS = [
-  {
-    version: '1.0, 2.0',
+const CONTRIBUTORS = {
+  2: {
+    title: '1.0, 2.0',
     contributors: [
       {
         nickname: 'Phodal',
@@ -62,10 +62,10 @@ const CONTRIBUTORS = [
       },
     ],
   },
-  {
+  3: {
     version: '3.0',
     contributors: [],
   },
-];
+};
 
 export default CONTRIBUTORS;
