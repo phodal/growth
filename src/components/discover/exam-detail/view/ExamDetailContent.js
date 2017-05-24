@@ -80,9 +80,11 @@ class ExamDetailContent extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1 }}>
+      <View
+        {...this.panResponder.panHandlers}
+        style={{ flex: 1, backgroundColor: 'rgba(0,0,0,0)' }}
+      >
         <View
-          {...this.panResponder.panHandlers}
           style={AppStyle.examDetailContentStyle}
         >
           <Text>{this.state.text}</Text>
