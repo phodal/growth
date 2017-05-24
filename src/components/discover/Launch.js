@@ -29,6 +29,9 @@ const launch = {
   examList: () => {
     Actions.examList();
   },
+  examDetail: (quiz) => {
+    Actions.examDetail({ quizs: quiz });
+  },
   solution: () => {
     Actions.solution();
   },
