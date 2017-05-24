@@ -3,8 +3,8 @@ import { ScrollView } from 'react-native';
 import AppStyle from '../../../theme/styles';
 import SimpleListItem from '../../../components/discover/view/SimpleListItem';
 import Launch from '../../../components/discover/Launch';
-import EXAM_LIST from '../../../../assets/data/EXAM_LIST';
-import QUIZS from '../../../../assets/data/QUIZS';
+import QUIZS from '../../../constants/QUIZS';
+import EXAM_LIST from '../../../constants/EXAM_LIST';
 
 function swtichQuiz(name) {
   switch (name) {
