@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, TouchableHighlight, Text } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import AppStyle from '../../../theme/styles';
+import AppStyle from '../../../../theme/styles';
 
 class ExamDetailBack extends Component {
   static componentName = 'ExamDetailBack';

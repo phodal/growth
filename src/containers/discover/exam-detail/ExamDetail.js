@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { View } from 'react-native';
-import ExamDetailBack from './ExamDetailBack';
-import Content from './ExamDetailContent';
+import ExamDetailBack from '../../../components/discover/exam-detail/view/ExamDetailBack';
+import Content from '../../../components/discover/exam-detail/view/ExamDetailContent';
 
 function getColor(index) {
   switch (index % 9) {

@@ -1,8 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 import { View } from 'react-native';
 import { Icon } from 'react-native-elements';
-import AppStyle from '../../../theme/styles';
-import ICON_LIST, { iconSize, iconType, defaultIcon } from '../../../../assets/data/QUIZS_ICON';
+import AppStyle from '../../../../theme/styles';
+import ICON_LIST, { iconSize, iconType, defaultIcon } from '../../../../../assets/data/QUIZS_ICON';
 
 class ExamDetailBack extends Component {
   static componentName = 'ExamDetailBack';

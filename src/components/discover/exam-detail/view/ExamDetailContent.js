@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { View, Text, PanResponder } from 'react-native';
 import Indicator from './ExamDetailIndicator';
-import AppStyle from '../../../theme/styles';
+import AppStyle from '../../../../theme/styles';
 
 let startX;
 let endX;
