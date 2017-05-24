@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test user center / about us / label renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "marginBottom": -6,
+      "marginTop": 12,
+      "paddingLeft": 20,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 14,
+      }
+    }
+  >
+    LabelText
+  </Text>
+</View>
+`;

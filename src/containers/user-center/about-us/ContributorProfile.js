@@ -2,6 +2,7 @@ import React from 'react';
 import { Linking, ScrollView, Text, View } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
 import AppStyle from '../../../theme/styles';
+import Label from './Label';
 
 const profileItemRenders = {
   github: value => (
@@ -44,11 +45,7 @@ const genProfileItems = (profile) => {
 
 const ContributorProfile = props => (
   <ScrollView style={AppStyle.userCenterBasisStyle}>
-    <View style={{ paddingLeft: 20, marginTop: 12, marginBottom: -6 }}>
-      <Text style={{ fontSize: 14 }}>
-        {props.contributor.duty}
-      </Text>
-    </View>
+    <Label text={props.contributor.duty} />
     <List>
       {genProfileItems(props.contributor.profile)}
     </List>

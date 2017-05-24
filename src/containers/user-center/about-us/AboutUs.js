@@ -1,8 +1,9 @@
 import React from 'react';
-import { Linking, ScrollView, Text, View } from 'react-native';
+import { Linking, ScrollView } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
 import AppStyle from '../../../theme/styles';
+import Label from './Label';
 
 const contributors = [{
   nickname: 'nickname',
@@ -22,18 +23,6 @@ const contributors = [{
     github: 'github-1',
   },
 }];
-
-export const Label = props => (
-  <View style={{ paddingLeft: 20, marginTop: 12, marginBottom: -6 }}>
-    <Text style={{ fontSize: 14 }}>
-      {props.text}
-    </Text>
-  </View>
-);
-
-Label.propTypes = {
-  text: React.PropTypes.string.isRequired,
-};
 
 const avatarOnGitHub = user =>
   `https://avatars.githubusercontent.com/${user}?v=3&s=40`;

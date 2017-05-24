@@ -228,14 +228,12 @@ export default Actions.create(
 
     <Scene
       key={'aboutUs'}
-      duration={0}
       title={'关于'}
       component={AboutUs}
     />
 
     <Scene
       key={'contributorProfile'}
-      duration={0}
       title={'Contributor Profile'}
       component={ContributorProfile}
     />
