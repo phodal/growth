@@ -1,6 +1,7 @@
 import React from 'react';
 import { Linking, ScrollView, Text, View } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
+import { Actions } from 'react-native-router-flux';
 import AppStyle from '../../../theme/styles';
 
 const contributors = [{
@@ -64,6 +65,7 @@ const AboutUs = () => (
           title={contributor.nickname}
           subtitle={contributor.bio}
           avatar={{ uri: avatarOnGitHub(contributor.profile.github) }}
+          onPress={() => Actions.contributorProfile({ contributor })}
           roundAvatar
           hideChevron
         />,
