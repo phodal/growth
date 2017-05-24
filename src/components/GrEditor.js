@@ -25,9 +25,10 @@ class GrEditor extends Component {
   static componentName = 'GrEditor';
 
   static runCode() {
-    EditorWebViewServices.getWebview().postMessage({
+    EditorWebViewServices.getWebview().postMessage(JSON.stringify({
       action: 'runCode',
-    });
+      code: {},
+    }));
   }
 
   constructor() {
@@ -37,7 +38,7 @@ class GrEditor extends Component {
 
   handleMessage = (event: Object) => {
     const message = event.nativeEvent.data;
-    console.log(message);
+    console.log(JSON.stringify(message));
   };
 
   render = () => {
