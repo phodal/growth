@@ -1,7 +1,7 @@
 import 'react-native';
 import React, {} from 'react';
 import renderer from 'react-test-renderer';
-import TimeLineView from '../../../src/components/discover/view/TimeLineView';
+import TimeLineView from '../../../src/components/discover/toadmap-detail/view/TimeLineView';
 
 
 it('renders correctly', () => {
