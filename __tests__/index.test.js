@@ -12,5 +12,4 @@ describe('test index', () => {
     const treeJson = tree.toJSON();
     expect(treeJson).toMatchSnapshot();
   });
-
 });
