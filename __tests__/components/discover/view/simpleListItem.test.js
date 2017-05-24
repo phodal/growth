@@ -1,7 +1,7 @@
 import 'react-native';
 import React, {} from 'react';
 import renderer from 'react-test-renderer';
-import SimpleListItem from '../../../src/components/discover/view/SimpleListItem';
+import SimpleListItem from '../../../../src/components/discover/view/SimpleListItem';
 
 
 it('renders correctly', () => {

@@ -1,7 +1,7 @@
 import 'react-native';
 import React, {} from 'react';
 import renderer from 'react-test-renderer';
-import DiscoverGridItem from '../../../src/components/discover/view/DiscoverGridItem';
+import DiscoverGridItem from '../../../../src/components/discover/view/DiscoverGridItem';
 
 it('renders correctly', () => {
   const gridItem = renderer.create(
