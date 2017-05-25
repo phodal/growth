@@ -2,7 +2,7 @@ import 'react-native';
 import React, {} from 'react';
 import renderer from 'react-test-renderer';
 import ExamDetailContent from '../../../../../src/components/discover/exam-detail/view/ExamDetailContent';
-import QUIZS from '../../../../../assets/data/QUIZS';
+import QUIZS from '../../../../../src/constants/QUIZS';
 
 it('renders correctly', () => {
   const examDetailContent = renderer.create(

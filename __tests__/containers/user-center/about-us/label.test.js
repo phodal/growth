@@ -1,7 +1,7 @@
 import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Label from '../../../../src/containers/user-center/about-us/Label';
+import Label from '../../../../src/components/Label';
 
 describe('test user center / about us / label', () => {
   it('renders correctly', () => {

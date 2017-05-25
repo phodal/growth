@@ -3,7 +3,7 @@ import { Linking, ScrollView } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
 import AppStyle from '../../../theme/styles';
-import Label from './Label';
+import Label from '../../../components/Label';
 
 const contributors = [{
   nickname: 'nickname',

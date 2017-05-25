@@ -2,7 +2,7 @@ import React from 'react';
 import { Linking, ScrollView } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
 import AppStyle from '../../../theme/styles';
-import Label from './Label';
+import Label from '../../../components/Label';
 
 const profileItemRenders = {
   github: value => (
