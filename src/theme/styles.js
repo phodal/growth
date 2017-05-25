@@ -37,7 +37,6 @@ export default {
     borderTopWidth: 1,
   },
   line: {
-    flex: 1,
     height: 1,
     backgroundColor: 'rgba(240, 240, 240, .9)',
   },
@@ -239,6 +238,27 @@ export default {
     marginRight: 15,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  solutionContentItemStyle: {
+    backgroundColor: 'white',
+    marginTop: 8,
+    marginRight: 10,
+    marginLeft: 10,
+  },
+  solutionContentItemTitleStyle: {
+    marginTop: 10,
+    marginBottom: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  solutionContentItemDescriptionStyle: {
+    padding: 10,
+  },
+  solutionContentItemStackStyle: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginTop: 5,
+    marginBottom: 5,
   },
   h: {
     width: Dimensions.get('window').width - 30,

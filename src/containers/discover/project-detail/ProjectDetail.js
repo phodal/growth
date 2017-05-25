@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { ScrollView, Text, View, Clipboard, TouchableHighlight, LayoutAnimation } from 'react-native';
 import AppStyle from '../../../theme/styles';
 import Helper from '../../../utils/helper';
+import Line from '../../../components/Line';
 
 class RoadmapDetail extends Component {
   static componentName = 'RoadmapDetail';
@@ -59,9 +60,9 @@ class RoadmapDetail extends Component {
           <View style={AppStyle.projectDetailItemTitleStyle}>
             <Text>{val.name}</Text>
           </View>
-          <Text style={AppStyle.line} />
+          <Line />
           <Text style={AppStyle.projectDetailItemDescStyle}>{val.desc}</Text>
-          <Text style={AppStyle.line} />
+          <Line />
           <Text
             style={AppStyle.projectDetailItemLinkStyle}
             onPress={() => { Helper.openLink(val.link); }}

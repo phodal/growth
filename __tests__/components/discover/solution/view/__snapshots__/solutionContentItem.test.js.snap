@@ -23,6 +23,9 @@ exports[`renders correctly 1`] = `
       },
       Object {
         "backgroundColor": "white",
+        "marginLeft": 10,
+        "marginRight": 10,
+        "marginTop": 8,
       },
     ]
   }
@@ -33,11 +36,10 @@ exports[`renders correctly 1`] = `
     <View
       style={
         Object {
-          "flex": 1,
-          "height": 40,
+          "alignItems": "center",
           "justifyContent": "center",
-          "marginLeft": 15,
-          "marginRight": 15,
+          "marginBottom": 10,
+          "marginTop": 10,
         }
       }
     >
@@ -46,9 +48,21 @@ exports[`renders correctly 1`] = `
         allowFontScaling={true}
         ellipsizeMode="tail"
       >
-        23333
+        Nginx/Apache日志分析
       </Text>
     </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "padding": 10,
+        }
+      }
+    >
+      用Hadoop分析、解析数据，将数据存储到ElasticSearch中，通过API与amMap再显示到地图上。
+    </Text>
     <View
       style={
         Object {
@@ -57,6 +71,38 @@ exports[`renders correctly 1`] = `
         }
       }
     />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-around",
+          "marginBottom": 5,
+          "marginTop": 5,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        Hadoop
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        amMap
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        ElasticSearch
+      </Text>
+    </View>
   </View>
 </View>
 `;

@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { Text, View, TouchableHighlight } from 'react-native';
 import AppStyle from '../../../../theme/styles';
 import Launch from '../../Launch';
+import Line from '../../../../components/Line';
 
 class ProjectListItem extends Component {
   static componentName = 'ProjectListItem';
@@ -45,7 +46,7 @@ class ProjectListItem extends Component {
           <View style={AppStyle.projectListContentStyle}>
             <Text>{val.name}</Text>
           </View>
-          <Text style={AppStyle.line} />
+          <Line />
         </View>
       </TouchableHighlight>));
     return (
@@ -53,7 +54,7 @@ class ProjectListItem extends Component {
         <View style={AppStyle.projectListTitleStyle}>
           <Text>{this.state.name}</Text>
         </View>
-        <Text style={AppStyle.line} />
+        <Line />
         {rows}
       </View>);
   }
