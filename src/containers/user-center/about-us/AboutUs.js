@@ -4,25 +4,7 @@ import { List, ListItem } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
 import AppStyle from '../../../theme/styles';
 import Label from '../../../components/Label';
-
-const contributors = [{
-  nickname: 'nickname',
-  duty: 'duty',
-  bio: 'bio',
-  profile: {
-    github: 'github',
-    weibo: 'weibo',
-    zhihu: 'zhihu',
-    blog: 'https://example.org',
-  },
-}, {
-  nickname: 'nickname-1',
-  duty: 'duty-1',
-  bio: 'bio-1',
-  profile: {
-    github: 'github-1',
-  },
-}];
+import CONTRIBUTORS from '../../../constants/CONTRIBUTORS';
 
 const avatarOnGitHub = user =>
   `https://avatars.githubusercontent.com/${user}?v=3&s=40`;
@@ -37,7 +19,7 @@ const AboutUs = () => (
         onPress={() => Linking.openURL('https://github.com/phodal/growth-ng')}
       />
       <ListItem
-        title={'QQ 交流群: 529600495'}
+        title={'QQ 交流群: 529600394'}
         hideChevron
       />
       <ListItem
@@ -48,12 +30,12 @@ const AboutUs = () => (
     </List>
     <Label text="贡献者" />
     <List>
-      {contributors.map(contributor =>
+      {CONTRIBUTORS.old.contributors.map(contributor =>
         <ListItem
           key={contributor.nickname}
           title={contributor.nickname}
-          subtitle={contributor.bio}
-          avatar={{ uri: avatarOnGitHub(contributor.profile.github) }}
+          subtitle={contributor.bio ? contributor.bio : ' '}
+          avatar={{ uri: avatarOnGitHub(contributor.github) }}
           onPress={() => Actions.contributorProfile({ contributor })}
           roundAvatar
           hideChevron

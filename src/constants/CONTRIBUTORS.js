@@ -1,5 +1,5 @@
 const CONTRIBUTORS = {
-  2: {
+  old: {
     title: '1.0, 2.0',
     contributors: [
       {
@@ -62,7 +62,7 @@ const CONTRIBUTORS = {
       },
     ],
   },
-  3: {
+  latest: {
     version: '3.0',
     contributors: [],
   },
