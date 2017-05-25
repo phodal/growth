@@ -49,14 +49,10 @@ exports[`renders correctly 1`] = `
         23333
       </Text>
     </View>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
+    <View
       style={
         Object {
           "backgroundColor": "rgba(240, 240, 240, .9)",
-          "flex": 1,
           "height": 1,
         }
       }
