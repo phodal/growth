@@ -36,9 +36,13 @@ const AboutUs = () => (
           title={contributor.nickname}
           subtitle={contributor.bio ? contributor.bio : ' '}
           avatar={{ uri: avatarOnGitHub(contributor.github) }}
-          onPress={() => Actions.contributorProfile({ contributor })}
+          onPress={() => {
+            if (contributor.profile) {
+              Actions.contributorProfile({ contributor });
+            }
+          }}
           roundAvatar
-          hideChevron
+          hideChevron={!contributor.profile}
         />,
       )}
     </List>
