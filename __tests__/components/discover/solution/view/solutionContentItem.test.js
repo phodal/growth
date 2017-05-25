@@ -2,7 +2,7 @@ import 'react-native';
 import React, {} from 'react';
 import renderer from 'react-test-renderer';
 import SolutionContentItem from '../../../../../src/components/discover/solution/view/SolutionContentItem';
-import SOLUTIONS from '../../../../../assets/data/SOLUTIONS';
+import SOLUTIONS from '../../../../../src/constants/SOLUTIONS';
 
 it('renders correctly', () => {
   const data = SOLUTIONS[0];

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
 import AppStyle from '../../../theme/styles';
 import ContentIten from '../../../components/discover/solution/view/SolutionContentItem';
-import SOLUTIONS from '../../../../assets/data/SOLUTIONS';
+import SOLUTIONS from '../../../constants/SOLUTIONS';
 
 class Solution extends Component {
   static componentName = 'Solution';
