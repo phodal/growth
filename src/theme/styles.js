@@ -37,7 +37,6 @@ export default {
     borderTopWidth: 1,
   },
   line: {
-    flex: 1,
     height: 1,
     backgroundColor: 'rgba(240, 240, 240, .9)',
   },
