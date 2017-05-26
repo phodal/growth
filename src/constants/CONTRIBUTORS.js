@@ -1,5 +1,5 @@
 const CONTRIBUTORS = {
-  2: {
+  old: {
     title: '1.0, 2.0',
     contributors: [
       {
@@ -7,14 +7,16 @@ const CONTRIBUTORS = {
         duty: '作者',
         github: 'phodal',
         bio: '待我代码编成，娶你为妻可好 @花仲马',
-        weibo: 'Phodal',
-        zhihu: 'Phodal',
-        blog: 'https://www.phodal.com/',
+        profile: {
+          weibo: 'Phodal',
+          zhihu: 'Phodal',
+          blog: 'https://www.phodal.com/',
+        },
       },
       {
         nickname: 'Song',
         duty: 'UX',
-        bio: '重新设计Growth界面',
+        bio: '设计 Growth 2.0 界面',
         github: 'song-what',
       },
       {
@@ -22,47 +24,44 @@ const CONTRIBUTORS = {
         duty: 'dev',
         github: 'haoflynet',
         bio: '添加关于我们页面',
-        weibo: '豪翔天下',
-        blog: 'https://haofly.net',
+        profile: {
+          weibo: '豪翔天下',
+          blog: 'https://haofly.net',
+        },
       },
       {
         nickname: 'raydeng83',
         duty: 'dev',
         github: 'raydeng83',
         bio: '添加1.0版翻译',
-        weibo: '',
       },
       {
         nickname: 'LightQueue',
         duty: 'dev',
         github: 'LightQueue',
         bio: '',
-        weibo: '',
       },
       {
         nickname: 'JasJia',
         duty: 'dev',
         github: 'JasJia',
-        bio: '',
-        weibo: '',
+        bio: ''
       },
       {
         nickname: 'zhangmx',
         duty: 'dev',
         github: 'zhangmx',
         bio: '',
-        weibo: '',
       },
       {
         nickname: 'JimmyLv',
         duty: 'dev',
         github: 'JimmyLv',
         bio: '',
-        weibo: '',
       },
     ],
   },
-  3: {
+  latest: {
     version: '3.0',
     contributors: [],
   },
