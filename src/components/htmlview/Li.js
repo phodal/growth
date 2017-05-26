@@ -21,7 +21,7 @@ class Li extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      listStyle: (this.props.parentName === 'ul' ? '\u2022' : ''.concat(this.props.index).concat('.')).concat('\u0020'),
+      listStyle: (this.props.parentName === 'ul' ? '\u2022' : ''.concat(this.props.index + 1).concat('.')).concat('\u0020'),
     };
   }
 
