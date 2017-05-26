@@ -35,7 +35,6 @@ import TabIcon from '../components/TabIcon';
 import Practises from '../containers/practises/Practises';
 import GrEditor from '../components/GrEditor';
 
-
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
   sceneStyle: {
@@ -107,14 +106,14 @@ export default Actions.create(
 
 
     <Scene
-      {...navbarPropsTabs}
+      {...AppConfig.navbarProps}
       key={'userCenter'}
       title={'用户中心'}
       component={UserCenter}
     />
 
     <Scene
-      {...navbarPropsTabs}
+      {...AppConfig.navbarProps}
       key={'skillDetail'}
       title={'技能'}
       component={SkillDetailView}
