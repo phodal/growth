@@ -1,9 +1,15 @@
 package com.growth;
 
 import android.app.Application;
+import android.content.Context;
+import android.content.SharedPreferences;
 
 import com.cboy.rn.splashscreen.SplashScreenReactPackage;
 import com.facebook.react.ReactApplication;
+import com.growth.util.AppUtil;
+import com.growth.util.FileUtils;
+import com.rnfs.RNFSPackage;
+import com.benwixen.rnfilesystem.RNFileSystemPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -12,6 +18,7 @@ import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.react.rnspinkit.RNSpinkitPackage;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,6 +36,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNFSPackage(),
+            new RNFileSystemPackage(),
             new SplashScreenReactPackage(),
             new RNSharePackage(),
             new RNDeviceInfo(),
@@ -47,5 +56,6 @@ public class MainApplication extends Application implements ReactApplication {
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
+    FileUtils.copyGrowthContent2externalSdcard(getApplicationContext());
   }
 }
