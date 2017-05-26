@@ -3248,7 +3248,7 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-moment@2.x.x:
+moment@2.x.x, moment@^2.18.1:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
 
@@ -3807,6 +3807,10 @@ react-native-tab-view@^0.0.65:
 react-native-tabs@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/react-native-tabs/-/react-native-tabs-1.0.9.tgz#75d3c35e8b5b6970869eab282372cb32e2a782cd"
+
+react-native-timeago@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-timeago/-/react-native-timeago-0.3.0.tgz#dc076c1a2fc3935f62cb3e2f327f95aeec233d24"
 
 react-native-vector-icons@~4.0.0:
   version "4.0.1"
