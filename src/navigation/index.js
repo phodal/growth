@@ -21,6 +21,7 @@ import ArticleDetail from '../containers/discover/article-detail/ArticleDetail';
 import ExamList from '../containers/discover/exam-list/ExamList';
 import ExamDetail from '../containers/discover/exam-detail/ExamDetail';
 import Solution from '../containers/discover/solution/Solution';
+import SolutionDetail from '../containers/discover/solution/SolutionDetail';
 import ThoughtworksBooks from '../containers/discover/thoughtworks-books/ThoughtworksBooks';
 import RecommendBooks from '../containers/discover/recommend-books/RecommendBooks';
 import RecommendArticles from '../containers/discover/recommend-articles/RecommendArticles';
@@ -198,6 +199,13 @@ export default Actions.create(
       duration={0}
       title={'解决方案'}
       component={Solution}
+    />
+
+    <Scene
+      key={'solutionDetail'}
+      duration={0}
+      title={'解决方案'}
+      component={SolutionDetail}
     />
 
     <Scene
