@@ -45,7 +45,7 @@ const CONTRIBUTORS = {
         nickname: 'JasJia',
         duty: 'dev',
         github: 'JasJia',
-        bio: ''
+        bio: '',
       },
       {
         nickname: 'zhangmx',
