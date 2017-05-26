@@ -39,6 +39,7 @@
 		D3D3C651AC9B472C94FA8D93 /* libSplashScreen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D348E3ACB737425FB308673E /* libSplashScreen.a */; };
 		DB579A327F3A47818669B396 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E75DAB1FA373449188E6EEC4 /* Foundation.ttf */; };
 		E1E1C82199574F798A20249E /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 921F5F3745644F9397A0F972 /* SimpleLineIcons.ttf */; };
+		80828C925C7B4BF9B55B82AC /* libRCTGoogleAnalyticsBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7539D1D02F4046F19A20634A /* libRCTGoogleAnalyticsBridge.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -315,6 +316,8 @@
 		E75DAB1FA373449188E6EEC4 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		EA29257687E6472BB458970D /* libRNFS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFS.a; sourceTree = "<group>"; };
 		F6E3BD4648794DD7A9565C73 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		57C10180B0194A97B2DCEBA5 /* RCTGoogleAnalyticsBridge.xcodeproj */ = {isa = PBXFileReference; name = "RCTGoogleAnalyticsBridge.xcodeproj"; path = "../node_modules/react-native-google-analytics-bridge/ios/RCTGoogleAnalyticsBridge/RCTGoogleAnalyticsBridge.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		7539D1D02F4046F19A20634A /* libRCTGoogleAnalyticsBridge.a */ = {isa = PBXFileReference; name = "libRCTGoogleAnalyticsBridge.a"; path = "libRCTGoogleAnalyticsBridge.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +343,7 @@
 				D3D3C651AC9B472C94FA8D93 /* libSplashScreen.a in Frameworks */,
 				8B027A14BC124168958582F6 /* libRNFileSystem.a in Frameworks */,
 				33D054F289E848519D9FDBCE /* libRNFS.a in Frameworks */,
+				80828C925C7B4BF9B55B82AC /* libRCTGoogleAnalyticsBridge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +537,7 @@
 				87A0B48AD5C3489DA52F37EE /* SplashScreen.xcodeproj */,
 				CF575B4241D44AFE9CC41C6C /* RNFileSystem.xcodeproj */,
 				C9417199316640CEB1836D1A /* RNFS.xcodeproj */,
+				57C10180B0194A97B2DCEBA5 /* RCTGoogleAnalyticsBridge.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1023,11 +1028,13 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-filesystem/ios/RNFileSystem",
 					"$(SRCROOT)/../node_modules/react-native-fs/**",
+					"$(SRCROOT)/../node_modules/react-native-google-analytics-bridge/ios/RCTGoogleAnalyticsBridge/**",
 				);
 				INFOPLIST_FILE = growth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
 				);
@@ -1058,11 +1065,13 @@
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
 					"$(SRCROOT)/../node_modules/react-native-filesystem/ios/RNFileSystem",
 					"$(SRCROOT)/../node_modules/react-native-fs/**",
+					"$(SRCROOT)/../node_modules/react-native-google-analytics-bridge/ios/RCTGoogleAnalyticsBridge/**",
 				);
 				INFOPLIST_FILE = growth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
 				);

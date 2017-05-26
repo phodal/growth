@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 
 import com.cboy.rn.splashscreen.SplashScreenReactPackage;
 import com.facebook.react.ReactApplication;
+import com.idehub.GoogleAnalyticsBridge.GoogleAnalyticsBridgePackage;
 import com.growth.util.AppUtil;
 import com.growth.util.FileUtils;
 import com.rnfs.RNFSPackage;
@@ -36,6 +37,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new GoogleAnalyticsBridgePackage(),
             new RNFSPackage(),
             new RNFileSystemPackage(),
             new SplashScreenReactPackage(),
