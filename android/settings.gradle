@@ -1,4 +1,8 @@
 rootProject.name = 'growth'
+include ':react-native-fs'
+project(':react-native-fs').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fs/android')
+include ':react-native-filesystem'
+project(':react-native-filesystem').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-filesystem/android')
 include ':react-native-splash-screen'
 project(':react-native-splash-screen').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-splash-screen/android')
 include ':react-native-share'

@@ -7,7 +7,7 @@ import SECTION5 from './sections/section-5';
 import SECTION6 from './sections/section-6';
 import SECTION7 from './sections/section-7';
 
-const subSections = [
+const SECTIONS = [
   {
     title: '从零开始',
     description: '从这里准备你的技能图谱',
@@ -66,4 +66,4 @@ const subSections = [
   },
 ];
 
-export default subSections;
+export default SECTIONS;

@@ -135,9 +135,11 @@ android {
 }
 
 apply from: "../../fonts.gradle"
-
+apply from: "../../growth-content.gradle"
 
 dependencies {
+    compile project(':react-native-fs')
+    compile project(':react-native-filesystem')
     compile project(':react-native-splash-screen')
     compile project(':react-native-share')
     compile project(':react-native-device-info')
