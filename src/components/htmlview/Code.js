@@ -14,7 +14,7 @@ class Code extends Component {
     component: null,
   };
   render() {
-    return <Text style={{ marginTop: this.props.margintop }}>{this.props.component}</Text>;
+    return <Text style={{ marginTop: this.props.margintop, backgroundColor: '#f9f9f7' }}>{this.props.component}</Text>;
   }
 }
 export default Code;

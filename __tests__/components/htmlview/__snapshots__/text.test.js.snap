@@ -1,18 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<View>
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+  style={
+    Object {
+      "color": "#000",
+    }
+  }
+>
+  2333
   <Text
     accessible={true}
     allowFontScaling={true}
     ellipsizeMode="tail"
-    style={
-      Object {
-        "color": "#000",
-      }
-    }
   >
-    1. 
     <Text
       accessible={true}
       allowFontScaling={true}
@@ -21,5 +25,5 @@ exports[`renders correctly 1`] = `
       2333
     </Text>
   </Text>
-</View>
+</Text>
 `;

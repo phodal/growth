@@ -5,12 +5,6 @@ exports[`renders correctly 1`] = `
   accessible={true}
   allowFontScaling={true}
   ellipsizeMode="tail"
-  style={
-    Object {
-      "backgroundColor": "#f9f9f7",
-      "marginTop": 15,
-    }
-  }
 >
   <Text
     accessible={true}

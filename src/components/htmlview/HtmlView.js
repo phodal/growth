@@ -1,28 +1,30 @@
 import React, { PropTypes } from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import htmlParse from '../../lib/htmlParse';
 import H from './H';
 import Bloackquote from './Blockquote';
 import P from './P';
 import Ul from './Ul';
+import Ol from './Ol';
 import Li from './Li';
 import Img from './Img';
 import A from './A';
 import Pre from './Pre';
 import Code from './Code';
+import HtmlText from './HtmlText';
+import Span from './Span';
 
 
 function getKey(key) {
   return 'key'.concat(key);
 }
 
-function getTextStyle(node) {
+function getParentName(node) {
   return (
   node.parent &&
-  node.parent.parent &&
-  /blockquote|code/.test(node.parent.parent.name))
-    ? { color: '#4c4c4c' }
-    : { color: '#000' };
+  node.parent.parent
+    ? node.parent.parent.name
+    : '');
 }
 
 function getTitleSize(node) {
@@ -70,10 +72,18 @@ const htmlToElement = (rawHtml, done) => {
                 component={domToElement(node.children)}
                 key={getKey(index)}
               />);
+          case 'ol':
+            return (
+              <Ol
+                component={domToElement(node.children)}
+                key={getKey(index)}
+              />);
           case 'li':
             return (
               <Li
                 component={domToElement(node.children)}
+                parentName={node.parent.name}
+                index={index}
                 key={getKey(index)}
               />);
           case 'img':
@@ -83,10 +93,18 @@ const htmlToElement = (rawHtml, done) => {
             />);
           case 'text':
             return (
-              <Text
-                style={getTextStyle(node)}
+              <HtmlText
+                text={node.text}
+                component={domToElement(node.children)}
+                parentName={getParentName(node)}
                 key={getKey(index)}
-              >{node.text}</Text>);
+              />);
+          case 'span':
+            return (
+              <Span
+                component={domToElement(node.children)}
+                key={getKey(index)}
+              />);
           case 'a':
             return (
               <A

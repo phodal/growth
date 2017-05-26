@@ -1,13 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
+<View
   style={
     Object {
-      "backgroundColor": "#f9f9f7",
       "marginTop": 15,
     }
   }
@@ -19,5 +15,5 @@ exports[`renders correctly 1`] = `
   >
     2333
   </Text>
-</Text>
+</View>
 `;
