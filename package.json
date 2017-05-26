@@ -19,6 +19,8 @@
     "react-native-collapsible": "^0.8.0",
     "react-native-device-info": "^0.10.2",
     "react-native-elements": "^0.11.2",
+    "react-native-filesystem": "^0.1.0",
+    "react-native-fs": "^2.3.2",
     "react-native-infinite-scroll-view": "^0.4.2",
     "react-native-router-flux": "3.37.0",
     "react-native-share": "^1.0.20",
