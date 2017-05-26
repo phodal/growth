@@ -25,7 +25,7 @@ class GrEditor extends Component {
   static componentName = 'GrEditor';
 
   static runCode() {
-    EditorWebViewServices.getWebview().postMessage(JSON.stringify({
+    EditorWebViewServices.getWebView().postMessage(JSON.stringify({
       action: 'runCode',
       code: {},
     }));
@@ -53,7 +53,7 @@ class GrEditor extends Component {
       <WebView
         ref={(webview) => {
           this.webview = webview;
-          EditorWebViewServices.setWebview(webview);
+          EditorWebViewServices.setWebView(webview);
         }}
         startInLoadingState
         source={source}
