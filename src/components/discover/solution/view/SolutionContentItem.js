@@ -25,7 +25,7 @@ class SolutionContentItem extends Component {
   render() {
     const stack = this.props.stack
       .map((val, index) => (
-        <Text key={val.concat(index)}>{val}</Text>));
+        <Text style={{ fontSize: 12, color: '#999' }} key={val.concat(index)}>{val}</Text>));
     return (
       <TouchableHighlight
         style={AppStyle.solutionContentItemStyle}
@@ -34,7 +34,7 @@ class SolutionContentItem extends Component {
       >
         <View>
           <View style={AppStyle.solutionContentItemTitleStyle}>
-            <Text>{this.props.name}</Text>
+            <Text style={{ fontSize: 16 }}>{this.props.name}</Text>
           </View>
           <Text style={AppStyle.solutionContentItemDescriptionStyle}>{this.props.description}</Text>
           <Line />
