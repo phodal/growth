@@ -1,11 +1,11 @@
 export default class EditorWebViewServices {
-  webview: null;
+  webView: null;
 
-  static getWebview(): null {
-    return this.webview;
+  static getWebView(): null {
+    return this.webView;
   }
 
-  static setWebview(value: null) {
-    this.webview = value;
+  static setWebView(value: null) {
+    this.webView = value;
   }
 }
