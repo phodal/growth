@@ -107,14 +107,12 @@ export default Actions.create(
 
 
     <Scene
-      {...navbarPropsTabs}
       key={'userCenter'}
       title={'用户中心'}
       component={UserCenter}
     />
 
     <Scene
-      {...navbarPropsTabs}
       key={'skillDetail'}
       title={'技能'}
       component={SkillDetailView}
