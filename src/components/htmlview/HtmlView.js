@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import htmlParse from '../../lib/htmlParse';
 import H from './H';
 import Bloackquote from './Blockquote';
@@ -99,14 +99,12 @@ const htmlToElement = (rawHtml, done) => {
                 parentName={getParentName(node)}
                 key={getKey(index)}
               />);
-          case 'span': {
-            console.log(node)
+          case 'span':
             return (
               <Span
                 component={domToElement(node.children)}
                 key={getKey(index)}
               />);
-          }
           case 'a':
             return (
               <A
