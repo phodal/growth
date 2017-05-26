@@ -1,3 +1,6 @@
 [submodule "src/components/GrEditor"]
 	path = src/components/GrEditor
 	url = https://github.com/phodal/GrEditor
+[submodule "assets/growth-content"]
+	path = assets/growth-content
+	url = https://github.com/GrowthStudio/growth-content.git

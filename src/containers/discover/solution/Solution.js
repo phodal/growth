@@ -3,6 +3,7 @@ import { ScrollView } from 'react-native';
 import AppStyle from '../../../theme/styles';
 import ContentIten from '../../../components/discover/solution/view/SolutionContentItem';
 import SOLUTIONS from '../../../constants/SOLUTIONS';
+import Launch from '../../../components/discover/Launch';
 
 class Solution extends Component {
   static componentName = 'Solution';
@@ -21,6 +22,7 @@ class Solution extends Component {
           name={val.name}
           description={val.description}
           stack={val.stacks}
+          click={() => Launch.solutionDetail(val.slug)}
           key={val.name.concat(index)}
         />
       ));

@@ -1,6 +1,7 @@
 import { Actions } from 'react-native-router-flux';
 import Helper from '../../utils/helper';
 
+
 const launch = {
   roadmapList: () => {
     Actions.roadmapList();
@@ -34,6 +35,9 @@ const launch = {
   },
   solution: () => {
     Actions.solution();
+  },
+  solutionDetail: (path) => {
+    Actions.solutionDetail({ slug: path });
   },
   thoughtworksBooks: () => {
     Actions.thoughtworksBooks();
