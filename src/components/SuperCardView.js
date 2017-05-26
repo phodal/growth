@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+/* eslint-disable react/forbid-prop-types */
+import React from 'react';
 import {
   View, Text, StyleSheet, Platform,
 } from 'react-native';
@@ -7,8 +8,8 @@ import Accordion from 'react-native-collapsible/Accordion';
 import * as Animatable from 'react-native-animatable';
 import * as shortid from 'shortid';
 
-
 import AppColors from '../theme/colors';
+import SECTIONS from '../constants/SECTIONS';
 
 const styles = StyleSheet.create({
   cardContainer: {
@@ -31,13 +32,6 @@ const styles = StyleSheet.create({
   },
 });
 
-const SECTIONS = [
-  {
-    title: 'First',
-    content: 'Lorem ipsum...',
-  },
-];
-
 class SuperCardView extends React.PureComponent {
 
   static renderContent(section, index, isActive) {
@@ -55,12 +49,14 @@ class SuperCardView extends React.PureComponent {
           <View
             style={{ backgroundColor: '#fff', marginLeft: 10, marginRight: 10 }}
           >
-            <ListItem
-              title={'hello, world'}
-            />
-            <ListItem
-              title={'开发环境'}
-            />
+            {
+              section.subSections.map(subSection => (
+                <ListItem
+                  key={shortid.generate()}
+                  title={subSection.title}
+                />
+              ))
+            }
           </View>
         </Animatable.View>
       </Animatable.View>
@@ -80,18 +76,18 @@ class SuperCardView extends React.PureComponent {
               <View style={{ flex: 1, justifyContent: 'space-between', flexDirection: 'column', margin: 15 }}>
                 <View style={{ height: 40 }}>
                   <Text style={{ fontSize: 20, marginTop: 5, marginBottom: 15 }}>
-                    {this.props.title}
+                    {section.title}
                   </Text>
                 </View>
                 <View style={{ height: 40 }}>
                   <Text style={{ marginTop: 5, marginBottom: 15 }}>
-                    {this.props.subTitle}
+                    {section.description}
                   </Text>
                 </View>
               </View>
             </View>
             <View style={{ height: 100, alignItems: 'flex-end', left: -10 }}>
-              <Icon size={100} name={this.props.iconName} type={'ionicon'} color={AppColors.brand.primary} />
+              <Icon size={100} name={'md-home'} type={'ionicon'} color={AppColors.brand.primary} />
             </View>
           </View>
         </View>
@@ -118,13 +114,5 @@ class SuperCardView extends React.PureComponent {
     );
   }
 }
-
-
-SuperCardView.propTypes = {
-  title: PropTypes.string.isRequired,
-  subTitle: PropTypes.string.isRequired,
-  iconName: PropTypes.string.isRequired,
-  sections: PropTypes.array.isRequired,
-};
 
 export default SuperCardView;
