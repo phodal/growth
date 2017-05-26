@@ -5,6 +5,7 @@ import H from './H';
 import Bloackquote from './Blockquote';
 import P from './P';
 import Ul from './Ul';
+import Ol from './Ol';
 import Li from './Li';
 import Img from './Img';
 import A from './A';
@@ -70,10 +71,18 @@ const htmlToElement = (rawHtml, done) => {
                 component={domToElement(node.children)}
                 key={getKey(index)}
               />);
+          case 'ol':
+            return (
+              <Ol
+                component={domToElement(node.children)}
+                key={getKey(index)}
+              />);
           case 'li':
             return (
               <Li
                 component={domToElement(node.children)}
+                parentName={node.parent.name}
+                index={index}
                 key={getKey(index)}
               />);
           case 'img':
