@@ -3,13 +3,14 @@ import React from 'react';
 import {
   View, Text, StyleSheet, Platform,
 } from 'react-native';
-import { Icon, ListItem } from 'react-native-elements';
+import { ListItem } from 'react-native-elements';
 import Accordion from 'react-native-collapsible/Accordion';
 import * as Animatable from 'react-native-animatable';
 import * as shortid from 'shortid';
 
 import AppColors from '../theme/colors';
 import SECTIONS from '../constants/SECTIONS';
+import Icon from '../icon/GrowthFont';
 
 const styles = StyleSheet.create({
   cardContainer: {
@@ -66,7 +67,7 @@ class SuperCardView extends React.PureComponent {
   static renderHeader(section, index, isActive) {
     return (
       <Animatable.View
-        duration={300}
+        duration={100}
         transition="opacity"
         style={{ backgroundColor: (isActive ? 'rgba(238, 238, 238, 1.0)' : 'rgba(238, 238, 238, 1.0)') }}
       >
@@ -87,7 +88,7 @@ class SuperCardView extends React.PureComponent {
               </View>
             </View>
             <View style={{ height: 100, alignItems: 'flex-end', left: -10 }}>
-              <Icon size={100} name={'md-home'} type={'ionicon'} color={AppColors.brand.primary} />
+              <Icon size={100} name={`home-${index + 1}`} color={AppColors.brand.primary} />
             </View>
           </View>
         </View>

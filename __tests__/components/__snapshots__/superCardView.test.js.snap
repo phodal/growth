@@ -128,50 +128,27 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              <View
-                onPress={undefined}
+              <Text
+                accessible={true}
+                allowFontScaling={false}
+                ellipsizeMode="tail"
                 style={
                   Array [
-                    false,
-                    false,
-                    false,
                     Object {
-                      "alignItems": "center",
-                      "backgroundColor": "transparent",
-                      "justifyContent": "center",
+                      "color": "#03a9f4",
+                      "fontSize": 100,
                     },
                     undefined,
+                    Object {
+                      "fontFamily": "growth",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
                   ]
                 }
-                underlayColor="white"
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#03a9f4",
-                        "fontSize": 100,
-                      },
-                      Array [
-                        Object {
-                          "backgroundColor": "transparent",
-                        },
-                        undefined,
-                      ],
-                      Object {
-                        "fontFamily": "Ionicons",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
+                
+              </Text>
             </View>
           </View>
         </View>
@@ -612,50 +589,27 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              <View
-                onPress={undefined}
+              <Text
+                accessible={true}
+                allowFontScaling={false}
+                ellipsizeMode="tail"
                 style={
                   Array [
-                    false,
-                    false,
-                    false,
                     Object {
-                      "alignItems": "center",
-                      "backgroundColor": "transparent",
-                      "justifyContent": "center",
+                      "color": "#03a9f4",
+                      "fontSize": 100,
                     },
                     undefined,
+                    Object {
+                      "fontFamily": "growth",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
                   ]
                 }
-                underlayColor="white"
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#03a9f4",
-                        "fontSize": 100,
-                      },
-                      Array [
-                        Object {
-                          "backgroundColor": "transparent",
-                        },
-                        undefined,
-                      ],
-                      Object {
-                        "fontFamily": "Ionicons",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
+                
+              </Text>
             </View>
           </View>
         </View>
@@ -1231,50 +1185,27 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              <View
-                onPress={undefined}
+              <Text
+                accessible={true}
+                allowFontScaling={false}
+                ellipsizeMode="tail"
                 style={
                   Array [
-                    false,
-                    false,
-                    false,
                     Object {
-                      "alignItems": "center",
-                      "backgroundColor": "transparent",
-                      "justifyContent": "center",
+                      "color": "#03a9f4",
+                      "fontSize": 100,
                     },
                     undefined,
+                    Object {
+                      "fontFamily": "growth",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
                   ]
                 }
-                underlayColor="white"
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#03a9f4",
-                        "fontSize": 100,
-                      },
-                      Array [
-                        Object {
-                          "backgroundColor": "transparent",
-                        },
-                        undefined,
-                      ],
-                      Object {
-                        "fontFamily": "Ionicons",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
+                
+              </Text>
             </View>
           </View>
         </View>
@@ -1850,50 +1781,27 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              <View
-                onPress={undefined}
+              <Text
+                accessible={true}
+                allowFontScaling={false}
+                ellipsizeMode="tail"
                 style={
                   Array [
-                    false,
-                    false,
-                    false,
                     Object {
-                      "alignItems": "center",
-                      "backgroundColor": "transparent",
-                      "justifyContent": "center",
+                      "color": "#03a9f4",
+                      "fontSize": 100,
                     },
                     undefined,
+                    Object {
+                      "fontFamily": "growth",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
                   ]
                 }
-                underlayColor="white"
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#03a9f4",
-                        "fontSize": 100,
-                      },
-                      Array [
-                        Object {
-                          "backgroundColor": "transparent",
-                        },
-                        undefined,
-                      ],
-                      Object {
-                        "fontFamily": "Ionicons",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
+                
+              </Text>
             </View>
           </View>
         </View>
@@ -2469,50 +2377,27 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              <View
-                onPress={undefined}
+              <Text
+                accessible={true}
+                allowFontScaling={false}
+                ellipsizeMode="tail"
                 style={
                   Array [
-                    false,
-                    false,
-                    false,
                     Object {
-                      "alignItems": "center",
-                      "backgroundColor": "transparent",
-                      "justifyContent": "center",
+                      "color": "#03a9f4",
+                      "fontSize": 100,
                     },
                     undefined,
+                    Object {
+                      "fontFamily": "growth",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
                   ]
                 }
-                underlayColor="white"
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#03a9f4",
-                        "fontSize": 100,
-                      },
-                      Array [
-                        Object {
-                          "backgroundColor": "transparent",
-                        },
-                        undefined,
-                      ],
-                      Object {
-                        "fontFamily": "Ionicons",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
+                
+              </Text>
             </View>
           </View>
         </View>
@@ -2953,50 +2838,27 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              <View
-                onPress={undefined}
+              <Text
+                accessible={true}
+                allowFontScaling={false}
+                ellipsizeMode="tail"
                 style={
                   Array [
-                    false,
-                    false,
-                    false,
                     Object {
-                      "alignItems": "center",
-                      "backgroundColor": "transparent",
-                      "justifyContent": "center",
+                      "color": "#03a9f4",
+                      "fontSize": 100,
                     },
                     undefined,
+                    Object {
+                      "fontFamily": "growth",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
                   ]
                 }
-                underlayColor="white"
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#03a9f4",
-                        "fontSize": 100,
-                      },
-                      Array [
-                        Object {
-                          "backgroundColor": "transparent",
-                        },
-                        undefined,
-                      ],
-                      Object {
-                        "fontFamily": "Ionicons",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
+                
+              </Text>
             </View>
           </View>
         </View>
@@ -3437,50 +3299,27 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              <View
-                onPress={undefined}
+              <Text
+                accessible={true}
+                allowFontScaling={false}
+                ellipsizeMode="tail"
                 style={
                   Array [
-                    false,
-                    false,
-                    false,
                     Object {
-                      "alignItems": "center",
-                      "backgroundColor": "transparent",
-                      "justifyContent": "center",
+                      "color": "#03a9f4",
+                      "fontSize": 100,
                     },
                     undefined,
+                    Object {
+                      "fontFamily": "growth",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
                   ]
                 }
-                underlayColor="white"
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#03a9f4",
-                        "fontSize": 100,
-                      },
-                      Array [
-                        Object {
-                          "backgroundColor": "transparent",
-                        },
-                        undefined,
-                      ],
-                      Object {
-                        "fontFamily": "Ionicons",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
+                
+              </Text>
             </View>
           </View>
         </View>
@@ -3921,50 +3760,27 @@ exports[`renders correctly 1`] = `
                 }
               }
             >
-              <View
-                onPress={undefined}
+              <Text
+                accessible={true}
+                allowFontScaling={false}
+                ellipsizeMode="tail"
                 style={
                   Array [
-                    false,
-                    false,
-                    false,
                     Object {
-                      "alignItems": "center",
-                      "backgroundColor": "transparent",
-                      "justifyContent": "center",
+                      "color": "#03a9f4",
+                      "fontSize": 100,
                     },
                     undefined,
+                    Object {
+                      "fontFamily": "growth",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
                   ]
                 }
-                underlayColor="white"
               >
-                <Text
-                  accessible={true}
-                  allowFontScaling={false}
-                  ellipsizeMode="tail"
-                  style={
-                    Array [
-                      Object {
-                        "color": "#03a9f4",
-                        "fontSize": 100,
-                      },
-                      Array [
-                        Object {
-                          "backgroundColor": "transparent",
-                        },
-                        undefined,
-                      ],
-                      Object {
-                        "fontFamily": "Ionicons",
-                        "fontStyle": "normal",
-                        "fontWeight": "normal",
-                      },
-                    ]
-                  }
-                >
-                  
-                </Text>
-              </View>
+                
+              </Text>
             </View>
           </View>
         </View>
