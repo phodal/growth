@@ -5,6 +5,8 @@ import {
 import { Icon, ListItem } from 'react-native-elements';
 import Accordion from 'react-native-collapsible/Accordion';
 import * as Animatable from 'react-native-animatable';
+import * as shortid from 'shortid';
+
 
 import AppColors from '../theme/colors';
 
@@ -122,6 +124,7 @@ SuperCardView.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string.isRequired,
   iconName: PropTypes.string.isRequired,
+  sections: PropTypes.array.isRequired,
 };
 
 export default SuperCardView;
