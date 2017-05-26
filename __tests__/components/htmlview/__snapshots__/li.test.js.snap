@@ -12,7 +12,7 @@ exports[`renders correctly 1`] = `
       }
     }
   >
-    • 
+    1. 
     <Text
       accessible={true}
       allowFontScaling={true}

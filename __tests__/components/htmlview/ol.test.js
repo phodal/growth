@@ -4,13 +4,13 @@ import React from 'react';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
-import Ul from '../../../src/components/htmlview/Ul';
+import Ol from '../../../src/components/htmlview/Ol';
 
 it('renders correctly', () => {
   // eslint-disable-next-line no-unused-vars
-  const ul = renderer.create(
-    <Ul component={<Text>2333</Text>} />,
+  const ol = renderer.create(
+    <Ol component={<Text>2333</Text>} />,
   );
-  const ulJson = ul.toJSON();
-  expect(ulJson).toMatchSnapshot();
+  const olJson = ol.toJSON();
+  expect(olJson).toMatchSnapshot();
 });

@@ -47,6 +47,11 @@ exports[`renders correctly 1`] = `
         accessible={true}
         allowFontScaling={true}
         ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 16,
+          }
+        }
       >
         Nginx/Apache日志分析
       </Text>
@@ -57,7 +62,10 @@ exports[`renders correctly 1`] = `
       ellipsizeMode="tail"
       style={
         Object {
-          "padding": 10,
+          "fontSize": 14,
+          "paddingBottom": 10,
+          "paddingLeft": 10,
+          "paddingRight": 10,
         }
       }
     >
@@ -85,6 +93,12 @@ exports[`renders correctly 1`] = `
         accessible={true}
         allowFontScaling={true}
         ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#999",
+            "fontSize": 12,
+          }
+        }
       >
         Hadoop
       </Text>
@@ -92,6 +106,12 @@ exports[`renders correctly 1`] = `
         accessible={true}
         allowFontScaling={true}
         ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#999",
+            "fontSize": 12,
+          }
+        }
       >
         amMap
       </Text>
@@ -99,6 +119,12 @@ exports[`renders correctly 1`] = `
         accessible={true}
         allowFontScaling={true}
         ellipsizeMode="tail"
+        style={
+          Object {
+            "color": "#999",
+            "fontSize": 12,
+          }
+        }
       >
         ElasticSearch
       </Text>

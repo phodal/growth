@@ -42,6 +42,11 @@ exports[`renders correctly 1`] = `
       }
     >
       2333
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      />
     </Text>
   </Text>
 </View>
