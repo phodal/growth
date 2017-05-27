@@ -5,6 +5,8 @@ import List from 'react-native-elements/src/list/List';
 import { ScrollView } from 'react-native';
 import DeviceInfo from 'react-native-device-info';
 import Share from 'react-native-share';
+import * as StoreReview from 'react-native-store-review';
+
 
 class UserCenter extends Component {
   static componentName = 'UserCenter';
@@ -16,6 +18,12 @@ class UserCenter extends Component {
       url: 'http://growth.ren/',
     };
     Share.open(option);
+  }
+
+  static ratingApp() {
+    if (StoreReview.isAvailable) {
+      StoreReview.requestReview();
+    }
   }
 
   constructor(render) {
@@ -51,6 +59,7 @@ class UserCenter extends Component {
         />
         <ListItem
           title={'觉得不错，给个好评'}
+          onPress={() => UserCenter.ratingApp()}
           leftIcon={{ name: 'thumb-up' }}
         />
         <ListItem

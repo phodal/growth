@@ -27,13 +27,14 @@ class SolutionDetail extends Component {
     const basePath = Platform.OS === 'ios'
       ? RNFS.MainBundlePath
       : RNFS.ExternalDirectoryPath;
-
-    RNFS.readFile(basePath.concat(`/growth-content/solution/${this.props.slug}.html`), 'utf8')
-      .then((result) => {
-        this.setState({
-          value: result,
+    if (basePath) {
+      RNFS.readFile(basePath.concat(`/growth-content/solution/${this.props.slug}.html`), 'utf8')
+        .then((result) => {
+          this.setState({
+            value: result,
+          });
         });
-      });
+    }
   }
 
   render() {

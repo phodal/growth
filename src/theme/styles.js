@@ -252,7 +252,10 @@ export default {
     alignItems: 'center',
   },
   solutionContentItemDescriptionStyle: {
-    padding: 10,
+    fontSize: 14,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingBottom: 10,
   },
   solutionContentItemStackStyle: {
     flexDirection: 'row',

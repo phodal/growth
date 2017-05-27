@@ -3248,7 +3248,7 @@ mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-moment@2.x.x:
+moment@2.x.x, moment@^2.18.1:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
 
@@ -3752,6 +3752,10 @@ react-native-fs@^2.3.2:
     base-64 "^0.1.0"
     utf8 "^2.1.1"
 
+react-native-google-analytics-bridge@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-google-analytics-bridge/-/react-native-google-analytics-bridge-5.0.1.tgz#b4b4eb00e1316d1aaa9f02304912355f8a5797e2"
+
 react-native-infinite-scroll-view@^0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/react-native-infinite-scroll-view/-/react-native-infinite-scroll-view-0.4.2.tgz#9091a213aeedf6ac2cee0374648406ab32790f74"
@@ -3788,6 +3792,10 @@ react-native-splash-screen@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/react-native-splash-screen/-/react-native-splash-screen-2.0.0.tgz#d03caaef7d92a0ac1eab60ee4204a1d6bf8234ec"
 
+react-native-store-review@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-native-store-review/-/react-native-store-review-0.1.2.tgz#394f6e0643c7b9ae15281b6474acb4892629f46e"
+
 react-native-tab-navigator@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/react-native-tab-navigator/-/react-native-tab-navigator-0.3.3.tgz#b222bad21fbe773c8d28f9a0de30ce62b08724d3"
@@ -3803,6 +3811,10 @@ react-native-tab-view@^0.0.65:
 react-native-tabs@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/react-native-tabs/-/react-native-tabs-1.0.9.tgz#75d3c35e8b5b6970869eab282372cb32e2a782cd"
+
+react-native-timeago@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/react-native-timeago/-/react-native-timeago-0.3.0.tgz#dc076c1a2fc3935f62cb3e2f327f95aeec233d24"
 
 react-native-vector-icons@~4.0.0:
   version "4.0.1"

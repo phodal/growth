@@ -4,9 +4,14 @@ import { View, Text, StyleSheet } from 'react-native';
 import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
 import { Icon, Divider } from 'react-native-elements';
 
-
 import Colors from '../../theme/colors';
 import ForumContainer from './forum/ForumContainers';
+
+const TimeAgo = require('react-native-timeago');
+const moment = require('moment'); // load moment module to set local language
+require('moment/locale/zh-cn'); // for import moment local language file during the application build
+
+moment.locale('zh-cn');// set moment local language to zh-cn
 
 const styles = StyleSheet.create({
   container: {
@@ -58,7 +63,7 @@ class Community extends PureComponent {
       <View style={{ flex: 1, flexDirection: 'row', margin: 8, justifyContent: 'space-between' }}>
         <View style={{ flex: 1, flexDirection: 'row' }}>
           {sticky}
-          <View><Text style={{ color: '#333' }}>{topic.attributes.lastTime}</Text></View>
+          <View><Text style={{ color: '#333' }}><TimeAgo time={topic.attributes.lastTime} interval={20000} /></Text></View>
         </View>
         <View style={{ flexDirection: 'row' }}>
           <Icon style={{ marginLeft: 5, marginRight: 5 }} name={'ios-chatboxes-outline'} type={'ionicon'} color={'#333'} />
