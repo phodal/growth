@@ -42,6 +42,9 @@ const launch = {
   thoughtworksBooks: () => {
     Actions.thoughtworksBooks();
   },
+  domainDetailPage: (caption, path) => {
+    Actions.domainDetailPage({ title: caption, domain: path });
+  },
   recommendBooks: () => {
     Actions.recommendBooks();
   },

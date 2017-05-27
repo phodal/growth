@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "rgb(245,245,245)",
+        "height": 40,
+        "justifyContent": "center",
+        "paddingLeft": 15,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#999",
+        }
+      }
+    >
+      基础篇
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "white",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 40,
+          "justifyContent": "center",
+          "marginLeft": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        代码整洁之道
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgba(240, 240, 240, .9)",
+          "height": 1,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "white",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 40,
+          "justifyContent": "center",
+          "marginLeft": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        单元测试之道
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgba(240, 240, 240, .9)",
+          "height": 1,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "white",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 40,
+          "justifyContent": "center",
+          "marginLeft": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        卓有成效的程序员
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgba(240, 240, 240, .9)",
+          "height": 1,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "white",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 40,
+          "justifyContent": "center",
+          "marginLeft": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        测试驱动开发
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgba(240, 240, 240, .9)",
+          "height": 1,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "white",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 40,
+          "justifyContent": "center",
+          "marginLeft": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        程序员的职业修养
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgba(240, 240, 240, .9)",
+          "height": 1,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "backgroundColor": "white",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "height": 40,
+          "justifyContent": "center",
+          "marginLeft": 15,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+      >
+        编写可读代码的艺术
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "backgroundColor": "rgba(240, 240, 240, .9)",
+          "height": 1,
+        }
+      }
+    />
+  </View>
+</View>
+`;
