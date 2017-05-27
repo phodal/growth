@@ -61,15 +61,19 @@ class ExamDetailContent extends Component {
   }
 
   change() {
-    if (endX === 0) return;
-    leftslide = (pressPosition - endX) > 0;
+    const movePx = 0;
+    const minCount = 0;
+    const maxCount = 8;
+    const minSlideValue = 30;
+    if (endX === movePx) return;
+    leftslide = (pressPosition - endX) > movePx;
     diff = endX - startX;
     if (!leftslide) {
       diff = -diff;
     }
-    if (diff > 30 && this.state.index < 8) {
+    if (diff > minSlideValue && this.state.index < maxCount) {
       this.state.index += 1;
-    } else if (diff < -30 && this.state.index > 0) {
+    } else if (diff < -minSlideValue && this.state.index > minCount) {
       this.state.index -= 1;
     }
     this.setState({
