@@ -22,7 +22,7 @@ Join us
 ---
 
 ### Setup
-
+0. 更新xcode至8.3.2
 1. 安装 yarn 或者 npm
 2. 安装 react-native-cli：``yarn global add react-native-cli``
 3. 安装依赖： ``yarn install``
