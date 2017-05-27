@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react';
-import { ScrollView } from 'react-native';
+import { View } from 'react-native';
+import CustomWebView from '../../../components/CustomWebView';
 import AppStyle from '../../../theme/styles';
 import Api from '../../../utils/api';
 import Dialog from '../../../components/dialog';
-import HtmlView from '../../../components/htmlview/HtmlView';
 
 const marked = require('marked');
 
@@ -24,7 +24,7 @@ class ArticleDetail extends Component {
     super(props);
     this.state = {
       loading: true,
-      rowData: null,
+      rowData: '',
     };
   }
 
@@ -37,10 +37,10 @@ class ArticleDetail extends Component {
 
   render() {
     return (
-      <ScrollView style={AppStyle.detailBasisStyle}>
+      <View style={[AppStyle.detailBasisStyle, { flex: 1 }]}>
         <Dialog show={this.state.loading} content={this.props.dialogContent} />
-        <HtmlView value={this.state.rowData} />
-      </ScrollView>
+        <CustomWebView html={this.state.rowData} />
+      </View>
     );
   }
 }
