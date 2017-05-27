@@ -26,7 +26,9 @@ Join us
 1. 安装 yarn 或者 npm
 2. 安装 react-native-cli：``yarn global add react-native-cli``
 3. 安装依赖： ``yarn install``
-4. 运行 Demo：``react-native run-ios``
+4. 链接原生库：``react-native link``
+5. 添加子模块：``git submodule init && git submodule update``
+6. 运行 Demo：``react-native run-ios``
 
 ### Workflow
 
