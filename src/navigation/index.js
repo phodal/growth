@@ -23,6 +23,7 @@ import ExamDetail from '../containers/discover/exam-detail/ExamDetail';
 import Solution from '../containers/discover/solution/Solution';
 import SolutionDetail from '../containers/discover/solution-detail/SolutionDetail';
 import ThoughtworksBooks from '../containers/discover/thoughtworks-books/ThoughtworksBooks';
+import DomainDetailPage from '../containers/discover/thoughtworks-books/domain-detail-page/DomainDetailPage';
 import RecommendBooks from '../containers/discover/recommend-books/RecommendBooks';
 import RecommendArticles from '../containers/discover/recommend-articles/RecommendArticles';
 import TodoLists from '../containers/discover/todo-lists/TodoLists';
@@ -212,6 +213,12 @@ export default Actions.create(
       duration={0}
       title={'ThoughtWorks读书路线'}
       component={ThoughtworksBooks}
+    />
+
+    <Scene
+      key={'domainDetailPage'}
+      duration={0}
+      component={DomainDetailPage}
     />
 
     <Scene
