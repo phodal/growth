@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
-import { ScrollView, Platform } from 'react-native';
+import { View, Platform } from 'react-native';
 import AppStyle from '../../../theme/styles';
-import HtmlView from '../../../components/htmlview/HtmlView';
+import CustomWebView from '../../../components/CustomWebView';
 
 const RNFS = require('react-native-fs');
 
@@ -38,9 +38,9 @@ class SolutionDetail extends Component {
 
   render() {
     return (
-      <ScrollView style={AppStyle.detailBasisStyle}>
-        <HtmlView value={this.state.value} />
-      </ScrollView>);
+      <View style={[AppStyle.detailBasisStyle, { flex: 1 }]} >
+        <CustomWebView html={this.state.value} />
+      </View>);
   }
 }
 export default SolutionDetail;
