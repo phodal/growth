@@ -65,6 +65,8 @@ export default Actions.create(
         {...navbarPropsTabs}
         key={'discover'}
         title={'探索'}
+        leftTitle={'用户中心'}
+        renderLeftButton={() => Helper.gotoUserCenter()}
         iconName={'md-compass'}
         iconType={'ionicon'}
         icon={TabIcon}
@@ -75,6 +77,8 @@ export default Actions.create(
         key={'skillTree'}
         title={'技能树'}
         rightTitle={'获取专业版'}
+        leftTitle={'用户中心'}
+        renderLeftButton={() => Helper.gotoUserCenter()}
         onRight={() => Helper.getProfessionalSkilltree()}
         rightButtonTextStyle={AppStyles.navbarTitle}
         iconName={'md-egg'}
@@ -86,6 +90,8 @@ export default Actions.create(
         {...navbarPropsTabs}
         key={'community'}
         title={'社区'}
+        leftTitle={'用户中心'}
+        renderLeftButton={() => Helper.gotoUserCenter()}
         iconName={'md-people'}
         iconType={'ionicon'}
         icon={TabIcon}
@@ -95,6 +101,8 @@ export default Actions.create(
         {...navbarPropsTabs}
         key={'practises'}
         title={'练习'}
+        leftTitle={'用户中心'}
+        renderLeftButton={() => Helper.gotoUserCenter()}
         iconName={'md-bonfire'}
         iconType={'ionicon'}
         icon={TabIcon}
