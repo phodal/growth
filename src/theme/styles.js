@@ -179,13 +179,11 @@ export default {
   projectListTitleStyle: {
     paddingLeft: 15,
     backgroundColor: 'rgb(245,245,245)',
-    flex: 1,
     height: 40,
     justifyContent: 'center',
   },
   projectListContentStyle: {
     marginLeft: 15,
-    flex: 1,
     height: 40,
     justifyContent: 'center',
   },
