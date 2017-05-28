@@ -240,5 +240,4 @@ HELPER_ARTICLES['zh-cn'] = {
     },
   ],
 };
-
 export default HELPER_ARTICLES;
