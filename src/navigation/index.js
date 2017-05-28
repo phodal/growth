@@ -25,8 +25,9 @@ import SolutionDetail from '../containers/discover/solution-detail/SolutionDetai
 import ThoughtworksBooks from '../containers/discover/thoughtworks-books/ThoughtworksBooks';
 import DomainDetailPage from '../containers/discover/thoughtworks-books/domain-detail-page/DomainDetailPage';
 import RecommendBooks from '../containers/discover/recommend-books/RecommendBooks';
+import RecommendBooksDetail from '../containers/discover/recommend-books/article/Article';
 import RecommendArticles from '../containers/discover/recommend-articles/RecommendArticles';
-import Article from '../containers/discover/recommend-articles/article/Article';
+import RecommendArticlesDetail from '../containers/discover/recommend-articles/article/Article';
 import TodoLists from '../containers/discover/todo-lists/TodoLists';
 import ChapterList from '../containers/discover/chapter-list/ChapterList';
 import SkillTree from '../containers/skill-tree/SkillTree';
@@ -237,6 +238,12 @@ export default Actions.create(
       title={'推荐书籍'}
       component={RecommendBooks}
     />
+    <Scene
+      key={'recommendBooksDetail'}
+      duration={0}
+      title={'书评'}
+      component={RecommendBooksDetail}
+    />
 
     <Scene
       key={'recommendArticles'}
@@ -246,10 +253,10 @@ export default Actions.create(
     />
 
     <Scene
-      key={'article'}
+      key={'recommendArticlesDetail'}
       duration={0}
       title={'文章'}
-      component={Article}
+      component={RecommendArticlesDetail}
     />
 
     <Scene
