@@ -1,10 +1,11 @@
 /* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import {
-  View, Text, StyleSheet, Platform,
+  View, Text, StyleSheet, Platform, TouchableHighlight,
 } from 'react-native';
 import { ListItem } from 'react-native-elements';
 import Accordion from 'react-native-collapsible/Accordion';
+import { Actions } from 'react-native-router-flux';
 import * as Animatable from 'react-native-animatable';
 import * as shortid from 'shortid';
 
@@ -51,11 +52,18 @@ class SuperCardView extends React.PureComponent {
             style={{ backgroundColor: '#fff', marginLeft: 10, marginRight: 10 }}
           >
             {
-              section.subSections.map(subSection => (
-                <ListItem
+              section.subSections.map((subSection, subSectionIndex) => (
+                <TouchableHighlight
                   key={shortid.generate()}
-                  title={subSection.title}
-                />
+                  underlayColor={'#fff'}
+                  onPress={() => { Actions.sectionPage(section.subSectionKeys[subSectionIndex]); }}
+                >
+                  <View>
+                    <ListItem
+                      title={subSection.title}
+                    />
+                  </View>
+                </TouchableHighlight>
               ))
             }
           </View>

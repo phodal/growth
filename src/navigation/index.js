@@ -35,6 +35,7 @@ import Helper from '../utils/helper';
 import TabIcon from '../components/TabIcon';
 import Practises from '../containers/practises/Practises';
 import GrEditor from '../components/GrEditor';
+import SectionPage from '../containers/home/sections/SectionPage';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -267,6 +268,12 @@ export default Actions.create(
       key={'contributorProfile'}
       title={'Contributor Profile'}
       component={ContributorProfile}
+    />
+
+    <Scene
+      key={'sectionPage'}
+      title={'Section'}
+      component={SectionPage}
     />
 
     <Scene

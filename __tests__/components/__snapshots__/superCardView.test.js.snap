@@ -188,271 +188,329 @@ exports[`renders correctly 1`] = `
               }
             >
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        hello, world
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            hello, world
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
               </View>
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        开发环境
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            开发环境
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
@@ -649,406 +707,493 @@ exports[`renders correctly 1`] = `
               }
             >
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        构建系统
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            构建系统
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
               </View>
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        前端
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            前端
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
               </View>
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        后台
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            后台
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
@@ -1245,406 +1390,493 @@ exports[`renders correctly 1`] = `
               }
             >
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        编码之前
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            编码之前
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
               </View>
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        测试
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            测试
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
               </View>
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        编码
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            编码
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
@@ -1841,406 +2073,493 @@ exports[`renders correctly 1`] = `
               }
             >
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        容器
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            容器
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
               </View>
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        Server
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            Server
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
               </View>
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        可配置
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            可配置
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
@@ -2437,271 +2756,329 @@ exports[`renders correctly 1`] = `
               }
             >
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        数据分析
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            数据分析
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
               </View>
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        用户体验
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            用户体验
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
@@ -2898,271 +3275,329 @@ exports[`renders correctly 1`] = `
               }
             >
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        持续交付
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            持续交付
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
               </View>
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        持续交付
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            持续交付
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
@@ -3359,271 +3794,329 @@ exports[`renders correctly 1`] = `
               }
             >
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        遗留系统
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            遗留系统
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
               </View>
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        重构
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            重构
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
@@ -3820,271 +4313,329 @@ exports[`renders correctly 1`] = `
               }
             >
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        回顾与总结
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            回顾与总结
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
               </View>
               <View
-                onLongPress={undefined}
-                onPress={undefined}
+                accessibilityComponentType={undefined}
+                accessibilityLabel={undefined}
+                accessibilityTraits={undefined}
+                accessible={true}
+                hasTVPreferredFocus={undefined}
+                hitSlop={undefined}
+                isTVSelectable={true}
+                onLayout={undefined}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
                 style={
                   Array [
                     Object {
                       "backgroundColor": "transparent",
-                      "borderBottomColor": "#ededed",
-                      "borderBottomWidth": 1,
-                      "paddingBottom": 10,
-                      "paddingRight": 10,
-                      "paddingTop": 10,
                     },
                     undefined,
                   ]
                 }
-                underlayColor="white"
+                testID={undefined}
+                tvParallaxProperties={undefined}
               >
-                <View
-                  style={
-                    Array [
-                      Object {
-                        "flexDirection": "row",
-                        "marginLeft": 10,
-                      },
-                      undefined,
-                    ]
-                  }
-                >
+                <View>
                   <View
+                    onLongPress={undefined}
+                    onPress={undefined}
                     style={
-                      Object {
-                        "flex": 1,
-                        "justifyContent": "center",
-                      }
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "borderBottomColor": "#ededed",
+                          "borderBottomWidth": 1,
+                          "paddingBottom": 10,
+                          "paddingRight": 10,
+                          "paddingTop": 10,
+                        },
+                        undefined,
+                      ]
                     }
+                    underlayColor="white"
                   >
                     <View
-                      style={undefined}
-                    >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={true}
-                        ellipsizeMode="tail"
-                        style={
-                          Array [
-                            Object {},
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            undefined,
-                            Array [
-                              Object {
-                                "color": "#43484d",
-                                "fontSize": 17.5,
-                              },
-                              Object {
-                                "marginLeft": 10,
-                              },
-                              undefined,
-                              undefined,
-                            ],
-                          ]
-                        }
-                      >
-                        架构设计
-                      </Text>
-                    </View>
-                    <View
-                      style={undefined}
-                    >
-                      <View />
-                    </View>
-                  </View>
-                  <View
-                    style={
-                      Object {
-                        "alignItems": "flex-end",
-                        "flex": 0.15,
-                        "justifyContent": "center",
-                      }
-                    }
-                  >
-                    <View
-                      onPress={undefined}
                       style={
                         Array [
-                          false,
-                          false,
-                          false,
                           Object {
-                            "alignItems": "center",
-                            "backgroundColor": "transparent",
-                            "justifyContent": "center",
+                            "flexDirection": "row",
+                            "marginLeft": 10,
                           },
                           undefined,
                         ]
                       }
-                      underlayColor="white"
                     >
-                      <Text
-                        accessible={true}
-                        allowFontScaling={false}
-                        ellipsizeMode="tail"
+                      <View
                         style={
-                          Array [
-                            Object {
-                              "color": "#bdc6cf",
-                              "fontSize": 28,
-                            },
-                            Array [
-                              Object {
-                                "backgroundColor": "transparent",
-                              },
-                              undefined,
-                            ],
-                            Object {
-                              "fontFamily": "Material Icons",
-                              "fontStyle": "normal",
-                              "fontWeight": "normal",
-                            },
-                          ]
+                          Object {
+                            "flex": 1,
+                            "justifyContent": "center",
+                          }
                         }
                       >
-                        
-                      </Text>
+                        <View
+                          style={undefined}
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={true}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {},
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                undefined,
+                                Array [
+                                  Object {
+                                    "color": "#43484d",
+                                    "fontSize": 17.5,
+                                  },
+                                  Object {
+                                    "marginLeft": 10,
+                                  },
+                                  undefined,
+                                  undefined,
+                                ],
+                              ]
+                            }
+                          >
+                            架构设计
+                          </Text>
+                        </View>
+                        <View
+                          style={undefined}
+                        >
+                          <View />
+                        </View>
+                      </View>
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "flex-end",
+                            "flex": 0.15,
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <View
+                          onPress={undefined}
+                          style={
+                            Array [
+                              false,
+                              false,
+                              false,
+                              Object {
+                                "alignItems": "center",
+                                "backgroundColor": "transparent",
+                                "justifyContent": "center",
+                              },
+                              undefined,
+                            ]
+                          }
+                          underlayColor="white"
+                        >
+                          <Text
+                            accessible={true}
+                            allowFontScaling={false}
+                            ellipsizeMode="tail"
+                            style={
+                              Array [
+                                Object {
+                                  "color": "#bdc6cf",
+                                  "fontSize": 28,
+                                },
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                  },
+                                  undefined,
+                                ],
+                                Object {
+                                  "fontFamily": "Material Icons",
+                                  "fontStyle": "normal",
+                                  "fontWeight": "normal",
+                                },
+                              ]
+                            }
+                          >
+                            
+                          </Text>
+                        </View>
+                      </View>
                     </View>
                   </View>
                 </View>
