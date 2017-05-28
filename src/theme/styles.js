@@ -70,6 +70,7 @@ export default {
     flex: 1,
     backgroundColor: 'white',
     justifyContent: 'center',
+    borderRadius: 5,
     alignItems: 'center',
   },
   discoverGridPositionRight: {
@@ -77,6 +78,7 @@ export default {
     backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
+    borderRadius: 5,
     marginLeft: 15,
   },
   discoverGridTextItem: {

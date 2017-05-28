@@ -24,6 +24,7 @@ exports[`renders correctly 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "white",
+        "borderRadius": 5,
         "flex": 1,
         "justifyContent": "center",
       },
