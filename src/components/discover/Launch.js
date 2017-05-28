@@ -48,11 +48,14 @@ const launch = {
   recommendBooks: () => {
     Actions.recommendBooks();
   },
+  recommendBooksDetail: (path) => {
+    Actions.recommendBooksDetail({ slug: path });
+  },
   recommendArticles: () => {
     Actions.recommendArticles();
   },
-  article: (path) => {
-    Actions.article({ slug: path });
+  recommendArticlesDetail: (path) => {
+    Actions.recommendArticlesDetail({ slug: path });
   },
   todoLists: () => {
     Actions.todoLists();

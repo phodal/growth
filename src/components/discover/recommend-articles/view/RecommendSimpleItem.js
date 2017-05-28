@@ -2,23 +2,24 @@ import React, { Component, PropTypes } from 'react';
 import { Text, View, TouchableHighlight } from 'react-native';
 import AppStyle from '../../../../theme/styles';
 import Line from '../../../Line';
-import Launch from '../../../../components/discover/Launch';
 
-class RecommendArticlesItem extends Component {
-  static componentName = 'RecommendArticlesItem';
+class RecommendSimpleItem extends Component {
+  static componentName = 'RecommendSimpleItem';
 
   static propTypes = {
     content:
-        PropTypes.shape(
+      PropTypes.shape(
+        PropTypes.string.isRequired,
+        PropTypes.arrayOf(PropTypes.shape(
           PropTypes.string.isRequired,
-          PropTypes.arrayOf(PropTypes.shape(
-            PropTypes.string.isRequired,
-            ),
-          )),
+          ),
+        )),
+    launch: PropTypes.func,
   };
 
   static defaultProps = {
     content: {},
+    launch: () => {},
   };
 
   constructor(props) {
@@ -31,7 +32,10 @@ class RecommendArticlesItem extends Component {
 
   render() {
     const rows = this.state.rowData.map((val, index) => (
-      <TouchableHighlight onPress={() => Launch.article(val.slug)} key={val.title.concat(index)}>
+      <TouchableHighlight
+        onPress={() => this.props.launch(val.slug)}
+        key={val.title.concat(index)}
+      >
         <View style={{ backgroundColor: 'white' }}>
           <View style={AppStyle.projectListContentStyle}>
             <Text>{val.title}</Text>
@@ -39,7 +43,7 @@ class RecommendArticlesItem extends Component {
           <Line />
         </View>
       </TouchableHighlight>
-     ));
+    ));
     return (
       <View>
         <View style={AppStyle.projectListTitleStyle}>
@@ -50,5 +54,5 @@ class RecommendArticlesItem extends Component {
     );
   }
 }
-export default RecommendArticlesItem;
+export default RecommendSimpleItem;
 
