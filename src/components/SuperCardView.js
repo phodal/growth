@@ -58,7 +58,7 @@ class SuperCardView extends React.PureComponent {
                   underlayColor={'#fff'}
                   onPress={() => {
                     Actions.sectionPage({
-                      title: subSection.title, sectionKey: section.subSectionKeys[subSectionIndex],
+                      title: subSection.title, sectionIndex: index, subSectionIndex,
                     });
                   }}
                 >

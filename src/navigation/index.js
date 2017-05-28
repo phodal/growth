@@ -287,6 +287,7 @@ export default Actions.create(
     />
 
     <Scene
+      {...navbarPropsTabs}
       key={'sectionPage'}
       title={'Section'}
       component={SectionPage}
