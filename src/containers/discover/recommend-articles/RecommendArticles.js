@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
 import AppStyle from '../../../theme/styles';
-import RecommendArticlesItem from '../../../components/discover/recommend-articles/view/RecommendArticlesItem';
+import RecommendSimpleItem from '../../../components/discover/recommend-articles/view/RecommendSimpleItem';
 import RECOMMEND_ARTICLES_LIST from '../../../constants/RECOMMEND_ARTICLES_LIST';
+import Launch from '../../../components/discover/Launch';
 
 class RecommendArticles extends Component {
   static componentName = 'RecommendArticles';
@@ -16,7 +17,11 @@ class RecommendArticles extends Component {
 
   render() {
     const rows = this.state.data.map((val, index) => (
-      <RecommendArticlesItem content={val} key={val.name.concat(index)} />));
+      <RecommendSimpleItem
+        content={val}
+        launch={Launch.recommendArticlesDetail}
+        key={val.name.concat(index)}
+      />));
     return (
       <ScrollView style={AppStyle.detailBasisStyle}>{rows}</ScrollView>
     );
