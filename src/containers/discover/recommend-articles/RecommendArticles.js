@@ -15,7 +15,6 @@ class RecommendArticles extends Component {
   }
 
   render() {
-    console.log(this.state.data)
     const rows = this.state.data.map((val, index) => (
       <RecommendArticlesItem content={val} key={val.name.concat(index)} />));
     return (

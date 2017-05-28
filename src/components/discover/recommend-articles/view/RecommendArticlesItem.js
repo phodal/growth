@@ -30,7 +30,7 @@ class RecommendArticlesItem extends Component {
 
   render() {
     const rows = this.state.rowData.map((val, index) => (
-      <TouchableHighlight onPress={() => console.log('jupm book detail')} key={val.title.concat(index)}>
+      <TouchableHighlight onPress={() => 'jupm book detail'} key={val.title.concat(index)}>
         <View style={{ backgroundColor: 'white' }}>
           <View style={AppStyle.projectListContentStyle}>
             <Text>{val.title}</Text>
