@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { Text, View, TouchableHighlight } from 'react-native';
 import AppStyle from '../../../../theme/styles';
 import Line from '../../../Line';
+import Launch from '../../../../components/discover/Launch';
 
 class RecommendArticlesItem extends Component {
   static componentName = 'RecommendArticlesItem';
@@ -30,7 +31,7 @@ class RecommendArticlesItem extends Component {
 
   render() {
     const rows = this.state.rowData.map((val, index) => (
-      <TouchableHighlight onPress={() => 'jupm book detail'} key={val.title.concat(index)}>
+      <TouchableHighlight onPress={() => Launch.article(val.slug)} key={val.title.concat(index)}>
         <View style={{ backgroundColor: 'white' }}>
           <View style={AppStyle.projectListContentStyle}>
             <Text>{val.title}</Text>

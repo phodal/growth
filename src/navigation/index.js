@@ -26,6 +26,7 @@ import ThoughtworksBooks from '../containers/discover/thoughtworks-books/Thought
 import DomainDetailPage from '../containers/discover/thoughtworks-books/domain-detail-page/DomainDetailPage';
 import RecommendBooks from '../containers/discover/recommend-books/RecommendBooks';
 import RecommendArticles from '../containers/discover/recommend-articles/RecommendArticles';
+import Article from '../containers/discover/recommend-articles/article/Article';
 import TodoLists from '../containers/discover/todo-lists/TodoLists';
 import ChapterList from '../containers/discover/chapter-list/ChapterList';
 import SkillTree from '../containers/skill-tree/SkillTree';
@@ -242,6 +243,13 @@ export default Actions.create(
       duration={0}
       title={'推荐文章'}
       component={RecommendArticles}
+    />
+
+    <Scene
+      key={'article'}
+      duration={0}
+      title={'文章'}
+      component={Article}
     />
 
     <Scene
