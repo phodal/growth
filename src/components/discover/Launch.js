@@ -51,6 +51,9 @@ const launch = {
   recommendArticles: () => {
     Actions.recommendArticles();
   },
+  article: (path) => {
+    Actions.article({ slug: path });
+  },
   todoLists: () => {
     Actions.todoLists();
   },
