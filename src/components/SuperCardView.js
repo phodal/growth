@@ -56,7 +56,11 @@ class SuperCardView extends React.PureComponent {
                 <TouchableHighlight
                   key={shortid.generate()}
                   underlayColor={'#fff'}
-                  onPress={() => { Actions.sectionPage(section.subSectionKeys[subSectionIndex]); }}
+                  onPress={() => {
+                    Actions.sectionPage({
+                      title: subSection.title, sectionKey: section.subSectionKeys[subSectionIndex],
+                    });
+                  }}
                 >
                   <View>
                     <ListItem
