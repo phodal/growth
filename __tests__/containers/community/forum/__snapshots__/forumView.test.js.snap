@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test user center renders correctly 1`] = `<View />`;
+exports[`test forum render renders correctly 1`] = `<View />`;
