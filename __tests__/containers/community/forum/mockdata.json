@@ -1,0 +1,1458 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 3,
+        "isSticky": true,
+        "lastPostNumber": 4,
+        "lastTime": "2017-03-10T01:19:57+00:00",
+        "participantsCount": 2,
+        "slug": "-",
+        "startTime": "2017-02-13T15:50:26+00:00",
+        "title": "程序员如何写好简历 && 一份优秀的程序员简历是什么样的?"
+      },
+      "id": "71",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "397",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 27,
+        "isSticky": true,
+        "lastPostNumber": 30,
+        "lastTime": "2017-02-10T15:08:39+00:00",
+        "participantsCount": 13,
+        "slug": "-",
+        "startTime": "2016-04-09T13:07:09+00:00",
+        "title": "我们正在寻找最适合的你: 微信交流群"
+      },
+      "id": "38",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "738",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "206",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": []
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 7,
+        "isSticky": true,
+        "lastPostNumber": 10,
+        "lastTime": "2016-11-13T09:10:11+00:00",
+        "participantsCount": 5,
+        "slug": "-",
+        "startTime": "2016-08-05T02:36:40+00:00",
+        "title": "关于手机不能注册的一点小说明"
+      },
+      "id": "53",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "656",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "311",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            },
+            {
+              "id": "3",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 1,
+        "isSticky": false,
+        "lastPostNumber": 1,
+        "lastTime": "2017-02-24T09:33:56+00:00",
+        "participantsCount": 1,
+        "slug": "phodal",
+        "startTime": "2017-02-24T09:33:56+00:00",
+        "title": "欢迎加入我们的交流圈子【Phodal】"
+      },
+      "id": "72",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "400",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            },
+            {
+              "id": "2",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 3,
+        "isSticky": false,
+        "lastPostNumber": 3,
+        "lastTime": "2017-02-15T00:21:39+00:00",
+        "participantsCount": 2,
+        "slug": "growth-2-5",
+        "startTime": "2017-02-12T13:05:48+00:00",
+        "title": "Growth 2.5 已发布"
+      },
+      "id": "70",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "396",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            },
+            {
+              "id": "3",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 1,
+        "isSticky": false,
+        "lastPostNumber": 1,
+        "lastTime": "2017-02-12T08:31:50+00:00",
+        "participantsCount": 1,
+        "slug": "-",
+        "startTime": "2017-02-12T08:31:50+00:00",
+        "title": "我的职业是前端工程师:如何选择合适的前端框架，告别选择恐惧症"
+      },
+      "id": "69",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "395",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            },
+            {
+              "id": "2",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 1,
+        "isSticky": false,
+        "lastPostNumber": 1,
+        "lastTime": "2017-01-21T15:09:26+00:00",
+        "participantsCount": 1,
+        "slug": "-",
+        "startTime": "2017-01-21T15:09:26+00:00",
+        "title": "我的职业是前端工程师：我要成为一个前端设计师"
+      },
+      "id": "68",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "393",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            },
+            {
+              "id": "2",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 5,
+        "isSticky": false,
+        "lastPostNumber": 5,
+        "lastTime": "2017-01-10T23:25:49+00:00",
+        "participantsCount": 5,
+        "slug": "growth",
+        "startTime": "2016-10-30T14:56:21+00:00",
+        "title": "《Growth编程周刊第一期——从零到开始》"
+      },
+      "id": "62",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "726",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "355",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            },
+            {
+              "id": "2",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 1,
+        "isSticky": false,
+        "lastPostNumber": 1,
+        "lastTime": "2016-12-29T01:54:31+00:00",
+        "participantsCount": 1,
+        "slug": "web",
+        "startTime": "2016-12-29T01:54:31+00:00",
+        "title": "Web 开发者技能树【移动版】预览：陪你成为顶尖开发者~"
+      },
+      "id": "67",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "389",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            },
+            {
+              "id": "2",
+              "type": "tags"
+            },
+            {
+              "id": "3",
+              "type": "tags"
+            },
+            {
+              "id": "4",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 3,
+        "isSticky": false,
+        "lastPostNumber": 3,
+        "lastTime": "2016-12-21T02:53:45+00:00",
+        "participantsCount": 3,
+        "slug": "growth",
+        "startTime": "2016-07-07T08:25:02+00:00",
+        "title": "论growth的界面"
+      },
+      "id": "48",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "708",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "276",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "420",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            },
+            {
+              "id": "3",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 5,
+        "isSticky": false,
+        "lastPostNumber": 5,
+        "lastTime": "2016-12-10T20:24:40+00:00",
+        "participantsCount": 4,
+        "slug": "growth",
+        "startTime": "2016-10-27T07:11:08+00:00",
+        "title": "想做一个《Growth周刊》 有人有兴趣么？"
+      },
+      "id": "59",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "699",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "342",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 5,
+        "isSticky": false,
+        "lastPostNumber": 5,
+        "lastTime": "2016-12-10T20:19:56+00:00",
+        "participantsCount": 4,
+        "slug": "growth",
+        "startTime": "2016-08-11T03:27:00+00:00",
+        "title": "Growth纸质版中，你希望有什么内容？"
+      },
+      "id": "54",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "699",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "323",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            },
+            {
+              "id": "3",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 2,
+        "isSticky": false,
+        "lastPostNumber": 2,
+        "lastTime": "2016-12-09T02:35:37+00:00",
+        "participantsCount": 2,
+        "slug": "-",
+        "startTime": "2016-11-22T02:20:06+00:00",
+        "title": "论坛安全警告"
+      },
+      "id": "64",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "374",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "87",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            },
+            {
+              "id": "5",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 2,
+        "isSticky": false,
+        "lastPostNumber": 2,
+        "lastTime": "2016-12-09T02:35:21+00:00",
+        "participantsCount": 2,
+        "slug": "-",
+        "startTime": "2016-11-22T16:01:40+00:00",
+        "title": "手机端回复问题"
+      },
+      "id": "65",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "378",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "682",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            },
+            {
+              "id": "3",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 8,
+        "isSticky": false,
+        "lastPostNumber": 8,
+        "lastTime": "2016-11-20T03:32:53+00:00",
+        "participantsCount": 5,
+        "slug": "growth-studio",
+        "startTime": "2016-10-27T07:13:55+00:00",
+        "title": "Growth Studio 团队长期招募~"
+      },
+      "id": "61",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "678",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "343",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 1,
+        "isSticky": false,
+        "lastPostNumber": 1,
+        "lastTime": "2016-11-07T23:17:06+00:00",
+        "participantsCount": 1,
+        "slug": "2016-11-thoughtworks",
+        "startTime": "2016-11-07T23:17:06+00:00",
+        "title": "从2016年11月期ThoughtWorks《技术雷达》看前端的未来"
+      },
+      "id": "63",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "365",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            },
+            {
+              "id": "2",
+              "type": "tags"
+            },
+            {
+              "id": "4",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 13,
+        "isSticky": false,
+        "lastPostNumber": 57,
+        "lastTime": "2016-10-28T09:33:49+00:00",
+        "participantsCount": 6,
+        "slug": "growth",
+        "startTime": "2016-01-24T23:52:52+00:00",
+        "title": "欢迎，使用Growth社区"
+      },
+      "id": "6",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "650",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "4",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 35,
+        "isSticky": false,
+        "lastPostNumber": 50,
+        "lastTime": "2016-10-28T06:27:53+00:00",
+        "participantsCount": 8,
+        "slug": "growth",
+        "startTime": "2016-01-24T03:30:29+00:00",
+        "title": " Growth反馈收集"
+      },
+      "id": "1",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "1",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 2,
+        "isSticky": false,
+        "lastPostNumber": 2,
+        "lastTime": "2016-10-17T08:29:33+00:00",
+        "participantsCount": 2,
+        "slug": "ios",
+        "startTime": "2016-10-10T05:22:58+00:00",
+        "title": "ios手机端图片放大"
+      },
+      "id": "58",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "340",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "638",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    },
+    {
+      "attributes": {
+        "canDelete": false,
+        "canHide": false,
+        "canRename": false,
+        "canReply": false,
+        "canSticky": false,
+        "canTag": false,
+        "commentsCount": 6,
+        "isSticky": false,
+        "lastPostNumber": 6,
+        "lastTime": "2016-10-08T01:22:14+00:00",
+        "participantsCount": 5,
+        "slug": "js-node-js",
+        "startTime": "2016-06-01T08:25:04+00:00",
+        "title": "浏览器js和node.js异步编程的实现方法？"
+      },
+      "id": "47",
+      "relationships": {
+        "lastUser": {
+          "data": {
+            "id": "1",
+            "type": "users"
+          }
+        },
+        "startPost": {
+          "data": {
+            "id": "262",
+            "type": "posts"
+          }
+        },
+        "startUser": {
+          "data": {
+            "id": "389",
+            "type": "users"
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "1",
+              "type": "tags"
+            },
+            {
+              "id": "3",
+              "type": "tags"
+            }
+          ]
+        }
+      },
+      "type": "discussions"
+    }
+  ],
+  "included": [
+    {
+      "attributes": {
+        "avatarUrl": "https://forum.growth.ren/assets/avatars/mxfgaglxszdrakh4.jpg",
+        "username": "phodal"
+      },
+      "id": "1",
+      "type": "users"
+    },
+    {
+      "attributes": {
+        "avatarUrl": "https://forum.growth.ren/assets/avatars/9eyv5cfzebnnq4cb.jpg",
+        "username": "timAnim"
+      },
+      "id": "738",
+      "type": "users"
+    },
+    {
+      "attributes": {
+        "avatarUrl": "https://forum.growth.ren/assets/avatars/ogpb6sxt1bogjsp8.jpg",
+        "username": "java-sparrow"
+      },
+      "id": "656",
+      "type": "users"
+    },
+    {
+      "attributes": {
+        "avatarUrl": "https://forum.growth.ren/assets/avatars/xa7k4cmhf2fkmsex.jpg",
+        "username": "HandSonic"
+      },
+      "id": "726",
+      "type": "users"
+    },
+    {
+      "attributes": {
+        "avatarUrl": null,
+        "username": "xuduoyun"
+      },
+      "id": "420",
+      "type": "users"
+    },
+    {
+      "attributes": {
+        "avatarUrl": null,
+        "username": "sunird"
+      },
+      "id": "708",
+      "type": "users"
+    },
+    {
+      "attributes": {
+        "avatarUrl": "https://forum.growth.ren/assets/avatars/ohnenijeaj77jtne.jpg",
+        "username": "j7gong"
+      },
+      "id": "699",
+      "type": "users"
+    },
+    {
+      "attributes": {
+        "avatarUrl": null,
+        "username": "屋顶的老猫"
+      },
+      "id": "87",
+      "type": "users"
+    },
+    {
+      "attributes": {
+        "avatarUrl": null,
+        "username": "fnoop"
+      },
+      "id": "682",
+      "type": "users"
+    },
+    {
+      "attributes": {
+        "avatarUrl": "https://forum.growth.ren/assets/avatars/rpsjwddhr1fgym5m.jpg",
+        "username": "patrickwangqy"
+      },
+      "id": "678",
+      "type": "users"
+    },
+    {
+      "attributes": {
+        "avatarUrl": null,
+        "username": "enjoylearning"
+      },
+      "id": "650",
+      "type": "users"
+    },
+    {
+      "attributes": {
+        "avatarUrl": "https://forum.growth.ren/assets/avatars/mg1i9mdyn1x40v1d.jpg",
+        "username": "billy7x17"
+      },
+      "id": "638",
+      "type": "users"
+    },
+    {
+      "attributes": {
+        "avatarUrl": null,
+        "username": "xiyaozhe"
+      },
+      "id": "389",
+      "type": "users"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<blockquote><p>最近收到了很多要来面试的简历，发现你们的简历怎么都是这样的呢？要是我是面试官，你们肯定进入不了下一轮。</p></blockquote>\n\n<p>马上就要到一年一度，最适合找工作的时间段：金三银四。另外一个时间段是：金九银十。<strong>金三银四</strong>的大意是：<strong>最好的时间是三月，其次是四月</strong>。同理于金九银十，<strong>最好的时间是九月，其次是十月</strong>。反正我也是在几年前，道听途说过来的。一过完年，一交流总会多些想法，就有了金三银四。金九银十则是，一些公司在年中的时候，发去年的年终奖。</p>\n\n<p>今年的行情虽然没有去年火热，但是你仍应该拾掇拾掇一下你的简历，万一机会来了呢？</p>\n\n<h3>跳槽的 N 个原因</h3>\n\n<p>作为一个技术人员，如果你满足以下条件中的任意一个，你应该去看看更多的机会：</p>\n\n <ul><li>钱少了</li>\n <li>技术空间增长太少</li>\n <li>没有发展空间</li>\n <li>心里委屈了</li></ul>\n\n<p>以及</p>\n\n <ul><li>老板招你的时候，和你谈理想。现在，老板问你说：理想能赚钱吗？</li>\n <li>加班太多——都没有时间约会或者女朋友和别人跑了</li>\n <li>你的女朋友在北京，而你在上海</li>\n <li>这个技术公司已经没有大牛了</li></ul>\n\n<p>这不是马上就要到，传说中一年一度的<strong>狗粮节</strong>了么。回到正题，<strong>一份优秀的前端开发工程师简历是怎么样的？</strong>。</p>\n\n<h2>一份优秀的前端开发工程师简历是怎么样的？</h2>\n\n<p>这个嘛，我觉得应该是这样的：</p>\n\n<p><img src=\"http://articles.phodal.com/resume/show-me-code.jpg\" alt=\"Phodal\"></p>\n\n<p>然后呢，HR 只需要打开这个 PDF 中的 GitHub 链接即可：</p>\n\n<p><img src=\"http://articles.phodal.com/resume/phodal-github.jpg\" alt=\"Phodal's GitHub\"></p>\n\n<p>这才叫优秀嘛，你说是不是？</p>\n\n<p>好了，写完段子了，让我们来看正文。</p>\n\n<h2>简历的 N 种错误姿势</h2>\n\n<p>这些年来，我也多多少少了，看了一些简历。也稍微有一些经验，让我先罗列一下问题，再说说原因：</p>\n\n<h3>打开姿势</h3>\n\n<p><strong>简历造假</strong>。任何造假的行为都是不能容忍的，这个问题容易出现在不自信的面试者身上。还容易出现在培训机构的学生上——我并没有任何歧视培训机构培训的学生，我只歧视培训机构及其行为。即使你能幸运的通过面试，在工作的时候，你也有可能被觉察出来。</p>\n\n<p><strong>不适当的文件名</strong>。当我收到一份简历，你可以是 xxx.pdf，可以是 xx公司<em>xx.pdf，但是不能是 all.pdf、resume.pdf 这样的文件名。我还需要帮你重新命名一下，然后存档么？在简历的文件名上，你要突出重点，谁，需要什么岗位，如：李小明</em>Android工程师_简历.pdf</p> \n\n<p><strong>使用 PDF 以外的格式</strong>，如PPT、DOCX、HTML。PDF 是我目前看到兼容性最好的格式，要知道 Windows 上写的 TXT 在 Mac OS 上打开都会有编码问题。DOCX 就更不用说了，我司标配的 Office 是 LibreOffice，打开的文件 100% 出问题。PPT 我就不说了，虽然很帅，但是我很累——<strong>要面试的人是你，不是我</strong>。</p>\n\n<p><img src=\"http://articles.phodal.com/resume/ppt-resume.png\" alt=\"PPT Resume\"></p>\n\n<p>呵呵~</p>\n\n<h3>Be Professional</h3>\n\n<p><strong>语法问题</strong>。在平时的时候，你可以将一些技术栈的单词拼错。但是在简历上，请认真一点~，最好可以找基友帮你过一遍。该大写的时候就应该大写，如 HTML 不应该写成 html 或者 Html，Java  8 不应该写在 JAVA 8 或者 java 8， 乃至 J8。</p>\n\n<p><strong>排版问题</strong>。像审美风格这样就算是其次的，该换行的时候就要换行，该对齐的时候就应该对齐。好在大家都是用模板来完成的，这个问题不大。</p>\n\n<p><strong>没有项目经验或者无用的项目经验</strong>。只是罗列技术栈，没有写你做了什么。这种感觉就好像，我在 BAT 里都干过，只不过是我是在里面扫地的。<strong>作为一个美团外卖员工，天天进百度外卖大楼去送外卖——除了没被打死，你还有什么可以自豪的？。<br>\n</strong><br>\n<strong>写了一些无关紧要的废话</strong>。谁 TM 想知道你和你家大伯的女儿关系，以及你在中小学的时候去哪玩了。除此，你在大学的时候做的家教、兼职也不重要。你要来面试的是一份<strong>技术工作</strong>、<strong>技术工作</strong>、<strong>技术工作</strong>，不是销售，也不是大家老师。如果你是党员，你也不用突出你是有多爱党。毕竟，作为一个普通人，我们都拥互党的领导的。</p>\n\n<h3>不作死</h3>\n\n<p><strong>罗列技术栈</strong>。不要在简历上，写上太多的无关技术栈。<strong>写到简历上的东西，都会成为你的呈堂证供。</strong>如我毕业的时候，准备了三种不同类型的简历，嵌入式工程师的、Web 工程师的、包含两者的。然后在<strong>专业技能</strong>上，我列举了我玩过的各个东西。在现在看来，简直是。。。</p>\n\n<p><img src=\"http://articles.phodal.com/resume/list-skills.png\" alt=\"罗列技术栈\"></p>\n\n<p>简直是作死。当年，我写在简历上的每一个内容，<strong>都被一一过问了一遍</strong>。</p>\n\n<h2>程序员该如何去写自己的简历</h2>\n\n<p>简历就是<strong>简单的介绍一下你自己有多 NB</strong>。所以，你需要介绍以下的内容：</p>\n\n<ol><li><strong>我是谁</strong>。</li>\n<li><strong>我会什么</strong>。</li>\n<li><strong>做过什么</strong>。</li>\n<li><strong>结果如何</strong>。</li></ol>\n\n<p>然后把这些内容放到一个模子里，就可以了。</p>\n\n<h3>选择一套模板</h3>\n\n<p>如果你并非设计师，或者想要相关的求职岗位，那么请不要在简历的样式上花时间。你应该将更多的时间花费在简历的内容上吧。作为一个技术岗位，面试官想看的是你能干什么，而不是漂亮不漂亮。你又不是要面试 鼓励师程序员 =  鼓励师 + 程序员。</p>\n\n<p>然后推荐下我用的模板，LaTex 里的 <strong>modercv</strong> 模板。就是这样的效果：</p>\n\n<p><img src=\"http://articles.phodal.com/resume/modercv.png\" alt=\"LaTex简历模板\"></p>\n\n<p>这个模板最大的优点是，写废话的地方很少。最大的缺点是：你需要学习 LaTex。你可以轻松地写上你的各种经历，并且排版出来的效果很不错。</p>\n\n<h3>首屏加载：在第一页尽可能突出自己</h3>\n\n<p>这里有一个突出自己的，最好例子：</p>\n\n<blockquote><p>本人学识渊博、经验丰富，代码风骚、效率恐怖，c/c++、java、php无不精通，熟练掌握各种框架，深山苦练20余年，一天只睡4小时，千里之外定位问题，瞬息之间修复上线。身体强壮、健步如飞，可连续编程100小时不休息，讨论技术方案5小时不喝水，上至带项目、出方案，下至盗账号、威胁pm，啥都能干。泡面矿泉水已备好，学校不支持编程已辍学，家人不支持编程已断绝关系，老婆不支持编程已离婚，小孩不支持编程已送孤儿院，备用电源万兆光纤永不断电断网，门口已埋雷无人打扰</p></blockquote>\n\n<p>因此，你要保证 <strong>HR 可以轻松地打开你的简历</strong>，并且可以看到他们想要看的内容。如果你使用 GitHub Pages 和网页的时候，就要注意这个问题。并不是所有的 HR 都会翻墙的，并不是所有公司访问外网都会很轻松的。</p>\n\n<p>你刚毕业不久的时候，你应该突出你在学校的成果：</p>\n\n<p><img src=\"http://articles.phodal.com/resume/resume-in-school-with-exp.jpg\" alt=\"在校情况\"></p>\n\n<p>工作的时候，便是突出你的公司，和 NB 的项目。</p>\n\n<h3>毕业到工作：从看学校到看公司</h3>\n\n<p>校招的时候，你可以把你在学校玩过的各种东西都写在上面，如下：</p>\n\n<p><img src=\"http://articles.phodal.com/resume/resume-in-school.jpg\" alt=\"学校简历\"></p>\n\n<p>就是要把你玩过的、觉得很 High 的东西都往上写。毕竟大部分人都是玩游戏过来的，然后你还玩过这么多东西，面试官对你的印象一定特定好。不过，还是那一点，<strong>不要造假</strong>——写到简历上的东西，都会成为你的呈堂证供。作为一个 Play for Fun 的程序员，谁的大家不是这么玩过来的。</p>\n\n<p>除了这种玩可以为你加分之后，还有：</p>\n\n<ol><li>211 985高校加分</li>\n<li>硕士学历加分</li>\n<li>大公司实习经验加分</li>\n<li>GitHub、博客加分 </li>\n<li>ACM 等比赛加分</li>\n<li>项目经验加分</li>\n<li>等等</li></ol>\n\n<p>而，等你工作多年后，教育经历就变成无关经历了。这时候加分的内容就变成：</p>\n\n<ol><li>BAT 等大公司加分</li>\n<li>NB 的开源项目加分</li>\n<li>与本公司相关的项目经验加分</li>\n<li>行业大牛，自带光环</li>\n<li>技术栈完全匹配加分</li>\n<li>GitHub、博客加分 </li>\n<li>认识 Phodal 加分 （笑~~）</li>\n<li>等等</li></ol>\n\n<p>这个世界就会从看学校到看公司。所以，如果你毕业的时候遇到这样一个选择：<strong>大公司还是创业公司</strong>。请考虑上这一点因素，如果这家创业公司倒了，那么你的下家就不好找了。反之，你从大公司要进入小公司，则是轻轻松松地一件事。</p>\n\n<p>（PS：我的干货就到这里结束了，以下是广告时间。）</p>\n\n<h2>小结</h2>\n\n<p>当然了，简历再漂亮，能力不行的话，你也是进不了进一轮的。这时候，你一定需要新版的 Growth 2.5.0，我们将带你成为顶尖开发者：全新的技术树、全新的学习体验。下载链接（<a href=\"http://a.app.qq.com/o/simple.jsp?pkgname=ren.growth\" target=\"_blank\" rel=\"nofollow noreferrer\">http://a.app.qq.com/o/simple.jsp?pkgname=ren.growth</a>)。</p>\n",
+        "contentType": "comment",
+        "id": 397,
+        "number": 1,
+        "time": "2017-02-13T15:50:26+00:00"
+      },
+      "id": "397",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>如果你让这个应用更加强大。</p>\n\n<p>如果你想帮助自己和他人更好的成长。</p>\n\n<p>如果你想和更多的人一起交流。</p>\n\n<p>请添加这个微信号: growth-ren</p>",
+        "contentType": "comment",
+        "id": 206,
+        "number": 1,
+        "time": "2016-04-09T13:07:09+00:00"
+      },
+      "id": "206",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<blockquote><p>最近国家网信办要求，App 提供者等不得从事危害国家安全、扰乱社会秩序等法律法规禁止的活动；并要求提供者按照 “后台实名、前台自愿” 原则，对注册用户进行基于移动电话号码等真实身份信息认证。同时记录用户日志信息，并保存60日。</p></blockquote>\n\n<p>因此目前处于观望状态，所以在手机上只能登陆。并且注册还需要激活邮箱，所以注册请通过：<a href=\"http://forum.growth.ren/\" target=\"_blank\" rel=\"nofollow noreferrer\">http://forum.growth.ren/</a> 在线注册。</p>",
+        "contentType": "comment",
+        "id": 311,
+        "number": 1,
+        "time": "2016-08-05T02:36:40+00:00"
+      },
+      "id": "311",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>小圈子，更亲密。咱一起嗨起来吧！ <a href=\"https://wx.xiaomiquan.com/mweb/views/joingroup/join_group.html?group_id=8421115422&amp;secret=g6pdt8ffwxxt2nmf0qh2e3wbh8w0diiu&amp;extra=d962a3de2e1f1a701f109c50f79e5acd067c719531be43805be4951581a38830\" target=\"_blank\" rel=\"nofollow noreferrer\">加入链接</a></p>\n\n<p><img src=\"http://articles.phodal.com/xmq.jpg\" alt=\"QRCode\"></p>",
+        "contentType": "comment",
+        "id": 400,
+        "number": 1,
+        "time": "2017-02-24T09:33:56+00:00"
+      },
+      "id": "400",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>Growth - 带你成为顶尖开发者 新版本 2.5.0 已发布</p>\n\n<ol><li>更新全部 API 为 HTTPS</li>\n<li>添加基本的技能树</li>\n<li>优化性能、更新 UI</li>\n<li>升级基础框架为 Angular 2、Ionic 2 正式版</li></ol>\n\n<p>更新地址：<a href=\"http://a.app.qq.com/o/simple.jsp?pkgname=ren.growth\" target=\"_blank\" rel=\"nofollow noreferrer\">http://a.app.qq.com/o/simple.jsp?pkgname=ren.growth</a></p>",
+        "contentType": "comment",
+        "id": 396,
+        "number": 1,
+        "time": "2017-02-12T13:05:48+00:00"
+      },
+      "id": "396",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "\n<blockquote><p>将 package.json 中的 Ionic 版本改为 2.0.0 的时候，我就思考一个问题。这个该死的问题是——我到底要用哪个框架继续工作下去。</p></blockquote>\n\n<p>刚开始学习前端的时候，SPA（单页面应用）还没有现在这么流行，可以选择的框架也很少。而今天，我随便打开一个技术相关的网站、应用，只需要简单的看几页，就可以看到丰富的<strong>前端框架世界</strong> Angular 2、React、Vue.js、Ember.js。</p>\n\n<p>当我还是一个新手程序员，我从不考虑技术选型的问题。因为不需要做技术选型、不需要更换架构的时候，便觉得框架丰富就让它丰富吧，<strong>反正我还是用现在的技术栈</strong>。等到真正需要用的时候，依靠之前的基础知识，我仍能很轻松地上手。</p>\n\n<p>可是一旦需要考虑选型的时候，真觉得天仿佛是要塌下来一般。选择 A 框架，则使用过 B 框架的可能会有些不满。选用 B 框架，则使用 A 框架的人会有些不满。选择一个过时的框架，则大部分的人都会不满。这点“小事”，也足够让你几天几夜睡不了一个好觉。</p>\n\n<h2>前端的选择恐惧症</h2>\n\n<p>年轻的程序员都是好奇的猫，玩过一个又一个的前端框架。从毛球上弄出一条条的线，玩啊玩，最后这一个个的框架在脑子里搅浆糊。</p>\n\n<h3>技术选型：不仅仅受技术影响</h3>\n\n<p>有太多的选择，就是一件麻烦的事；没有选择时，就是一件更麻烦的事；有唯一的选择时，事情就会变得超级简单。</p>\n\n<p>倘若，我是那个使用 Java 来开发 API 的少年，我会使用 Spring Boot 来作为开发框架。尽管 Java 是一门臃肿的语言，但保守的选择不会犯上大错。</p>\n\n<p>倘若，我是那个使用 Python 来开发  Web 应用的少年，我会使用 Django 来作为开发框架。它可以让我快速地开发出一个应用。</p>\n\n<p>只可惜，我不再是一个后台开发者，我不再像过去，可以直接、没有顾虑的选择。当我选择 JavaScript 时，我就犯上了「选择恐惧症」。技术选型也是没有银弹的——没有一个框架能解决所有的问题。</p>\n\n<p>在《Growth：全栈 Web 开发思想》一书中，我曾提到过影响技术选型的几个因素。</p>\n\n<p><img src=\"http://ued.party/images/tech-decide.png\" alt=\"技术选择因素\"></p>\n\n<p>这时，为了更好的考量不同的因素，你就需要列出重要的象限，如<strong>开发效率</strong>、团队喜好等等。并依此来决定，哪个框架更适合当前的团队和项目。</p>\n\n<p><img src=\"http://ued.party/images/pri.jpg\" alt=\"PRI\"></p>\n\n<p>即使，不考虑前端框架以外的因素，那么技术选型也是相当痛苦的一件事。</p>\n\n<h3>上线时间影响框架</h3>\n\n<p>每一个框架从诞生到受欢迎，都有其特定的原因和背景。不同的开发者选择时，也是依据于其特定情景下的原因和背景。</p>\n\n<p>如 Ruby On Rails诞生之时，带来了极大的开发效率，而开发效率正是当时大部分人的痛点。我们知道 Ruby On Rails 是一个大而广的框架，它可以提供开发者所需要的一切，开发者所需要做的就是实现业务代码。当开发效率不再是问题时，自由度变成了一些开发者的痛点，此时像 Sinatra 这样的微框架就受这些人欢迎。</p>\n\n<p>也因此，开发效率会在很大程度上影响技术选型。毕竟，开发效率在很大程度上决定了上线时间，上线时间很大地影响了技术选型。</p>\n\n <ul><li>用几星期的时间来做一个网站，我首先想到的会是找一个模板。</li>\n <li>用几个月的时候来做一个网站，我仍然会想到找一个框架。</li>\n <li>用几个年的时间来做一个网站，我会想着是不是可以造几个轮子。</li></ul>\n\n<p>遗憾的是，要遇到可以造轮子的项目不多。</p>\n\n<h3>锤子定律：你需要更大的视野</h3>\n\n<p><strong>年轻的时候，学会了 A 框架，总觉得 Z 网站用 A 框架来实现会更好</strong>，一定不会像今天这样经常崩溃、出Bug。**时间一长，有时候就会发现，Z 网站使用 A 不合适，他们的问题并不是框架的问题，而是运维的问题。</p>\n\n<p>后来，出于对职业发展的探索，我开始了解咨询师，看到一本名为《咨询的奥秘》的书籍。在这其中，提到一个有意思的定律“锤子定律”（又称为工具定律）——<strong>圣诞节收到一把锤子的孩子，会发现所有东西都需要敲打</strong>。 出现这种情况的主要原因是，<strong>开发者对一个熟悉的工具过度的依赖</strong>。</p>\n\n<p>认真观察，就会发现这个现象随处可见。当一个新手程序员学会了某个最新的框架，通常来说这个框架有着更多的优点，这个时候最容易出现的想法是：<strong>替换现有的框架</strong>。可是，现有的框架并没有什么大的问题。并且凭估不充分时，新的框架则存在更多的风险。</p>\n\n<p>并且，对于某个熟悉工具的过度依赖，特别容易影响到技术决策——看不到更多的可能性。这时候，我们就需要头脑风暴。但是这种情况下，头脑风暴很难帮助解决问题。</p>\n\n<p>在这个时候，拥有更多项目、框架经验的人，可能会做出更好的选择。</p>\n\n<h2>前端框架一览</h2>\n\n<p>在这个复杂的前端框架世界里，我不敢自称是有丰富的徒刑经验。我只能去分享我用过的那些框架，读者们再结合其他不同的框架来做决定。</p>\n\n<h3>jQuery, 使用生态解决问题</h3>\n\n<p>jQuery 创立之初的主要目标是，简化 HTML 与 JavaScript 之间的操作，开发者可以轻松地使用 <code>$('elment').doSomething()</code> 的形式来对元素进行操作。诞生之后，由于其简单容易手、并且拥有丰富的插件，几度成为最受欢迎的前端框架。大部分动态交互效果，都能轻松地找到 jQuery 插件。即使，没有也能通过其 API，快速地编写相应的插件。</p>\n\n<p>在很多人看来，jQuery 似乎是一个不会在未来用到的框架。可惜到了今天（2017年），我仍然还在项目中使用 jQuery 框架。一年前，我们仍在一个流量巨大的搜索网站上使用用 jQuery。在这几个项目上，仍然使用 jQuery 的原因，大抵有：</p>\n\n <ul><li>项目功能比较简单。并不需要做成一个<strong>单页面应用</strong>，就不需要 MV* 框架</li>\n <li>项目是一个<strong>遗留系统</strong>。与其使用其他框架来替换，不如留着以后重写项目</li></ul>\n\n<p>所以，在互联网上仍有大量的网站在使用 jQuery。这些网站多数是 CMS（内容管理系统）、学校网站、政府机构的网站等等。对于这些以内容为主的网站来说，他们并不需要更好的用户体验，只需要能正确的显示内容即可。</p>\n\n<p>因此即使在今天，对于一般的 Web 应用来说，JavaScript 搭配 jQuery 生态下的插件就够用。然而，对于一些为用户提供服务的网站来说，前端就不是那么简单。</p>\n\n<h3>Backbone.js，脊椎连接框架</h3>\n\n<p>从 Ajax 出现的那时候开始，前端便迎来了一个新的天地。后来，智能手机开始流行开来。Web 便从桌面端往移动端发展，越来越多的公司开始制作移动应用（APP 和 移动网站）。jQuery Mobile 也诞生这个特殊的时候，然而开发起中大型应用就有些吃力。随后就诞生了 Backbone、Angular 等等的一系列框架。</p>\n\n<p>毕竟，<strong>作为一个程序员，如果我们觉得一个工具不顺手，那么应该造一个新的轮子。</strong></p>\n\n<p>Backbone.js 是一个轻量级的前端框架，其编程范型大致上匹配MVC架构。它为应用程序提供了模型(models)、集合(collections)、视图(views)的结构。</p>\n\n<p>Backbone 的神奇之处在于，在可以结合不同的框架在一起使用。就像脊椎一样，连接上身体的各个部分。使用 Require.js 来管理依赖；使用 jQuery 来管理 DOM；使用 Mustache 来作为模板。它可以和当时流行的框架，很好地结合到一起。在今天看来，能结合其他前端框架，是一件非常难得的事。</p>\n\n<p>遗憾的是，Backbone.js 有一些的缺陷，使它无法满足复杂的前端应用，如 Model 模型比较简单，要处理好 View 比较复杂。除此，还有更新 DOM 带来的性能问题。</p>\n\n<h3>Angular，一站式提高生产力</h3>\n\n<p>与 Backbone 同一时代诞生的 Angular 便是一个大而全的 MVC 框架。在这个框架里，它提供了我们所需要的各种功能，如模块管理、双向绑定等等。它涵盖了开发中的各个层面，并且层与层之间都经过了精心调适。</p>\n\n<p>我们所需要做的便是遵循其设计思想，来一步步完善我们的应用。Angular.js 的创建理念是：即声明式编程应该用于构建用户界面以及编写软件构建，而命令式编程非常适合来表示业务逻辑。</p>\n\n<p>我开始使用 Angular.js 的原因是，我使用 Ionic 来创建混合应用。出于对制作移动应用的好奇，我创建了一个又一个的移动应用，也在这时学会了 Angular.js。对于我而言，选择合适的技术栈，远远比选择流行的技术栈要重要得多，这也是我喜欢使用 Ionic 的原因。当我们在制作一个应用，它对性能要求不是很高的时候，那么我们应该选择开发速度更快的技术栈。</p>\n\n<p>对于复杂的前端应用来说，基于 Angular.js 应用的运行效率，仍然有大量地改进空间。在应用运行的过程中，需要不断地操作 DOM，会造成明显的卡顿。对于 WebView 性能较差或早期的移动设备来说，这就是一个致命伤。</p>\n\n<p>幸运的是在 2016 年底，Angular 团队推出了 Angular 2，它使用 Zone.js 实现变化的自动检测、</p>\n\n<p>而迟来的 Angular 2 则受<strong>奥斯本效应</strong><a href=\"%E9%A2%87%E5%8F%97%E6%AC%A2%E8%BF%8E%E7%9A%84%E4%B8%AA%E4%BA%BA%E7%94%B5%E8%84%91%E5%8E%82%E5%95%86%E5%A5%A5%E6%96%AF%E6%9C%AC%EF%BC%8C%E5%85%B6%E5%85%AC%E5%8F%B8%E7%9A%84%E5%88%9B%E6%96%B0%E5%BC%8F%E4%BE%BF%E6%90%BA%E7%94%B5%E8%84%91%E8%BF%98%E6%B2%A1%E6%9C%89%E4%B8%8A%E5%B8%82%EF%BC%8C%E5%B0%B1%E5%AE%A3%E5%B8%83%E4%BB%96%E4%BB%AC%E8%A6%81%E6%8E%A8%E5%87%BA%E7%9A%84%E6%9B%B4%E9%AB%98%E6%A1%A3%E7%9A%84%E6%9C%BA%E5%99%A8%EF%BC%8C%E8%80%8C%E5%8F%88%E8%BF%9F%E8%BF%9F%E6%97%A0%E6%B3%95%E4%BA%A4%E8%B4%A7%EF%BC%8C%E6%B6%88%E8%B4%B9%E8%80%85%E9%97%BB%E9%A3%8E%E7%BA%B7%E7%BA%B7%E5%81%9C%E6%AD%A2%E4%B8%8B%E5%8D%95%E8%AE%A2%E8%B4%AD%E7%8E%B0%E6%9C%89%E6%9C%BA%E7%A7%8D%EF%BC%8C%E6%9C%80%E5%90%8E%E5%AF%BC%E8%87%B4%E5%A5%A5%E6%96%AF%E6%9C%AC%E5%9B%A0%E6%94%B6%E5%85%A5%E6%9E%AF%E7%AB%AD%E8%80%8C%E5%AE%A3%E5%B8%83%E7%A0%B4%E4%BA%A7%E3%80%82\" target=\"_blank\" rel=\"nofollow noreferrer\"><sup>osborne</sup></a>的影响，逼得相当多的开发者们开始转向其它的框架。</p>\n\n\n\n<h3>React，组件化提高复用</h3>\n\n<p>从 Backbone 和 Angular.js 的性能问题上来看，我们会发现 DOM 是单页面应用急需改善的问题——主要是DOM 的操作非常慢。而在单页面应用中，我们又需要处理大量的 DOM，性能就更是问题了。于是，采用 Virtual DOM 的 React 的诞生，让那些饱受性能苦恼的开发者欢迎。</p>\n\n<p>传统的 DOM 操作是直接在 DOM 上操作的，当需要修改一系列元素中的值时，就会直接对 DOM 进行操作。而采用 Virtual DOM 则会对需要修改的 DOM 进行比较（DIFF），从而只选择需要修改的部分。也因此对于不需要大量修改 DOM 的应用来说，采用 Virtual DOM 并不会有优势。开发者就可以创建出可交互的 UI。</p>\n\n<p>除了编写应用时，不需要对 DOM 进行直接操作，提高了应用的性能。React 还有一个重要思想是组件化，即 UI 中的每个组件都是独立封装的。与此同时，由于这些组件独立于 HTML，使它们不仅仅可以运行在浏览器里，还能作为原生应用的组件来运行。</p>\n\n<p>同时，在 React 中还引入了 JSX 模板，即在 JS 中编写模板，还需要使用 ES 6。令人遗憾的是 React 只是一个 View 层，它是为了优。为了完成一个完整的应用，我们还需要路由库、执行单向流库、web API 调用库、测试库、依赖管理库等等，这简直是一场噩梦。因此为了完整搭建出一个完整的 React 项目，我们还需要做大量的额外工作。</p>\n\n<p>大量的人选择 React 还有一个原因是：React Native、React VR 等等，可以让 React 运行在不同的平台之上。我们还能通过 React 轻松编写出原生应用，还有 VR 应用。</p>\n\n<p>在看到 Angular 2 升级以及 React 复杂性的时候，我相信有相当多的开发者转而选择 Vue.js。</p>\n\n<h3>Vue.js，简单也是提高效率</h3>\n\n<p>引自官网的介绍，Vue.js 是一套构建用户界面的渐进式框架，专注于MVVM 模型的 ViewModel 层。Vue.js 不仅简单、容易上手、配置设施齐全，同时拥有中文文档。</p>\n\n<p>对于使用 Vue.js 的开发者来说，我们仍然可以使用 熟悉的 HTML 和 CSS 来编写代码。并且，Vue.js 也使用了 Virtual DOM、Reactive 及组件化的思想，可以让我们集中精力于编写应用，而不是应用的性能。</p>\n\n<p>对于没有 Angular 和 React 经验的团队，并且规模不大的前端项目来说，Vue.js 是一个非常好的选择。</p>\n\n<p>虽然 Vue.js 的生态与 React 相比虽然差上一截，但是配套设施还是相当齐全的，如 Vuex 、 VueRouter。只是，这些组件配套都由官方来提供、维护，甚至连 awesome-vue 也都是官方项目，总觉得有些奇怪。</p>\n\n<p>除此，Vue.js 中定义了相当多的规矩，这种风格似乎由 jQuery 时代遗留下来的。照着这些规矩来写代码，让人觉得有些不自在。</p>\n\n<p>和 React 相似的是，Vue.js 也有相应的 Native 方案 Weex，仍然值得我们期待。</p>\n\n<h3>小结</h3>\n\n<p>除了上面提到的这些前端框架，我还用过 Reactive、Ember.js、Mithril.js，遗憾的是同 Vue.js 一样，我没有在大一点的、正式项目上用过。也因此，我没有能力、经验、精力去做更详细的介绍。有兴趣的读者，可以做更详细的了解，也可以在 GitHub (<a href=\"https://github.com/phodal/fe\" target=\"_blank\" rel=\"nofollow noreferrer\">https://github.com/phodal/fe</a>) 上给我们提交一个 Pull Request。</p>\n\n<h2>总结</h2>\n\n<p>今天，大部分的框架并不只是那么简单。为了使用这个框架你，可能需要学习更多的框架、知识、理论。一个很好的例子就是 React，这个框架的开发人员，引入了相当多的概念，JSX、VIrtual Dom。而为了更好地使用 React 来开发，我们还需要引入其他框架，如 Redux、ES6 等等的内容。</p>\n\n<p>这些框架从思想上存在一些差异，但是它们都有相似之处，如组件化、MV**、All in JS、模板引擎等等。欲知后事如何，请期待下一章。</p>\n",
+        "contentType": "comment",
+        "id": 395,
+        "number": 1,
+        "time": "2017-02-12T08:31:50+00:00"
+      },
+      "id": "395",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<blockquote><p>我年轻的时候，是一个前端工程师。那时候，有这样一个传说：美工是最受妹子的欢迎，其次是半个美工的前端工程师。</p></blockquote>\n\n<p>本故事纯属瞎掰，如有雷同纯属巧合——Phodal @PasteRight</p>\n\n<p>未满 18 年时，想成为一名 Kernel Hacker，就是那种操着键盘，在屏幕洒下一行行汇编语言的大牛。在我学了一段时间 C++ 后，我觉得：『用记事本写代码，并运行起来』的故事都是骗人的。为了将代码转变为程序，你还需要一个编译工具。</p>\n\n<p>然而有一天，我在网吧里看到一个人在记事本里写代码。开始的时候，我觉得这个人是个新手吧，怎么拿记事本在写代码呢，不是应该都拿 IDE 才能编译运行吗？几分钟过后，我发现他居然能将，记事本写的程序运行起来，太神奇了，Amazing Man。</p>\n\n<p>后来，为了在别人面前装这个 100 分的逼，我成了一名 Web 工程师，而且还是一个前端工程师。</p>\n\n<p>（PS：以上纯属瞎扯）</p>\n\n<h2>漂亮的前台</h2>\n\n<p>各位看官中，有些可能不是前端工程师，那就先让我来说说前端工程师是干什么。前端又可以称之为前台，不是那种每天对你笑、帮你开门、长得还算不错的前台，然而却也差不了多少。</p>\n\n<p>他们要做出好看的、美丽大方的界面，以免吓走那些对颜值有要求的挑剔客户；还要对指引好用户，免得有些用户认错了楼、走错了路口，然后再也不来光顾你们的网站了；有些时候，还要像处女座纠结于对齐，纠结于 px px 的程序员。</p>\n\n<p>你还会看到他们拿起纸当尺子，一点点的测量着什么东西，好似在怀疑这个屏幕是不是真的是 15.4 寸。<br>\n如果你看到一个程序员，他在纠结椅子是不是摆放正确的，那么它有可能是三种程序员中的一种：处女座程序员、前端工程师，还有测试工程师。</p>\n\n<p>我们就像上个世纪的网民，时不时地按下 F5 又或者 Command + R 来刷新页面，一直在怀疑页面上的内容是不是最新的。好在后来，有一个伟大的大魔法师发明了一个工具，可以检测到代码修改，自动地帮你刷新页面。终于，不再像个老大爷一样踢电脑，以指望提高图片的质量，甚至去掉马赛克。</p>\n\n<p>过去，我也无法理解：这群智力超群的程序员，为什么会变得如此px px 计较，直到我成为了其中的一员。</p>\n\n<h2>我要成为一个前端设计师</h2>\n\n<p>习惯了大学的生活过后，我和好友楚非就一起去租了一个服务器，从此生活就变得有点艰难。不过有了一个服务器，我们就可以去做个网站，并托管别人的网站，然后就可以坐在学校里数钱了。对于当时的我而言，我并不想成为一个 Web 开发工程师，我还是从心底向往底层的开发。</p>\n\n<p>理想很美好，现实很残酷。虽然我们有了一个服务器，但是它不能立刻地为我们赚钱。我不知道一个完整的网站是怎样的，也没有找到客户。后来，直到大二下学期快结束的时候，我们才算迎来真正的客户。在那段找不到客户，也没有能力找客户的日子里，我们就这样把自己逼上了一条不归路。</p>\n\n<blockquote><p>就这样和很多人一样，为了赚钱，就这样成为了一个前端工程师。</p></blockquote>\n\n<p>这时，我们就遇到了一个问题：我们俩究竟谁做前端，谁做后台？</p>\n\n<p>这结局大多数人都是知道的，我来负责前端。然而每每说到：他是学美术的，他去做后台；而我是学电子信息工程的，我来负责前端，总会有人感到一些惊讶。选择前端，有这么一个主要的原因：<strong>离成为设计师的目标更进一步</strong>。</p>\n\n<p>我所理解的“设计师”，是广泛意义上的设计师。他们做一些创意的工作，以此来创造一些令人啧啧称赞的作品。这些作品不仅仅可以是一件雕塑，一幅画，还能是一个 Idea，一段代码。</p>\n\n<p><strong>当你是一个前端工程师的时候，你是一个程序员，还是一个设计师。</strong></p>\n\n<p>程序员本身也是设计师。虽然程序已经代替了相当数量的手工操作，要想代替程序员则需要更多的时日。然而，程序员手艺的好坏是有相当大的差异的。初学编程的时候，总会看到各种“程序设计”这样高大上的字眼，设计才是程序的核心。这就意味着，写代码的时候，就是在设计作品。设计是一门脑力活，也是一门模式活，从中能看出一个人的风格，从而了解一个人的水平。</p>\n\n<p>因为我认为，前端工程师还应该懂得设计。我便花费了很多时间去：学习素描，熟悉一些原型设计软件，了解各种配色原理。以指望我可以像一个设计师一样，做好前端网页的设计。毕竟代码和大部分艺术作品一样，容易被临摹、复制，而要复制思想则不是一件容易的事。</p>\n\n<p>而到了今天，我的设计能力还是有待商榷。幸运的是，我可以熟练地使用各种可视化工具，然后做出各种美妙的图案。</p>\n\n<p>我还能写编写一行行的前端代码，并写下这个系列（《我的职业是前端工程师》）的文章，来帮助大家深入了解前端工程师。</p>",
+        "contentType": "comment",
+        "id": 393,
+        "number": 1,
+        "time": "2017-01-21T15:09:26+00:00"
+      },
+      "id": "393",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<blockquote><p>本期我们关注的主题是，第一次是怎样的体验，第一次我们应该怎么做。</p></blockquote>\n\n<p>欢迎您阅读由 Phodal 推出的《Growth周刊》，我们致力于为你打造一份更完整的增长体验。每一期我们都会有一个主题，每一个主题里都会包含有开源项目、实用软件、推荐书籍、TIPS、时事点评等一系列相关的内容。</p>\n\n<p>在这一期里，我们将会手把你教会你如何从入门到精通。</p>\n\n<h2>开源项目推荐（文档篇）</h2>\n\n<h3>从零开始学编程系列汇总</h3>\n\n<p>首先，先让我们先看看一个GitHub资料收集项目——<a href=\"https://github.com/justjavac/Programming-Alpha-To-Omega\" target=\"_blank\" rel=\"nofollow noreferrer\">从零开始学编程系列汇总(从Α到Ω)</a>，由 <a href=\"https://forum.growth.ren/u/justjavac\" class=\"UserMention\">@justjavac</a> 维护。在这一个项目里，收集了几个不错的「从零开始学编程系列」以及「自己动手」系列的文章合集，也包括了我在两个多以前写的《自己动手写编辑器》——可惜，我已经放弃了在这方面的想法了。在这个项目里包含了下面的一些话题：<code>编译器</code>、<code>操作系统</code>、<code>网络游戏</code>、<code>Chrome扩展</code>、<code>数据库</code>等等。</p>\n\n<p>说了这么多，你还不去看看吗？</p>\n\n<h3>从零开始学JavaScript全栈</h3>\n\n<p>这是本周在GitHub Trending上榜的一个JavaScript项目，这个项目的英文名是：<a href=\"https://github.com/verekia/js-stack-from-scratch\" target=\"_blank\" rel=\"nofollow noreferrer\">JS stack from Scratch</a>，只是我看了看这个项目的内容——有各种不同的JavaScript方面的知识，从前端、后台等等。目前来说，一共包含了12个主题。简单的分一下类就是：包管理、构建工具、Bable和Gulp、ES6语法 、React和Redux、测试以及类型检测工作流。</p>\n\n<p>并且，它还有一个中文译版：<a href=\"https://github.com/pd4d10/js-stack-from-scratch\" target=\"_blank\" rel=\"nofollow noreferrer\">https://github.com/pd4d10/js-stack-from-scratch</a></p>\n\n<h3>其他</h3>\n\n<p>笑，还有我的电子书《<a href=\"https://github.com/phodal/designiot\" target=\"_blank\" rel=\"nofollow noreferrer\">一步步搭建物联网系统</a>》也算是属于这个系列的。</p>\n\n<p>当然《Re:从零开始的异世界生活》也是不错的。</p>\n\n<p>(雷姆.jpg)</p>\n\n<h2>开源项目推荐（技术篇）</h2>\n\n<p>本期我们要推荐的开源项目都是一些生成全栈JavaScript项目的开源项目。如果你还在使用各种Boilerplate，那么你更应该看看这几个工具。</p>\n\n<h3>Yeoman</h3>\n\n<p>我想你已经听过这个项目了，Yeoman旨在为开发者提供一系列健壮的工具、程序库和工作流，帮助他们快速构建出漂亮、引人注目的Web应用。你只需要使用Yeoman安装一个这个软件<code>yo</code>，然后你只需要找到合适的生成器，最后你可以愉快地完成项目。这一切的前提是已经有了制作了一个Generator。</p>\n\n<h3>Brunch</h3>\n\n<p>这算是一个小众型的构建工具，并且带了相当多的前端框架模板，你可以把它视为是一个 Yeoman + Grunt 的合体。从一个简单的 前端框架，到结合不同的后台服务，如Rails。Babel、React、Electron等等，也可以使用TypeScript等等。</p>\n\n<h3>next.js</h3>\n\n<p>本周里还有一个JavaScript的项目在GitHub Trending上很受欢迎，即<a href=\"https://github.com/zeit/next.js\" target=\"_blank\" rel=\"nofollow noreferrer\">next.js</a>。它是一个服务端渲染的React应用的最小框架，有了这个全栈的JavaScript模板。你就可以当上CTO，迎娶白富美。它使用Babel和Webpack，可以自动帮你转译、热加载等等。</p>\t\n\n\n<h2>书籍</h2>\n\n<p>如果你想问我某个语言或者某个技术栈的读书路线，那么它是这样的：x 语言入门—&gt; x 语言应用实践—&gt; x 语言高阶编程—&gt; x 语言的科学与艺术—&gt; 编程之美—&gt; 编程之道—&gt; 编程之禅—&gt; 颈椎病康复指南。更详细的信息可以查看我之前编写的：<a href=\"https://github.com/phodal/booktree\" target=\"_blank\" rel=\"nofollow noreferrer\">BookTree</a>，或者直接使用 Growth APP了解更多，更详细的内容。</p>\n\n<p>现在让我们来推荐几本从入门到精通的书，顺便打个小广告。</p>\n\n <ul><li>《编码的奥秘》，这本书是一本神奇的全栈书籍，在Web开发领域我们所说的全栈都是指会做前端和后台，顺便带点运维，以及界面设计等等。但是这本书呢，将教会你从莫尔斯码到CPU的制造，就是这么神奇的硬件书籍。</li>\n <li>《JavaScript框架设计》，虽然这本书在今天看来有点过时，根据作者说，第二版已经在出版中了。第一次阅读这本书的时候，是我在学习造前端轮子的时候看到的，你可以很容易根据这本书来了解一下SPA应用的原理。<br>\n -《自己动手设计物联网》，你将在这本书中看到如何“从零开发使用JavaScript来开发物联网应用”。</li></ul>\n\n<h2>TIPS</h2>\n\n<p>其实呢，要学习一个语言或者框架，最简单的办法是：</p>\n\n<p>首先买本书，了解下这个框架或者语言的大概；随后呢，你再整理一下相关的知识图谱——比如思维导图；然后，再动手写写个项目；最后，写几篇文章和博客来整理一下自己的知识了。</p>\n\n<h2>时事点评</h2>\n\n<p>本周“巨硬”（微软）推出了Surface Studio，可惜我没钱买Surface——平时用电脑模式写写代码，休息时当成平板玩游戏~。苹果也推出了 Emacs 键盘版的 Macbook，即Touch Bar版MBP ，很明显圣战已经在苹果内部结束了~。</p>\n\n<p>MBP 没有 ESC键了，VIM程序员怎么办？——难道不是又找到了个理由买机械键盘了。</p>\n\n\n<p>由于我和我家花仲马的笔记本电源都已经损坏，我在专卖店写下此文~。感谢Apple专卖店提供的网络服务，虽然我买不起iPhone。</p>\n\n<p>你还有什么想听的内容，想学的知识，请与我们联系。</p>",
+        "contentType": "comment",
+        "id": 355,
+        "number": 1,
+        "time": "2016-10-30T14:56:21+00:00"
+      },
+      "id": "355",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>上周六陪我们家 @花仲马 去看一部狗血的电影《摆渡人》。在这期间，我又想到我伟大的技能树可以单独地出一个版本。于是，我就简单地先撸了一个 Demo 版本。</p>\n\n<p>原型仍然还是原生的那个原型：<a href=\"https://github.com/phodal/sherlock\" target=\"_blank\" rel=\"nofollow noreferrer\">https://github.com/phodal/sherlock</a>，还是基于以前的 Skilltree。</p>\n\n<p>只是现在变成了移动版，除了可以当成一个 Android 应用、iOS 应用，它还将作为 PWA 应用运行——这意味着，你可以在带有 Chrome 浏览器上安装离线这个应用。</p>\n\n<p>先将自己的技能树的功能一个个的迁移了过来：</p>\n\n<ol><li>使用之前的 Sherlock 项目生成的 SVG</li>\n<li>在 SVG 上添加事件绑定</li>\n<li>准备并展示相应的数据</li>\n<li>添加 TODO Lists 功能</li>\n<li>完成 TODO 事项便点亮技能</li></ol>\n\n<p>由于是预览版，所以打开方式还是一样的：</p>\n\n<ol><li>点击技能进行详情页</li>\n<li>在详情页里拥有相关资料的介绍，并且可以点亮技能</li></ol>\n\n<p>PWA 打开方式</p>\n\n<p>步骤如下：</p>\n\n<ol><li>你需要安装一个 Google 的 Chrome 浏览器。</li>\n<li>打开 「Growth 技能树」的地址：<a href=\"https://phodal.github.io/motree/\" target=\"_blank\" rel=\"nofollow noreferrer\">https://phodal.github.io/motree/</a></li>\n<li>待页面加载完后，点击右上角的菜单，选择「添加到主屏幕」</li></ol>\n\n<p>然后你就可以运行应用~~。</p>\n\n<p>Android 用户也可以从 Google Play 上下载该应用：<a href=\"https://play.google.com/store/apps/details?id=ren.growth.skilltree\" target=\"_blank\" rel=\"nofollow noreferrer\">https://play.google.com/store/apps/details?id=ren.growth.skilltree</a></p>\n\n<p>项目地址：<a href=\"https://github.com/phodal/motree\" target=\"_blank\" rel=\"nofollow noreferrer\">https://github.com/phodal/motree</a></p>\n\n<p>你希望拥有什么功能呢？</p>\n\n",
+        "contentType": "comment",
+        "id": 389,
+        "number": 1,
+        "time": "2016-12-29T01:54:31+00:00"
+      },
+      "id": "389",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>界面简介雅观，特别能显示程序员硬朗的风格，以及极客的侠士之风。</p>",
+        "contentType": "comment",
+        "id": 276,
+        "number": 1,
+        "time": "2016-07-07T08:25:02+00:00"
+      },
+      "id": "276",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>~~</p>\n\n<p>每期推荐一下下面的内容：</p>\n\n <ul><li>书籍</li>\n <li>开源项目</li>\n <li>软件</li>\n <li>文章</li>\n <li>时事点评</li>\n <li>TIPS</li></ul>\n\n\n<p><a href=\"https://github.com/phodal/growth-weekly\" target=\"_blank\" rel=\"nofollow noreferrer\">https://github.com/phodal/growth-weekly</a></p>",
+        "contentType": "comment",
+        "id": 342,
+        "number": 1,
+        "time": "2016-10-27T07:11:08+00:00"
+      },
+      "id": "342",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>如。题。</p>\n\n<p>宝宝正在计划写Growth的纸质版，这肯定是一本Web开发的书——可以称为全栈或者全端。但是远不止这些，讲的主要是Web开发的流程。</p>",
+        "contentType": "comment",
+        "id": 323,
+        "number": 1,
+        "time": "2016-08-11T03:27:00+00:00"
+      },
+      "id": "323",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>平时用手机看论坛，今天用电脑登论坛<a href=\"http://forum.growth.ren/%EF%BC%8C%E7%BD%91%E9%A1%B5%E6%8F%90%E7%A4%BA%E6%AD%A4%E7%BD%91%E7%AB%99%E4%B8%BA%E5%8D%B1%E9%99%A9%E7%BD%91%E7%AB%99\" target=\"_blank\" rel=\"nofollow noreferrer\">http://forum.growth.ren/，网页提示此网站为危险网站</a>？？<br>\nQQ浏览器</p>",
+        "contentType": "comment",
+        "id": 374,
+        "number": 1,
+        "time": "2016-11-22T02:20:06+00:00"
+      },
+      "id": "374",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>感觉手机端回复的时候反应时间很长，5,6s的样子</p>",
+        "contentType": "comment",
+        "id": 378,
+        "number": 1,
+        "time": "2016-11-22T16:01:40+00:00"
+      },
+      "id": "378",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>大约在10个月前，我制定了 Growth Plan——一个旨在帮助开发者成长的计划，这个计划一共由好几部分组成：</p>\n\n <ul><li>Growth APP，这个APP已经有过万的下载量了（在各大应用商店，搜索Growth）。</li>\n <li>Growth 电子书，如你所见，我们在 GitHub 已经有了《全栈增长工程师指南》、《Growth: 全栈增长工程师实战》 </li>\n <li>Growth 论坛和Growth 用户群，虽然不是很成气候，但是已经有了~~。</li>\n <li>Growth 纸质书，正在编写中，如果没有意外的话，应该年底就能写完了。</li>\n <li>Growth Studio / Growth Team，是的作为计划的一部分，它还没有开始！！！</li></ul>\n\n<p>今年给自己订的KPI要怎么办呢？怎么办？先写一篇关于 Growth Studio，即将组建的文章~~~。</p>\n\n<p>值得注意的事 Growth Studio 和 Growth Plan 性质是一样的：</p>\n\n <ul><li>创建开源项目，分享编程知识</li>\n <li>只是性质从一个人变成了一个团队·~。</li></ul>\n\n<h3>为什么开源？</h3>\n\n<p>公司是指一般依法设立的，有独立的法人财产，以营利为目的的企业法人。<br>\n你那么聪明，一定懂得上面这句话。</p>\n\n\n\n<p>欢迎前来报名~~</p>",
+        "contentType": "comment",
+        "id": 343,
+        "number": 1,
+        "time": "2016-10-27T07:13:55+00:00"
+      },
+      "id": "343",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<blockquote><p>本文仅代表 Phodal 的个人观点，来听听一个前端程序员的 YY。</p></blockquote>\n\n<p>新一期的技术雷达有点出乎意料，使用<code>new</code>标签的框架、工具、技术、语言等等超过了一半——Vue.js、ES2017上榜，Three.js凭着VR的火又上榜了，还有熟悉的Electron，以及微前端的概念。</p>\n\n<p>让我们先看看一些技术亮点~~。</p>\n\n<h2>前端在可见的未来</h2>\n\n<p>在那篇《<a href=\"http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&amp;mid=405412226&amp;idx=1&amp;sn=3bc7a9c6afd166591a90723a1802ed99&amp;scene=21#wechat_redirect\" target=\"_blank\" rel=\"nofollow noreferrer\">最流行的编程语言JavaScript能做什么？</a>》的文章里，我们看到了JavaScript在各个领域的应用。在这一期里，仍然有很多亮点（new）：</p>\n\n<p><img src=\"http://articles.phodal.com/radar/vuejs.jpg\" alt=\"Vue.js\"></p>\n\n<p><strong>Vue.js</strong>，如果你在使用Vue.js，那么你更应该找到相当的自信了，现在它已经被列入了评估期了。Vue.js是一个简单易上手的框架，并且相当的轻量，在最近的这段时间里，它发挥得相当的出色。</p>\n\n<p>可惜，宝宝现在在用Angular.js 和 Angular 2，毕竟我现在是开发混合应用的。不过相信在半年后，Angular 2 和 Ionic 2是会上榜的。</p>\n\n<p><strong>Ember.js</strong>，尽管没有证据表明这个框架在国内将火起来的趋势，我现在还对这个框架缺乏深入的了解。</p>\n\n<p><strong>ECMAScript 2017</strong>，尽管我现在已经倾向于使用TypeScript，不过 ES2017 还是会用到的，只是我觉得 Babel 对我来说就是个坑啊</p>\n\n<p><img src=\"http://articles.phodal.com/radar/pwa-general.jpg\" alt=\"PWA\"></p>\n\n<p><strong>Electron</strong>，如果你是一个老读者，那么你已经知道我在很多场合里使用了这个框架，从NodeWebkit开始写编辑器，再到用Electron完成Growth 1.0的桌面版。</p>\n\n<p><strong>Physical Web</strong>，现在我们可以在浏览器上来控制真实世界，通过蓝牙低功耗技术。</p>\n\n<p>不过与此相比，我更看好 <strong>Progressive Web App</strong>，毕竟他可以让Web应用接触到更多的底层API，而不是局限于蓝牙，还可以是Push Notification等等。</p>\n\n<p><img src=\"http://articles.phodal.com/radar/vr.jpg\" alt=\"VR\"></p>\n\n<p><strong>Three.js</strong>，它上榜的原因是因为 WebVR 的流行。这一点可以从我去年写的那篇《<a href=\"https://github.com/phodal/oculus-nodejs-threejs-example\" target=\"_blank\" rel=\"nofollow noreferrer\">Oculus + Node.js + Three.js 打造VR世界</a>》，就可以看到一些趋势。这些就和现在的单页面应用一样，虽然运行起来不是那么流畅，但是还是行得通。因而在可见的未来使用 Web 技术来开发 VR 也有一点苗头，未来浏览器上应该是可以运行编译过后的代码，而不是在运行时。</p>\n\n<p><strong>WebRTC</strong>，它可以让我们在浏览器端实现实时视频聊天。第一次接触到这个视频流技术是在两年多以前，上一次接触则是在半年多以前使用 WebRTC + Oculus，你可以在我博客的那篇《<a href=\"http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&amp;mid=405273259&amp;idx=1&amp;sn=521e128ee8579f20b31a4cfc47659f82&amp;scene=21#wechat_redirect\" target=\"_blank\" rel=\"nofollow noreferrer\">JavaScript在VR世界的应用</a>》中了解到更多的详细信息。当然如雷达所说，WebRTC将会形成未来在Web上进行AR/VR 协作的基础。</p>\n\n<p>接着再让我们看看一些架构上的变化吧。</p> \n\n<h2>前端引起的架构变化</h2>\n\n<p>在过去的两三年里，前端火得一塌糊涂——对于后端程序员来说，这有点 winter is coming 的感觉。我在那篇《<a href=\"http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&amp;mid=400613181&amp;idx=1&amp;sn=0922531a39cf51ab7a12f625ae50609b&amp;scene=21#wechat_redirect\" target=\"_blank\" rel=\"nofollow noreferrer\">前端演进史</a>》对前端的演进做了相当多的介绍，并在《<a href=\"http://mp.weixin.qq.com/s?__biz=MjM5Mjg4NDMwMA==&amp;mid=404975336&amp;idx=1&amp;sn=9905ac8d0a7803f1cde5926bb652bc2e&amp;scene=21#wechat_redirect\" target=\"_blank\" rel=\"nofollow noreferrer\">后台即服务演进史</a>》里对后台即服务开了个头，在这篇文章里让我们根据《技术雷达》来继续补几刀。</p>\n\n<p><img src=\"http://articles.phodal.com/radar/frontend-bacekdn.png\" alt=\"前后端分离\"></p>\n\n<p>我们可以看到在中大型团队里，已经分解为前端和后台两个小组，沟通可以通过接口、契约等等的方式来进行。但是这一点儿也不精益，沟通在这时仍然是一个问题，让我有点怀念起之前前后端都做的项目了——自己可以创建自己想要的接口。</p>\n\n<p>不过，这意味着前端和后台在技术选型上更加独立了。</p>\n\n<h3>臃肿的前端——微前端</h3>\n\n<p><img src=\"http://articles.phodal.com/radar/fe-monolith.png\" alt=\"前端单体应用\"></p>\n\n<p>在上一个项目里，我们一步步地将一个有近10年系统的系统替换掉。起初这是一个传统的Spring + JSP网站，然后我们用JSP创建了JSON API，后来创建了一个新的 API 来服务移动应用和单页面应用，再后来这个 API 被拆分成了几个 API。我们的后台已经成一个单体应用变成了一个微服务架构的应用，但是这一点并没有在前端上应用——前端应用正在变得难以维护。</p>\n\n<p>因此在这一期的雷达里，你可以看到微前端的概念（micro frontends）。这也是在上一个项目里，我们尝试做的一部分，遗憾的是并没有成功完全实施。这是一个搜索类型的网站，网站的首页承担着大部分的访问量，而详情页的主要流量来源则是搜索引擎。我们在首页上使用jQuery + Require.js技术栈，而在其他页面（搜索结果页 + 详情页）使用 React.js，我们在最初的时候考虑过将详情页静态化——因为需要 SEO 的缘故，这样可以让我们降低 SEO 带来的复杂度。</p>\n\n<p><img src=\"http://articles.phodal.com/radar/microservices.png\" alt=\"MicroServices\"></p>\n\n<p>后来，我也在我的博客上解耦了两部分，为了更快的访问首页的速度——将首页独立出来，不使用JS，直接使用Pure.css来担重任；在其他页面里使用Material Design Lite作为 UI 部分。</p>\n\n<p>有一点值得考虑的是：对于微服务架构来说，在一个系统的不同的部分使用不同的技术栈是一种不错的体验；而对于一个前端团队来说，在同一个系统的使用不同的技术栈<strong>就不是</strong>一种不错的体验。</p>\n\n<h3>API 设计——应该变得简单</h3>\n\n<p><img src=\"http://articles.phodal.com/radar/mean.jpg\" alt=\"Backend\"></p>\n\n<p>如我们所见的<strong>Spring Boot</strong>已经变成推荐采用的程度了，按雷达上的习惯用语：“我们已经在多个项目上使用这个框架”——反正我最近的项目都是用这个框架。如果你考虑使用 Java，那么你一定不要错过这个框架，以及使用这个框架来实施前后端分享。</p>\n\n<p>对于大部分不需要考虑 SEO 的应用来说，将后台变成一系列 RESTful 的 API 并不是一件复杂的事，但是在后台 API 上的设计就变成一件麻烦的事。因此尽管在实见的过程中，有契约来作为保证，但是不一定是可靠的。作为一个前端程序来说，我们在调用后台 API 的过程中，总会遇到这样、那样的问题。除此，还有接口不好用的问题——“要是你可以在这里使用超媒体 API，那么我的代码就会更加简单了”。</p>\n\n<p>因此在 API 设计上，雷达上给出了两个不错的案例：</p>\n\n<h4>强化后台查询</h4>\n\n<p><img src=\"http://articles.phodal.com/radar/illustration-nobg.png\" alt=\"GraphQL\"></p>\n\n<p>代表的例子就是 Facebook 的 GraphQL，它是在 Facebook 内部应用多年的一套数据查询语言和 runtime。原本为了请求一个用户及其好友信息的请求，需要发起多个 API 请求。现在，我们只需要在客户端拼装好对应的 Query语句，在这个语句里将大部分需要查询的东西写好，即 JSON 格式的数据，然后发给服务端来处理。而在我们客户端上，我们所获取到的结果都是我们所需要的，不需要再做特殊处理了。</p>\n\n<p>这一切，看上去很美好——除了，在客户端上拼查询语句。</p>\n\n<p>过去，我们使用搜索引擎来搜索数据，就需要在前端拼好对应的 Query，再传给后台 API，由后台 API 返回我们需要的结果。在这个过程里，我们在Query做一些对应的数据处理。</p>\n\n<p>反正，他们都是使用查询语言来搜索结果。如果你考虑使用 QL 的话，不妨做一层 Wrapper，以后好做迁移。</p>\n\n<h4>前后端同时优化</h4>\n\n<p><img src=\"http://articles.phodal.com/radar/falcor-services-diagram.png\" alt=\"Falcor\"></p>\n\n<p>Netflix对于这样复杂的API请求下，创建了 自己的库Falcor——它可以从多个数据源获取数据，并在服务端上汇总成一个 JSON model；在客户端上，请求的时候我们只需要在请求的时候加上对应的参数即可——可以将多个请求合并到一起，也可以只针对某一个部分发出请求。这样可以减少发出多个请求，所带来的复杂度。</p>\n\n<p>我想，一种最实用的做法：就是将一些更新频率较低的API合并成一个大的 API 了——大部分人都会这样做吧。</p>\n\n<h3>简化的后台——无服务器架构</h3>\n\n<p><img src=\"http://articles.phodal.com/radar/serverless.png\" alt=\"ServerLess\"></p>\n\n<p>除了上面的这些内容，后台还有一些东西还蛮好玩的，其中一个就是 Serverless 架构，即无服务器架构。不过，这种架构目前在国内运行起来还是有点难度的，缺少一系列的配套措施。如在这期的雷达上的Auth0可以为我们提供一个授权服务，以及AWS Lambda可以直接使用 AWS系列云服务来对数据进行处理。</p>\n\n<p>我就不多说了~~，读者可以自己去看。</p>\n\n<p>那么未来，你看想玩哪种技术。</p>\n\n<p>访问 <a href=\"https://www.thoughtworks.com/cn/radar\" target=\"_blank\" rel=\"nofollow noreferrer\">https://www.thoughtworks.com/cn/radar</a> 获取最新一期ThoughtWorks技术雷达</p>\n\n<p>（PS：如果你访问不了原文链接，可以修改DNS为 8.8.8.8，或者放在我的GitHub Page上的备份：<a href=\"http://radar.phodal.com/2016.pdf\" target=\"_blank\" rel=\"nofollow noreferrer\">http://radar.phodal.com/2016.pdf</a> ）</p>\n",
+        "contentType": "comment",
+        "id": 365,
+        "number": 1,
+        "time": "2016-11-07T23:17:06+00:00"
+      },
+      "id": "365",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>Hi:</p>\n\n<p>我们正在进行Growth社区的开发，当然现在还是处于测试版——我们使用的是当前处于测试版的flarum。</p>\n\n<p>如果你想参与这部分的测试，请加入QQ群：529600394。</p>\n\n<p>或者发邮件给我，邮箱 <a href=\"mailto:h@phodal.com\">h@phodal.com</a></p>  ",
+        "contentType": "comment",
+        "id": 4,
+        "number": 1,
+        "time": "2016-01-24T23:52:52+00:00"
+      },
+      "id": "4",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>Growth是一款专注于Web开发者成长的应用，涵盖Web开发的流程及技术栈，Web开发的学习路线、成长衡量等各方面。在这里，你将通过不断检验自己的学习成效，形成属于你自己的独一无二的个性技能图谱。</p>\n\n<p>在这里你可以了解到：</p>\n\n <ul><li>完整的Web开发，运维，部署，维护   </li>\n <li>如何写好代码:重构、测试、模式</li>\n <li>遗留代码、遗留系统的形成</li></ul>\n\n<p>在这里你可以get到：</p>\n\n <ul><li>不同阶段所需的不同技能</li>\n <li>相关书单推荐</li>\n <li>相关技术栈推荐</li>\n <li>Web应用解决方案</li></ul>\n\n<p>在这里你还可以：</p>\n\n<ul><li>玩玩小游戏了解技能掌握状况</li>\n<li>一键解锁新技能，形成技能图谱 </li>\n<li>一步步成为Web顶尖开发者</li> </ul>",
+        "contentType": "comment",
+        "id": 1,
+        "number": 1,
+        "time": "2016-01-24T03:30:29+00:00"
+      },
+      "id": "1",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>手机上图片过小，没有放大功能根本看不清</p>",
+        "contentType": "comment",
+        "id": 340,
+        "number": 1,
+        "time": "2016-10-10T05:22:58+00:00"
+      },
+      "id": "340",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "contentHtml": "<p>问题一：老师，我在学习js时，关于异步编程的实现方法很不理解。网上许多人说，js的异步和多线程是两个概念，都用setTimeout函数做例子，但是seTimeout函数只是将函数执行时间放到后面去了，并不是同时处理。这种方法究竟算不算是异步处理？</p>\n\n<p>问题二：很多人说回调函数是异步编程的一种方法，但主函数执行完才执行回调方法，感觉这好像是同步执行，是不是现在的回调异步(如ansyc.js的异步机制)都是用seTimeout函数加回调实现的异步执行？</p>\n\n<p>问题三：浏览器的javascript引擎是单线程的，利用setTimeout实现的浏览器端的异步是不是都是伪异步？node.js利用libuv实现的多线程异步是不是才是真正的异步？</p>",
+        "contentType": "comment",
+        "id": 262,
+        "number": 1,
+        "time": "2016-06-01T08:25:04+00:00"
+      },
+      "id": "262",
+      "type": "posts"
+    },
+    {
+      "attributes": {
+        "backgroundMode": null,
+        "backgroundUrl": null,
+        "canAddToDiscussion": false,
+        "canStartDiscussion": false,
+        "color": "#1ba1e2",
+        "defaultSort": null,
+        "description": "",
+        "discussionsCount": 33,
+        "iconUrl": null,
+        "isChild": false,
+        "isHidden": false,
+        "lastTime": "2017-03-09T19:04:23+00:00",
+        "name": "General",
+        "position": 0,
+        "slug": "general"
+      },
+      "id": "1",
+      "type": "tags"
+    },
+    {
+      "attributes": {
+        "backgroundMode": null,
+        "backgroundUrl": null,
+        "canAddToDiscussion": false,
+        "canStartDiscussion": false,
+        "color": "#673ab7",
+        "defaultSort": null,
+        "description": "Mobile",
+        "discussionsCount": 15,
+        "iconUrl": null,
+        "isChild": false,
+        "isHidden": false,
+        "lastTime": "2017-02-15T00:16:16+00:00",
+        "name": "Mobile",
+        "position": null,
+        "slug": "mobile"
+      },
+      "id": "3",
+      "type": "tags"
+    },
+    {
+      "attributes": {
+        "backgroundMode": null,
+        "backgroundUrl": null,
+        "canAddToDiscussion": false,
+        "canStartDiscussion": false,
+        "color": "#27ae60",
+        "defaultSort": null,
+        "description": "Roadmap",
+        "discussionsCount": 10,
+        "iconUrl": null,
+        "isChild": false,
+        "isHidden": false,
+        "lastTime": "2017-02-24T09:33:56+00:00",
+        "name": "路线图",
+        "position": null,
+        "slug": "roadmap"
+      },
+      "id": "2",
+      "type": "tags"
+    },
+    {
+      "attributes": {
+        "backgroundMode": null,
+        "backgroundUrl": null,
+        "canAddToDiscussion": false,
+        "canStartDiscussion": false,
+        "color": "#1abc9c",
+        "defaultSort": null,
+        "description": "技术咨询",
+        "discussionsCount": 7,
+        "iconUrl": null,
+        "isChild": false,
+        "isHidden": false,
+        "lastTime": "2016-12-29T01:54:31+00:00",
+        "name": "技术咨询",
+        "position": null,
+        "slug": "tech-consultant"
+      },
+      "id": "4",
+      "type": "tags"
+    },
+    {
+      "attributes": {
+        "backgroundMode": null,
+        "backgroundUrl": null,
+        "canAddToDiscussion": false,
+        "canStartDiscussion": false,
+        "color": "#ff5722",
+        "defaultSort": null,
+        "description": "Bug",
+        "discussionsCount": 1,
+        "iconUrl": null,
+        "isChild": false,
+        "isHidden": false,
+        "lastTime": "2016-11-22T02:20:06+00:00",
+        "name": "Bug",
+        "position": null,
+        "slug": "bug"
+      },
+      "id": "5",
+      "type": "tags"
+    }
+  ],
+  "links": {
+    "first": "https://forum.growth.ren/api/discussions",
+    "next": "https://forum.growth.ren/api/discussions?page%5Boffset%5D=20"
+  }
+}
