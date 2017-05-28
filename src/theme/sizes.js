@@ -17,6 +17,7 @@ export default {
     widthThreeQuarters: screenWidth * 0.75,
   },
   navbarHeight: (Platform.OS === 'ios') ? 64 : 54,
+  basicNavbarHeight: (Platform.OS === 'ios') ? 24 : 14,
   statusBarHeight: (Platform.OS === 'ios') ? 16 : 0,
   tabbarHeight: 51,
 

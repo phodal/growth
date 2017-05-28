@@ -14,4 +14,11 @@ export default {
       paddingTop: AppSizes.navbarHeight,
     },
   },
+  basicNavbarProps: {
+    hideNavBar: true,
+    sceneStyle: {
+      backgroundColor: AppColors.background,
+      paddingTop: AppSizes.basicNavbarHeight,
+    },
+  },
 };
