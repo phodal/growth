@@ -1,11 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import { View } from 'react-native';
-import CustomWebView from '../../../components/CustomWebView';
-import AppStyle from '../../../theme/styles';
+import HtmlView, { NET } from '../../../components/HtmlView';
 import Api from '../../../utils/api';
-import Dialog from '../../../components/dialog';
-
-const marked = require('marked');
 
 class ArticleDetail extends Component {
   static componentName = 'ArticleDetail';
@@ -20,28 +15,13 @@ class ArticleDetail extends Component {
     dialogContent: '',
   };
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      loading: true,
-      rowData: '',
-    };
-  }
-
-  componentDidMount() {
-    Api.get(Api.ARTICLE_DETAIL.concat(this.props.uri))
-      .then(response => this.setState({
-        loading: false,
-        rowData: marked(response.data) }));
-  }
-
   render() {
     return (
-      <View style={[AppStyle.detailBasisStyle, { flex: 1 }]}>
-        <Dialog show={this.state.loading} content={this.props.dialogContent} />
-        <CustomWebView html={this.state.rowData} />
-      </View>
-    );
+      <HtmlView
+        type={NET}
+        url={Api.ARTICLE_DETAIL.concat(this.props.uri)}
+        dialogContent={this.props.dialogContent}
+      />);
   }
 }
 export default ArticleDetail;
