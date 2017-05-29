@@ -51,7 +51,7 @@ class ProjectListItem extends Component {
       </TouchableHighlight>));
     return (
       <View>
-        <View style={AppStyle.projectListTitleStyle}>
+        <View style={AppStyle.titleVerticalCenterColorGrayStyle}>
           <Text>{this.state.name}</Text>
         </View>
         <Line />

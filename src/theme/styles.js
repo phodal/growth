@@ -178,7 +178,7 @@ export default {
   timeLineContent: {
     padding: 15,
   },
-  projectListTitleStyle: {
+  titleVerticalCenterColorGrayStyle: {
     paddingLeft: 15,
     backgroundColor: 'rgb(245,245,245)',
     height: 40,
