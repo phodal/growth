@@ -31,6 +31,7 @@ import RecommendArticlesDetail from '../containers/discover/recommend-articles/a
 import TodoLists from '../containers/discover/todo-lists/TodoLists';
 import TodoList from '../containers/discover/todo-list/TodoList';
 import ChapterList from '../containers/discover/chapter-list/ChapterList';
+import ChapterListArticle from '../containers/discover/chapter-list/article/Article';
 import SkillTree from '../containers/skill-tree/SkillTree';
 import SkillDetailView from '../containers/skill-tree/SkillDetailView';
 import ComingSoonView from '../containers/ComingSoonView';
@@ -278,8 +279,14 @@ export default Actions.create(
     <Scene
       key={'chapterList'}
       duration={0}
-      title={'ChapterList'}
       component={ChapterList}
+    />
+
+    <Scene
+      key={'chapterListArticle'}
+      duration={0}
+      title={'章节详情'}
+      component={ChapterListArticle}
     />
 
     <Scene

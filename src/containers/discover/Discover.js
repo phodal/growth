@@ -5,6 +5,7 @@ import MoreItem from '../../components/discover/view/DiscoverMoreItem';
 import GridItem from '../../components/discover/view/DiscoverGridItem';
 import OnLineRead from '../../components/discover/view/DiscoverOnlineReadItem';
 import Launch from '../../components/discover/Launch';
+import Api from '../../utils/api';
 
 const home1 = require('../../../assets/growth-ui/img/home-1.jpg');
 const home2 = require('../../../assets/growth-ui/img/home-2.jpg');
@@ -45,12 +46,25 @@ class Discover extends Component {
           <GridItem title="待办事项" iconName="explore-2-6" position={'right'} onclick={() => { Launch.todoLists(); }} />
         </View>
       </View>
-      <View style={{ height: 340 }}>
+      <View style={{ height: 490 }}>
         <View style={AppStyle.discoverTitle} >
           <Text style={AppStyle.discoverTextColor}>在线阅读</Text>
         </View>
-        <OnLineRead image={home1} title={'《Growth: 全栈增长工程师实战》'} onclick={() => { Launch.chapterList(); }} />
-        <OnLineRead image={home2} title={'《Ideabock: 练手项目集》'} top={15} onclick={() => { Launch.chapterList(); }} />
+        <OnLineRead
+          image={home1}
+          title={'《Growth: 全栈增长工程师实战》'}
+          onclick={() => { Launch.chapterList('《Growth: 全栈增长工程师实战》', Api.GROWTH_IN_ACTION); }}
+        />
+        <OnLineRead
+          image={home2}
+          title={'《Ideabock: 练手项目集》'}
+          top={15} onclick={() => { Launch.chapterList('《Ideabock: 练手项目集》', Api.IDEA_BOOK); }}
+        />
+        <OnLineRead
+          image={home3}
+          title={'《我的职业是前端工程师》'}
+          top={15} onclick={() => { Launch.chapterList('《我的职业是前端工程师》', Api.FE); }}
+        />
       </View>
       <View style={{ height: 190 }}>
         <View style={AppStyle.discoverTitle} >

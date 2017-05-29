@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { WebView, Dimensions } from 'react-native';
 import HtmlHelper from '../utils/HtmlHelper';
+import Helper from '../utils/helper';
 
 class CustomWebView extends Component {
   static componentName = 'CustomWebView';
@@ -29,7 +30,12 @@ class CustomWebView extends Component {
         startInLoadingState
         source={{ html: HtmlHelper.getHtml(this.props.html) }}
         style={{ height: Dimensions.get('window').height, backgroundColor: 'white' }}
-        onNavigationStateChange={this.onNavigationStateChange}
+        onNavigationStateChange={(event) => {
+          if (event.url.startsWith('http')) {
+            Helper.openLink(event.url);
+            this.webview.stopLoading();
+          }
+        }}
         injectedJavaScript=""
       />);
   }
