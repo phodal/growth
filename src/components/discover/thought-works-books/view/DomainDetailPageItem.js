@@ -39,7 +39,7 @@ class DomainDetailPageItem extends Component {
      ));
     return (
       <View>
-        <View style={AppStyle.projectListTitleStyle}>
+        <View style={AppStyle.titleVerticalCenterColorGrayStyle}>
           <Text style={{ color: '#999' }}>{this.state.name}</Text>
         </View>
         {rows}

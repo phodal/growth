@@ -29,6 +29,7 @@ import RecommendBooksDetail from '../containers/discover/recommend-books/article
 import RecommendArticles from '../containers/discover/recommend-articles/RecommendArticles';
 import RecommendArticlesDetail from '../containers/discover/recommend-articles/article/Article';
 import TodoLists from '../containers/discover/todo-lists/TodoLists';
+import TodoList from '../containers/discover/todo-list/TodoList';
 import ChapterList from '../containers/discover/chapter-list/ChapterList';
 import SkillTree from '../containers/skill-tree/SkillTree';
 import SkillDetailView from '../containers/skill-tree/SkillDetailView';
@@ -265,6 +266,13 @@ export default Actions.create(
       duration={0}
       title={'待办事项'}
       component={TodoLists}
+    />
+
+    <Scene
+      key={'todoList'}
+      duration={0}
+      title={'Todo'}
+      component={TodoList}
     />
 
     <Scene

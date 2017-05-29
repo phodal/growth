@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "rgb(245,245,245)",
+      "height": 40,
+      "justifyContent": "center",
+      "paddingLeft": 15,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#999",
+      }
+    }
+  >
+    已完成
+  </Text>
+</View>
+`;

@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import AppStyle from '../../../../theme/styles';
 import TWBOOKS from '../../../../constants/TWBOOKS';
 import PageItem from '../../../../components/discover/thought-works-books/view/DomainDetailPageItem';
@@ -44,7 +44,7 @@ class DomainDetailPage extends Component {
 
   render() {
     const rows = this.state.data.map((val, index) => <PageItem content={val} key={'key'.concat(index)} />);
-    return <View style={AppStyle.detailBasisStyle}>{rows}</View>;
+    return <ScrollView style={AppStyle.detailBasisStyle}>{rows}</ScrollView>;
   }
 }
 export default DomainDetailPage;

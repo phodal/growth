@@ -60,6 +60,9 @@ const launch = {
   todoLists: () => {
     Actions.todoLists();
   },
+  todoList: (todo) => {
+    Actions.todoList({ data: todo });
+  },
   chapterList: () => {
     Actions.chapterList();
   },

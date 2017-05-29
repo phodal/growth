@@ -1,10 +1,27 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { ScrollView } from 'react-native';
+import AppStyle from '../../../theme/styles';
+import TODO_LISTS_ITEM from '../../../constants/TODO_LISTS_ITEM';
+import SimpleListItem from '../../../components/discover/view/SimpleListItem';
+import Launch from '../../../components/discover/Launch';
 
 class TodoLists extends Component {
   static componentName = 'TodoLists';
-  render = () => (
-    <Text>TodoLists</Text>
-  );
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: TODO_LISTS_ITEM,
+    };
+  }
+  render() {
+    const rows = this.state.data.map((val, index) => (
+      <SimpleListItem
+        text={val.name}
+        click={() => Launch.todoList(val)}
+        key={val.name.concat(index)}
+      />));
+    return <ScrollView style={AppStyle.detailBasisStyle}>{rows}</ScrollView>;
+  }
 }
 export default TodoLists;
