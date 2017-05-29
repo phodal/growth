@@ -43,7 +43,11 @@ class HtmlView extends Component {
       Api.get(this.props.url)
         .then(response => this.setState({
           visible: false,
-          html: marked(response.data) }));
+          html: marked(response.data) }))
+        .catch(err => this.setState({
+          visible: false,
+          html: err.message,
+        }));
     } else {
       const basePath = Platform.OS === 'ios'
         ? RNFS.MainBundlePath
