@@ -11,6 +11,9 @@ class Api {
   static TOOLBOX_DETAIL = 'toolbox/';
   static ARTICLE_LIST = 'articles/api/all.json';
   static ARTICLE_DETAIL = 'articles/';
+  static GROWTH_IN_ACTION = 'growth-in-action/api/all.json';
+  static IDEA_BOOK = 'ideabook/api/all.json';
+  static FE = 'fe/api/all.json';
 
   static get = url => axios.get(url);
 
