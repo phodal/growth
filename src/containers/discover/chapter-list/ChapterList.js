@@ -44,7 +44,9 @@ class ChapterList extends Component {
       .map((val, index) => (
         <SimpleListItem
           text={val.title}
-          click={() => Launch.chapterListArticle(this.state.baseUrl.concat(val.path))}
+          click={() => (
+            Launch.chapterListArticle(
+              this.state.baseUrl.concat(val.path), this.props.dialogContent))}
           key={val.title.concat(index)}
         />))
     return (

@@ -66,8 +66,8 @@ const launch = {
   chapterList: (caption, path) => {
     Actions.chapterList({ title: caption, url: path });
   },
-  chapterListArticle: (path) => {
-    Actions.chapterListArticle({ url: path });
+  chapterListArticle: (path, dialog) => {
+    Actions.chapterListArticle({ url: path, dialogContent: dialog });
   },
   openGitHub: (link) => {
     Helper.openLink(link);
