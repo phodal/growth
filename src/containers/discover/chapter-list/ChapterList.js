@@ -48,7 +48,7 @@ class ChapterList extends Component {
             Launch.chapterListArticle(
               this.state.baseUrl.concat(val.path), this.props.dialogContent))}
           key={val.title.concat(index)}
-        />))
+        />));
     return (
       <ScrollView style={AppStyle.detailBasisStyle}>
         <Dialog show={this.state.visible} content={this.props.dialogContent} />
