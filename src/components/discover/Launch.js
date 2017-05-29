@@ -63,8 +63,11 @@ const launch = {
   todoList: (todo) => {
     Actions.todoList({ data: todo });
   },
-  chapterList: () => {
-    Actions.chapterList();
+  chapterList: (caption, path) => {
+    Actions.chapterList({ title: caption, url: path });
+  },
+  chapterListArticle: (path) => {
+    Actions.chapterListArticle({ url: path });
   },
   openGitHub: (link) => {
     Helper.openLink(link);
