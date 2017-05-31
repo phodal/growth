@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import AppStyle from '../../theme/styles';
-import MoreItem from '../../components/discover/view/DiscoverMoreItem';
 import GridItem from '../../components/discover/view/DiscoverGridItem';
 import OnLineRead from '../../components/discover/view/DiscoverOnlineReadItem';
 import Launch from '../../components/discover/Launch';

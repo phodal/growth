@@ -1,6 +1,4 @@
 import { Actions } from 'react-native-router-flux';
-import Helper from '../../utils/helper';
-
 
 const launch = {
   roadmapList: () => {
@@ -68,6 +66,6 @@ const launch = {
   },
   chapterListArticle: (path, dialog) => {
     Actions.chapterListArticle({ url: path, dialogContent: dialog });
-  }
+  },
 };
 export default launch;
