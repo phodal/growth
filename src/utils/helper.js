@@ -27,6 +27,10 @@ class Helper {
     });
   }
 
+  static getMoreFeatures() {
+    Helper.openLink('https://github.com/phodal/growth-ng/issues');
+  }
+
   static gotoUserCenter() {
     return (
       <Icon

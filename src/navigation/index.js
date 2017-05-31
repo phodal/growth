@@ -72,6 +72,9 @@ export default Actions.create(
         title={'探索'}
         leftTitle={'用户中心'}
         renderLeftButton={() => Helper.gotoUserCenter()}
+        rightTitle={'更多功能'}
+        onRight={() => Helper.getMoreFeatures()}
+        rightButtonTextStyle={AppStyles.navbarTitle}
         iconName={'md-compass'}
         iconType={'ionicon'}
         icon={TabIcon}

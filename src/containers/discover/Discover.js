@@ -66,17 +66,6 @@ class Discover extends Component {
           top={15} onclick={() => { Launch.chapterList('《我的职业是前端工程师》', Api.FE); }}
         />
       </View>
-      <View style={{ height: 190 }}>
-        <View style={AppStyle.discoverTitle} >
-          <Text style={AppStyle.discoverTextColor}>更多</Text>
-        </View>
-        <MoreItem
-          image={home3}
-          title="你还需要什么功能？"
-          titleBackgroundColor="rgba(255,255,255, .5)"
-          onclick={() => { Launch.openGitHub('https://github.com/phodal/growth-ng/issues'); }}
-        />
-      </View>
     </ScrollView>
   );
 }

@@ -68,9 +68,6 @@ const launch = {
   },
   chapterListArticle: (path, dialog) => {
     Actions.chapterListArticle({ url: path, dialogContent: dialog });
-  },
-  openGitHub: (link) => {
-    Helper.openLink(link);
-  },
+  }
 };
 export default launch;
