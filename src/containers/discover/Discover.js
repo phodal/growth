@@ -57,8 +57,8 @@ class Discover extends Component {
         />
         <OnLineRead
           image={home2}
-          title={'《Ideabock: 练手项目集》'}
-          top={15} onclick={() => { Launch.chapterList('《Ideabock: 练手项目集》', Api.IDEA_BOOK); }}
+          title={'《Ideabook: 练手项目集》'}
+          top={15} onclick={() => { Launch.chapterList('《Ideabook: 练手项目集》', Api.IDEA_BOOK); }}
         />
         <OnLineRead
           image={home3}
