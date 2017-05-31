@@ -95,8 +95,7 @@ export default Actions.create(
         component={SkillTree}
       />
       <Scene
-        {...AppConfig.basicNavbarProps}
-        hideNavBar
+        {...navbarPropsTabs}
         key={'community'}
         title={'社区'}
         leftTitle={'用户中心'}

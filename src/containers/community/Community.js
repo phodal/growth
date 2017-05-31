@@ -1,7 +1,6 @@
 /* eslint-disable class-methods-use-this */
 import React, { PureComponent } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
+import { View, Text } from 'react-native';
 import { Icon, Divider } from 'react-native-elements';
 
 import Colors from '../../theme/colors';
@@ -13,28 +12,9 @@ require('moment/locale/zh-cn'); // for import moment local language file during 
 
 moment.locale('zh-cn');// set moment local language to zh-cn
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
-const SecondRoute = () => <View style={[styles.container, { backgroundColor: '#673ab7' }]} />;
 
 class Community extends PureComponent {
   static componentName = 'Community';
-
-  state = {
-    index: 0,
-    routes: [
-      { key: '1', title: '论坛' },
-      { key: '2', title: '动态' },
-    ],
-  };
-
-  handleChangeTab = index => this.setState({ index });
-
-  renderHeader = props => <TabBar {...props} />;
 
   renderElement(topic) {
     let sticky = <View />;
@@ -51,6 +31,7 @@ class Community extends PureComponent {
         <Text style={{ marginTop: -3, color: '#fff' }}>置顶</Text>
       </View>);
     }
+
     return (<View
       style={{
         height: 72,
@@ -75,20 +56,9 @@ class Community extends PureComponent {
     );
   }
 
-  renderScene = SceneMap({
-    1: () => <ForumContainer url={'https://forum.growth.ren/api/discussions'} element={data => this.renderElement(data)} />,
-    2: SecondRoute,
-  });
-
   render() {
     return (
-      <TabViewAnimated
-        style={styles.container}
-        navigationState={this.state}
-        renderScene={this.renderScene}
-        renderHeader={this.renderHeader}
-        onRequestChangeTab={this.handleChangeTab}
-      />
+      <ForumContainer url={'https://forum.growth.ren/api/discussions'} element={data => this.renderElement(data)} />
     );
   }
 }
