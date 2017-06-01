@@ -1,13 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<View>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
+<View
+  loaded={
+    Array [
+      0,
+    ]
+  }
+  onLayout={[Function]}
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "overflow": "hidden",
+      },
+      Object {
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <View
+    collapsable={false}
   >
-    前端
-  </Text>
+    <View
+      style={
+        Object {
+          "backgroundColor": "#2196f3",
+          "elevation": 4,
+          "shadowColor": "black",
+          "shadowOffset": Object {
+            "height": 0.5,
+          },
+          "shadowOpacity": 0.1,
+          "shadowRadius": 0.5,
+          "zIndex": 1,
+        }
+      }
+    >
+      <View
+        pointerEvents="none"
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffeb3b",
+              "bottom": 0,
+              "height": 2,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "transform": Array [
+                Object {
+                  "translateX": 0,
+                },
+              ],
+              "width": 0,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          Object {
+            "overflow": "scroll",
+          }
+        }
+      />
+    </View>
+  </View>
 </View>
 `;
