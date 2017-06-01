@@ -5,7 +5,7 @@ import DomainDetailPage from '../../../../../src/containers/discover/thoughtwork
 
 it('renders correctly', () => {
   const domainDetailPage = renderer.create(
-    <DomainDetailPage />,
+    <DomainDetailPage title={'实践'} domain={'practical'} />,
   );
   const domainDetailPageJson = domainDetailPage.toJSON();
   expect(domainDetailPageJson).toMatchSnapshot();

@@ -27,4 +27,10 @@ describe('helper test android', () => {
     Helper.getProfessionalSkilltree();
     expect(spy).toBeCalledWith('market://details?id=ren.growth.skilltree');
   });
+
+  it('should open more features link', () => {
+    const spy = jest.spyOn(Linking, 'canOpenURL');
+    Helper.getMoreFeatures();
+    expect(spy).toBeCalledWith('https://github.com/phodal/growth-ng/issues');
+  });
 });
