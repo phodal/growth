@@ -32,7 +32,7 @@ class TodoList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: null,
+      data: this.props.data,
       test: false,
     };
     this.getNotChangeList = val => (
@@ -101,6 +101,7 @@ class TodoList extends Component {
 
 
   render() {
+    console.log(this.state.data);
     if (this.state.data !== null) {
       const todo = this.getTodoList();
 
