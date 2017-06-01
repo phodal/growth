@@ -73,34 +73,41 @@ class SectionPage extends Component {
       const growthView = this.state.sectionInfo.growthView;
       const todoView = this.state.sectionInfo.todoView;
 
-      const growthViewComponent = growthView ? growthView[0].sections.map(section => (
-        <ListItem
-          key={shortid.generate()}
-          title={section.title}
-        />
-      )) : <View />;
+      const growthViewComponent = growthView ?
+        (<List>
+          {
+            growthView[0].sections.map(section => (
+              <ListItem
+                key={shortid.generate()}
+                title={section.title}
+              />
+            ))
+          }
+        </List>) : <View />;
 
-      const todoViewComponent = todoView ? todoView.map(todo => (
-        <ListItem
-          key={shortid.generate()}
-          title={todo.title}
-        />
-        )) : <View />;
+      const todoViewComponent = todoView && todoView.length > 0 ? (
+        <View>
+          <Text style={{ marginTop: 15, textAlign: 'center' }}>TODO</Text>
+          <List>
+            {
+              todoView.map(todo => (
+                <ListItem
+                  key={shortid.generate()}
+                  title={todo.title}
+                />
+              ))
+            }
+          </List>
+        </View>
+        ) : <View />;
 
       return (
         <View>
           <View style={{ backgroundColor: '#2d89ef' }}>
             <Text style={{ margin: 10, color: '#fff', textAlign: 'center' }}>扩展自己的知识视野</Text>
           </View>
-          <List>
-            { growthViewComponent }
-          </List>
-          {
-            todoView ? <Text style={{ marginTop: 15, textAlign: 'center' }}>TODO</Text> : null
-          }
-          <List>
-            { todoViewComponent }
-          </List>
+          { growthViewComponent }
+          { todoViewComponent }
         </View>
       );
     },
