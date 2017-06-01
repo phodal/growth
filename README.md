@@ -6,6 +6,17 @@
 [![Gitter](https://img.shields.io/gitter/room/phodal/growth-ng.svg)](https://gitter.im/phodal/growth-ng)
 
 
+TODO List
+---
+
+ - 开源书列表
+ - Awesome 项目列表
+ - 点击图片进入全屏
+ - 练习页面
+   - 算法和数据结构练习
+   — 可视化算法
+   - 可练习算法
+
 技术栈
 ---
 
