@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
 import { ListItem } from 'react-native-elements';
 import * as shortid from 'shortid';
@@ -45,6 +45,7 @@ class SectionPage extends Component {
   renderScene = SceneMap({
     1: () => (
       <View>
+        <Text>了解优秀软件工程实践所需的信息</Text>
         {
           this.state.sectionInfo.articlesView ?
             this.state.sectionInfo.articlesView[0].articles.map(article => (
@@ -56,7 +57,30 @@ class SectionPage extends Component {
         }
       </View>
     ),
-    2: () => <View style={[styles.container, { backgroundColor: '#673ab7' }]} />,
+    2: () => (
+      <View>
+        <Text>扩展自己的知识视野</Text>
+        {
+          this.state.sectionInfo.growthView ?
+            this.state.sectionInfo.growthView[0].sections.map(section => (
+              <ListItem
+                key={shortid.generate()}
+                title={section.title}
+              />
+            )) : ''
+        }
+        <Text>TODO</Text>
+        {
+          this.state.sectionInfo.todoView ?
+            this.state.sectionInfo.todoView.map(todo => (
+              <ListItem
+                key={shortid.generate()}
+                title={todo.title}
+              />
+            )) : ''
+        }
+      </View>
+    ),
   });
 
   render() {
