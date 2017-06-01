@@ -19,7 +19,7 @@ class RecommendArticles extends Component {
     const rows = this.state.data.map((val, index) => (
       <RecommendSimpleItem
         content={val}
-        launch={Launch.recommendArticlesDetail}
+        launch={Launch.localArticleView}
         key={val.name.concat(index)}
       />));
     return (

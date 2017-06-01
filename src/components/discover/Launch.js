@@ -52,8 +52,8 @@ const launch = {
   recommendArticles: () => {
     Actions.recommendArticles();
   },
-  recommendArticlesDetail: (path) => {
-    Actions.recommendArticlesDetail({ slug: path });
+  localArticleView: (path) => {
+    Actions.localArticleView({ slug: path });
   },
   todoLists: () => {
     Actions.todoLists();

@@ -27,7 +27,7 @@ import DomainDetailPage from '../containers/discover/thoughtworks-books/domain-d
 import RecommendBooks from '../containers/discover/recommend-books/RecommendBooks';
 import RecommendBooksDetail from '../containers/discover/recommend-books/article/Article';
 import RecommendArticles from '../containers/discover/recommend-articles/RecommendArticles';
-import RecommendArticlesDetail from '../containers/discover/recommend-articles/article/Article';
+import LocalArticleView from '../components/LocalArticleView';
 import TodoLists from '../containers/discover/todo-lists/TodoLists';
 import TodoList from '../containers/discover/todo-list/TodoList';
 import ChapterList from '../containers/discover/chapter-list/ChapterList';
@@ -258,10 +258,10 @@ export default Actions.create(
     />
 
     <Scene
-      key={'recommendArticlesDetail'}
+      key={'localArticleView'}
       duration={0}
       title={'文章'}
-      component={RecommendArticlesDetail}
+      component={LocalArticleView}
     />
 
     <Scene

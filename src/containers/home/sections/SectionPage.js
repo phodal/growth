@@ -4,6 +4,7 @@ import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
 import { List, ListItem } from 'react-native-elements';
 import * as shortid from 'shortid';
 
+import Launch from '../../../components/discover/Launch';
 import SECTIONS from '../../../constants/SECTIONS';
 
 const styles = StyleSheet.create({
@@ -54,6 +55,7 @@ class SectionPage extends Component {
         <ListItem
           key={shortid.generate()}
           title={article.title}
+          onPress={() => Launch.localArticleView(article.slug)}
         />
       ));
 

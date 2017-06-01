@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
-import HtmlView from '../../../../components/HtmlView';
+import HtmlView from './HtmlView';
 
-class Article extends Component {
+class LocalArticleView extends Component {
   static componentName = 'Article';
 
   static propTypes = {
@@ -16,4 +16,4 @@ class Article extends Component {
     return <HtmlView domain={'article'} slug={this.props.slug} />;
   }
 }
-export default Article;
+export default LocalArticleView;
