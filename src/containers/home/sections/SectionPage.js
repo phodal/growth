@@ -6,6 +6,7 @@ import * as shortid from 'shortid';
 
 import Launch from '../../../components/discover/Launch';
 import SECTIONS from '../../../constants/SECTIONS';
+import TODO_LISTS from "../../../constants/TODO_LISTS";
 
 const styles = StyleSheet.create({
   container: {
@@ -96,6 +97,7 @@ class SectionPage extends Component {
                 <ListItem
                   key={shortid.generate()}
                   title={todo.title}
+                  onPress={() => Launch.todoList(TODO_LISTS['zh-cn'][todo.info.domain])}
                 />
               ))
             }
