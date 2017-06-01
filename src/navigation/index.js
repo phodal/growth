@@ -40,6 +40,7 @@ import TabIcon from '../components/TabIcon';
 import Practises from '../containers/practises/Practises';
 import GrEditor from '../components/GrEditor';
 import SectionPage from '../containers/home/sections/SectionPage';
+import HtmlView from '../components/HtmlView';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -308,6 +309,12 @@ export default Actions.create(
       key={'sectionPage'}
       title={'Section'}
       component={SectionPage}
+    />
+
+    <Scene
+      {...navbarPropsTabs}
+      key={'htmlView'}
+      component={HtmlView}
     />
 
     <Scene

@@ -20,6 +20,7 @@ class HtmlView extends Component {
     domain: PropTypes.string,
     slug: PropTypes.string,
     dialogContent: PropTypes.string,
+    isFullSlug: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -28,6 +29,7 @@ class HtmlView extends Component {
     domain: '',
     slug: '',
     dialogContent: '',
+    isFullSlug: false,
   };
 
   constructor(props) {
@@ -53,7 +55,14 @@ class HtmlView extends Component {
         ? RNFS.MainBundlePath
         : RNFS.ExternalDirectoryPath;
       if (basePath) {
-        RNFS.readFile(basePath.concat(`/growth-content/${this.props.domain}/${this.props.slug}.html`), 'utf8')
+        let slug = '';
+        if (this.props.isFullSlug) {
+          slug = this.props.slug;
+        } else {
+          slug = `/growth-content/${this.props.domain}/${this.props.slug}.html`;
+        }
+
+        RNFS.readFile(basePath.concat(slug), 'utf8')
           .then((result) => {
             this.setState({
               html: result,

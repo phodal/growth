@@ -2,11 +2,12 @@ import React, { Component, PropTypes } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
 import { List, ListItem } from 'react-native-elements';
+import { Actions } from 'react-native-router-flux';
 import * as shortid from 'shortid';
 
 import Launch from '../../../components/discover/Launch';
 import SECTIONS from '../../../constants/SECTIONS';
-import TODO_LISTS from "../../../constants/TODO_LISTS";
+import TODO_LISTS from '../../../constants/TODO_LISTS';
 
 const styles = StyleSheet.create({
   container: {
@@ -21,6 +22,26 @@ class SectionPage extends Component {
     sectionIndex: PropTypes.number.isRequired,
     subSectionIndex: PropTypes.number.isRequired,
   };
+
+  static showGrowthView(section) {
+    let slug = '';
+    const sectionInfo = section.info;
+
+    if (sectionInfo.type === 'book') {
+      slug = `/growth-content/review/${sectionInfo.domain}.html`;
+    } else if (sectionInfo.type === 'tool') {
+      slug = `/growth-content/tool/${sectionInfo.domain}.html`;
+    } else if (sectionInfo.domain) {
+      slug = `/growth-content/growth/${sectionInfo.domain}/${sectionInfo.slug}.html`;
+    }
+
+    return Actions.htmlView({
+      domain: sectionInfo.domain,
+      slug,
+      title: sectionInfo.title,
+      isFullSlug: true,
+    });
+  }
 
   state = {
     index: 0,
@@ -83,6 +104,7 @@ class SectionPage extends Component {
               <ListItem
                 key={shortid.generate()}
                 title={section.title}
+                onPress={() => { SectionPage.showGrowthView(section); }}
               />
             ))
           }
