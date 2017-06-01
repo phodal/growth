@@ -13,6 +13,7 @@ TODO List
  - APP 介绍页面：https://github.com/FuYaoDe/react-native-app-intro
  - Awesome 项目列表
  - 点击图片进入全屏： https://github.com/oblador/react-native-lightbox
+ - 双击退出
  - 练习页面
    - 算法和数据结构练习
    — 可视化算法
