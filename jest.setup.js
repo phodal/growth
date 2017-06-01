@@ -2,6 +2,11 @@
 
 fetch = jest.fn(() => new Promise(resolve => resolve()));
 
+jest.mock('react-native-fs', () => ({
+  writeFile: jest.fn(() => Promise.resolve()),
+  ExternalStorageDirectoryPath: 'package-path',
+}));
+
 jest.mock('react-native-splash-screen', () => ({
   hide: jest.fn(),
 }));

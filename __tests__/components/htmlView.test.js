@@ -5,11 +5,6 @@ import renderer from 'react-test-renderer';
 import HtmlView from '../../src/components/HtmlView';
 import HELPER_ARTICLES from '../../src/constants/HELPER_ARTICLES';
 
-jest.mock('react-native-fs', () => ({
-  writeFile: jest.fn(() => Promise.resolve()),
-  ExternalStorageDirectoryPath: 'package-path',
-}));
-
 it('renders correctly', () => {
   // eslint-disable-next-line no-unused-vars
   const htmlView = renderer.create(

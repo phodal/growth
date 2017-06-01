@@ -1,9 +1,11 @@
 import 'react-native';
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { Actions, Scene } from 'react-native-router-flux';
 
 import SectionGrowthTab from '../../../src/containers/home/sections/SectionGrowthTab';
 import HELPER_ARTICLES from '../../../src/constants/HELPER_ARTICLES';
+import HtmlView from '../../../src/components/HtmlView';
 
 it('renders correctly', () => {
   const sectionInfo = {
@@ -46,4 +48,38 @@ it('renders correctly', () => {
 
   const treeJson = tree.toJSON();
   expect(treeJson).toMatchSnapshot();
+});
+
+describe('test showGrowthView', () => {
+  const scenesData = (
+    <Scene
+      key="root"
+    >
+      <Scene
+        key={'htmlView'}
+        title={'技能'}
+        component={HtmlView}
+      />
+    </Scene>
+  );
+  Actions.create(scenesData);
+  Actions.callback = () => { };
+
+  it('test for general', () => {
+    const spy = jest.spyOn(Actions, 'htmlView');
+    SectionGrowthTab.showGrowthView({
+      title: 'Debug',
+      info: { slug: 'debug', type: 'general', domain: 'frontend' },
+    });
+    expect(spy).toBeCalledWith({ domain: 'frontend', isFullSlug: true, slug: '/growth-content/growth/frontend/debug.html', title: undefined });
+  });
+
+  it('test for book', () => {
+    const spy = jest.spyOn(Actions, 'htmlView');
+    SectionGrowthTab.showGrowthView({
+      title: '书单',
+      info: { type: 'book', domain: 'coding' },
+    });
+    expect(spy).toBeCalledWith({ domain: 'coding', isFullSlug: true, slug: '/growth-content/review/coding.html', title: undefined });
+  });
 });

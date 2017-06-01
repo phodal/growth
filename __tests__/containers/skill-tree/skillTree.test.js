@@ -1,10 +1,6 @@
 import 'react-native';
 import { Actions, Scene } from 'react-native-router-flux';
 import React from 'react';
-
-// Note: test renderer must be required after react-native.
-// import renderer from 'react-test-renderer';
-//
 import SkillTree from '../../../src/containers/skill-tree/SkillTree';
 import SkillDetailView from '../../../src/containers/skill-tree/SkillDetailView';
 
