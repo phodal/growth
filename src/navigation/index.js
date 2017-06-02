@@ -1,6 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
-import { View } from 'react-native';
+import { View, TouchableOpacity } from 'react-native';
 import { Actions, Scene } from 'react-native-router-flux';
 import { Icon } from 'react-native-elements';
 import Home from '../containers/home/Home';
@@ -43,6 +43,7 @@ import Practises from '../containers/practises/Practises';
 import GrEditor from '../components/GrEditor';
 import SectionPage from '../containers/home/sections/SectionPage';
 import HtmlView from '../components/HtmlView';
+import SectionIntro from '../containers/home/sections/SectionIntro';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -311,13 +312,24 @@ export default Actions.create(
       key={'sectionPage'}
       title={'Section'}
       component={SectionPage}
-      renderRightButton={() =>
-        (
-          <View>
+      renderRightButton={() => (
+        <View>
+          <TouchableOpacity
+            onPress={() => {
+              Actions.sectionIntro();
+            }}
+          >
             <Icon name="help-outline" size={24} color="#fff" />
-          </View>
+          </TouchableOpacity>
+        </View>
         )
       }
+    />
+
+    <Scene
+      key={'sectionIntro'}
+      title={'简介'}
+      component={SectionIntro}
     />
 
     <Scene
