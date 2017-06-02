@@ -1,6 +1,8 @@
 /* eslint-disable react/prefer-stateless-function */
 import React from 'react';
+import { TouchableHighlight, View } from 'react-native';
 import { Actions, Scene } from 'react-native-router-flux';
+import { Icon } from 'react-native-elements';
 import Home from '../containers/home/Home';
 import AppConfig from '../constants/config';
 import AppSizes from '../theme/sizes';
@@ -309,6 +311,13 @@ export default Actions.create(
       key={'sectionPage'}
       title={'Section'}
       component={SectionPage}
+      renderRightButton={() =>
+        (
+          <View>
+            <Icon name="help-outline" size={24} color="#fff" />
+          </View>
+        )
+      }
     />
 
     <Scene
