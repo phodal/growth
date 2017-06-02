@@ -101,7 +101,6 @@ class TodoList extends Component {
 
 
   render() {
-    console.log(this.state.data);
     if (this.state.data !== null) {
       const todo = this.getTodoList();
 

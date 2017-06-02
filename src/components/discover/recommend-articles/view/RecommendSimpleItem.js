@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
-import { Text, View, TouchableHighlight } from 'react-native';
+import { Text, View } from 'react-native';
+import { ListItem, List } from 'react-native-elements';
 import AppStyle from '../../../../theme/styles';
-import Line from '../../../Line';
 
 class RecommendSimpleItem extends Component {
   static componentName = 'RecommendSimpleItem';
@@ -35,17 +35,11 @@ class RecommendSimpleItem extends Component {
 
   render() {
     const rows = this.state.rowData.map((val, index) => (
-      <TouchableHighlight
+      <ListItem
         onPress={() => this.props.launch(val.slug)}
         key={val.title.concat(index)}
-      >
-        <View style={{ backgroundColor: 'white' }}>
-          <View style={AppStyle.projectListContentStyle}>
-            <Text>{val.title}</Text>
-          </View>
-          <Line />
-        </View>
-      </TouchableHighlight>
+        title={val.title}
+      />
     ));
     return (
       <View>
@@ -54,7 +48,9 @@ class RecommendSimpleItem extends Component {
             <Text style={{ color: '#999' }}>{this.state.name}</Text>
           </View> : null
         }
-        {rows}
+        <List>
+          {rows}
+        </List>
       </View>
     );
   }
