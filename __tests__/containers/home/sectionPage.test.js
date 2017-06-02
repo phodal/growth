@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 
 import SectionPage from '../../../src/containers/home/sections/SectionPage';
 
-it('renders correctly', () => {
+xit('renders correctly', () => {
   const tree = renderer.create(
     <SectionPage sectionIndex={1} subSectionIndex={1} />,
   );

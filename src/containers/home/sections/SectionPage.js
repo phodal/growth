@@ -1,10 +1,12 @@
 import React, { Component, PropTypes } from 'react';
 import { StyleSheet } from 'react-native';
 import { TabViewAnimated, TabBar, SceneMap } from 'react-native-tab-view';
+import { connect } from 'react-redux';
 
 import SECTIONS from '../../../constants/SECTIONS';
 import SectionArticleTab from './SectionArticleTab';
 import SectionGrowthTab from './SectionGrowthTab';
+import { saveSection } from '../../../redux/section/actions';
 
 const styles = StyleSheet.create({
   container: {
@@ -16,6 +18,7 @@ class SectionPage extends Component {
   static componentName = 'SectionPage';
 
   static propTypes = {
+    dispatch: PropTypes.func.isRequired,
     sectionIndex: PropTypes.number.isRequired,
     subSectionIndex: PropTypes.number.isRequired,
   };
@@ -36,6 +39,8 @@ class SectionPage extends Component {
     this.setState({
       sectionInfo,
     });
+
+    this.props.dispatch(saveSection(sectionInfo));
   }
 
   handleChangeTab = index => this.setState({ index });
@@ -60,4 +65,10 @@ class SectionPage extends Component {
   }
 }
 
-export default SectionPage;
+const mapStateToProps = () => ({
+});
+
+const mapDispatchToProps = {
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(SectionPage);
