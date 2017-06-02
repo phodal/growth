@@ -32,9 +32,9 @@
     "react-native-tab-view": "^0.0.65",
     "react-native-timeago": "^0.3.0",
     "react-native-vector-icons": "~4.0.0",
-    "react-redux": "^5.0.5",
+    "react-redux": "^5.0.1",
     "redux": "^3.6.0",
-    "redux-logger": "^3.0.6",
+    "redux-logger": "^2.7.4",
     "redux-thunk": "^2.2.0",
     "shortid": "^2.2.8"
   },
