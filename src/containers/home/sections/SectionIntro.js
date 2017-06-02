@@ -1,10 +1,10 @@
-/* eslint-disable no-undef,react/forbid-prop-types,react/require-default-props */
+/* eslint-disable no-undef,react/forbid-prop-types */
 import React, { Component, PropTypes } from 'react';
 import { Text, View } from 'react-native';
 import { connect } from 'react-redux';
 
 class SectionIntro extends Component {
-  static componentName = 'ComingSoonView';
+  static componentName = 'SectionIntro';
   static propTypes = {
 // eslint-disable-next-line react/require-default-props
     routes: PropTypes.object,
