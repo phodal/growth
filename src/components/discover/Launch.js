@@ -43,8 +43,8 @@ const launch = {
   domainDetailPage: (caption, path) => {
     Actions.domainDetailPage({ title: caption, domain: path });
   },
-  recommendBooks: () => {
-    Actions.recommendBooks();
+  recommendBooks: (books) => {
+    Actions.recommendBooks(books);
   },
   recommendBooksDetail: (path) => {
     Actions.recommendBooksDetail({ slug: path });

@@ -3,29 +3,6 @@
 exports[`renders correctly 1`] = `
 <View>
   <View
-    style={
-      Object {
-        "backgroundColor": "rgb(245,245,245)",
-        "height": 40,
-        "justifyContent": "center",
-        "paddingLeft": 15,
-      }
-    }
-  >
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-      style={
-        Object {
-          "color": "#999",
-        }
-      }
-    >
-      hello, world
-    </Text>
-  </View>
-  <View
     accessibilityComponentType={undefined}
     accessibilityLabel={undefined}
     accessibilityTraits={undefined}

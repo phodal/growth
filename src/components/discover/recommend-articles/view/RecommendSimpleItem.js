@@ -15,17 +15,20 @@ class RecommendSimpleItem extends Component {
           ),
         )),
     launch: PropTypes.func,
+    withoutHeading: PropTypes.bool,
   };
 
   static defaultProps = {
     content: {},
     launch: () => {},
+    withoutHeading: false,
   };
 
   constructor(props) {
     super(props);
     this.state = {
       name: this.props.content.name,
+      withoutHeading: this.props.withoutHeading,
       rowData: Array.from(new Array(this.props.content.books.length))
         .map((val, index) => (this.props.content.books[index])) };
   }
@@ -46,9 +49,11 @@ class RecommendSimpleItem extends Component {
     ));
     return (
       <View>
-        <View style={AppStyle.titleVerticalCenterColorGrayStyle}>
-          <Text style={{ color: '#999' }}>{this.state.name}</Text>
-        </View>
+        {
+          this.state.withoutHeading ? <View style={AppStyle.titleVerticalCenterColorGrayStyle}>
+            <Text style={{ color: '#999' }}>{this.state.name}</Text>
+          </View> : null
+        }
         {rows}
       </View>
     );

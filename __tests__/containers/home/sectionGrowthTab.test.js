@@ -6,6 +6,8 @@ import { Actions, Scene } from 'react-native-router-flux';
 import SectionGrowthTab from '../../../src/containers/home/sections/SectionGrowthTab';
 import HELPER_ARTICLES from '../../../src/constants/HELPER_ARTICLES';
 import HtmlView from '../../../src/components/HtmlView';
+import RecommendBooks from '../../../src/containers/discover/recommend-books/RecommendBooks';
+import BOOKS from '../../../src/constants/BOOKS';
 
 it('renders correctly', () => {
   const sectionInfo = {
@@ -60,6 +62,11 @@ describe('test showGrowthView', () => {
         title={'技能'}
         component={HtmlView}
       />
+      <Scene
+        key={'recommendBooks'}
+        title={'技能'}
+        component={RecommendBooks}
+      />
     </Scene>
   );
   Actions.create(scenesData);
@@ -75,11 +82,11 @@ describe('test showGrowthView', () => {
   });
 
   it('test for book', () => {
-    const spy = jest.spyOn(Actions, 'htmlView');
+    const spy = jest.spyOn(Actions, 'recommendBooks');
     SectionGrowthTab.showGrowthView({
       title: '书单',
       info: { type: 'book', domain: 'coding' },
     });
-    expect(spy).toBeCalledWith({ domain: 'coding', isFullSlug: true, slug: '/growth-content/review/coding.html', title: undefined });
+    expect(spy).toBeCalledWith({ data: [{ books: BOOKS['zh-cn'].coding, name: '书单' }] });
   });
 });

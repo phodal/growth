@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { ScrollView } from 'react-native';
 import AppStyle from '../../../theme/styles';
 import RecommendSimpleItem from '../../../components/discover/recommend-articles/view/RecommendSimpleItem';
@@ -8,10 +8,29 @@ import Launch from '../../../components/discover/Launch';
 class RecommendBooks extends Component {
   static componentName = 'RecommendBooks';
 
+  static propTypes = {
+    data: PropTypes.arrayOf(PropTypes.shape({
+      name: PropTypes.string,
+      books: PropTypes.shape({
+        category: PropTypes.string,
+        slug: PropTypes.string,
+        store: PropTypes.string,
+        title: PropTypes.string,
+      }),
+    })),
+    withoutHeading: PropTypes.bool,
+  };
+
+  static defaultProps = {
+    data: RECOMMEND_BOOKS_LIST,
+    withoutHeading: false,
+  };
+
   constructor(props) {
     super(props);
     this.state = {
-      data: RECOMMEND_BOOKS_LIST,
+      data: this.props.data,
+      withoutHeading: this.props.withoutHeading,
     };
   }
 
@@ -20,6 +39,7 @@ class RecommendBooks extends Component {
       <RecommendSimpleItem
         content={val}
         launch={Launch.recommendBooksDetail}
+        withoutHeading={this.state.withoutHeading}
         key={val.name.concat(index)}
       />));
     return (

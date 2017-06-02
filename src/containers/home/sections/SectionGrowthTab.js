@@ -6,6 +6,7 @@ import * as shortid from 'shortid';
 
 import Launch from '../../../components/discover/Launch';
 import TODO_LISTS from '../../../constants/TODO_LISTS';
+import BOOKS from '../../../constants/BOOKS';
 
 class SectionGrowthTab extends Component {
   static componentName = 'SectionGrowthTab';
@@ -19,7 +20,9 @@ class SectionGrowthTab extends Component {
     const sectionInfo = section.info;
 
     if (sectionInfo.type === 'book') {
-      slug = `/growth-content/review/${sectionInfo.domain}.html`;
+      return Actions.recommendBooks({
+        data: [{ name: section.title, books: BOOKS['zh-cn'][sectionInfo.domain] }],
+      });
     } else if (sectionInfo.type === 'tool') {
       slug = `/growth-content/tool/${sectionInfo.domain}.html`;
     } else if (sectionInfo.domain) {
