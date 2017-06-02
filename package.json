@@ -53,7 +53,8 @@
     "jest": "19.0.2",
     "react-addons-test-utils": "15.4.2",
     "react-dom": "15.4.2",
-    "react-test-renderer": "15.4.2"
+    "react-test-renderer": "15.4.2",
+    "redux-mock-store": "^1.2.3"
   },
   "jest": {
     "preset": "react-native",
