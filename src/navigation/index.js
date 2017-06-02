@@ -312,7 +312,6 @@ export default Actions.create(
     />
 
     <Scene
-      {...navbarPropsTabs}
       key={'htmlView'}
       component={HtmlView}
     />
