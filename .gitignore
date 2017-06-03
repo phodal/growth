@@ -154,3 +154,5 @@ ENV/
 
 # mypy
 .mypy_cache/
+android/app/src/main/assets/GrEditor/
+android/app/src/main/assets/www/
