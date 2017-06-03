@@ -45,7 +45,7 @@ class Discover extends Component {
           <GridItem title="待办事项" iconName="explore-2-6" position={'right'} onclick={() => { Launch.todoLists(); }} />
         </View>
       </View>
-      <View style={{ height: 490 }}>
+      <View style={{ height: 490, paddingBottom: 30 }}>
         <View style={AppStyle.discoverTitle} >
           <Text style={AppStyle.discoverTextColor}>在线阅读</Text>
         </View>
