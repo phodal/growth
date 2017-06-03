@@ -3,9 +3,11 @@
 import React, { Component } from 'react';
 import { WebView, StyleSheet, Platform } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-
 import AppSizes from '../../theme/sizes';
 import AppStyles from '../../theme/styles';
+import SKILL_TREE_DATA from './SKILL_TREE_DATA';
+
+const filter = require('lodash.filter');
 
 const styles = StyleSheet.create({
   container: {
@@ -24,8 +26,10 @@ class SkillTree extends Component {
 
   handleMessage = (event: Object) => {
     const message = event.nativeEvent.data;
-    const skillId = JSON.parse(message).id;
-    Actions.skillDetail({ skillId: parseInt(skillId, 10) });
+    const skillId = parseInt(JSON.parse(message).id, 10);
+    const title = filter(SKILL_TREE_DATA, { id: skillId })[0].title;
+
+    Actions.skillDetail({ skillId, title });
   };
 
   render = () => {

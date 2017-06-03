@@ -40,6 +40,6 @@ describe('test skill tree ', () => {
         }),
       },
     });
-    expect(spy).toBeCalledWith({ skillId: 1 });
+    expect(spy).toBeCalledWith({ skillId: 1, title: 'HTML' });
   });
 });

@@ -89,7 +89,7 @@ class SkillDetailView extends Component {
     return (
       <ScrollView>
         <Card
-          title={skillData.title}
+          title={'技能简介'}
         >
           <Text>{ skillData.description }</Text>
         </Card>
