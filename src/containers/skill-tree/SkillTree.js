@@ -8,17 +8,9 @@ import AppSizes from '../../theme/sizes';
 import AppStyles from '../../theme/styles';
 
 const styles = StyleSheet.create({
-  background: {
-    backgroundColor: 'transparent',
+  container: {
     height: AppSizes.screen.height,
     width: AppSizes.screen.width,
-  },
-  logo: {
-    width: AppSizes.screen.width * 0.85,
-    resizeMode: 'contain',
-  },
-  whiteText: {
-    color: '#FFF',
   },
 });
 
