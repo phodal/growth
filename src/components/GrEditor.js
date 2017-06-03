@@ -1,6 +1,6 @@
-/* eslint-disable global-require */
+/* eslint-disable global-require,no-unused-vars,class-methods-use-this */
 import React, { Component } from 'react';
-import { WebView, StyleSheet, Platform } from 'react-native';
+import { Keyboard, Dimensions, DeviceEventEmitter, WebView, StyleSheet, Platform } from 'react-native';
 import EditorWebViewServices from '../utils/EditorWebViewServices';
 
 import AppSizes from '../theme/sizes';
@@ -34,12 +34,42 @@ class GrEditor extends Component {
   constructor() {
     super();
     this.webview = null;
+    this.state = {
+      visibleHeight: Dimensions.get('window').height,
+    };
+  }
+
+  componentWillMount() {
+    Keyboard.addListener('keyboardWillShow', this.keyboardWillShow.bind(this));
+    Keyboard.addListener('keyboardWillHide', this.keyboardWillHide.bind(this));
+    Keyboard.addListener('keyboardDidShow', this.keyboardDidShow.bind(this));
+    Keyboard.addListener('keyboardDidHide', this.keyboardDidHide.bind(this));
   }
 
   handleMessage = (event: Object) => {
-    const message = event.nativeEvent.data;
-    console.log(JSON.stringify(message));
+    const message = JSON.parse(event.nativeEvent.data);
+    if (message.action === 'console') {
+      console.log(message.data);
+    }
   };
+
+  keyboardWillShow(event) {
+    const newSize = Dimensions.get('window').height - event.endCoordinates.height;
+    this.setState({ visibleHeight: newSize });
+  }
+
+  keyboardWillHide(event) {
+    this.setState({ visibleHeight: Dimensions.get('window').height });
+  }
+
+  keyboardDidShow() {
+    console.log('Keyboard Shown');
+  }
+
+  keyboardDidHide() {
+    console.log('Keyboard Hidden');
+  }
+
 
   render = () => {
     let source;
@@ -59,7 +89,7 @@ class GrEditor extends Component {
         source={source}
         onMessage={this.handleMessage}
         automaticallyAdjustContentInsets={false}
-        style={[AppStyles.container, styles.container]}
+        style={[AppStyles.container, styles.container, { height: this.state.visibleHeight }]}
         injectedJavaScript=""
         onNavigationStateChange={this.onNavigationStateChange}
       />

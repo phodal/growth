@@ -338,7 +338,7 @@ export default Actions.create(
     />
 
     <Scene
-      {...navbarPropsTabs}
+      {...AppConfig.navbarProps}
       key={'grEditor'}
       duration={500}
       title={'编辑器'}
