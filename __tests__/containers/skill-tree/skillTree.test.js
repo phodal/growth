@@ -1,19 +1,21 @@
 import 'react-native';
 import { Actions, Scene } from 'react-native-router-flux';
 import React from 'react';
+import renderer from 'react-test-renderer';
+
 import SkillTree from '../../../src/containers/skill-tree/SkillTree';
 import SkillDetailView from '../../../src/containers/skill-tree/SkillDetailView';
 
 describe('test skill tree ', () => {
-  // it('test render', function () {
+  it('test render', function () {
     // eslint-disable-next-line no-unused-vars
-    // const tree = renderer.create(
-    //   <SkillTree skillId={1} />,
-    // );
-    //
-    // const treeJson = tree.toJSON();
-    // expect(treeJson).toMatchSnapshot();
-  // });
+    const tree = renderer.create(
+      <SkillTree skillId={1} />,
+    );
+
+    const treeJson = tree.toJSON();
+    expect(treeJson).toMatchSnapshot();
+  });
 
   it('should goto detail view', () => {
     const scenesData = (
