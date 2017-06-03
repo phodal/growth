@@ -7,7 +7,7 @@ import SkillTree from '../../../src/containers/skill-tree/SkillTree';
 import SkillDetailView from '../../../src/containers/skill-tree/SkillDetailView';
 
 describe('test skill tree ', () => {
-  it('test render', function () {
+  it('test render', () => {
     // eslint-disable-next-line no-unused-vars
     const tree = renderer.create(
       <SkillTree skillId={1} />,
