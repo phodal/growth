@@ -76,7 +76,7 @@ class GrEditor extends Component {
     if (__DEV__) {
       source = require('./GrEditor/index.html');
     } else {
-      source = Platform.OS === 'ios' ? require('./GrEditor/index.html') : { uri: 'file:///android_asset/GrEdtiror/index.html' };
+      source = Platform.OS === 'ios' ? require('./GrEditor/index.html') : { uri: 'file:///android_asset/GrEditor/index.html' };
     }
 
     return (
