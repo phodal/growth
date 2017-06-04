@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import { Keyboard, Dimensions, WebView, StyleSheet, Platform } from 'react-native';
 import Toast from 'react-native-simple-toast';
+import Orientation from 'react-native-orientation';
 
 import EditorWebViewServices from '../utils/EditorWebViewServices';
 
@@ -46,7 +47,14 @@ class GrEditor extends Component {
     Keyboard.addListener('keyboardWillHide', this.keyboardWillHide.bind(this));
     Keyboard.addListener('keyboardDidShow', this.keyboardDidShow.bind(this));
     Keyboard.addListener('keyboardDidHide', this.keyboardDidHide.bind(this));
+    Orientation.addOrientationListener(this.orientationDidChange);
   }
+
+  orientationDidChange = () => {
+    this.webview.postMessage(JSON.stringify({
+      action: 'resize',
+    }));
+  };
 
   handleMessage = (event: Object) => {
     const message = JSON.parse(event.nativeEvent.data);

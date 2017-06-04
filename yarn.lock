@@ -3763,6 +3763,10 @@ react-native-infinite-scroll-view@^0.4.2:
     react-clone-referenced-element "^1.0.1"
     react-native-scrollable-mixin "^1.0.0"
 
+"react-native-orientation@git+https://github.com/yamill/react-native-orientation.git":
+  version "1.17.0"
+  resolved "git+https://github.com/yamill/react-native-orientation.git#f904c885fab8a8262f041b73b786167eeb3a8813"
+
 react-native-router-flux@3.37.0:
   version "3.37.0"
   resolved "https://registry.yarnpkg.com/react-native-router-flux/-/react-native-router-flux-3.37.0.tgz#18e8fd3e1e6dbdc4d8340cd47313c28bb9bb1caf"
