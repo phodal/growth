@@ -14,6 +14,7 @@ TODO List
  - Awesome 项目列表
  - 点击图片进入全屏： https://github.com/oblador/react-native-lightbox
  - 双击退出
+ - LeetCode
  - 练习页面
    - 算法和数据结构练习
    — 可视化算法
@@ -154,6 +155,13 @@ Awesome 项目列表   | https://phodal.github.io/growth-api-awesome/api/awesome
 社区 API 文档： [Growth NG Wiki](https://github.com/phodal/growth-ng/wiki)
 
 Basis on: [React Native Stater APP](https://github.com/mcnamee/react-native-starter-app)
+
+Thanks to
+---
+
+ - [https://github.com/Nightonke/LeeCo](https://github.com/Nightonke/LeeCo)
+ - [https://github.com/hanzichi/leetcode](https://github.com/hanzichi/leetcode)
+ - [https://github.com/haoel/leetcode](https://github.com/haoel/leetcode)
 
 License
 ---

@@ -11,6 +11,9 @@ class Practises extends Component {
       <ScrollView>
         <List>
           <ListItem
+            title={'LeetCode'}
+          />
+          <ListItem
             title={'算法'}
             onPress={() => Actions.algorithmView()}
           />
