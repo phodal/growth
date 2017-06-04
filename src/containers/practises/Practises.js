@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 import { ListItem, List } from 'react-native-elements';
 
 class Practises extends Component {
@@ -11,11 +12,13 @@ class Practises extends Component {
         <List>
           <ListItem
             title={'算法'}
-            leftIcon={{ name: 'bug-report' }}
+            onPress={() => Actions.algorithmView()}
           />
           <ListItem
             title={'数据结构'}
-            leftIcon={{ name: 'bug-report' }}
+          />
+          <ListItem
+            title={'设计模式'}
           />
         </List>
       </ScrollView>

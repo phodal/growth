@@ -44,6 +44,7 @@ import GrEditor from '../components/GrEditor';
 import SectionPage from '../containers/home/sections/SectionPage';
 import HtmlView from '../components/HtmlView';
 import SectionIntro from '../containers/home/sections/SectionIntro';
+import AlgorithmView from '../containers/practises/algorithm/AlgorithmView';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -335,6 +336,12 @@ export default Actions.create(
     <Scene
       key={'htmlView'}
       component={HtmlView}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      key={'algorithmView'}
+      component={AlgorithmView}
     />
 
     <Scene
