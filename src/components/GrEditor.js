@@ -1,6 +1,8 @@
 /* eslint-disable global-require,no-unused-vars,class-methods-use-this */
 import React, { Component } from 'react';
-import { Keyboard, Dimensions, DeviceEventEmitter, WebView, StyleSheet, Platform } from 'react-native';
+import { Keyboard, Dimensions, WebView, StyleSheet, Platform } from 'react-native';
+import Toast from 'react-native-simple-toast';
+
 import EditorWebViewServices from '../utils/EditorWebViewServices';
 
 import AppSizes from '../theme/sizes';
@@ -49,7 +51,7 @@ class GrEditor extends Component {
   handleMessage = (event: Object) => {
     const message = JSON.parse(event.nativeEvent.data);
     if (message.action === 'console') {
-      console.log(message.data);
+      Toast.show(message.data);
     }
   };
 
@@ -90,8 +92,6 @@ class GrEditor extends Component {
         onMessage={this.handleMessage}
         automaticallyAdjustContentInsets={false}
         style={[AppStyles.container, styles.container, { height: this.state.visibleHeight }]}
-        injectedJavaScript=""
-        onNavigationStateChange={this.onNavigationStateChange}
       />
     );
   }

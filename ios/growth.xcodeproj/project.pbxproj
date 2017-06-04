@@ -45,6 +45,7 @@
 		E885A0591ED877FF00EE64E1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E885A0581ED877FF00EE64E1 /* libz.tbd */; };
 		E885A05B1ED8780700EE64E1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E885A05A1ED8780700EE64E1 /* CoreData.framework */; };
 		E885A05D1ED8780D00EE64E1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E885A05C1ED8780D00EE64E1 /* SystemConfiguration.framework */; };
+		ED59FA1803464715B5F231E8 /* libLRDRCTSimpleToast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0102CDF72AB74EB49C3E4F8A /* libLRDRCTSimpleToast.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -343,6 +344,8 @@
 		E885A05C1ED8780D00EE64E1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EA29257687E6472BB458970D /* libRNFS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFS.a; sourceTree = "<group>"; };
 		F6E3BD4648794DD7A9565C73 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		7407FD5446BE40DEBDBE2C48 /* LRDRCTSimpleToast.xcodeproj */ = {isa = PBXFileReference; name = "LRDRCTSimpleToast.xcodeproj"; path = "../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		0102CDF72AB74EB49C3E4F8A /* libLRDRCTSimpleToast.a */ = {isa = PBXFileReference; name = "libLRDRCTSimpleToast.a"; path = "libLRDRCTSimpleToast.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +377,7 @@
 				33D054F289E848519D9FDBCE /* libRNFS.a in Frameworks */,
 				80828C925C7B4BF9B55B82AC /* libRCTGoogleAnalyticsBridge.a in Frameworks */,
 				5F9F4102A07A458FB768AE51 /* libRNStoreReview.a in Frameworks */,
+				ED59FA1803464715B5F231E8 /* libLRDRCTSimpleToast.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +573,7 @@
 				C9417199316640CEB1836D1A /* RNFS.xcodeproj */,
 				57C10180B0194A97B2DCEBA5 /* RCTGoogleAnalyticsBridge.xcodeproj */,
 				0BB952AFDA07460EACECF67E /* RNStoreReview.xcodeproj */,
+				7407FD5446BE40DEBDBE2C48 /* LRDRCTSimpleToast.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1111,11 +1116,13 @@
 					"$(SRCROOT)/../node_modules/react-native-fs/**",
 					"$(SRCROOT)/../node_modules/react-native-google-analytics-bridge/ios/RCTGoogleAnalyticsBridge/**",
 					"$(SRCROOT)/../node_modules/react-native-store-review/ios",
+					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
 				);
 				INFOPLIST_FILE = growth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
@@ -1150,11 +1157,13 @@
 					"$(SRCROOT)/../node_modules/react-native-fs/**",
 					"$(SRCROOT)/../node_modules/react-native-google-analytics-bridge/ios/RCTGoogleAnalyticsBridge/**",
 					"$(SRCROOT)/../node_modules/react-native-store-review/ios",
+					"$(SRCROOT)/../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast",
 				);
 				INFOPLIST_FILE = growth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",

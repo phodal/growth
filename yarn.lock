@@ -3784,6 +3784,10 @@ react-native-side-menu@^0.20.1:
   version "0.20.1"
   resolved "https://registry.yarnpkg.com/react-native-side-menu/-/react-native-side-menu-0.20.1.tgz#df21b4bb9d8a1aa3bae53d74ddf8a739eb59bfc5"
 
+react-native-simple-toast@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/react-native-simple-toast/-/react-native-simple-toast-0.0.6.tgz#f1ddb2c07c192cf2b75b860d283028a0769b2f72"
+
 react-native-spinkit@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/react-native-spinkit/-/react-native-spinkit-1.0.2.tgz#0d31b019556e038aa8e953038562550cb0ead8d2"
