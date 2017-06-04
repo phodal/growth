@@ -36,7 +36,9 @@ Join us
 ---
 
 ### Setup
-0. 更新xcode至8.3.2
+
+**iOS 要求**：XCode 8.3.2+
+
 1. 安装 yarn 或者 npm
 2. 安装 react-native-cli：``yarn global add react-native-cli``
 3. 安装依赖： ``yarn install``
@@ -154,11 +156,10 @@ Awesome 项目列表   | https://phodal.github.io/growth-api-awesome/api/awesome
 
 社区 API 文档： [Growth NG Wiki](https://github.com/phodal/growth-ng/wiki)
 
-Basis on: [React Native Stater APP](https://github.com/mcnamee/react-native-starter-app)
-
 Thanks to
 ---
 
+ - [React Native Stater APP](https://github.com/mcnamee/react-native-starter-app)
  - [https://github.com/Nightonke/LeeCo](https://github.com/Nightonke/LeeCo)
  - [https://github.com/hanzichi/leetcode](https://github.com/hanzichi/leetcode)
  - [https://github.com/haoel/leetcode](https://github.com/haoel/leetcode)
@@ -168,4 +169,4 @@ License
 
 [![Phodal's Idea](http://brand.phodal.com/shields/idea-small.svg)](http://ideas.phodal.com/)
 
-© 2016 A [Phodal Huang](https://www.phodal.com)'s [Idea](http://github.com/phodal/ideas).  This code is distributed under the MIT license. See `LICENSE` in this directory.
+© 2016~2017 A [Phodal Huang](https://www.phodal.com)'s [Idea](http://github.com/phodal/ideas).  This code is distributed under the MIT license. See `LICENSE` in this directory.
