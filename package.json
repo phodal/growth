@@ -12,6 +12,7 @@
     "events": "^1.1.1",
     "htmlparser2-without-node-native": "^3.9.0",
     "lodash.filter": "^4.6.0",
+    "lodash.isobject": "^3.0.2",
     "marked": "^0.3.6",
     "moment": "^2.18.1",
     "react": "15.4.2",

@@ -9,6 +9,8 @@ import EditorWebViewServices from '../utils/EditorWebViewServices';
 import AppSizes from '../theme/sizes';
 import AppStyles from '../theme/styles';
 
+const isObject = require('lodash.isobject');
+
 const styles = StyleSheet.create({
   background: {
     backgroundColor: 'transparent',
@@ -51,7 +53,7 @@ class GrEditor extends Component {
   }
 
   orientationDidChange = () => {
-    this.webview.postMessage(JSON.stringify({
+    EditorWebViewServices.getWebView().postMessage(JSON.stringify({
       action: 'resize',
     }));
   };
@@ -59,7 +61,11 @@ class GrEditor extends Component {
   handleMessage = (event: Object) => {
     const message = JSON.parse(event.nativeEvent.data);
     if (message.action === 'console') {
-      Toast.show(message.data);
+      if (isObject(message.data)) {
+        Toast.show(JSON.stringify(message.data));
+      } else {
+        Toast.show(message.data.toString());
+      }
     }
   };
 
