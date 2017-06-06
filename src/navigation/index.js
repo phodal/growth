@@ -45,6 +45,7 @@ import SectionPage from '../containers/home/sections/SectionPage';
 import HtmlView from '../components/HtmlView';
 import SectionIntro from '../containers/home/sections/SectionIntro';
 import AlgorithmView from '../containers/practises/algorithm/AlgorithmView';
+import PaperIntroView from '../containers/home/paper/PaperIntroView';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -66,7 +67,7 @@ export default Actions.create(
         leftTitle={'用户中心'}
         renderLeftButton={() => Helper.gotoUserCenter()}
         rightTitle={'购买纸质版'}
-        onRight={() => Actions.comingSoon()}
+        onRight={() => Actions.paperIntroView()}
         rightButtonTextStyle={AppStyles.navbarTitle}
         icon={TabIcon}
         component={Home}
@@ -331,6 +332,12 @@ export default Actions.create(
       key={'sectionIntro'}
       title={'简介'}
       component={SectionIntro}
+    />
+
+    <Scene
+      key={'paperIntroView'}
+      title={'全栈应用开发：精益实践'}
+      component={PaperIntroView}
     />
 
     <Scene
