@@ -335,6 +335,7 @@ export default Actions.create(
     />
 
     <Scene
+      {...AppConfig.navbarProps}
       key={'paperIntroView'}
       title={'全栈应用开发：精益实践'}
       component={PaperIntroView}
