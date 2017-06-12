@@ -7,6 +7,7 @@ import SECTIONS from '../../../constants/SECTIONS';
 import SectionArticleTab from './SectionArticleTab';
 import SectionGrowthTab from './SectionGrowthTab';
 import { saveSection } from '../../../redux/section/actions';
+import SectionPageHelper from '../../../utils/SectionPageHelper';
 
 const styles = StyleSheet.create({
   container: {
@@ -40,6 +41,7 @@ class SectionPage extends Component {
       sectionInfo,
     });
 
+    SectionPageHelper.setSection(sectionInfo);
     this.props.dispatch(saveSection(sectionInfo));
   }
 
