@@ -321,7 +321,7 @@ export default Actions.create(
             onPress={() => {
               const sectionInfo = SectionPageHelper.getSection();
               const slug = sectionInfo.intros[0].info.slug;
-              Actions.sectionIntro(slug);
+              Actions.sectionIntro({slug});
             }}
           >
             <Icon name="help-outline" size={24} color="#fff" />
