@@ -46,6 +46,7 @@ import HtmlView from '../components/HtmlView';
 import SectionIntro from '../containers/home/sections/SectionIntro';
 import AlgorithmView from '../containers/practises/algorithm/AlgorithmView';
 import PaperIntroView from '../containers/home/paper/PaperIntroView';
+import SectionPageHelper from '../utils/SectionPageHelper';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -318,7 +319,9 @@ export default Actions.create(
         <View>
           <TouchableOpacity
             onPress={() => {
-              Actions.sectionIntro();
+              const sectionInfo = SectionPageHelper.getSection();
+              const slug = sectionInfo.intros[0].info.slug;
+              Actions.sectionIntro(slug);
             }}
           >
             <Icon name="help-outline" size={24} color="#fff" />

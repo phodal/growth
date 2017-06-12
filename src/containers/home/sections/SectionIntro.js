@@ -1,21 +1,21 @@
 /* eslint-disable no-undef,react/forbid-prop-types */
-import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import SectionPageHelper from '../../../utils/SectionPageHelper';
+import HtmlView from '../../../components/HtmlView';
 
 class SectionIntro extends Component {
   static componentName = 'SectionIntro';
 
-  render() {
-    const sectionInfo = SectionPageHelper.getSection();
-    console.log(sectionInfo);
+  static propTypes = {
+    slug: PropTypes.string.isRequired,
+  };
 
-    return (
-      <View>
-        <Text>SectionIntro</Text>
-      </View>
-    );
+  static defaultProps = {
+    slug: '',
+  };
+
+  render() {
+    return (<HtmlView domain={'desc'} slug={this.props.slug} />);
   }
 }
 
