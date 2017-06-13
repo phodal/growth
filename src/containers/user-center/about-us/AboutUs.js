@@ -28,7 +28,14 @@ const AboutUs = () => (
         hideChevron
       />
     </List>
-    <Label text="贡献者" />
+    <Label text="贡献者 3.0" />
+    <List>
+      <ListItem
+        title="TBD  "
+      />
+    </List>
+
+    <Label text="贡献者 1.0 2.0" />
     <List>
       {CONTRIBUTORS.old.contributors.map(contributor =>
         <ListItem

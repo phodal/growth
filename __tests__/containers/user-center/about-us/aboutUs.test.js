@@ -31,7 +31,7 @@ describe('test user center / about us', () => {
   it('test for children components', () => {
     const wrapper = shallow(<AboutUs />);
 
-    chai.expect(wrapper.find(ListItem)).to.have.length(11);
+    chai.expect(wrapper.find(ListItem)).to.have.length(12);
     chai.expect(wrapper.find({ title: '开源 - GitHub' })).to.have.length(1);
     chai.expect(wrapper.find({ title: 'QQ 交流群: 529600394' })).to.have.length(1);
     chai.expect(wrapper.find({ title: '论坛: https://forum.growth.ren' })).to.have.length(1);

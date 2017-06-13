@@ -7,6 +7,7 @@ import DeviceInfo from 'react-native-device-info';
 import Share from 'react-native-share';
 import * as StoreReview from 'react-native-store-review';
 
+import Helper from '../../utils/helper';
 
 class UserCenter extends Component {
   static componentName = 'UserCenter';
@@ -64,14 +65,20 @@ class UserCenter extends Component {
         />
         <ListItem
           title={'发现Bug'}
+          onPress={() => Helper.openLink('https://github.com/phodal/growth/issues')}
           leftIcon={{ name: 'bug-report' }}
         />
         <ListItem
           title={'功能反馈'}
+          onPress={() => Helper.openLink('https://jinshuju.net/f/aZ4CAS')}
           leftIcon={{ name: 'feedback' }}
         />
       </List>
       <List>
+        <ListItem
+          title={'支持开发'}
+          leftIcon={{ name: 'work' }}
+        />
         <ListItem
           hideChevron
           title={'微信公众号'}
@@ -79,13 +86,10 @@ class UserCenter extends Component {
           subtitle={'phodal-weixin'}
         />
         <ListItem
-          title={'支持开发'}
-          leftIcon={{ name: 'work' }}
-        />
-        <ListItem
           hideChevron
-          title={'当前版本'}
-          rightTitle={this.state.version}
+          title={'当前构建版本'}
+          leftIcon={{ name: 'build' }}
+          subtitle={this.state.version}
         />
       </List>
     </ScrollView>
