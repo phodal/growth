@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test user center renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "marginTop": 20,
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="#000"
+    hidesWhenStopped={true}
+    size="large"
+  />
+</View>
+`;
