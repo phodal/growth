@@ -2,6 +2,7 @@
 import React, { Component, PropTypes } from 'react';
 import { View, ActivityIndicator } from 'react-native';
 import ForumView from './ForumView';
+// import AsyncStorageHelper from '../../../utils/AsyncStorageHelper';
 
 class ForumContainer extends Component {
   static componentName = 'ForumContainer';
@@ -27,6 +28,15 @@ class ForumContainer extends Component {
 
   componentDidMount = () => {
     this.fetchData();
+
+    // AsyncStorageHelper.query('discussions', (result) => {
+    //   if (result) {
+    //     this.setState({
+    //       loading: false,
+    //       data: JSON.parse(result),
+    //     });
+    //   }
+    // });
   };
 
   fetchData = (option) => {
@@ -67,6 +77,8 @@ class ForumContainer extends Component {
         data,
       });
 
+      // AsyncStorageHelper.set('discussions', JSON.stringify(data));
+      //
       if (responseData.links.next) {
         this.setState({
           dataUrl: responseData.links.next,
