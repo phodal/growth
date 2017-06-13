@@ -47,6 +47,7 @@ import SectionIntro from '../containers/home/sections/SectionIntro';
 import AlgorithmView from '../containers/practises/algorithm/AlgorithmView';
 import PaperIntroView from '../containers/home/paper/PaperIntroView';
 import SectionPageHelper from '../utils/SectionPageHelper';
+import ForumDetail from '../containers/community/forum/ForumDetail';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -353,6 +354,12 @@ export default Actions.create(
       {...AppConfig.navbarProps}
       key={'algorithmView'}
       component={AlgorithmView}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      key={'forumDetail'}
+      component={ForumDetail}
     />
 
     <Scene

@@ -1,8 +1,8 @@
 /* eslint-disable class-methods-use-this */
 import React, { PureComponent } from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import { Icon, Divider } from 'react-native-elements';
-
+import { Actions } from 'react-native-router-flux';
 import Colors from '../../theme/colors';
 import ForumContainer from './forum/ForumContainers';
 
@@ -32,27 +32,29 @@ class Community extends PureComponent {
       </View>);
     }
 
-    return (<View
-      style={{
-        height: 72,
-        backgroundColor: '#fff',
-      }}
-    >
-      <View style={{ margin: 8 }}>
-        <Text numberOfLines={1} style={{ fontSize: 15 }}>{topic.attributes.title}</Text>
-      </View>
-      <View style={{ flex: 1, flexDirection: 'row', margin: 8, justifyContent: 'space-between' }}>
-        <View style={{ flex: 1, flexDirection: 'row' }}>
-          {sticky}
-          <View><Text style={{ color: '#333' }}><TimeAgo time={topic.attributes.lastTime} interval={20000} /></Text></View>
+    return (
+      <TouchableOpacity
+        onPress={() => {
+          Actions.forumDetail({ id: topic.attributes.id});
+        }}
+      >
+        <View style={{ height: 72, backgroundColor: '#fff' }}>
+          <View style={{ margin: 8 }}>
+            <Text numberOfLines={1} style={{ fontSize: 15 }}>{topic.attributes.title}</Text>
+          </View>
+          <View style={{ flex: 1, flexDirection: 'row', margin: 8, justifyContent: 'space-between' }}>
+            <View style={{ flex: 1, flexDirection: 'row' }}>
+              {sticky}
+              <View><Text style={{ color: '#333' }}><TimeAgo time={topic.attributes.lastTime} interval={20000} /></Text></View>
+            </View>
+            <View style={{ flexDirection: 'row' }}>
+              <Icon style={{ marginLeft: 5, marginRight: 5 }} name={'ios-chatboxes-outline'} type={'ionicon'} color={'#333'} />
+              <Text>{topic.attributes.commentsCount}</Text>
+            </View>
+          </View>
+          <Divider style={{ backgroundColor: '#eee' }} />
         </View>
-        <View style={{ flexDirection: 'row' }}>
-          <Icon style={{ marginLeft: 5, marginRight: 5 }} name={'ios-chatboxes-outline'} type={'ionicon'} color={'#333'} />
-          <Text>{topic.attributes.commentsCount}</Text>
-        </View>
-      </View>
-      <Divider style={{ backgroundColor: '#eee' }} />
-    </View>
+      </TouchableOpacity>
     );
   }
 
