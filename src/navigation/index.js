@@ -367,6 +367,7 @@ export default Actions.create(
     <Scene
       {...AppConfig.navbarProps}
       key={'forumUserCenter'}
+      title={'用户'}
       component={ForumUserCenter}
     />
 

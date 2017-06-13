@@ -40,7 +40,8 @@
     "redux": "^3.6.0",
     "redux-logger": "^2.7.4",
     "redux-thunk": "^2.2.0",
-    "shortid": "^2.2.8"
+    "shortid": "^2.2.8",
+    "tcomb-form-native": "^0.6.9"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
