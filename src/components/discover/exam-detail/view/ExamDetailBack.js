@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { View, TouchableHighlight, Text } from 'react-native';
+import { View } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import AppStyle from '../../../../theme/styles';
+import { Button } from 'react-native-elements';
 
 class ExamDetailBack extends Component {
   static componentName = 'ExamDetailBack';
@@ -9,12 +9,12 @@ class ExamDetailBack extends Component {
     return (
       <View style={{ height: 40, flexDirection: 'row' }}>
         <View style={{ flex: 1 }} />
-        <TouchableHighlight
+        <Button
+          raised
+          icon={{ name: 'exit-to-app' }}
+          title="结束"
           onPress={() => Actions.pop()}
-          style={AppStyle.examDetailBackStyle}
-        >
-          <Text style={{ color: '#03a9f4' }}>back</Text>
-        </TouchableHighlight>
+        />
       </View>
     );
   }
