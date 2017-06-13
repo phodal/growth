@@ -35,7 +35,10 @@ class Community extends PureComponent {
     return (
       <TouchableOpacity
         onPress={() => {
-          Actions.forumDetail({ id: topic.attributes.id});
+          Actions.forumDetail({
+            title: topic.attributes.title,
+            id: topic.id,
+          });
         }}
       >
         <View style={{ height: 72, backgroundColor: '#fff' }}>
