@@ -95,7 +95,7 @@ class UserCenter extends Component {
         <ListItem
           hideChevron
           title={'当前构建版本'}
-          leftIcon={{ name: 'build' }}
+          leftIcon={{ name: 'perm-device-information' }}
           subtitle={this.state.version}
         />
       </List>
