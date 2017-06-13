@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { WebView, Dimensions, View } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
 import HtmlHelper from '../../../utils/HtmlHelper';
+import Helper from '../../../utils/helper';
 
 class PaperIntroView extends Component {
   static componentName = 'PaperIntroView';
@@ -44,12 +45,15 @@ class PaperIntroView extends Component {
         <List style={{ marginTop: 15, marginBottom: 15, backgroundColor: '#fff' }}>
           <ListItem
             title={'亚马逊'}
+            onPress={() => { Helper.openLink('https://www.amazon.cn/dp/B0722YJR89'); }}
           />
           <ListItem
             title={'京东'}
+            onPress={() => { Helper.openLink('http://item.jd.com/12195442.html'); }}
           />
           <ListItem
             title={'当当'}
+            onPress={() => { Helper.openLink('http://product.dangdang.com/25077858.html'); }}
           />
         </List>
         <WebView

@@ -19,22 +19,40 @@ exports[`renders correctly 1`] = `
     }
   >
     <View
-      onLongPress={undefined}
-      onPress={undefined}
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
         Array [
           Object {
             "backgroundColor": "transparent",
-            "borderBottomColor": "#ededed",
-            "borderBottomWidth": 1,
-            "paddingBottom": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
           },
-          undefined,
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderBottomColor": "#ededed",
+              "borderBottomWidth": 1,
+              "paddingBottom": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+            undefined,
+          ],
         ]
       }
-      underlayColor="white"
+      testID={undefined}
+      tvParallaxProperties={undefined}
     >
       <View
         style={
@@ -154,22 +172,40 @@ exports[`renders correctly 1`] = `
       </View>
     </View>
     <View
-      onLongPress={undefined}
-      onPress={undefined}
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
         Array [
           Object {
             "backgroundColor": "transparent",
-            "borderBottomColor": "#ededed",
-            "borderBottomWidth": 1,
-            "paddingBottom": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
           },
-          undefined,
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderBottomColor": "#ededed",
+              "borderBottomWidth": 1,
+              "paddingBottom": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+            undefined,
+          ],
         ]
       }
-      underlayColor="white"
+      testID={undefined}
+      tvParallaxProperties={undefined}
     >
       <View
         style={
@@ -289,22 +325,40 @@ exports[`renders correctly 1`] = `
       </View>
     </View>
     <View
-      onLongPress={undefined}
-      onPress={undefined}
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
         Array [
           Object {
             "backgroundColor": "transparent",
-            "borderBottomColor": "#ededed",
-            "borderBottomWidth": 1,
-            "paddingBottom": 10,
-            "paddingRight": 10,
-            "paddingTop": 10,
           },
-          undefined,
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "borderBottomColor": "#ededed",
+              "borderBottomWidth": 1,
+              "paddingBottom": 10,
+              "paddingRight": 10,
+              "paddingTop": 10,
+            },
+            undefined,
+          ],
         ]
       }
-      underlayColor="white"
+      testID={undefined}
+      tvParallaxProperties={undefined}
     >
       <View
         style={
