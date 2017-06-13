@@ -2,7 +2,8 @@
 import React, { Component, PropTypes } from 'react';
 import { Text, View, ScrollView, ActivityIndicator, WebView, Dimensions } from 'react-native';
 
-import HtmlHelper from '../../../utils/HtmlHelper';
+import HTMLView from 'react-native-htmlview';
+
 
 class ForumDetail extends Component {
   static componentName = 'ForumDetail';
@@ -60,10 +61,8 @@ class ForumDetail extends Component {
     return (
       <ScrollView style={{ flex: 1, flexDirection: 'column' }}>
         <Text>{ attributes.title } </Text>
-        <WebView
-          scalesPageToFit
-          source={{ html: HtmlHelper.getHtml(post.attributes.contentHtml) }}
-          style={{ height: Dimensions.get('window').height, backgroundColor: 'white' }}
+        <HTMLView
+          value={post.attributes.contentHtml}
         />
       </ScrollView>
     );

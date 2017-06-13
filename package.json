@@ -24,6 +24,7 @@
     "react-native-filesystem": "^0.1.0",
     "react-native-fs": "^2.3.2",
     "react-native-google-analytics-bridge": "^5.0.1",
+    "react-native-htmlview": "^0.9.0",
     "react-native-infinite-scroll-view": "^0.4.2",
     "react-native-orientation": "git+https://github.com/yamill/react-native-orientation.git",
     "react-native-router-flux": "3.37.0",
