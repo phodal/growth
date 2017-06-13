@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Platform } from 'react';
 import { Actions } from 'react-native-router-flux';
 import ListItem from 'react-native-elements/src/list/ListItem';
 import List from 'react-native-elements/src/list/List';
@@ -23,8 +23,15 @@ class UserCenter extends Component {
 
   static ratingApp() {
     if (StoreReview.isAvailable) {
-      StoreReview.requestReview();
+      return StoreReview.requestReview();
     }
+    let link = 'market://details?id=ren.growth';
+
+    if (Platform.OS === 'iOS') {
+      link = 'itms://itunes.apple.com/us/app/apple-store/myiosappid?mt=8';
+    }
+
+    return Helper.openLink(link);
   }
 
   constructor(render) {
