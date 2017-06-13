@@ -1,6 +1,8 @@
 /* eslint-disable no-undef */
 import React, { Component, PropTypes } from 'react';
-import { Text, View, ActivityIndicator } from 'react-native';
+import { Text, View, ScrollView, ActivityIndicator, WebView, Dimensions } from 'react-native';
+
+import HtmlHelper from '../../../utils/HtmlHelper';
 
 class ForumDetail extends Component {
   static componentName = 'ForumDetail';
@@ -56,10 +58,14 @@ class ForumDetail extends Component {
     const post = data.included[0];
 
     return (
-      <View>
+      <ScrollView style={{ flex: 1, flexDirection: 'column' }}>
         <Text>{ attributes.title } </Text>
-        <Text>{ post.attributes.content } </Text>
-      </View>
+        <WebView
+          scalesPageToFit
+          source={{ html: HtmlHelper.getHtml(post.attributes.contentHtml) }}
+          style={{ height: Dimensions.get('window').height, backgroundColor: 'white' }}
+        />
+      </ScrollView>
     );
   }
 }
