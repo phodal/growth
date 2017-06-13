@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { WebView, Dimensions } from 'react-native';
+import { WebView, Dimensions, View } from 'react-native';
+import { List, ListItem } from 'react-native-elements';
 import HtmlHelper from '../../../utils/HtmlHelper';
 
 class PaperIntroView extends Component {
@@ -39,11 +40,24 @@ class PaperIntroView extends Component {
   </div>`;
 
     return (
-      <WebView
-        scalesPageToFit
-        source={{ html: HtmlHelper.getHtml(bookHtml) }}
-        style={{ height: Dimensions.get('window').height, backgroundColor: 'white' }}
-      />
+      <View style={{ flex: 1, flexDirection: 'column' }}>
+        <List style={{ marginTop: 15, marginBottom: 15, backgroundColor: '#fff' }}>
+          <ListItem
+            title={'亚马逊'}
+          />
+          <ListItem
+            title={'京东'}
+          />
+          <ListItem
+            title={'当当'}
+          />
+        </List>
+        <WebView
+          scalesPageToFit
+          source={{ html: HtmlHelper.getHtml(bookHtml) }}
+          style={{ height: Dimensions.get('window').height, backgroundColor: 'white' }}
+        />
+      </View>
     );
   }
 }
