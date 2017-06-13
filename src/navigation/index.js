@@ -48,6 +48,7 @@ import AlgorithmView from '../containers/practises/algorithm/AlgorithmView';
 import PaperIntroView from '../containers/home/paper/PaperIntroView';
 import SectionPageHelper from '../utils/SectionPageHelper';
 import ForumDetail from '../containers/community/forum/ForumDetail';
+import ForumUserCenter from "../containers/community/forum/ForumUserCenter";
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -108,6 +109,7 @@ export default Actions.create(
         title={'社区'}
         leftTitle={'用户中心'}
         renderLeftButton={() => Helper.gotoUserCenter()}
+        renderRightButton={() => Helper.gotoLogin()}
         iconName={'md-people'}
         iconType={'ionicon'}
         icon={TabIcon}
@@ -360,6 +362,12 @@ export default Actions.create(
       {...AppConfig.navbarProps}
       key={'forumDetail'}
       component={ForumDetail}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      key={'forumUserCenter'}
+      component={ForumUserCenter}
     />
 
     <Scene

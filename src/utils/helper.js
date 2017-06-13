@@ -34,8 +34,17 @@ class Helper {
   static gotoUserCenter() {
     return (
       <Icon
-        name={'md-person'} type={'ionicon'} color={'#fff'}
+        name={'md-color-palette'} type={'ionicon'} color={'#fff'}
         onPress={() => Actions.userCenter()}
+      />
+    );
+  }
+
+  static gotoLogin() {
+    return (
+      <Icon
+        name={'md-person'} type={'ionicon'} color={'#fff'}
+        onPress={() => Actions.forumUserCenter()}
       />
     );
   }
