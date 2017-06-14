@@ -4,7 +4,9 @@ exports[`test user center renders correctly 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#fff",
+      "backgroundColor": "#ffffff",
+      "justifyContent": "center",
+      "padding": 20,
     }
   }
 >
@@ -31,13 +33,13 @@ exports[`test user center renders correctly 1`] = `
           }
         }
       >
-        Username
+        用户名
       </Text>
       <View
         style={Object {}}
       >
         <TextInput
-          accessibilityLabel="Username"
+          accessibilityLabel="用户名"
           autoCapitalize={undefined}
           autoCorrect={undefined}
           autoFocus={undefined}
@@ -106,13 +108,13 @@ exports[`test user center renders correctly 1`] = `
           }
         }
       >
-        Password
+        密码
       </Text>
       <View
         style={Object {}}
       >
         <TextInput
-          accessibilityLabel="Password"
+          accessibilityLabel="密码"
           autoCapitalize={undefined}
           autoCorrect={undefined}
           autoFocus={undefined}
@@ -122,7 +124,7 @@ exports[`test user center renders correctly 1`] = `
           editable={undefined}
           enablesReturnKeyAutomatically={undefined}
           keyboardAppearance={undefined}
-          keyboardType="numeric"
+          keyboardType={undefined}
           maxLength={undefined}
           multiline={undefined}
           numberOfLines={undefined}
@@ -181,10 +183,10 @@ exports[`test user center renders correctly 1`] = `
           }
         }
       >
-        Remember me
+        保持登录
       </Text>
       <RCTSwitch
-        accessibilityLabel="Remember me"
+        accessibilityLabel="保持登录"
         disabled={false}
         onChange={[Function]}
         onResponderTerminationRequest={[Function]}
@@ -207,6 +209,56 @@ exports[`test user center renders correctly 1`] = `
         value={false}
       />
     </View>
+  </View>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    hasTVPreferredFocus={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+        },
+        Object {
+          "alignSelf": "stretch",
+          "backgroundColor": "#48BBEC",
+          "borderColor": "#48BBEC",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "height": 36,
+          "justifyContent": "center",
+          "marginBottom": 10,
+        },
+      ]
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "alignSelf": "center",
+          "color": "white",
+          "fontSize": 18,
+        }
+      }
+    >
+      登录
+    </Text>
   </View>
 </View>
 `;
