@@ -33,18 +33,18 @@ exports[`test user center renders correctly 1`] = `
           }
         }
       >
-        用户名
+        邮箱
       </Text>
       <View
         style={Object {}}
       >
         <TextInput
-          accessibilityLabel="用户名"
-          autoCapitalize={undefined}
+          accessibilityLabel="邮箱"
+          autoCapitalize="none"
           autoCorrect={undefined}
           autoFocus={undefined}
           blurOnSubmit={undefined}
-          clearButtonMode={undefined}
+          clearButtonMode="while-editing"
           clearTextOnFocus={undefined}
           editable={undefined}
           enablesReturnKeyAutomatically={undefined}
@@ -119,7 +119,7 @@ exports[`test user center renders correctly 1`] = `
           autoCorrect={undefined}
           autoFocus={undefined}
           blurOnSubmit={undefined}
-          clearButtonMode={undefined}
+          clearButtonMode="while-editing"
           clearTextOnFocus={undefined}
           editable={undefined}
           enablesReturnKeyAutomatically={undefined}
@@ -141,7 +141,7 @@ exports[`test user center renders correctly 1`] = `
           placeholder={undefined}
           placeholderTextColor={undefined}
           returnKeyType={undefined}
-          secureTextEntry={undefined}
+          secureTextEntry={true}
           selectTextOnFocus={undefined}
           selectionColor={undefined}
           selectionState={undefined}

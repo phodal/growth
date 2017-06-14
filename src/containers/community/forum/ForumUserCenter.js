@@ -11,10 +11,16 @@ const Person = FormValidation.struct({
 const options = {
   fields: {
     username: {
-      label: '用户名',
+      label: '邮箱',
+      error: '请输入有效邮箱',
+      autoCapitalize: 'none',
+      clearButtonMode: 'while-editing',
     },
     password: {
       label: '密码',
+      error: '密码应该太于六位',
+      clearButtonMode: 'while-editing',
+      secureTextEntry: true,
     },
     rememberMe: {
       label: '保持登录',
