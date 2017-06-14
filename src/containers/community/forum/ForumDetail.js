@@ -1,9 +1,20 @@
-/* eslint-disable no-undef */
+/* eslint-disable no-undef,consistent-return,no-unused-vars */
 import React, { Component, PropTypes } from 'react';
 import { Text, View, ScrollView, ActivityIndicator } from 'react-native';
 
 import HTMLView from 'react-native-htmlview';
 
+
+function renderNode(node, index, siblings, parent, defaultRenderer) {
+  if (node.type === 'text') {
+    console.log(node.data);
+  }
+}
+
+function removeTailingWhiteSpaces(text) {
+  return text.replace(new RegExp('<p>', 'g'), '<span>')
+    .replace(new RegExp('</p>', 'g'), '</span>');
+}
 
 class ForumDetail extends Component {
   static componentName = 'ForumDetail';
@@ -62,7 +73,9 @@ class ForumDetail extends Component {
       <ScrollView style={{ flex: 1, flexDirection: 'column' }}>
         <Text>{ attributes.title } </Text>
         <HTMLView
-          value={post.attributes.contentHtml}
+          value={removeTailingWhiteSpaces(post.attributes.contentHtml)}
+          addLineBreaks={false}
+          renderNode={renderNode}
         />
       </ScrollView>
     );
