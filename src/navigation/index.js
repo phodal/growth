@@ -48,7 +48,7 @@ import AlgorithmView from '../containers/practises/algorithm/AlgorithmView';
 import PaperIntroView from '../containers/home/paper/PaperIntroView';
 import SectionPageHelper from '../utils/SectionPageHelper';
 import ForumDetail from '../containers/community/forum/ForumDetail';
-import ForumUserCenter from "../containers/community/forum/ForumUserCenter";
+import ForumUserCenter from '../containers/community/forum/ForumUserCenter';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,

@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React, { Component, PropTypes } from 'react';
-import { Text, View, ScrollView, ActivityIndicator, WebView, Dimensions } from 'react-native';
+import { Text, View, ScrollView, ActivityIndicator } from 'react-native';
 
 import HTMLView from 'react-native-htmlview';
 
