@@ -1,15 +1,10 @@
 /* eslint-disable no-undef,consistent-return,no-unused-vars,no-control-regex */
 import React, { Component, PropTypes } from 'react';
 import { Text, View, ScrollView, ActivityIndicator } from 'react-native';
-
 import HTMLView from 'react-native-htmlview';
+import * as shortid from 'shortid';
 
-
-function renderNode(node, index, siblings, parent, defaultRenderer) {
-  if (node.type === 'text') {
-    console.log(node.data);
-  }
-}
+const filter = require('lodash.filter');
 
 function removeTailingWhiteSpaces(text) {
   return text.replace(new RegExp('<p>', 'g'), '<span>')
@@ -70,6 +65,21 @@ class ForumDetail extends Component {
     const attributes = data.data.attributes;
     const post = data.included[0];
 
+    const discussions = filter(data.included, { type: 'posts' });
+    let discussComponent = <View />;
+
+    if (discussions) {
+      discussComponent = (<View>
+        {
+          discussions.map((val, index) => (
+            <View key={shortid.generate()}>
+              <Text >{val.attributes.contentHtml}</Text>
+            </View>
+          ))
+        }
+      </View>);
+    }
+
     return (
       <ScrollView style={{ flex: 1, flexDirection: 'column' }}>
         <View style={{ paddingTop: 15, paddingBottom: 15, borderBottomWidth: 1, borderBottomColor: '#ddd' }}>
@@ -78,9 +88,9 @@ class ForumDetail extends Component {
         <HTMLView
           value={removeTailingWhiteSpaces(post.attributes.contentHtml)}
           addLineBreaks={false}
-          renderNode={renderNode}
           style={{ padding: 10, borderBottomWidth: 1, backgroundColor: '#fff', borderBottomColor: '#ddd' }}
         />
+        {discussComponent}
       </ScrollView>
     );
   }
