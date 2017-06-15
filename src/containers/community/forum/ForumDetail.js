@@ -71,12 +71,15 @@ class ForumDetail extends Component {
     const post = data.included[0];
 
     return (
-      <ScrollView style={{ flex: 1, flexDirection: 'column' }}>
-        <Text>{ attributes.title } </Text>
+      <ScrollView style={{ flex: 1, flexDirection: 'column', backgroundColor: '#fff' }}>
+        <View style={{ paddingTop: 15, paddingBottom: 15, borderBottomWidth: 3, borderBottomColor: '#eee' }}>
+          <Text style={{ textAlign: 'center' }}>{ attributes.title }</Text>
+        </View>
         <HTMLView
           value={removeTailingWhiteSpaces(post.attributes.contentHtml)}
           addLineBreaks={false}
           renderNode={renderNode}
+          style={{ paddingTop: 5, paddingBottom: 15, borderBottomWidth: 2, borderBottomColor: '#eee' }}
         />
       </ScrollView>
     );
