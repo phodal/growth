@@ -3774,6 +3774,10 @@ react-native-infinite-scroll-view@^0.4.2:
     react-clone-referenced-element "^1.0.1"
     react-native-scrollable-mixin "^1.0.0"
 
+react-native-looped-carousel@^0.1.7:
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/react-native-looped-carousel/-/react-native-looped-carousel-0.1.7.tgz#9e81aec732039250568e367383d0bd70ba4173e9"
+
 "react-native-orientation@git+https://github.com/yamill/react-native-orientation.git":
   version "1.17.0"
   resolved "git+https://github.com/yamill/react-native-orientation.git#f904c885fab8a8262f041b73b786167eeb3a8813"

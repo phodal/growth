@@ -1,4 +1,4 @@
-/* eslint-disable no-undef,consistent-return,no-unused-vars */
+/* eslint-disable no-undef,consistent-return,no-unused-vars,no-control-regex */
 import React, { Component, PropTypes } from 'react';
 import { Text, View, ScrollView, ActivityIndicator } from 'react-native';
 
@@ -13,7 +13,8 @@ function renderNode(node, index, siblings, parent, defaultRenderer) {
 
 function removeTailingWhiteSpaces(text) {
   return text.replace(new RegExp('<p>', 'g'), '<span>')
-    .replace(new RegExp('</p>', 'g'), '</span>');
+    .replace(new RegExp('</p>', 'g'), '</span>')
+    .replace(new RegExp('(\n){2,}', 'gim'), '<br/>');
 }
 
 class ForumDetail extends Component {
