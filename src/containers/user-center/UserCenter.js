@@ -83,10 +83,6 @@ class UserCenter extends Component {
       </List>
       <List>
         <ListItem
-          title={'支持开发'}
-          leftIcon={{ name: 'work' }}
-        />
-        <ListItem
           hideChevron
           title={'微信公众号'}
           leftIcon={{ name: 'code' }}

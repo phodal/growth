@@ -21,7 +21,7 @@ describe('test user center', () => {
   it('test for onpress trigger', () => {
     const spy = jest.spyOn(Share, 'open');
     const wrapper = shallow(<UserCenter />);
-    chai.expect(wrapper.find(ListItem)).to.have.length(10);
+    chai.expect(wrapper.find(ListItem)).to.have.length(9);
 
     chai.expect(wrapper.find({ title: '分享给好友' })).to.have.length(1);
     wrapper.find({ title: '分享给好友' }).props().onPress();
