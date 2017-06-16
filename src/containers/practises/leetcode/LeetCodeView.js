@@ -6,7 +6,16 @@ import {
 } from 'react-native';
 import Carousel from 'react-native-looped-carousel';
 
+const randomColor = require('randomcolor'); // import the script
+
 const { width, height } = Dimensions.get('window');
+
+function getRandomColor() {
+  return randomColor({
+    luminosity: 'light',
+    hue: 'random',
+  });
+}
 
 export default class LeetCodeView extends Component {
   static componentName = 'LeetCodeView';
@@ -34,9 +43,15 @@ export default class LeetCodeView extends Component {
           pageInfo
           onAnimateNextPage={p => console.log(p)}
         >
-          <View style={[{ backgroundColor: '#BADA55' }, this.state.size]}><Text>1</Text></View>
-          <View style={[{ backgroundColor: 'red' }, this.state.size]}><Text>2</Text></View>
-          <View style={[{ backgroundColor: 'blue' }, this.state.size]}><Text>3</Text></View>
+          <View style={[{ backgroundColor: getRandomColor() }, this.state.size]}>
+            <Text>1</Text>
+          </View>
+          <View style={[{ backgroundColor: getRandomColor() }, this.state.size]}>
+            <Text>2</Text>
+          </View>
+          <View style={[{ backgroundColor: getRandomColor() }, this.state.size]}>
+            <Text>3</Text>
+          </View>
         </Carousel>
       </View>
     );
