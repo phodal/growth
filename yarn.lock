@@ -3793,6 +3793,12 @@ react-native-looped-carousel@^0.1.7:
   version "1.17.0"
   resolved "git+https://github.com/yamill/react-native-orientation.git#f904c885fab8a8262f041b73b786167eeb3a8813"
 
+react-native-progress@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-progress/-/react-native-progress-3.2.1.tgz#9f2353045c49f06803ae04d86a2cd5baa83cd465"
+  dependencies:
+    prop-types "^15.5.8"
+
 react-native-router-flux@3.37.0:
   version "3.37.0"
   resolved "https://registry.yarnpkg.com/react-native-router-flux/-/react-native-router-flux-3.37.0.tgz#18e8fd3e1e6dbdc4d8340cd47313c28bb9bb1caf"

@@ -30,6 +30,7 @@
     "react-native-infinite-scroll-view": "^0.4.2",
     "react-native-looped-carousel": "^0.1.7",
     "react-native-orientation": "git+https://github.com/yamill/react-native-orientation.git",
+    "react-native-progress": "^3.2.1",
     "react-native-router-flux": "3.37.0",
     "react-native-share": "^1.0.20",
     "react-native-simple-toast": "0.0.6",
