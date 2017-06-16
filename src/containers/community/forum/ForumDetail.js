@@ -69,12 +69,15 @@ class ForumDetail extends Component {
     let discussComponent = <View />;
 
     if (discussions) {
-      discussComponent = (<View>
+      discussComponent = (<View style={{ paddingTop: 15 }}>
         {
           discussions.map((discussion, index) => {
             if (discussion.attributes.number !== 1) {
-              return (<View key={shortid.generate()}>
-                <Text>{discussion.attributes.contentHtml}</Text>
+              return (<View key={shortid.generate()} style={{ paddingTop: 5 }}>
+                <HTMLView
+                  value={discussion.attributes.contentHtml}
+                  style={{ padding: 5, borderBottomWidth: 1, backgroundColor: '#fff', borderBottomColor: '#ddd' }}
+                />
               </View>);
             }
 
