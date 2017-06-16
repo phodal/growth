@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { WebView, Dimensions, View } from 'react-native';
+import { ScrollView } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
-import HtmlHelper from '../../../utils/HtmlHelper';
+import HTMLView from 'react-native-htmlview';
 import Helper from '../../../utils/helper';
 
 class PaperIntroView extends Component {
@@ -14,9 +14,7 @@ class PaperIntroView extends Component {
       本书是我在编程生涯初期的一些体会，它更像是一本关于Web开发的索引书籍，但其实这些索引正是我读了大量书籍后，自己对精髓之处进行的理解加工。在这本书里，你会看到我对很多知识点进行了概括，并以实战的方式将一个个知识点连接到一起。</p>
     <p>在最开始的时候，我曾经想将书名命名为实习记。后来又觉得虽然这是在我实习期间学到的知识，但其实很多内容在其他公司是学不到的。因此，在电子书里将其命名为Growth，它不仅是在让读者增长，也在让我自己增长。</p>
   </div>
-
-  <h2>目录结构</h2>
-
+  <h5>目录结构</h5>
   <div>
     <p>本书从结构上分成了三部分，每个部分都会不同的侧重点。</p>
     <p>第一部分：<strong>准备阶段</strong></p>
@@ -41,7 +39,7 @@ class PaperIntroView extends Component {
   </div>`;
 
     return (
-      <View style={{ flex: 1, flexDirection: 'column' }}>
+      <ScrollView style={{ flex: 1, flexDirection: 'column' }}>
         <List style={{ marginTop: 15, marginBottom: 15, backgroundColor: '#fff' }}>
           <ListItem
             title={'亚马逊'}
@@ -56,12 +54,12 @@ class PaperIntroView extends Component {
             onPress={() => { Helper.openLink('http://product.dangdang.com/25077858.html'); }}
           />
         </List>
-        <WebView
-          scalesPageToFit
-          source={{ html: HtmlHelper.getHtml(bookHtml) }}
-          style={{ height: Dimensions.get('window').height, backgroundColor: 'white' }}
+        <HTMLView
+          value={bookHtml}
+          addLineBreaks={false}
+          style={{ padding: 10, borderBottomWidth: 1, backgroundColor: '#fff', borderBottomColor: '#ddd' }}
         />
-      </View>
+      </ScrollView>
     );
   }
 }
