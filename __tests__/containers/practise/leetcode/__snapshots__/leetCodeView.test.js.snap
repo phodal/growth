@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      Array [
+        Object {
+          "height": 1334,
+          "width": 750,
+        },
+      ]
+    }
+  >
+    <View
+      pointerEvents="none"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "bottom": 20,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderRadius": 10,
+                "height": 20,
+                "justifyContent": "center",
+                "width": 80,
+              },
+              Object {
+                "backgroundColor": "rgba(0, 0, 0, 0.25)",
+              },
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "textAlign": "center",
+                },
+                undefined,
+              ]
+            }
+          >
+            1 / 3
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

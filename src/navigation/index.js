@@ -49,6 +49,7 @@ import PaperIntroView from '../containers/home/paper/PaperIntroView';
 import SectionPageHelper from '../utils/SectionPageHelper';
 import ForumDetail from '../containers/community/forum/ForumDetail';
 import ForumUserCenter from '../containers/community/forum/ForumUserCenter';
+import LeetCodeView from '../containers/practises/leetcode/LeetCodeView';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -369,6 +370,13 @@ export default Actions.create(
       key={'forumUserCenter'}
       title={'用户'}
       component={ForumUserCenter}
+    />
+
+
+    <Scene
+      {...AppConfig.navbarProps}
+      key={'leetCodeView'}
+      component={LeetCodeView}
     />
 
     <Scene

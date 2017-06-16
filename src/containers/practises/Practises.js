@@ -12,6 +12,7 @@ class Practises extends Component {
         <List>
           <ListItem
             title={'LeetCode'}
+            onPress={() => Actions.leetCodeView()}
           />
           <ListItem
             title={'算法'}
