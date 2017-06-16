@@ -71,11 +71,15 @@ class ForumDetail extends Component {
     if (discussions) {
       discussComponent = (<View>
         {
-          discussions.map((val, index) => (
-            <View key={shortid.generate()}>
-              <Text >{val.attributes.contentHtml}</Text>
-            </View>
-          ))
+          discussions.map((discussion, index) => {
+            if (discussion.attributes.number !== 1) {
+              return (<View key={shortid.generate()}>
+                <Text>{discussion.attributes.contentHtml}</Text>
+              </View>);
+            }
+
+            return null;
+          })
         }
       </View>);
     }
