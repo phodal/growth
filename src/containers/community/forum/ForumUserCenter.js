@@ -2,15 +2,22 @@ import React, { Component } from 'react';
 import { View, StyleSheet, TouchableHighlight, Text } from 'react-native';
 import FormValidation from 'tcomb-form-native';
 
-const Person = FormValidation.struct({
-  username: FormValidation.String,
+const validEmail = FormValidation.refinement(
+  FormValidation.String, (email) => {
+    const regularExpression = /^.+@.+\..+$/i;
+    return regularExpression.test(email);
+  },
+);
+
+const User = FormValidation.struct({
+  email: validEmail,
   password: FormValidation.String,
   rememberMe: FormValidation.Boolean,
 });
 
 const options = {
   fields: {
-    username: {
+    email: {
       label: '邮箱',
       error: '请输入有效邮箱',
       autoCapitalize: 'none',
@@ -63,7 +70,7 @@ class ForumUserCenter extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: {},
+      form_values: {},
     };
   }
 
@@ -78,8 +85,8 @@ class ForumUserCenter extends Component {
       <View style={styles.container}>
         <Form
           ref={(form) => { this.form = form; }}
-          type={Person}
-          value={this.state.value}
+          type={User}
+          value={this.state.form_values}
           options={options}
         />
         <TouchableHighlight style={styles.button} onPress={this.onPress} underlayColor={'#99d9f4'}>
