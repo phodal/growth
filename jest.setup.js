@@ -37,3 +37,5 @@ jest.mock('Linking', () =>
     getInitialURL: jest.fn(),
   }),
 );
+
+jest.mock('WebView', () => 'WebView')

@@ -1,71 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<View
-  style={
+<WebView
+  injectedJavaScript=""
+  onNavigationStateChange={[Function]}
+  scalesPageToFit={true}
+  source={
     Object {
-      "flex": 1,
+      "html": "",
     }
   }
->
-  <RCTWebView
-    allowsInlineMediaPlayback={undefined}
-    automaticallyAdjustContentInsets={undefined}
-    bounces={undefined}
-    contentInset={undefined}
-    dataDetectorTypes={undefined}
-    decelerationRate={undefined}
-    injectedJavaScript=""
-    mediaPlaybackRequiresUserAction={undefined}
-    messagingEnabled={false}
-    onLoadingError={[Function]}
-    onLoadingFinish={[Function]}
-    onLoadingStart={[Function]}
-    onMessage={[Function]}
-    onShouldStartLoadWithRequest={undefined}
-    scalesPageToFit={true}
-    scrollEnabled={undefined}
-    source={
-      Object {
-        "html": "",
-      }
+  startInLoadingState={true}
+  style={
+    Object {
+      "backgroundColor": "white",
+      "height": 1334,
     }
-    style={
-      Array [
-        Object {
-          "flex": 1,
-        },
-        Object {
-          "backgroundColor": "#ffffff",
-        },
-        Object {
-          "backgroundColor": "white",
-          "height": 1334,
-        },
-        Object {
-          "flex": 0,
-          "height": 0,
-        },
-      ]
-    }
-  />
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "rgba(255,255,255,0.8)",
-        "flex": 1,
-        "height": 100,
-        "justifyContent": "center",
-      }
-    }
-  >
-    <ActivityIndicator
-      animating={true}
-      color="#999999"
-      hidesWhenStopped={true}
-      size="small"
-    />
-  </View>
-</View>
+  }
+/>
 `;

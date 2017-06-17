@@ -6,7 +6,7 @@ import ForumDetail from '../../../../src/containers/community/forum/ForumDetail'
 describe('test user center', () => {
   it('renders correctly', () => {
     const tree = renderer.create(
-      <ForumDetail />,
+      <ForumDetail id={5} />,
     );
 
     const treeJson = tree.toJSON();

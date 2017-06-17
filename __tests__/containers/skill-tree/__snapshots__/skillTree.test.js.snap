@@ -1,74 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`test skill tree  test render 1`] = `
-<View
-  style={
+<WebView
+  automaticallyAdjustContentInsets={false}
+  injectedJavaScript=""
+  onMessage={[Function]}
+  onNavigationStateChange={undefined}
+  scalesPageToFit={true}
+  source={
     Object {
-      "flex": 1,
+      "process": [Function],
     }
   }
->
-  <RCTWebView
-    allowsInlineMediaPlayback={undefined}
-    automaticallyAdjustContentInsets={false}
-    bounces={undefined}
-    contentInset={undefined}
-    dataDetectorTypes={undefined}
-    decelerationRate={undefined}
-    injectedJavaScript=""
-    mediaPlaybackRequiresUserAction={undefined}
-    messagingEnabled={true}
-    onLoadingError={[Function]}
-    onLoadingFinish={[Function]}
-    onLoadingStart={[Function]}
-    onMessage={[Function]}
-    onShouldStartLoadWithRequest={undefined}
-    scalesPageToFit={true}
-    scrollEnabled={undefined}
-    source={
+  startInLoadingState={true}
+  style={
+    Array [
+      undefined,
       Object {
-        "process": [Function],
-      }
-    }
-    style={
-      Array [
-        Object {
-          "flex": 1,
-        },
-        Object {
-          "backgroundColor": "#ffffff",
-        },
-        Array [
-          undefined,
-          Object {
-            "height": 1334,
-            "width": 750,
-          },
-        ],
-        Object {
-          "flex": 0,
-          "height": 0,
-        },
-      ]
-    }
-  />
-  <View
-    style={
-      Object {
-        "alignItems": "center",
-        "backgroundColor": "rgba(255,255,255,0.8)",
-        "flex": 1,
-        "height": 100,
-        "justifyContent": "center",
-      }
-    }
-  >
-    <ActivityIndicator
-      animating={true}
-      color="#999999"
-      hidesWhenStopped={true}
-      size="small"
-    />
-  </View>
-</View>
+        "height": 1334,
+        "width": 750,
+      },
+    ]
+  }
+/>
 `;
