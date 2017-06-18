@@ -6,7 +6,7 @@ import PaperIntroView from '../../../src/containers/home/paper/PaperIntroView';
 
 it('renders correctly', () => {
   const tree = renderer.create(
-    <PaperIntroView skillId={1} />,
+    <PaperIntroView />,
   );
 
   const treeJson = tree.toJSON();
