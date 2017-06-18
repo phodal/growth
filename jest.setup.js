@@ -38,4 +38,4 @@ jest.mock('Linking', () =>
   }),
 );
 
-jest.mock('WebView', () => 'WebView')
+jest.mock('WebView', () => 'WebView');
