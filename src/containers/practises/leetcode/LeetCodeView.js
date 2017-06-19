@@ -47,6 +47,21 @@ function getRandomColor() {
 export default class LeetCodeView extends Component {
   static componentName = 'LeetCodeView';
 
+  static unzipFiles(res) {
+    unzip(res.path(), `${DIR.DocumentDir}`).then(() => {
+      AsyncStorageHelper.set('leetcode.unzip', 'true');
+    }).catch((err) => {
+      Toast.show(`解压失败 ${err}`);
+    });
+  }
+
+  static loadQuestionsToDB() {
+    RNFS.readFile(DIR.DocumentDir.concat(`${LEETCODE_PATH}/api.json`), 'utf8')
+    .then((json) => {
+      AsyncStorageHelper.set('leetcode.questions', json);
+    });
+  }
+
   constructor(props) {
     super(props);
 
@@ -58,23 +73,32 @@ export default class LeetCodeView extends Component {
     };
   }
 
-  componentDidMount() {
-    const self = this;
+  componentWillMount() {
+    AsyncStorageHelper.get('leetcode.index', (err, result) => {
+      let index = 0;
+      if (result !== null) {
+        index = parseInt(result, 10);
+      }
+
+      this.setState({
+        index,
+      });
+    });
+
     AsyncStorageHelper.get('leetcode.downloaded', (err, result) => {
       if (result === 'true') {
-        self.setState({
+        this.setState({
           hasDownloaded: true,
         });
+      }
+    });
+  }
 
-        RNFS.readFile(DIR.DocumentDir.concat(`${LEETCODE_PATH}/api.json`), 'utf8')
-        .then((json) => {
-          self.setState({
-            questions: JSON.parse(json),
-          });
-        });
-      } else {
-        self.modal.open();
-        self.fetchFile(LeetCodeUrl, 'leetcode');
+  componentDidMount() {
+    AsyncStorageHelper.get('leetcode.downloaded', (err, result) => {
+      if (result !== 'true') {
+        this.modal.open();
+        this.fetchFile(LeetCodeUrl, 'leetcode');
       }
     });
   }
@@ -102,14 +126,8 @@ export default class LeetCodeView extends Component {
       console.log(`${now} 下载成功`);
       console.log(res.path());
 
-      unzip(res.path(), `${DIR.DocumentDir}`)
-      .then((path) => {
-        console.log(`unzip completed at ${path}`);
-        AsyncStorageHelper.set('leetcode.unzip', 'true');
-      })
-      .catch((err) => {
-        Toast.show(`解压失败 ${err}`);
-      });
+      this.unzipFiles(res);
+      this.loadQuestionsToDB();
 
       AsyncStorageHelper.set('leetcode.downloaded', 'true');
       this.setState({ hasDownloaded: true });
@@ -147,7 +165,7 @@ export default class LeetCodeView extends Component {
           delay={2000}
           style={this.state.size}
           autoplay={false}
-          pageInfo
+          pageInfo={false}
           onAnimateNextPage={p => console.log(p)}
         >
           <View style={[{ backgroundColor: getRandomColor() }, this.state.size]}>
