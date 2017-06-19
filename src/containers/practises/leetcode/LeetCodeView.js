@@ -61,8 +61,8 @@ export default class LeetCodeView extends Component {
     super(props);
 
     this.state = {
-      progress: 0,
-      questions: [],
+      progress: 0.001,
+      questions: null,
       size: { width, height },
       hasDownloaded: false,
     };
@@ -113,7 +113,10 @@ export default class LeetCodeView extends Component {
   };
 
   loadQuestionsToDB() {
-    RNFS.readFile(DIR.DocumentDir.concat(`${LEETCODE_PATH}/api.json`), 'utf8')
+    const leetCodeDir = DIR.DocumentDir.concat(`${LEETCODE_PATH}/api.json`);
+    console.log(leetCodeDir);
+
+    RNFS.readFile(leetCodeDir, 'utf8')
     .then((json) => {
       this.setState({
         questions: JSON.parse(json),
@@ -130,7 +133,9 @@ export default class LeetCodeView extends Component {
     })
     .fetch('GET', url, {})
     .progress((received, total) => {
-      let progress = received / total;
+      const progressWithoutRound = received / total;
+
+      let progress = Math.round(progressWithoutRound * 1e2) / 1e2;
       if (progress > 1) {
         progress = 1;
       }
