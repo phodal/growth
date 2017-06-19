@@ -241,7 +241,8 @@ export default {
   },
   solutionContentItemStyle: {
     backgroundColor: 'white',
-    marginTop: 8,
+    borderRadius: 5,
+    marginTop: 15,
     marginRight: 10,
     marginLeft: 10,
   },
