@@ -17,6 +17,9 @@ import AsyncStorageHelper from '../../../utils/AsyncStorageHelper';
 
 const randomColor = require('randomcolor'); // import the script
 
+const DIR = RNFetchBlob.fs.dirs;
+const LEETCODE_PATH = '/growth-leetcode-api-master';
+const LeetCodeUrl = 'https://github.com/phodal/growth-leetcode-api/archive/master.zip';
 const { width, height } = Dimensions.get('window');
 const styles = StyleSheet.create({
   wrapper: {
@@ -63,8 +66,6 @@ export default class LeetCodeView extends Component {
           hasDownloaded: true,
         });
 
-        const DIR = RNFetchBlob.fs.dirs;
-        const LEETCODE_PATH = '/growth-leetcode-api-master';
         RNFS.readFile(DIR.DocumentDir.concat(`${LEETCODE_PATH}/api.json`), 'utf8')
         .then((json) => {
           self.setState({
@@ -73,7 +74,7 @@ export default class LeetCodeView extends Component {
         });
       } else {
         self.modal.open();
-        self.fetchFile('https://github.com/phodal/growth-leetcode-api/archive/master.zip', 'leetcode');
+        self.fetchFile(LeetCodeUrl, 'leetcode');
       }
     });
   }
@@ -84,15 +85,11 @@ export default class LeetCodeView extends Component {
   };
 
   fetchFile(url, fileName) {
-    const DIR = RNFetchBlob.fs.dirs;
-
     RNFetchBlob
     .config({
       path: `${DIR.DocumentDir}/${fileName}.zip`,
     })
-    .fetch('GET', url, {
-      // some headers ..
-    })
+    .fetch('GET', url, {})
     .progress((received, total) => {
       let progress = received / total;
       if (progress > 1) {
