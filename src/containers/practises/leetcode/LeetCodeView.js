@@ -48,15 +48,6 @@ export default class LeetCodeView extends Component {
   static componentName = 'LeetCodeView';
   static modal = null;
 
-  static unzipFiles(res) {
-    unzip(res.path(), `${DIR.DocumentDir}`).then(() => {
-      AsyncStorageHelper.set('leetcode.unzip', 'true');
-    }).catch((err) => {
-      console.log(`解压失败 ${err}`);
-      Toast.show(`解压失败 ${err}`);
-    });
-  }
-
   constructor(props) {
     super(props);
 
@@ -151,14 +142,23 @@ export default class LeetCodeView extends Component {
       console.log(`${now} 下载成功`);
       console.log(res.path());
 
-      LeetCodeView.unzipFiles(res);
-      this.loadQuestionsToDB();
+      this.unzipFiles(res);
 
       AsyncStorageHelper.set('leetcode.downloaded', 'true');
       this.setState({ hasDownloaded: true });
     })
     .catch((err) => {
       Toast.show(`下载失败 ${err}`);
+    });
+  }
+
+  unzipFiles(res) {
+    unzip(res.path(), `${DIR.DocumentDir}`).then(() => {
+      this.loadQuestionsToDB();
+      AsyncStorageHelper.set('leetcode.unzip', 'true');
+    }).catch((err) => {
+      console.log(`解压失败 ${err}`);
+      Toast.show(`解压失败 ${err}`);
     });
   }
 
