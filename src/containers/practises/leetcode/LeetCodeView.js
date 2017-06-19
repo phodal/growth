@@ -101,6 +101,8 @@ export default class LeetCodeView extends Component {
             that.setState({
               questions: JSON.parse(questions),
             });
+          } else {
+            that.loadQuestionsToDB();
           }
         });
       }
@@ -123,6 +125,9 @@ export default class LeetCodeView extends Component {
       });
 
       AsyncStorageHelper.set('leetcode.questions', json);
+    }).catch((error) => {
+      Toast.show(error);
+      AsyncStorageHelper.set('leetcode.downloaded', 'false');
     });
   }
 

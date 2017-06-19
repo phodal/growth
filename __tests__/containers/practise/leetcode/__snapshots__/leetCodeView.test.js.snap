@@ -1,24 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-<View
-  onLayout={[Function]}
-  style={
-    Object {
-      "flex": 1,
-    }
-  }
->
-  <View
-    onLayout={[Function]}
-    style={
-      Array [
-        Object {
-          "height": 1334,
-          "width": 750,
-        },
-      ]
-    }
-  />
-</View>
-`;
+exports[`renders correctly 1`] = `<View />`;
