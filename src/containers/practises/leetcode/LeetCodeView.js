@@ -46,19 +46,14 @@ function getRandomColor() {
 
 export default class LeetCodeView extends Component {
   static componentName = 'LeetCodeView';
+  static modal = null;
 
   static unzipFiles(res) {
     unzip(res.path(), `${DIR.DocumentDir}`).then(() => {
       AsyncStorageHelper.set('leetcode.unzip', 'true');
     }).catch((err) => {
+      console.log(`解压失败 ${err}`);
       Toast.show(`解压失败 ${err}`);
-    });
-  }
-
-  static loadQuestionsToDB() {
-    RNFS.readFile(DIR.DocumentDir.concat(`${LEETCODE_PATH}/api.json`), 'utf8')
-    .then((json) => {
-      AsyncStorageHelper.set('leetcode.questions', json);
     });
   }
 
@@ -95,10 +90,19 @@ export default class LeetCodeView extends Component {
   }
 
   componentDidMount() {
+    const that = this;
     AsyncStorageHelper.get('leetcode.downloaded', (err, result) => {
       if (result !== 'true') {
         this.modal.open();
         this.fetchFile(LeetCodeUrl, 'leetcode');
+      } else {
+        AsyncStorageHelper.get('leetcode.questions', (error, questions) => {
+          if (questions) {
+            that.setState({
+              questions: JSON.parse(questions),
+            });
+          }
+        });
       }
     });
   }
@@ -107,6 +111,17 @@ export default class LeetCodeView extends Component {
     const layout = e.nativeEvent.layout;
     this.setState({ size: { width: layout.width, height: layout.height } });
   };
+
+  loadQuestionsToDB() {
+    RNFS.readFile(DIR.DocumentDir.concat(`${LEETCODE_PATH}/api.json`), 'utf8')
+    .then((json) => {
+      this.setState({
+        questions: JSON.parse(json),
+      });
+
+      AsyncStorageHelper.set('leetcode.questions', json);
+    });
+  }
 
   fetchFile(url, fileName) {
     RNFetchBlob
@@ -126,7 +141,7 @@ export default class LeetCodeView extends Component {
       console.log(`${now} 下载成功`);
       console.log(res.path());
 
-      this.unzipFiles(res);
+      LeetCodeView.unzipFiles(res);
       this.loadQuestionsToDB();
 
       AsyncStorageHelper.set('leetcode.downloaded', 'true');
@@ -141,7 +156,7 @@ export default class LeetCodeView extends Component {
     const hasDownloaded = this.state.hasDownloaded;
     const questions = this.state.questions;
 
-    if (!hasDownloaded && !questions) {
+    if (!hasDownloaded || !questions) {
       return (
         <Modal
           style={[styles.modal]}
