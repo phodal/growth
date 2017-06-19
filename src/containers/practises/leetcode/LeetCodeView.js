@@ -21,7 +21,9 @@ const styles = StyleSheet.create({
     paddingTop: 50,
     flex: 1,
   },
-
+  text: {
+    paddingBottom: 50,
+  },
   modal: {
     justifyContent: 'center',
     alignItems: 'center',
@@ -44,6 +46,7 @@ export default class LeetCodeView extends Component {
     super(props);
 
     this.state = {
+      progress: 0,
       size: { width, height },
       hasDownloaded: false,
     };
@@ -106,6 +109,7 @@ export default class LeetCodeView extends Component {
           position={'center'}
           ref={(modal) => { this.modal = modal; }}
         >
+          <Text style={styles.text}>正在为您下载</Text>
           <Progress.Circle
             style={styles.progress}
             progress={this.state.progress}
