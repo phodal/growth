@@ -14,6 +14,7 @@ import * as Progress from 'react-native-progress';
 import AsyncStorageHelper from '../../../utils/AsyncStorageHelper';
 
 const randomColor = require('randomcolor'); // import the script
+
 const { width, height } = Dimensions.get('window');
 const styles = StyleSheet.create({
   wrapper: {
