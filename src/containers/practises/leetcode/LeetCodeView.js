@@ -186,23 +186,22 @@ export default class LeetCodeView extends Component {
   }
 
   reloadQuestion() {
-    // const index = this.state.index;
-    // this.setState({
-    //   state: index + 1,
-    //   question: this.state.nextQuestion,
-    // });
+    const index = this.state.index;
+    this.setState({
+      index: index + 1,
+      question: this.state.nextQuestion,
+    });
 
-    console.log(this.state.index);
-    // const path2 = this.state.questions[this.state.index + 1].path;
-    // const NextQuestionPath = DIR.DocumentDir.concat(`${LEETCODE_PATH}/${path2}`);
-    // RNFS.readFile(NextQuestionPath, 'utf8')
-    //   .then((nextQuestion) => {
-    //     this.setState({
-    //       nextQuestion,
-    //     });
-    //   }).catch((error) => {
-    //     Toast.show(error);
-    //   });
+    const path2 = this.state.questions[this.state.index + 1].path;
+    const NextQuestionPath = DIR.DocumentDir.concat(`${LEETCODE_PATH}/${path2}`);
+    RNFS.readFile(NextQuestionPath, 'utf8')
+      .then((nextQuestion) => {
+        this.setState({
+          nextQuestion: md.render(nextQuestion),
+        });
+      }).catch((error) => {
+        Toast.show(error);
+      });
   }
 
   render() {
