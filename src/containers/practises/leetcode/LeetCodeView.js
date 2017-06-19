@@ -10,6 +10,7 @@ import Modal from 'react-native-modalbox';
 import RNFetchBlob from 'react-native-fetch-blob';
 import Toast from 'react-native-simple-toast';
 import * as Progress from 'react-native-progress';
+import { unzip } from 'react-native-zip-archive';
 
 import AsyncStorageHelper from '../../../utils/AsyncStorageHelper';
 
@@ -92,6 +93,16 @@ export default class LeetCodeView extends Component {
       const now = new Date();
       console.log(`${now} 下载成功`);
       console.log(res.path());
+
+      unzip(res.path(), `${DIR.DocumentDir}`)
+      .then((path) => {
+        console.log(`unzip completed at ${path}`);
+        AsyncStorageHelper.set('leetcode.unzip', 'true');
+      })
+      .catch((err) => {
+        Toast.show(`解压失败 ${err}`);
+      });
+
       AsyncStorageHelper.set('leetcode.downloaded', 'true');
       this.setState({ hasDownloaded: true });
     })
@@ -119,6 +130,9 @@ export default class LeetCodeView extends Component {
         </Modal>
       );
     }
+
+    const DIR = RNFetchBlob.fs.dirs;
+    console.log(DIR);
 
     return (
       <View style={{ flex: 1 }} onLayout={this.onLayoutDidChange}>
