@@ -11,6 +11,7 @@ import RNFetchBlob from 'react-native-fetch-blob';
 import Toast from 'react-native-simple-toast';
 import * as Progress from 'react-native-progress';
 import { unzip } from 'react-native-zip-archive';
+import RNFS from 'react-native-fs';
 
 import AsyncStorageHelper from '../../../utils/AsyncStorageHelper';
 
@@ -48,6 +49,7 @@ export default class LeetCodeView extends Component {
 
     this.state = {
       progress: 0,
+      questions: [],
       size: { width, height },
       hasDownloaded: false,
     };
@@ -59,6 +61,15 @@ export default class LeetCodeView extends Component {
       if (result === 'true') {
         self.setState({
           hasDownloaded: true,
+        });
+
+        const DIR = RNFetchBlob.fs.dirs;
+        const LEETCODE_PATH = '/growth-leetcode-api-master';
+        RNFS.readFile(DIR.DocumentDir.concat(`${LEETCODE_PATH}/api.json`), 'utf8')
+        .then((json) => {
+          self.setState({
+            questions: JSON.parse(json),
+          });
         });
       } else {
         self.modal.open();
@@ -113,7 +124,9 @@ export default class LeetCodeView extends Component {
 
   render() {
     const hasDownloaded = this.state.hasDownloaded;
-    if (!hasDownloaded) {
+    const questions = this.state.questions;
+
+    if (!hasDownloaded && !questions) {
       return (
         <Modal
           style={[styles.modal]}
@@ -130,9 +143,6 @@ export default class LeetCodeView extends Component {
         </Modal>
       );
     }
-
-    const DIR = RNFetchBlob.fs.dirs;
-    console.log(DIR);
 
     return (
       <View style={{ flex: 1 }} onLayout={this.onLayoutDidChange}>

@@ -55,3 +55,7 @@ jest.mock('Linking', () =>
 );
 
 jest.mock('WebView', () => 'WebView');
+
+jest.mock('react-native-zip-archive', () => ({
+  unzip: jest.fn(),
+}));
