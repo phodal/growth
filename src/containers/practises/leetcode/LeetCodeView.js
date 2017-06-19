@@ -12,11 +12,13 @@ import Toast from 'react-native-simple-toast';
 import * as Progress from 'react-native-progress';
 import { unzip } from 'react-native-zip-archive';
 import RNFS from 'react-native-fs';
+import HTMLView from 'react-native-htmlview';
 
 import AsyncStorageHelper from '../../../utils/AsyncStorageHelper';
 
-const randomColor = require('randomcolor'); // import the script
+const MarkdownIt = require('markdown-it');
 
+const md = new MarkdownIt();
 const DIR = RNFetchBlob.fs.dirs;
 const LEETCODE_PATH = '/growth-leetcode-api-master';
 const LeetCodeUrl = 'https://github.com/phodal/growth-leetcode-api/archive/master.zip';
@@ -37,13 +39,6 @@ const styles = StyleSheet.create({
   },
 });
 
-function getRandomColor() {
-  return randomColor({
-    luminosity: 'light',
-    hue: 'random',
-  });
-}
-
 export default class LeetCodeView extends Component {
   static componentName = 'LeetCodeView';
   static modal = null;
@@ -54,6 +49,8 @@ export default class LeetCodeView extends Component {
     this.state = {
       progress: 0.001,
       questions: null,
+      question: null,
+      nextQuestion: null,
       size: { width, height },
       hasDownloaded: false,
     };
@@ -169,11 +166,43 @@ export default class LeetCodeView extends Component {
     RNFS.readFile(questionPath, 'utf8')
       .then((question) => {
         this.setState({
-          question,
+          question: md.render(question),
         });
       }).catch((error) => {
         Toast.show(error);
       });
+
+    const question2Index = this.state.index + 1;
+    const path2 = this.state.questions[question2Index].path;
+    const NextQuestionPath = DIR.DocumentDir.concat(`${LEETCODE_PATH}/${path2}`);
+    RNFS.readFile(NextQuestionPath, 'utf8')
+      .then((nextQuestion) => {
+        this.setState({
+          nextQuestion: md.render(nextQuestion),
+        });
+      }).catch((error) => {
+        Toast.show(error);
+      });
+  }
+
+  reloadQuestion() {
+    // const index = this.state.index;
+    // this.setState({
+    //   state: index + 1,
+    //   question: this.state.nextQuestion,
+    // });
+
+    console.log(this.state.index);
+    // const path2 = this.state.questions[this.state.index + 1].path;
+    // const NextQuestionPath = DIR.DocumentDir.concat(`${LEETCODE_PATH}/${path2}`);
+    // RNFS.readFile(NextQuestionPath, 'utf8')
+    //   .then((nextQuestion) => {
+    //     this.setState({
+    //       nextQuestion,
+    //     });
+    //   }).catch((error) => {
+    //     Toast.show(error);
+    //   });
   }
 
   render() {
@@ -205,10 +234,21 @@ export default class LeetCodeView extends Component {
           style={this.state.size}
           autoplay={false}
           pageInfo={false}
-          onAnimateNextPage={p => console.log(p)}
+          onAnimateNextPage={() => (this.reloadQuestion())}
         >
-          <View>
-            <Text>{this.state.question}</Text>
+          <View style={{ width }}>
+            <HTMLView
+              value={this.state.question}
+              addLineBreaks={false}
+              style={{ padding: 10, borderBottomWidth: 1, backgroundColor: '#fff', borderBottomColor: '#ddd' }}
+            />
+          </View>
+          <View style={{ width }}>
+            <HTMLView
+              value={this.state.nextQuestion}
+              addLineBreaks={false}
+              style={{ padding: 10, borderBottomWidth: 1, backgroundColor: '#fff', borderBottomColor: '#ddd' }}
+            />
           </View>
         </Carousel>
       </View>
