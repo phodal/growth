@@ -245,7 +245,7 @@ export default class LeetCodeView extends Component {
           </ScrollView>
           <ScrollView style={{ width }}>
             <HTMLView
-              value={this.state.nextQuestion}
+              value={this.state.question}
               addLineBreaks={false}
               style={{ padding: 10, borderBottomWidth: 1, backgroundColor: '#fff', borderBottomColor: '#ddd' }}
             />
