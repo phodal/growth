@@ -92,6 +92,7 @@ export default class LeetCodeView extends Component {
             that.setState({
               questions: JSON.parse(questions),
             });
+            this.loadQuestion();
           } else {
             that.loadQuestionsToDB();
           }
@@ -162,6 +163,19 @@ export default class LeetCodeView extends Component {
     });
   }
 
+  loadQuestion() {
+    const path = this.state.questions[this.state.index].path;
+    const questionPath = DIR.DocumentDir.concat(`${LEETCODE_PATH}/${path}`);
+    RNFS.readFile(questionPath, 'utf8')
+      .then((question) => {
+        this.setState({
+          question,
+        });
+      }).catch((error) => {
+        Toast.show(error);
+      });
+  }
+
   render() {
     const hasDownloaded = this.state.hasDownloaded;
     const questions = this.state.questions;
@@ -193,14 +207,8 @@ export default class LeetCodeView extends Component {
           pageInfo={false}
           onAnimateNextPage={p => console.log(p)}
         >
-          <View style={[{ backgroundColor: getRandomColor() }, this.state.size]}>
-            <Text>1</Text>
-          </View>
-          <View style={[{ backgroundColor: getRandomColor() }, this.state.size]}>
-            <Text>2</Text>
-          </View>
-          <View style={[{ backgroundColor: getRandomColor() }, this.state.size]}>
-            <Text>3</Text>
+          <View>
+            <Text>{this.state.question}</Text>
           </View>
         </Carousel>
       </View>
