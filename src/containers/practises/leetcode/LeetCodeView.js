@@ -52,7 +52,7 @@ export default class LeetCodeView extends Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     const self = this;
     AsyncStorageHelper.get('leetcode.downloaded', (err, result) => {
       if (result === 'true') {
