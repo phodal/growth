@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   Text,
   View,
+  ScrollView,
   StyleSheet,
   Dimensions,
 } from 'react-native';
@@ -235,20 +236,20 @@ export default class LeetCodeView extends Component {
           pageInfo={false}
           onAnimateNextPage={() => (this.reloadQuestion())}
         >
-          <View style={{ width }}>
+          <ScrollView style={{ width }}>
             <HTMLView
               value={this.state.question}
               addLineBreaks={false}
               style={{ padding: 10, borderBottomWidth: 1, backgroundColor: '#fff', borderBottomColor: '#ddd' }}
             />
-          </View>
-          <View style={{ width }}>
+          </ScrollView>
+          <ScrollView style={{ width }}>
             <HTMLView
               value={this.state.nextQuestion}
               addLineBreaks={false}
               style={{ padding: 10, borderBottomWidth: 1, backgroundColor: '#fff', borderBottomColor: '#ddd' }}
             />
-          </View>
+          </ScrollView>
         </Carousel>
       </View>
     );
