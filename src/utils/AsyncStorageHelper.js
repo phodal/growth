@@ -12,6 +12,10 @@ class AsyncStorageHelper {
     AsyncStorage.setItem(key, value);
   }
 
+  static get(key, callback) {
+    AsyncStorage.getItem(key, callback);
+  }
+
   static del(key, call) {
     AsyncStorage.removeItem(
       key, () => (

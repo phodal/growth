@@ -15,12 +15,28 @@ jest.mock('react-native-device-info', () => ({
   getVersion: jest.fn(),
 }));
 
-jest.mock('react-native-fetch-blob', () => {
-  return {
-    DocumentDir: () => {},
-    polyfill: () => {},
-  };
-});
+jest.mock('react-native-fetch-blob', () => ({
+  DocumentDir: () => {},
+  polyfill: () => {},
+  config() {
+    return this;
+  },
+  fetch() {
+    return this;
+  },
+  progress() {
+    return this;
+  },
+  then() {
+    return this;
+  },
+  catch() {
+    return this;
+  },
+  fs: {
+    dirs: {},
+  },
+}));
 
 jest.mock('react-native-simple-toast', () => (jest.fn()));
 

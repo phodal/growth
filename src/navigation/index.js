@@ -372,7 +372,6 @@ export default Actions.create(
       component={ForumUserCenter}
     />
 
-
     <Scene
       {...AppConfig.navbarProps}
       key={'leetCodeView'}

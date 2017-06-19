@@ -5,6 +5,8 @@ import {
   Dimensions,
 } from 'react-native';
 import Carousel from 'react-native-looped-carousel';
+import AsyncStorageHelper from '../../../utils/AsyncStorageHelper';
+import FetchFileModal from '../../../components/helper/FetchFileModal';
 
 const randomColor = require('randomcolor'); // import the script
 
@@ -25,7 +27,18 @@ export default class LeetCodeView extends Component {
 
     this.state = {
       size: { width, height },
+      hasDownloaded: false,
     };
+  }
+
+  componentWillMount() {
+    AsyncStorageHelper.get('leetcode.downloaded', (err, result) => {
+      if (result === 'true') {
+        this.setState({
+          hasDownloaded: true,
+        });
+      }
+    });
   }
 
   onLayoutDidChange = (e) => {
@@ -34,6 +47,16 @@ export default class LeetCodeView extends Component {
   };
 
   render() {
+    const hasDownloaded = this.state.hasDownloaded;
+    if (!hasDownloaded) {
+      return (
+        <FetchFileModal
+          url={'https://github.com/phodal/growth-leetcode-api/archive/master.zip'}
+          fileName={'leetcode'}
+        />
+      );
+    }
+
     return (
       <View style={{ flex: 1 }} onLayout={this.onLayoutDidChange}>
         <Carousel

@@ -1,5 +1,5 @@
-import React, { StyleSheet, Component, PropTypes } from 'react';
-import { View } from 'react-native';
+import React, { Component, PropTypes } from 'react';
+import { StyleSheet } from 'react-native';
 import Modal from 'react-native-modalbox';
 import RNFetchBlob from 'react-native-fetch-blob';
 import Toast from 'react-native-simple-toast';
@@ -25,9 +25,8 @@ const styles = StyleSheet.create({
 class FetchFileModal extends Component {
   static componentName = 'FetchFileModal';
 
-
   static propTypes = {
-    url: PropTypes.bool.isRequired,
+    url: PropTypes.string.isRequired,
     fileName: PropTypes.string.isRequired,
   };
 
@@ -65,7 +64,9 @@ class FetchFileModal extends Component {
       this.setState({ progress });
     })
     .then((res) => {
-      console.log(res.path);
+      const now = new Date();
+      console.log(`${now} 下载成功`);
+      console.log(res.path());
     })
     .catch((err) => {
       Toast.show(`下载失败 ${err}`);
@@ -74,23 +75,21 @@ class FetchFileModal extends Component {
 
   render() {
     return (
-      <View>
-        <Modal
-          style={[styles.modal]}
-          position={'center'}
-          ref={(modal) => { this.modal = modal; }}
-        >
-          <Progress.CircleSnail
-            style={styles.progress}
-            progress={this.state.progress}
-            color={[
-              '#F44336',
-              '#2196F3',
-              '#009688',
-            ]}
-          />
-        </Modal>
-      </View>
+      <Modal
+        style={[styles.modal]}
+        position={'center'}
+        ref={(modal) => { this.modal = modal; }}
+      >
+        <Progress.CircleSnail
+          style={styles.progress}
+          progress={this.state.progress}
+          color={[
+            '#F44336',
+            '#2196F3',
+            '#009688',
+          ]}
+        />
+      </Modal>
     );
   }
 }
