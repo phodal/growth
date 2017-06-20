@@ -236,7 +236,6 @@ exports[`test index renders correctly 1`] = `
                             "padding": 8,
                             "position": "absolute",
                             "top": 20,
-                            "width": 100,
                           },
                           Object {
                             "alignItems": "flex-start",
@@ -330,7 +329,6 @@ exports[`test index renders correctly 1`] = `
                           "position": "absolute",
                           "right": 2,
                           "top": 22,
-                          "width": 100,
                         }
                       }
                       testID="rightNavButton"
