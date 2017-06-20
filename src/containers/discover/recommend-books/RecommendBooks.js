@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { ScrollView } from 'react-native';
 import AppStyle from '../../../theme/styles';
 import RecommendSimpleItem from '../../../components/discover/recommend-articles/view/RecommendSimpleItem';

@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { View, Text, PanResponder } from 'react-native';
 import Indicator from './ExamDetailIndicator';
 import AppStyle from '../../../../theme/styles';

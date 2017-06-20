@@ -1,5 +1,6 @@
 /* eslint-disable no-undef,consistent-return,no-unused-vars,no-control-regex */
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Text, View, ScrollView, ActivityIndicator } from 'react-native';
 import HTMLView from 'react-native-htmlview';
 import * as shortid from 'shortid';

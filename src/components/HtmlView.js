@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { View, Platform } from 'react-native';
 import RNFS from 'react-native-fs';
 import Api from '../utils/api';

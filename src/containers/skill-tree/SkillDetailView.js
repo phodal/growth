@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Text, View, ScrollView } from 'react-native';
 import { Card, List, ListItem } from 'react-native-elements';
 import * as shortid from 'shortid';

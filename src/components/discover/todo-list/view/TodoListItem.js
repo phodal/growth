@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { View, Text, TouchableHighlight } from 'react-native';
 import { Icon } from 'react-native-elements';
 import Line from '../../../Line';
