@@ -23,7 +23,7 @@
     "react-native-animatable": "^1.2.0",
     "react-native-collapsible": "^0.8.0",
     "react-native-device-info": "^0.10.2",
-    "react-native-elements": "^0.12.2",
+    "react-native-elements": "^0.13.0",
     "react-native-fetch-blob": "^0.10.5",
     "react-native-filesystem": "^0.1.0",
     "react-native-fs": "^2.3.2",
