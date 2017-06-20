@@ -13,9 +13,7 @@ class Home extends Component {
 
     this.state = {
       inSearch: false,
-      data: {
-       
-      },
+      data: {},
     };
   }
 
