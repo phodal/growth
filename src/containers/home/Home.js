@@ -58,6 +58,7 @@ class Home extends Component {
             onFocus={this.onFocus}
             afterFocus={this.afterFocus}
             onCancel={this.onCancel}
+            onDelete={this.onCancel}
             onChangeText={this.onChangeText}
           />
         </View>
