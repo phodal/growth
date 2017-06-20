@@ -15,11 +15,15 @@ class Discover extends Component {
 
   render = () => (
     <ScrollView style={AppStyle.discoverParentStyle}>
-      <View style={{ height: 300 }}>
+      <View style={{ height: 420 }}>
         <View style={AppStyle.discoverTitle}>
           <Text style={AppStyle.discoverTextColor}>在线资源</Text>
         </View>
         <View style={AppStyle.discoverFirstGrid}>
+          <GridItem title="在线电子书" iconName="icon-social" position={'left'} onclick={() => { }} />
+          <GridItem title="Awesome" iconName="md-book" position={'right'} onclick={() => { }} />
+        </View>
+        <View style={AppStyle.discoverOtherGrid}>
           <GridItem title="学习路线" iconName="icon-social" position={'left'} onclick={() => { Launch.roadmapList(); }} />
           <GridItem title="练手项目" iconName="explore-1-2" position={'right'} onclick={() => { Launch.projectList(); }} />
         </View>
