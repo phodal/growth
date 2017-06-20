@@ -49,15 +49,16 @@ class AwesomeLists extends Component {
       <ScrollView>
         <View containerStyle={{ marginBottom: 20 }}>
           {
-            rowData.map(sections => (
+            rowData.map((sections, index) => (
               <View
-                key={shortid.generate()}
+                key={'key'.concat(index)}
               >
                 <View style={{ padding: 10 }}><Text style={{ textAlign: 'center' }}>{sections.heading}</Text></View>
                 <FlatList
                   data={sections.childrens}
                   renderItem={({ item }) => (
                     <TouchableHighlight
+                      key={shortid.generate()}
                       onPress={() => Helper.openLink(item.href)}
                     >
                       <View style={{ backgroundColor: 'white' }}>
