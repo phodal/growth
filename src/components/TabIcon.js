@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { View, Text } from 'react-native';
 import { Icon } from 'react-native-elements';
 import AppColors from '../theme/colors';
