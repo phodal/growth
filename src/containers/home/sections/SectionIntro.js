@@ -20,4 +20,12 @@ class SectionIntro extends Component {
   }
 }
 
-export default connect(({ routes }) => ({ routes }))(SectionIntro);
+
+const mapStateToProps = state => ({
+  section: state.section,
+});
+
+const mapDispatchToProps = {
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(SectionIntro);

@@ -3,7 +3,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
 
-import reducers from '../routes/reducer';
+import reducers from '../';
 
 const loggerMiddleware = createLogger({
   predicate: (getState, action) => __DEV__,
@@ -25,5 +25,6 @@ export default function configureStore() {
   const enhancer = compose(
     applyMiddleware(...middleware),
   );
+
   return createStore(reducers, enhancer);
 }
