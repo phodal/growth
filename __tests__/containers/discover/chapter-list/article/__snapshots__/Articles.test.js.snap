@@ -49,7 +49,7 @@ exports[`renders correctly 1`] = `
           }
         >
           <RNSpinkit
-            color={4278430196}
+            color="#03a9f4"
             size={18}
             style={
               Array [

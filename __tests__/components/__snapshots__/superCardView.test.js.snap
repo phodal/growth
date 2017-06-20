@@ -221,8 +221,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -258,6 +258,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -294,13 +295,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -385,8 +402,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -422,6 +439,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -458,13 +476,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -740,8 +774,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -777,6 +811,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -813,13 +848,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -904,8 +955,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -941,6 +992,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -977,13 +1029,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -1068,8 +1136,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -1105,6 +1173,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -1141,13 +1210,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -1423,8 +1508,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -1460,6 +1545,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -1496,13 +1582,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -1587,8 +1689,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -1624,6 +1726,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -1660,13 +1763,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -1751,8 +1870,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -1788,6 +1907,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -1824,13 +1944,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -2106,8 +2242,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -2143,6 +2279,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -2179,13 +2316,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -2270,8 +2423,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -2307,6 +2460,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -2343,13 +2497,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -2434,8 +2604,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -2471,6 +2641,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -2507,13 +2678,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -2789,8 +2976,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -2826,6 +3013,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -2862,13 +3050,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -2953,8 +3157,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -2990,6 +3194,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -3026,13 +3231,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -3308,8 +3529,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -3345,6 +3566,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -3381,13 +3603,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -3472,8 +3710,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -3509,6 +3747,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -3545,13 +3784,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -3827,8 +4082,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -3864,6 +4119,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -3900,13 +4156,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -3991,8 +4263,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -4028,6 +4300,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -4064,13 +4337,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -4346,8 +4635,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -4383,6 +4672,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -4419,13 +4709,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
@@ -4510,8 +4816,8 @@ exports[`renders correctly 1`] = `
                       Array [
                         Object {
                           "backgroundColor": "transparent",
-                          "borderBottomColor": "#ededed",
-                          "borderBottomWidth": 1,
+                          "borderBottomColor": "#bbb",
+                          "borderBottomWidth": 0.5,
                           "paddingBottom": 10,
                           "paddingRight": 10,
                           "paddingTop": 10,
@@ -4547,6 +4853,7 @@ exports[`renders correctly 1`] = `
                             accessible={true}
                             allowFontScaling={true}
                             ellipsizeMode="tail"
+                            numberOfLines={1}
                             style={
                               Array [
                                 Object {},
@@ -4583,13 +4890,29 @@ exports[`renders correctly 1`] = `
                         </View>
                       </View>
                       <View
+                        accessibilityComponentType={undefined}
+                        accessibilityLabel={undefined}
+                        accessibilityTraits={undefined}
+                        accessible={true}
+                        hitSlop={undefined}
+                        isTVSelectable={true}
+                        onLayout={undefined}
+                        onResponderGrant={[Function]}
+                        onResponderMove={[Function]}
+                        onResponderRelease={[Function]}
+                        onResponderTerminate={[Function]}
+                        onResponderTerminationRequest={[Function]}
+                        onStartShouldSetResponder={[Function]}
                         style={
                           Object {
                             "alignItems": "flex-end",
                             "flex": 0.15,
                             "justifyContent": "center",
+                            "opacity": 1,
                           }
                         }
+                        testID={undefined}
+                        tvParallaxProperties={undefined}
                       >
                         <View
                           onPress={undefined}
