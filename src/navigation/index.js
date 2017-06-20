@@ -51,6 +51,7 @@ import ForumDetail from '../containers/community/forum/ForumDetail';
 import ForumUserCenter from '../containers/community/forum/ForumUserCenter';
 import LeetCodeView from '../containers/practises/leetcode/LeetCodeView';
 import FreeBookList from '../containers/discover/free-book-list/FreeBookList';
+import AwesomeLists from '../containers/discover/awesomes/AwesomeLists';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -382,7 +383,15 @@ export default Actions.create(
     <Scene
       {...AppConfig.navbarProps}
       key={'freeBookList'}
+      title={'免费开源图书列表'}
+      rightTitle={'访问 GitHub'}
       component={FreeBookList}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      key={'awesomeLists'}
+      component={AwesomeLists}
     />
 
     <Scene

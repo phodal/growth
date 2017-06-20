@@ -70,5 +70,8 @@ const launch = {
   freeBookList: () => {
     Actions.freeBookList();
   },
+  awesomeLists: () => {
+    Actions.awesomeLists();
+  },
 };
 export default launch;

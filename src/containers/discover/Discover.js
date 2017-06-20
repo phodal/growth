@@ -21,7 +21,7 @@ class Discover extends Component {
         </View>
         <View style={AppStyle.discoverFirstGrid}>
           <GridItem title="在线电子书" iconName="icon-social" position={'left'} onclick={() => { Launch.freeBookList(); }} />
-          <GridItem title="Awesome" iconName="md-book" position={'right'} onclick={() => { }} />
+          <GridItem title="Awesome" iconName="md-book" position={'right'} onclick={() => { Launch.awesomeLists(); }} />
         </View>
         <View style={AppStyle.discoverOtherGrid}>
           <GridItem title="学习路线" iconName="icon-social" position={'left'} onclick={() => { Launch.roadmapList(); }} />
