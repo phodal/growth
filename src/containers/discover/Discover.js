@@ -20,7 +20,7 @@ class Discover extends Component {
           <Text style={AppStyle.discoverTextColor}>在线资源</Text>
         </View>
         <View style={AppStyle.discoverFirstGrid}>
-          <GridItem title="在线电子书" iconName="icon-social" position={'left'} onclick={() => { }} />
+          <GridItem title="在线电子书" iconName="icon-social" position={'left'} onclick={() => { Launch.freeBookList(); }} />
           <GridItem title="Awesome" iconName="md-book" position={'right'} onclick={() => { }} />
         </View>
         <View style={AppStyle.discoverOtherGrid}>

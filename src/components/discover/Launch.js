@@ -67,5 +67,8 @@ const launch = {
   chapterListArticle: (path, dialog) => {
     Actions.chapterListArticle({ url: path, dialogContent: dialog });
   },
+  freeBookList: () => {
+    Actions.freeBookList();
+  },
 };
 export default launch;

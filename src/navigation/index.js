@@ -50,6 +50,7 @@ import SectionPageHelper from '../utils/SectionPageHelper';
 import ForumDetail from '../containers/community/forum/ForumDetail';
 import ForumUserCenter from '../containers/community/forum/ForumUserCenter';
 import LeetCodeView from '../containers/practises/leetcode/LeetCodeView';
+import FreeBookList from '../containers/discover/free-book-list/FreeBookList';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -376,6 +377,12 @@ export default Actions.create(
       {...AppConfig.navbarProps}
       key={'leetCodeView'}
       component={LeetCodeView}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      key={'freeBookList'}
+      component={FreeBookList}
     />
 
     <Scene
