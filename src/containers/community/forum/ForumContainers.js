@@ -1,5 +1,6 @@
 /* eslint-disable no-undef,consistent-return */
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { View, ActivityIndicator } from 'react-native';
 import ForumView from './ForumView';
 // import AsyncStorageHelper from '../../../utils/AsyncStorageHelper';

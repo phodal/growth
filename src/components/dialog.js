@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { View, Text, Modal } from 'react-native';
 import Spinkit from 'react-native-spinkit';
 import AppStyle from '../theme/styles';

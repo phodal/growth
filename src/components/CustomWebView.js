@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { WebView, Dimensions } from 'react-native';
 import HtmlHelper from '../utils/HtmlHelper';
 import Helper from '../utils/helper';

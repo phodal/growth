@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { View } from 'react-native';
 import ExamDetailBack from '../../../components/discover/exam-detail/view/ExamDetailBack';
 import Content from '../../../components/discover/exam-detail/view/ExamDetailContent';
