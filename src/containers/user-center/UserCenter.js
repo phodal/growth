@@ -84,7 +84,7 @@ class UserCenter extends Component {
       <List>
         <ListItem
           hideChevron
-          title={'版本声明'}
+          title={'版权声明'}
           leftIcon={{ name: 'copyright' }}
         />
         <ListItem

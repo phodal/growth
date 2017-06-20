@@ -1,4 +1,4 @@
-package com.growth;
+package ren.growth.rn;
 
 import android.os.Bundle;
 
