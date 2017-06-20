@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React, { Component } from 'react';
-import { ScrollView, Text, View, ActivityIndicator } from 'react-native';
+import { ScrollView, Text, View, ActivityIndicator, FlatList, TouchableHighlight } from 'react-native';
 import { ListItem } from 'react-native-elements';
 import * as shortid from 'shortid';
 import Helper from '../../../utils/helper';
@@ -53,17 +53,22 @@ class FreeBookList extends Component {
               <View
                 key={shortid.generate()}
               >
-                <View><Text>{sections.heading}</Text></View>
-                {
-                  sections.childrens.map(section => (
-                    <ListItem
-                      key={shortid.generate()}
-                      title={section.title}
-                      onPress={() => Helper.openLink(section.href)}
-                      subtitle={`类型：${section.type}`}
-                    />
-                  ))
-                }
+                <View style={{ padding: 10 }}><Text style={{ textAlign: 'center' }}>{sections.heading}</Text></View>
+                <FlatList
+                  data={sections.childrens}
+                  renderItem={({ item }) => (
+                    <TouchableHighlight
+                      onPress={() => Helper.openLink(item.href)}
+                    >
+                      <View style={{ backgroundColor: 'white' }}>
+                        <ListItem
+                          title={item.title}
+                          subtitle={`类型：${item.type}`}
+                        />
+                      </View>
+                    </TouchableHighlight>
+                  )}
+                />
               </View>
             ))
           }
