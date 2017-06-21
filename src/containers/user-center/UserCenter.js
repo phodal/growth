@@ -49,12 +49,12 @@ class UserCenter extends Component {
         <ListItem
           title={'我的书签'}
           leftIcon={{ name: 'bookmark' }}
-          onPress={() => Actions.comingSoon()}
+          onPress={() => Actions.comingSoon('我的书签')}
         />
         <ListItem
           title={'我的技能分布'}
           leftIcon={{ name: 'trending-up' }}
-          onPress={() => Actions.comingSoon()}
+          onPress={() => Actions.comingSoon('我的技能分布')}
         />
       </List>
       <List>

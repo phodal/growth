@@ -1,9 +1,27 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Text, View } from 'react-native';
 import { Button } from 'react-native-elements';
+import { GoogleAnalyticsTracker } from 'react-native-google-analytics-bridge';
+
+import AppConfig from '../constants/config';
+
+const GoogleAnalytics = new GoogleAnalyticsTracker(AppConfig.gaTrackingId);
 
 class ComingSoonView extends Component {
   static componentName = 'ComingSoonView';
+
+  static defaultProps = {
+    type: '',
+  };
+
+  static propTypes = {
+    type: PropTypes.string,
+  };
+
+  componentDidMount() {
+    GoogleAnalytics.trackEvent('ComingSoon', this.props.type);
+  }
 
   render() {
     return (
