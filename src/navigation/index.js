@@ -164,6 +164,7 @@ export default Actions.create(
       rightTitle={'其他功能'}
       rightButtonTextStyle={AppStyles.navbarTitle}
       onRight={() => Helper.getMoreFeatures()}
+      analyticsDesc={' ComingSoonView '}
     />
 
     <Scene
@@ -171,12 +172,14 @@ export default Actions.create(
       title={'学习路线'}
       duration={0}
       component={RoadmapList}
+      analyticsDesc={' RoadmapList '}
     />
 
     <Scene
       key={'roadmapDetail'}
       duration={0}
       component={RoadmapDetail}
+      analyticsDesc={' RoadmapDetail '}
     />
 
     <Scene
@@ -184,12 +187,14 @@ export default Actions.create(
       duration={0}
       title={'练手项目'}
       component={ProjectList}
+      analyticsDesc={' ProjectList '}
     />
 
     <Scene
       key={'projectDetail'}
       duration={0}
       component={ProjectDetail}
+      analyticsDesc={' ProjectDetail '}
     />
 
     <Scene
@@ -197,6 +202,7 @@ export default Actions.create(
       duration={0}
       title={'工具箱'}
       component={ToolBoxList}
+      analyticsDesc={' ToolBoxList '}
     />
 
     <Scene
@@ -204,6 +210,7 @@ export default Actions.create(
       duration={0}
       title={'工具箱'}
       component={ToolBoxDetail}
+      analyticsDesc={' ToolBoxDetail '}
     />
 
     <Scene
@@ -211,6 +218,7 @@ export default Actions.create(
       duration={0}
       title={'文章推荐'}
       component={ArticleList}
+      analyticsDesc={' ArticleList '}
     />
 
     <Scene
@@ -218,6 +226,7 @@ export default Actions.create(
       duration={0}
       title={'文章详情'}
       component={ArticleDetail}
+      analyticsDesc={' ArticleDetail '}
     />
 
     <Scene
@@ -225,6 +234,7 @@ export default Actions.create(
       duration={0}
       title={'技能测验'}
       component={ExamList}
+      analyticsDesc={' ExamList '}
     />
 
     <Scene
@@ -232,6 +242,7 @@ export default Actions.create(
       duration={0}
       hideNavBar
       component={ExamDetail}
+      analyticsDesc={' ExamDetail '}
     />
 
     <Scene
@@ -239,6 +250,7 @@ export default Actions.create(
       duration={0}
       title={'解决方案'}
       component={Solution}
+      analyticsDesc={' Solution '}
     />
 
     <Scene
@@ -246,6 +258,7 @@ export default Actions.create(
       duration={0}
       title={'解决方案'}
       component={SolutionDetail}
+      analyticsDesc={' SolutionDetail '}
     />
 
     <Scene
@@ -253,12 +266,14 @@ export default Actions.create(
       duration={0}
       title={'ThoughtWorks读书路线'}
       component={ThoughtworksBooks}
+      analyticsDesc={' ThoughtworksBooks '}
     />
 
     <Scene
       key={'domainDetailPage'}
       duration={0}
       component={DomainDetailPage}
+      analyticsDesc={' DomainDetailPage '}
     />
 
     <Scene
@@ -266,12 +281,15 @@ export default Actions.create(
       duration={0}
       title={'推荐书籍'}
       component={RecommendBooks}
+      analyticsDesc={' RecommendBooks '}
     />
+
     <Scene
       key={'recommendBooksDetail'}
       duration={0}
       title={'书评'}
       component={RecommendBooksDetail}
+      analyticsDesc={' RecommendBooksDetail '}
     />
 
     <Scene
@@ -279,6 +297,7 @@ export default Actions.create(
       duration={0}
       title={'推荐文章'}
       component={RecommendArticles}
+      analyticsDesc={' RecommendArticles '}
     />
 
     <Scene
@@ -286,6 +305,7 @@ export default Actions.create(
       duration={0}
       title={'文章'}
       component={LocalArticleView}
+      analyticsDesc={' LocalArticleView '}
     />
 
     <Scene
@@ -293,6 +313,7 @@ export default Actions.create(
       duration={0}
       title={'待办事项'}
       component={TodoLists}
+      analyticsDesc={' TodoLists '}
     />
 
     <Scene
@@ -300,12 +321,14 @@ export default Actions.create(
       duration={0}
       title={'Todo'}
       component={TodoList}
+      analyticsDesc={' TodoList '}
     />
 
     <Scene
       key={'chapterList'}
       duration={0}
       component={ChapterList}
+      analyticsDesc={' ChapterList '}
     />
 
     <Scene
@@ -313,18 +336,21 @@ export default Actions.create(
       duration={0}
       title={'章节详情'}
       component={ChapterListArticle}
+      analyticsDesc={' ChapterListArticle '}
     />
 
     <Scene
       key={'aboutUs'}
       title={'关于'}
       component={AboutUs}
+      analyticsDesc={' AboutUs '}
     />
 
     <Scene
       key={'contributorProfile'}
       title={'Contributor Profile'}
       component={ContributorProfile}
+      analyticsDesc={' ContributorProfile '}
     />
 
     <Scene
@@ -346,12 +372,14 @@ export default Actions.create(
         </View>
         )
       }
+      analyticsDesc={' SectionPage '}
     />
 
     <Scene
       key={'sectionIntro'}
       title={'简介'}
       component={SectionIntro}
+      analyticsDesc={' SectionIntro '}
     />
 
     <Scene
@@ -359,23 +387,27 @@ export default Actions.create(
       key={'paperIntroView'}
       title={'全栈应用开发：精益实践'}
       component={PaperIntroView}
+      analyticsDesc={' PaperIntroView '}
     />
 
     <Scene
       key={'htmlView'}
       component={HtmlView}
+      analyticsDesc={' HtmlView '}
     />
 
     <Scene
       {...AppConfig.navbarProps}
       key={'algorithmView'}
       component={AlgorithmView}
+      analyticsDesc={' AlgorithmView '}
     />
 
     <Scene
       {...AppConfig.navbarProps}
       key={'forumDetail'}
       component={ForumDetail}
+      analyticsDesc={' ForumDetail '}
     />
 
     <Scene
@@ -383,12 +415,14 @@ export default Actions.create(
       key={'forumUserCenter'}
       title={'用户'}
       component={ForumUserCenter}
+      analyticsDesc={' ForumUserCenter '}
     />
 
     <Scene
       {...AppConfig.navbarProps}
       key={'leetCodeView'}
       component={LeetCodeView}
+      analyticsDesc={' LeetCodeView '}
     />
 
     <Scene
@@ -397,12 +431,14 @@ export default Actions.create(
       title={'免费开源图书列表'}
       rightTitle={'访问 GitHub'}
       component={FreeBookList}
+      analyticsDesc={' FreeBookList '}
     />
 
     <Scene
       {...AppConfig.navbarProps}
       key={'awesomeLists'}
       component={AwesomeLists}
+      analyticsDesc={' AwesomeLists '}
     />
 
     <Scene
@@ -414,6 +450,7 @@ export default Actions.create(
       rightButtonTextStyle={AppStyles.navbarTitle}
       onRight={() => GrEditor.runCode()}
       component={GrEditor}
+      analyticsDesc={' GrEditor '}
     />
 
   </Scene>,
