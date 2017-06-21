@@ -22,12 +22,13 @@ class UserCenter extends Component {
   }
 
   static ratingApp() {
-    if (StoreReview.isAvailable) {
-      return StoreReview.requestReview();
-    }
     let link = 'market://details?id=ren.growth';
 
     if (Platform.OS === 'iOS') {
+      if (StoreReview.isAvailable) {
+        return StoreReview.requestReview();
+      }
+
       link = 'itms://itunes.apple.com/us/app/apple-store/myiosappid?mt=8';
     }
 
