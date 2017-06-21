@@ -83,6 +83,7 @@ class ForumUserCenter extends Component {
 
     return (
       <View style={styles.container}>
+        <Text style={{ paddingBottom: 10 }}>功能正在开发中。。。</Text>
         <Form
           ref={(form) => { this.form = form; }}
           type={User}
