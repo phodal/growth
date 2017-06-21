@@ -4,6 +4,7 @@ import { ScrollView, Text, View, ActivityIndicator, FlatList, TouchableHighlight
 import { ListItem } from 'react-native-elements';
 import * as shortid from 'shortid';
 import Helper from '../../../utils/helper';
+import AsyncStorageHelper from '../../../utils/AsyncStorageHelper';
 
 class FreeBookList extends Component {
   static componentName = 'FreeBookList';
@@ -17,12 +18,22 @@ class FreeBookList extends Component {
   }
 
   componentDidMount() {
+    AsyncStorageHelper.get('discover.freebook', (result) => {
+      if (result) {
+        this.setState({
+          loading: false,
+          rowData: JSON.parse(result),
+        });
+      }
+    });
+
     fetch('https://phodal.github.io/growth-api-gitbook/api.json')
     .then(response => response.json())
     .then((data) => {
       const rowData = Array.from(new Array(data.length))
       .map((val, index) => (data[index]));
 
+      AsyncStorageHelper.set('discover.freebook', JSON.stringify(data));
       this.setState({
         loading: false,
         rowData,
