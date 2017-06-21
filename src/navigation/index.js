@@ -150,6 +150,7 @@ export default Actions.create(
     />
 
     <Scene
+      {...AppConfig.navbarProps}
       key={'comingSoon'}
       title={'Coming Soon'}
       component={ComingSoonView}

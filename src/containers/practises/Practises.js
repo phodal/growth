@@ -20,12 +20,15 @@ class Practises extends Component {
           />
           <ListItem
             title={'数据结构'}
+            onPress={() => Actions.comingSoon()}
           />
           <ListItem
             title={'设计模式'}
+            onPress={() => Actions.comingSoon()}
           />
           <ListItem
             title={'正则表达式'}
+            onPress={() => Actions.comingSoon()}
           />
         </List>
       </ScrollView>
