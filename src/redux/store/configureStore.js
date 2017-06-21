@@ -4,6 +4,7 @@ import createLogger from 'redux-logger';
 import thunk from 'redux-thunk';
 
 import reducers from '../';
+import Analytics from '../../lib/analytics';
 
 const loggerMiddleware = createLogger({
   predicate: (getState, action) => __DEV__,
@@ -11,6 +12,7 @@ const loggerMiddleware = createLogger({
 
 export default function configureStore() {
   let middleware = [
+    Analytics,
     thunk,
   ];
 

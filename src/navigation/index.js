@@ -77,6 +77,7 @@ export default Actions.create(
         rightButtonTextStyle={AppStyles.navbarTitle}
         icon={TabIcon}
         component={Home}
+        analyticsDesc={' Home '}
       />
       <Scene
         {...navbarPropsTabs}
@@ -91,6 +92,7 @@ export default Actions.create(
         iconType={'ionicon'}
         icon={TabIcon}
         component={Discover}
+        analyticsDesc={' Discover '}
       />
       <Scene
         {...navbarPropsTabs}
@@ -105,6 +107,7 @@ export default Actions.create(
         iconType={'ionicon'}
         icon={TabIcon}
         component={SkillTree}
+        analyticsDesc={' SkillTree '}
       />
       <Scene
         {...navbarPropsTabs}
@@ -117,6 +120,7 @@ export default Actions.create(
         iconType={'ionicon'}
         icon={TabIcon}
         component={Community}
+        analyticsDesc={' Community '}
       />
       <Scene
         {...navbarPropsTabs}
@@ -131,6 +135,7 @@ export default Actions.create(
         onRight={() => Actions.grEditor()}
         rightButtonTextStyle={AppStyles.navbarTitle}
         component={Practises}
+        analyticsDesc={' Practises '}
       />
     </Scene>
 
@@ -140,6 +145,7 @@ export default Actions.create(
       key={'userCenter'}
       title={'用户中心'}
       component={UserCenter}
+      analyticsDesc={' UserCenter '}
     />
 
     <Scene
@@ -147,6 +153,7 @@ export default Actions.create(
       key={'skillDetail'}
       title={'技能'}
       component={SkillDetailView}
+      analyticsDesc={' SkillDetailView '}
     />
 
     <Scene
