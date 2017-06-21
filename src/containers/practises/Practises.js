@@ -24,6 +24,9 @@ class Practises extends Component {
           <ListItem
             title={'设计模式'}
           />
+          <ListItem
+            title={'正则表达式'}
+          />
         </List>
       </ScrollView>
     );
