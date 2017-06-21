@@ -154,6 +154,9 @@ export default Actions.create(
       key={'comingSoon'}
       title={'Coming Soon'}
       component={ComingSoonView}
+      rightTitle={'其他功能'}
+      rightButtonTextStyle={AppStyles.navbarTitle}
+      onRight={() => Helper.getMoreFeatures()}
     />
 
     <Scene

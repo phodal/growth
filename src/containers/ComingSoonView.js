@@ -8,7 +8,7 @@ class ComingSoonView extends Component {
   render() {
     return (
       <View>
-        <Text>Coming Soon</Text>
+        <Text style={{ padding: 20, textAlign: 'center' }}> 这个功能在 TODO List 里，如果你需要请点个赞</Text>
         <Button
           icon={{ name: 'thumb-up' }}
           title="需要"
@@ -18,9 +18,9 @@ class ComingSoonView extends Component {
         <Button
           icon={{ name: 'thumb-down' }}
           title="不需要"
+          style={{ paddingTop: 20 }}
           borderRadius={6}
         />
-        <Text>这个功能我们正在考虑中，如果你需要请点个赞</Text>
       </View>
     );
   }
