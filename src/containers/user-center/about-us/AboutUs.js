@@ -11,6 +11,7 @@ const avatarOnGitHub = user =>
 
 const AboutUs = () => (
   <ScrollView style={AppStyle.userCenterBasisStyle}>
+
     <Label text="Growth" />
     <List>
       <ListItem
@@ -28,11 +29,24 @@ const AboutUs = () => (
         hideChevron
       />
     </List>
+
     <Label text="贡献者 3.0" />
     <List>
-      <ListItem
-        title="TBD  "
-      />
+      {CONTRIBUTORS.latest.contributors.map(contributor =>
+        <ListItem
+          key={contributor.nickname}
+          title={contributor.nickname}
+          subtitle={contributor.bio ? contributor.bio : ' '}
+          avatar={{ uri: avatarOnGitHub(contributor.github) }}
+          onPress={() => {
+            if (contributor.profile) {
+              Actions.contributorProfile({ contributor });
+            }
+          }}
+          roundAvatar
+          hideChevron={!contributor.profile}
+        />,
+      )}
     </List>
 
     <Label text="贡献者 1.0 2.0" />

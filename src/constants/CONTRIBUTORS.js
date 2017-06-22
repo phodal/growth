@@ -63,7 +63,37 @@ const CONTRIBUTORS = {
   },
   latest: {
     version: '3.0',
-    contributors: [],
+    contributors: [
+      {
+        nickname: 'Phodal',
+        duty: '作者',
+        github: 'phodal',
+        bio: '待我代码编成，娶你为妻可好 @花仲马',
+        profile: {
+          weibo: 'Phodal',
+          zhihu: 'Phodal',
+          blog: 'https://www.phodal.com/',
+        },
+      },
+      {
+        nickname: 'travelgeezer',
+        duty: 'UX',
+        bio: 'Growth 3.0 Discover 页面及功能',
+        github: 'travelgeezer',
+      },
+      {
+        nickname: 'airt',
+        duty: 'Dev',
+        bio: 'Growth 3.0 关于我们页面',
+        github: 'airt',
+      },
+      {
+        nickname: 'Gozeon',
+        duty: 'Dev',
+        bio: 'Growth 3.0 初始化项目',
+        github: 'Gozeon',
+      },
+    ],
   },
 };
 
