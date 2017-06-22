@@ -86,9 +86,9 @@ class UserCenter extends Component {
       </List>
       <List>
         <ListItem
-          hideChevron
           title={'版权声明'}
           leftIcon={{ name: 'copyright' }}
+          onPress={() => Actions.copyrightView()}
         />
         <ListItem
           hideChevron

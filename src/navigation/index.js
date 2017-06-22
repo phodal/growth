@@ -52,6 +52,7 @@ import ForumUserCenter from '../containers/community/forum/ForumUserCenter';
 import LeetCodeView from '../containers/practises/leetcode/LeetCodeView';
 import FreeBookList from '../containers/discover/free-book-list/FreeBookList';
 import AwesomeLists from '../containers/discover/awesomes/AwesomeLists';
+import CopyrightView from '../containers/user-center/CopyrightView';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -428,7 +429,7 @@ export default Actions.create(
     <Scene
       {...AppConfig.navbarProps}
       key={'freeBookList'}
-      title={'免费开源图书列表'}
+      title={'在线电子书'}
       rightTitle={'访问 GitHub'}
       component={FreeBookList}
       analyticsDesc={' FreeBookList '}
@@ -436,9 +437,18 @@ export default Actions.create(
 
     <Scene
       {...AppConfig.navbarProps}
+      title={'Awesomes'}
       key={'awesomeLists'}
       component={AwesomeLists}
       analyticsDesc={' AwesomeLists '}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      title={'版权声明'}
+      key={'copyrightView'}
+      component={CopyrightView}
+      analyticsDesc={' CopyrightView '}
     />
 
     <Scene
