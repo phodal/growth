@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars,global-require */
 import React, { Component } from 'react';
-import { View, Text, ScrollView, Image, TouchableHighlight } from 'react-native';
+import {View, Text, ScrollView, Image, TouchableHighlight, ActivityIndicator} from 'react-native';
 import Search from 'react-native-search-box';
 import { Button, Card, List, ListItem } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
@@ -139,7 +139,13 @@ class Home extends Component {
         {
           this.state.inSearch ?
             <View>
-              <Text>Text in Test</Text>
+              <Text style={{ backgroundColor: '#fff', textAlign: 'center', paddingTop: 20 }}>功能实现中。。。</Text>
+              <ActivityIndicator
+                animating
+                size={'large'}
+                color={'#000'}
+                style={{ paddingTop: 20, backgroundColor: '#fff', height: 200 }}
+              />
             </View> : homeView
         }
       </ScrollView>
