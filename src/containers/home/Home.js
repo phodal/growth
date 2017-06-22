@@ -2,7 +2,8 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import Search from 'react-native-search-box';
-import SuperCardView from '../../components/SuperCardView';
+import { Button } from 'react-native-elements';
+import { Actions } from 'react-native-router-flux';
 
 class Home extends Component {
   static componentName = 'Home';
@@ -47,6 +48,23 @@ class Home extends Component {
   });
 
   render() {
+    const homeView = (
+      <View>
+        <Button
+          raised
+          icon={{ name: 'exit-to-app' }}
+          title="Growth 应用"
+          onPress={() => Actions.growthView()}
+        />
+        <Button
+          raised
+          icon={{ name: 'exit-to-app' }}
+          title="Growth 技能树"
+          onPress={() => Actions.skillTree()}
+        />
+      </View>
+      );
+
     return (
       <ScrollView>
         <View style={{ paddingTop: 5, paddingBottom: 5 }}>
@@ -67,7 +85,7 @@ class Home extends Component {
           this.state.inSearch ?
             <View>
               <Text>Text in Test</Text>
-            </View> : <SuperCardView />
+            </View> : homeView
         }
       </ScrollView>
     );
