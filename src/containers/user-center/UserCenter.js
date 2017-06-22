@@ -1,8 +1,8 @@
-import React, { Component, Platform } from 'react';
+import React, { Component } from 'react';
 import { Actions } from 'react-native-router-flux';
 import ListItem from 'react-native-elements/src/list/ListItem';
 import List from 'react-native-elements/src/list/List';
-import { ScrollView } from 'react-native';
+import { ScrollView, Platform } from 'react-native';
 import DeviceInfo from 'react-native-device-info';
 import Share from 'react-native-share';
 import * as StoreReview from 'react-native-store-review';
@@ -24,7 +24,7 @@ class UserCenter extends Component {
   static ratingApp() {
     let link = 'market://details?id=ren.growth';
 
-    if (Platform.OS === 'iOS') {
+    if (Platform.OS === 'ios') {
       if (StoreReview.isAvailable) {
         return StoreReview.requestReview();
       }
