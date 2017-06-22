@@ -13,7 +13,6 @@ import com.idehub.GoogleAnalyticsBridge.GoogleAnalyticsBridgePackage;
 import ren.growth.rn.util.AppUtil;
 import ren.growth.rn.util.FileUtils;
 import com.rnfs.RNFSPackage;
-import com.benwixen.rnfilesystem.RNFileSystemPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -45,7 +44,6 @@ public class MainApplication extends Application implements ReactApplication {
             new OrientationPackage(),
             new GoogleAnalyticsBridgePackage(),
             new RNFSPackage(),
-            new RNFileSystemPackage(),
             new SplashScreenReactPackage(),
             new RNSharePackage(),
             new RNDeviceInfo(),
