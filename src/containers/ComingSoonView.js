@@ -19,8 +19,12 @@ class ComingSoonView extends Component {
     type: PropTypes.string,
   };
 
-  componentDidMount() {
-    GoogleAnalytics.trackEvent('ComingSoon', this.props.type);
+  upFeatures() {
+    GoogleAnalytics.trackEvent('ComingSoon - Up', this.props.type);
+  }
+
+  downFeatures() {
+    GoogleAnalytics.trackEvent('ComingSoon - Down', this.props.type);
   }
 
   render() {
@@ -32,12 +36,14 @@ class ComingSoonView extends Component {
           title="需要"
           borderRadius={6}
           backgroundColor={'#03a9f4'}
+          onPress={() => this.upFeatures}
         />
         <Button
           icon={{ name: 'thumb-down' }}
           title="不需要"
           style={{ paddingTop: 20 }}
           borderRadius={6}
+          onPress={() => this.downFeatures}
         />
       </View>
     );
