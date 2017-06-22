@@ -25,18 +25,18 @@ class FreeBookList extends Component {
           rowData: JSON.parse(result),
         });
       }
-    });
 
-    fetch('https://phodal.github.io/growth-api-gitbook/api.json')
-    .then(response => response.json())
-    .then((data) => {
-      const rowData = Array.from(new Array(data.length))
-      .map((val, index) => (data[index]));
+      fetch('https://phodal.github.io/growth-api-gitbook/api.json')
+      .then(response => response.json())
+      .then((data) => {
+        const rowData = Array.from(new Array(data.length))
+        .map((val, index) => (data[index]));
 
-      AsyncStorageHelper.set('discover.freebook', JSON.stringify(data));
-      this.setState({
-        loading: false,
-        rowData,
+        AsyncStorageHelper.set('discover.freebook', JSON.stringify(data));
+        this.setState({
+          loading: false,
+          rowData,
+        });
       });
     });
   }
