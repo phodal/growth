@@ -228,86 +228,6 @@ exports[`test index renders correctly 1`] = `
                       </Text>
                     </View>
                     <View
-                      style={
-                        Array [
-                          Object {
-                            "height": 37,
-                            "left": 2,
-                            "padding": 8,
-                            "position": "absolute",
-                            "top": 20,
-                          },
-                          Object {
-                            "alignItems": "flex-start",
-                          },
-                        ]
-                      }
-                    >
-                      <View
-                        accessibilityComponentType={undefined}
-                        accessibilityLabel={undefined}
-                        accessibilityTraits={undefined}
-                        accessible={true}
-                        hasTVPreferredFocus={undefined}
-                        hitSlop={undefined}
-                        isTVSelectable={true}
-                        onLayout={undefined}
-                        onResponderGrant={[Function]}
-                        onResponderMove={[Function]}
-                        onResponderRelease={[Function]}
-                        onResponderTerminate={[Function]}
-                        onResponderTerminationRequest={[Function]}
-                        onStartShouldSetResponder={[Function]}
-                        style={
-                          Array [
-                            Object {
-                              "backgroundColor": "transparent",
-                            },
-                            Array [
-                              false,
-                              false,
-                              false,
-                              Object {
-                                "alignItems": "center",
-                                "backgroundColor": "transparent",
-                                "justifyContent": "center",
-                              },
-                              undefined,
-                            ],
-                          ]
-                        }
-                        testID={undefined}
-                        tvParallaxProperties={undefined}
-                      >
-                        <Text
-                          accessible={true}
-                          allowFontScaling={false}
-                          ellipsizeMode="tail"
-                          style={
-                            Array [
-                              Object {
-                                "color": "#fff",
-                                "fontSize": 24,
-                              },
-                              Array [
-                                Object {
-                                  "backgroundColor": "transparent",
-                                },
-                                undefined,
-                              ],
-                              Object {
-                                "fontFamily": "Ionicons",
-                                "fontStyle": "normal",
-                                "fontWeight": "normal",
-                              },
-                            ]
-                          }
-                        >
-                          
-                        </Text>
-                      </View>
-                    </View>
-                    <View
                       accessibilityComponentType={undefined}
                       accessibilityLabel={undefined}
                       accessibilityTraits={undefined}
@@ -636,94 +556,6 @@ exports[`test index renders correctly 1`] = `
                       ]
                     }
                   >
-                    
-                  </Text>
-                </View>
-                <Text
-                  accessible={true}
-                  allowFontScaling={true}
-                  ellipsizeMode="tail"
-                  style={
-                    Object {
-                      "color": "#767676",
-                    }
-                  }
-                >
-                  技能树
-                </Text>
-              </View>
-            </View>
-            <View
-              accessibilityComponentType={undefined}
-              accessibilityLabel={undefined}
-              accessibilityTraits={undefined}
-              accessible={true}
-              hitSlop={undefined}
-              isTVSelectable={true}
-              onLayout={undefined}
-              onResponderGrant={[Function]}
-              onResponderMove={[Function]}
-              onResponderRelease={[Function]}
-              onResponderTerminate={[Function]}
-              onResponderTerminationRequest={[Function]}
-              onStartShouldSetResponder={[Function]}
-              style={
-                Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#ffffff",
-                  "borderTopColor": "#D0D1D5",
-                  "borderTopWidth": 1,
-                  "flex": 1,
-                  "height": 50,
-                  "justifyContent": "center",
-                  "opacity": 1,
-                }
-              }
-              testID={undefined}
-              tvParallaxProperties={undefined}
-            >
-              <View>
-                <View
-                  onPress={undefined}
-                  style={
-                    Array [
-                      false,
-                      false,
-                      false,
-                      Object {
-                        "alignItems": "center",
-                        "backgroundColor": "transparent",
-                        "justifyContent": "center",
-                      },
-                      undefined,
-                    ]
-                  }
-                  underlayColor="white"
-                >
-                  <Text
-                    accessible={true}
-                    allowFontScaling={false}
-                    ellipsizeMode="tail"
-                    style={
-                      Array [
-                        Object {
-                          "color": "#767676",
-                          "fontSize": 24,
-                        },
-                        Array [
-                          Object {
-                            "backgroundColor": "transparent",
-                          },
-                          undefined,
-                        ],
-                        Object {
-                          "fontFamily": "Ionicons",
-                          "fontStyle": "normal",
-                          "fontWeight": "normal",
-                        },
-                      ]
-                    }
-                  >
                     
                   </Text>
                 </View>
@@ -826,6 +658,94 @@ exports[`test index renders correctly 1`] = `
                   }
                 >
                   练习
+                </Text>
+              </View>
+            </View>
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#ffffff",
+                  "borderTopColor": "#D0D1D5",
+                  "borderTopWidth": 1,
+                  "flex": 1,
+                  "height": 50,
+                  "justifyContent": "center",
+                  "opacity": 1,
+                }
+              }
+              testID={undefined}
+              tvParallaxProperties={undefined}
+            >
+              <View>
+                <View
+                  onPress={undefined}
+                  style={
+                    Array [
+                      false,
+                      false,
+                      false,
+                      Object {
+                        "alignItems": "center",
+                        "backgroundColor": "transparent",
+                        "justifyContent": "center",
+                      },
+                      undefined,
+                    ]
+                  }
+                  underlayColor="white"
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={false}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "color": "#767676",
+                          "fontSize": 24,
+                        },
+                        Array [
+                          Object {
+                            "backgroundColor": "transparent",
+                          },
+                          undefined,
+                        ],
+                        Object {
+                          "fontFamily": "Ionicons",
+                          "fontStyle": "normal",
+                          "fontWeight": "normal",
+                        },
+                      ]
+                    }
+                  >
+                    
+                  </Text>
+                </View>
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Object {
+                      "color": "#767676",
+                    }
+                  }
+                >
+                  用户中心
                 </Text>
               </View>
             </View>

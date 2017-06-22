@@ -73,8 +73,6 @@ export default Actions.create(
         title={'Growth'}
         iconName={'md-home'}
         iconType={'ionicon'}
-        leftTitle={'用户中心'}
-        renderLeftButton={() => Helper.gotoUserCenter()}
         rightTitle={'购买纸质版'}
         onRight={() => Actions.paperIntroView()}
         rightButtonTextStyle={AppStyles.navbarTitle}
@@ -86,8 +84,6 @@ export default Actions.create(
         {...navbarPropsTabs}
         key={'discover'}
         title={'探索'}
-        leftTitle={'用户中心'}
-        renderLeftButton={() => Helper.gotoUserCenter()}
         rightTitle={'更多功能'}
         onRight={() => Helper.getMoreFeatures()}
         rightButtonTextStyle={AppStyles.navbarTitle}
@@ -97,27 +93,11 @@ export default Actions.create(
         component={Discover}
         analyticsDesc={' Discover '}
       />
-      <Scene
-        {...navbarPropsTabs}
-        key={'skillTree'}
-        title={'技能树'}
-        rightTitle={'获取专业版'}
-        leftTitle={'用户中心'}
-        renderLeftButton={() => Helper.gotoUserCenter()}
-        onRight={() => Helper.getProfessionalSkilltree()}
-        rightButtonTextStyle={AppStyles.navbarTitle}
-        iconName={'md-egg'}
-        iconType={'ionicon'}
-        icon={TabIcon}
-        component={SkillTree}
-        analyticsDesc={' SkillTree '}
-      />
+
       <Scene
         {...navbarPropsTabs}
         key={'community'}
         title={'社区'}
-        leftTitle={'用户中心'}
-        renderLeftButton={() => Helper.gotoUserCenter()}
         renderRightButton={() => Helper.gotoLogin()}
         iconName={'md-people'}
         iconType={'ionicon'}
@@ -129,8 +109,6 @@ export default Actions.create(
         {...navbarPropsTabs}
         key={'practises'}
         title={'练习'}
-        leftTitle={'用户中心'}
-        renderLeftButton={() => Helper.gotoUserCenter()}
         iconName={'md-bonfire'}
         iconType={'ionicon'}
         icon={TabIcon}
@@ -140,15 +118,31 @@ export default Actions.create(
         component={Practises}
         analyticsDesc={' Practises '}
       />
-    </Scene>
 
+      <Scene
+        {...navbarPropsTabs}
+        key={'userCenter'}
+        title={'用户中心'}
+        iconName={'md-apps'}
+        iconType={'ionicon'}
+        icon={TabIcon}
+        component={UserCenter}
+        analyticsDesc={' UserCenter '}
+      />
+    </Scene>
 
     <Scene
       {...AppConfig.navbarProps}
-      key={'userCenter'}
-      title={'用户中心'}
-      component={UserCenter}
-      analyticsDesc={' UserCenter '}
+      key={'skillTree'}
+      title={'技能树'}
+      rightTitle={'获取专业版'}
+      onRight={() => Helper.getProfessionalSkilltree()}
+      rightButtonTextStyle={AppStyles.navbarTitle}
+      iconName={'md-egg'}
+      iconType={'ionicon'}
+      icon={TabIcon}
+      component={SkillTree}
+      analyticsDesc={' SkillTree '}
     />
 
     <Scene
