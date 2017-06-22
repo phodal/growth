@@ -59,8 +59,72 @@ class CopyrightView extends Component {
         link: 'https://github.com/maxs15/react-native-modalbox',
       },
       {
-        name: 'React Native Progress',
-        link: 'https://github.com/oblador/react-native-progress',
+        name: 'React Native Router Flux',
+        link: 'https://github.com/aksonov/react-native-router-flux',
+      },
+      {
+        name: 'React Native Search Box',
+        link: 'https://github.com/crabstudio/react-native-search-box',
+      },
+      {
+        name: 'React Native Share',
+        link: 'https://github.com/EstebanFuentealba/react-native-share',
+      },
+      {
+        name: 'React Native Simple Toast',
+        link: 'https://github.com/xgfe/react-native-simple-toast',
+      },
+      {
+        name: 'React Native Spinkit',
+        link: 'https://github.com/maxs15/react-native-spinkit',
+      },
+      {
+        name: 'React Native Splash Screen',
+        link: 'https://github.com/crazycodeboy/react-native-splash-screen',
+      },
+      {
+        name: 'React Native Store Review',
+        link: 'https://github.com/oblador/react-native-store-review',
+      },
+      {
+        name: 'React Native Tab View',
+        link: 'https://github.com/react-native-community/react-native-tab-view',
+      },
+      {
+        name: 'React Native Timeago',
+        link: 'https://github.com/TylerLH/react-native-timeago',
+      },
+      {
+        name: 'React Native Vector Icons',
+        link: 'https://github.com/oblador/react-native-vector-icons',
+      },
+      {
+        name: 'React Native Zip Archive',
+        link: 'https://github.com/mockingbot/react-native-zip-archive',
+      },
+      {
+        name: 'React Redux',
+        link: 'https://github.com/reactjs/react-redux',
+      },
+      {
+        name: 'Redux',
+        link: 'https://github.com/reactjs/redux',
+      },
+      {
+        name: 'Logger for Redux',
+        link: 'https://github.com/evgenyrodionov/redux-logger',
+      },
+      {
+        name: 'Redux Thunk',
+        link: 'https://github.com/gaearon/redux-thunk',
+      },
+      {
+        name: 'shortid',
+        link: 'https://github.com/dylang/shortid',
+      },
+      {
+        name: 'Tcomb Form Native',
+        link: 'https://github.com/gcanti/tcomb-form-native',
       },
     ];
 
