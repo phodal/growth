@@ -2,7 +2,7 @@ import HELPER_ARTICLES from '../HELPER_ARTICLES';
 
 const SECTION5 = {
   ci: {
-    title: '持续交付',
+    title: '持续集成',
     intros: [
       {
         info: { slug: 'ci', type: 'desc' },
