@@ -3925,10 +3925,6 @@ react-native-fetch-blob@^0.10.5:
     base-64 "0.1.0"
     glob "^7.0.6"
 
-react-native-filesystem@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-filesystem/-/react-native-filesystem-0.1.0.tgz#b66eebbfa046ac12cb5d2503eda78641fca58c23"
-
 react-native-fs@^2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/react-native-fs/-/react-native-fs-2.3.2.tgz#49c6fd3413ae863427d91de4272dbf57248bc5dd"
