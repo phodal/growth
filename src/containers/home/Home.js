@@ -5,6 +5,7 @@ import Search from 'react-native-search-box';
 import { Button, Card } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
 import Carousel from 'react-native-snap-carousel';
+import GrowthImageCard from '../../components/home/GrowthCard';
 
 const sliderWidth = Dimensions.get('window').width;
 
@@ -53,37 +54,16 @@ class Home extends Component {
   render() {
     const homeView = (
       <View style={{ paddingBottom: 20 }}>
-        <TouchableHighlight
-          activeOpacity={1}
-          onPress={() => Actions.growthView()}
-        >
-          <Image
-            source={require('../../../assets/growth-ui/img/home-5.jpg')}
-            resizeMode="cover"
-            borderRadius={6}
-            style={{ marginLeft: 20, marginRight: 20, marginTop: 10, width: null, height: 120 }}
-          >
-            <View style={{ height: 40, opacity: 0.8, top: 80, backgroundColor: '#fff' }}>
-              <Text style={{ textAlign: 'center', fontSize: 20, top: 8, color: '#000' }}> Growth 指南 </Text>
-            </View>
-          </Image>
-        </TouchableHighlight>
-        <TouchableHighlight
-          activeOpacity={1}
-          onPress={() => Actions.skillTree()}
-        >
-          <Image
-            source={require('../../../assets/growth-ui/img/home-6.jpg')}
-            resizeMode="cover"
-            borderRadius={6}
-            style={{ marginLeft: 20, marginRight: 20, marginTop: 10, width: null, height: 120 }}
-          >
-            <View style={{ height: 40, opacity: 0.8, top: 80, backgroundColor: '#fff' }}>
-              <Text style={{ textAlign: 'center', fontSize: 20, top: 8, color: '#000' }}> Growth 技能树 </Text>
-            </View>
-          </Image>
-        </TouchableHighlight>
-
+        <GrowthImageCard
+          imageUrl={require('../../../assets/growth-ui/img/home-5.jpg')}
+          actions={Actions.growthView}
+          text={'Growth 指南'}
+        />
+        <GrowthImageCard
+          imageUrl={require('../../../assets/growth-ui/img/home-6.jpg')}
+          actions={Actions.skillTree}
+          text={'Growth 技能树'}
+        />
 
         <View style={{ paddingTop: 20 }}>
           <Carousel
