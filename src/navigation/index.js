@@ -54,6 +54,7 @@ import FreeBookList from '../containers/discover/free-book-list/FreeBookList';
 import AwesomeLists from '../containers/discover/awesomes/AwesomeLists';
 import CopyrightView from '../containers/user-center/CopyrightView';
 import GrowthView from "../containers/home/GrowthView";
+import AwesomesDetail from '../containers/discover/awesomes/AwesomesDetail';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -450,6 +451,13 @@ export default Actions.create(
       key={'awesomeLists'}
       component={AwesomeLists}
       analyticsDesc={' AwesomeLists '}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      key={'awesomesDetail'}
+      component={AwesomesDetail}
+      analyticsDesc={' AwesomesDetail '}
     />
 
     <Scene

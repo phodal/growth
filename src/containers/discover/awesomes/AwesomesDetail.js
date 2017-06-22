@@ -1,12 +1,17 @@
 /* eslint-disable no-undef */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { ScrollView, Text, View, ActivityIndicator, FlatList, TouchableHighlight } from 'react-native';
 import { ListItem } from 'react-native-elements';
 import * as shortid from 'shortid';
-import { Actions } from 'react-native-router-flux';
+import Helper from '../../../utils/helper';
 
 class AwesomeLists extends Component {
   static componentName = 'AwesomeLists';
+
+  static propTypes = {
+    path: PropTypes.string.isRequired,
+  };
 
   constructor(props) {
     super(props);
@@ -17,7 +22,8 @@ class AwesomeLists extends Component {
   }
 
   componentDidMount() {
-    fetch('https://phodal.github.io/growth-api-awesome/api/awesomes.json')
+    console.log(this.props.path);
+    fetch(`https://phodal.github.io/growth-api-awesome/api/${this.props.path}`)
     .then(response => response.json())
     .then((data) => {
       const rowData = Array.from(new Array(data.length))
@@ -59,7 +65,7 @@ class AwesomeLists extends Component {
                   renderItem={({ item }) => (
                     <TouchableHighlight
                       key={shortid.generate()}
-                      onPress={() => Actions.awesomesDetail({ title: item.title, path: item.slug })}
+                      onPress={() => Helper.openLink(item.href)}
                     >
                       <View style={{ backgroundColor: 'white' }}>
                         <ListItem
