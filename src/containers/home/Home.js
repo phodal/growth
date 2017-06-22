@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import Search from 'react-native-search-box';
-import { Button } from 'react-native-elements';
+import { Button, List, ListItem } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
 
 class Home extends Component {
@@ -50,18 +50,40 @@ class Home extends Component {
   render() {
     const homeView = (
       <View>
-        <Button
-          raised
-          icon={{ name: 'exit-to-app' }}
-          title="Growth 应用"
-          onPress={() => Actions.growthView()}
-        />
-        <Button
-          raised
-          icon={{ name: 'exit-to-app' }}
-          title="Growth 技能树"
-          onPress={() => Actions.skillTree()}
-        />
+        <View>
+          <Button
+            icon={{ name: 'exit-to-app' }}
+            title="Growth 应用"
+            borderRadius={6}
+            backgroundColor={'#03a9f4'}
+            onPress={() => Actions.growthView()}
+          />
+          <Button
+            icon={{ name: 'exit-to-app' }}
+            title="Growth 技能树"
+            borderRadius={6}
+            style={{ paddingTop: 20 }}
+            backgroundColor={'#03a9f4'}
+            onPress={() => Actions.skillTree()}
+          />
+        </View>
+
+        <View style={{ paddingTop: 20 }}>
+          <Text>为您推荐</Text>
+          <List>
+            <ListItem
+              title="example"
+            />
+          </List>
+        </View>
+        <View style={{ paddingTop: 20 }}>
+          <Text>今日精选</Text>
+          <List>
+            <ListItem
+              title="example"
+            />
+          </List>
+        </View>
       </View>
       );
 
