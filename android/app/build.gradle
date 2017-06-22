@@ -143,7 +143,6 @@ dependencies {
     compile project(':react-native-orientation')
     compile project(':react-native-google-analytics-bridge')
     compile project(':react-native-fs')
-    compile project(':react-native-filesystem')
     compile project(':react-native-splash-screen')
     compile project(':react-native-share')
     compile project(':react-native-device-info')
