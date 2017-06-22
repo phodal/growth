@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars,global-require */
 import React, { Component } from 'react';
-import {View, Text, ScrollView, Image, TouchableHighlight, ActivityIndicator} from 'react-native';
+import { View, Text, ScrollView, Image, TouchableHighlight, ActivityIndicator } from 'react-native';
 import Search from 'react-native-search-box';
-import { Button, Card, List, ListItem } from 'react-native-elements';
+import { Button, Card } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
 
 class Home extends Component {
