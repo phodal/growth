@@ -6,6 +6,8 @@ import { Button, Card } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
 import Carousel from 'react-native-snap-carousel';
 import GrowthImageCard from '../../components/home/GrowthCard';
+import GridItem from "../../components/discover/view/DiscoverGridItem";
+import Launch from "../../components/discover/Launch";
 
 const sliderWidth = Dimensions.get('window').width;
 
@@ -66,6 +68,7 @@ class Home extends Component {
         />
 
         <View style={{ paddingTop: 20 }}>
+          <Text style={{ paddingLeft: 20, paddingBottom: 10 }}>探索</Text>
           <Carousel
           // ref={(carousel) => { this._carousel = carousel; }}
             sliderWidth={sliderWidth}
@@ -74,11 +77,21 @@ class Home extends Component {
             firstItem={2}
             sliderHeight={80}
           >
-            <View style={{ height: 80, backgroundColor: '#fff', width: 120 }}><Text>fasdf</Text></View>
-            <View style={{ height: 80, backgroundColor: '#fff', width: 120 }}><Text>fasdf</Text></View>
-            <View style={{ height: 80, backgroundColor: '#fff', width: 120 }}><Text>fasdf</Text></View>
-            <View style={{ height: 80, backgroundColor: '#fff', width: 120 }}><Text>fasdf</Text></View>
-            <View style={{ height: 80, backgroundColor: '#fff', width: 120 }}><Text>fasdf</Text></View>
+            <View style={{ height: 80, backgroundColor: '#fff', width: 120, borderRadius: 6 }}>
+              <GridItem title="在线电子书" iconName="icon-social" position={'left'} onclick={() => { Launch.freeBookList(); }} />
+            </View>
+            <View style={{ height: 80, backgroundColor: '#fff', width: 120, borderRadius: 6 }}>
+              <GridItem title="学习路线" iconName="icon-social" position={'left'} onclick={() => { Launch.roadmapList(); }} />
+            </View>
+            <View style={{ height: 80, backgroundColor: '#fff', width: 120, borderRadius: 6 }}>
+              <GridItem title="工具箱" iconName="explore-1-3" position={'left'} onclick={() => { Launch.toolBox(); }} />
+            </View>
+            <View style={{ height: 80, backgroundColor: '#fff', width: 120, borderRadius: 6 }}>
+              <GridItem title="技能测验" iconName="icon-graowth" position={'left'} onclick={() => { Launch.examList(); }} />
+            </View>
+            <View style={{ height: 80, backgroundColor: '#fff', width: 120, borderRadius: 6 }}>
+              <GridItem title="读书路线" iconName="explore-2-3" position={'left'} onclick={() => { Launch.thoughtworksBooks(); }} />
+            </View>
           </Carousel>
         </View>
 
