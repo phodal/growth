@@ -4,6 +4,7 @@ import { View, Text, ScrollView, Image, TouchableHighlight, ActivityIndicator } 
 import Search from 'react-native-search-box';
 import { Button, Card } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
+import Carousel from 'react-native-snap-carousel';
 
 class Home extends Component {
   static componentName = 'Home';
@@ -80,6 +81,24 @@ class Home extends Component {
             </View>
           </Image>
         </TouchableHighlight>
+
+
+        <View style={{ paddingTop: 20 }}>
+          <Carousel
+          // ref={(carousel) => { this._carousel = carousel; }}
+            sliderWidth={600}
+            itemWidth={120}
+            itemHeight={80}
+            firstItem={2}
+            sliderHeight={80}
+          >
+            <View style={{ height: 80, backgroundColor: '#fff', width: 120 }}><Text>fasdf</Text></View>
+            <View style={{ height: 80, backgroundColor: '#fff', width: 120 }}><Text>fasdf</Text></View>
+            <View style={{ height: 80, backgroundColor: '#fff', width: 120 }}><Text>fasdf</Text></View>
+            <View style={{ height: 80, backgroundColor: '#fff', width: 120 }}><Text>fasdf</Text></View>
+            <View style={{ height: 80, backgroundColor: '#fff', width: 120 }}><Text>fasdf</Text></View>
+          </Carousel>
+        </View>
 
         <View style={{ paddingTop: 20 }}>
           <Text style={{ paddingLeft: 20 }}>今日精选</Text>
