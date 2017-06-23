@@ -204,6 +204,18 @@ assertion-error@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/assertion-error/-/assertion-error-1.0.2.tgz#13ca515d86206da0bac66e834dd397d87581094c"
 
+assign-deep@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/assign-deep/-/assign-deep-0.4.5.tgz#d7c76caa123020114f550c66f0823c559f39af13"
+  dependencies:
+    assign-symbols "^0.1.1"
+    is-primitive "^2.0.0"
+    kind-of "^3.0.2"
+
+assign-symbols@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-0.1.1.tgz#cb025944ef4ec8a3693f086e9e112c74e3a0fed9"
+
 ast-types-flow@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/ast-types-flow/-/ast-types-flow-0.0.7.tgz#f70b735c6bca1a5c9c22d982c3e39e7feba3bdad"
@@ -3900,6 +3912,13 @@ react-native-animatable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/react-native-animatable/-/react-native-animatable-1.2.0.tgz#fd279c6ee4b49161c6cc3b951ed7765b35a73467"
 
+react-native-app-intro@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/react-native-app-intro/-/react-native-app-intro-1.1.5.tgz#34a2d2265b2d654d31bae743c404856c37448692"
+  dependencies:
+    assign-deep "^0.4.5"
+    react-native-swiper "git+https://github.com/FuYaoDe/react-native-swiper.git"
+
 react-native-collapsible@^0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/react-native-collapsible/-/react-native-collapsible-0.8.0.tgz#169af4b2e596e45fa0df0769118e8a78d1491486"
@@ -4026,6 +4045,12 @@ react-native-splash-screen@^2.0.0:
 react-native-store-review@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/react-native-store-review/-/react-native-store-review-0.1.2.tgz#394f6e0643c7b9ae15281b6474acb4892629f46e"
+
+"react-native-swiper@git+https://github.com/FuYaoDe/react-native-swiper.git":
+  version "1.4.4"
+  resolved "git+https://github.com/FuYaoDe/react-native-swiper.git#a6417ff41a8b2d490bdcc4541015ab35736d4595"
+  dependencies:
+    react-timer-mixin "^0.13.3"
 
 react-native-tab-navigator@^0.3.3:
   version "0.3.3"
@@ -4175,7 +4200,7 @@ react-test-renderer@16.0.0-alpha.6:
     fbjs "^0.8.9"
     object-assign "^4.1.0"
 
-react-timer-mixin@^0.13.2:
+react-timer-mixin@^0.13.2, react-timer-mixin@^0.13.3:
   version "0.13.3"
   resolved "https://registry.yarnpkg.com/react-timer-mixin/-/react-timer-mixin-0.13.3.tgz#0da8b9f807ec07dc3e854d082c737c65605b3d22"
 

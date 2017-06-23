@@ -21,6 +21,7 @@
     "react": "16.0.0-alpha.6",
     "react-native": "^0.44.3",
     "react-native-animatable": "^1.2.0",
+    "react-native-app-intro": "^1.1.5",
     "react-native-collapsible": "^0.8.0",
     "react-native-device-info": "^0.10.2",
     "react-native-elements": "^0.13.0",
