@@ -10,7 +10,7 @@ it('renders correctly', () => {
   const dialog = renderer.create(
     <GrowthImageCard
       imageUrl={require('../../../../assets/growth-ui/img/home-6.jpg')}
-      actions={() => {}}
+      actions={{}}
       text={'Growth 技能树'}
     />,
   );

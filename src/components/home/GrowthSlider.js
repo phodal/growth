@@ -13,6 +13,9 @@ const styles = StyleSheet.create({
 
 const GrowthSlider = () => (
   <Carousel
+    refs={(carousel) => {
+      this.carousel = carousel;
+    }}
     sliderWidth={sliderWidth}
     itemWidth={120}
     itemHeight={80}
