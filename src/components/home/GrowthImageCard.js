@@ -3,7 +3,7 @@ import React from 'react';
 import { Image, Text, TouchableHighlight, View } from 'react-native';
 import PropTypes from 'prop-types';
 
-const GrowthCard = props => (
+const GrowthImageCard = props => (
   <TouchableHighlight
     activeOpacity={1}
     onPress={() => props.actions()}
@@ -21,10 +21,10 @@ const GrowthCard = props => (
   </TouchableHighlight>
 );
 
-GrowthCard.propTypes = {
+GrowthImageCard.propTypes = {
   imageUrl: PropTypes.number.isRequired,
   text: PropTypes.string.isRequired,
   actions: PropTypes.func.isRequired,
 };
 
-export default GrowthCard;
+export default GrowthImageCard;
