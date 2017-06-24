@@ -224,7 +224,7 @@ exports[`test index renders correctly 1`] = `
                           }
                         }
                       >
-                        Growth
+                        首页
                       </Text>
                     </View>
                     <View
@@ -393,7 +393,7 @@ exports[`test index renders correctly 1`] = `
                     }
                   }
                 >
-                  Growth
+                  首页
                 </Text>
               </View>
             </View>

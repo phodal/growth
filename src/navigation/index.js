@@ -70,7 +70,7 @@ export default Actions.create(
       <Scene
         {...navbarPropsTabs}
         key={'home'}
-        title={'Growth'}
+        title={'首页'}
         iconName={'md-home'}
         iconType={'ionicon'}
         rightTitle={'购买纸质版'}

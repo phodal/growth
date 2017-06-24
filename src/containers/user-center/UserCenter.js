@@ -93,6 +93,7 @@ class UserCenter extends Component {
         <ListItem
           hideChevron
           title={'微信公众号'}
+          onPress={() => Helper.openLink('http://mp.weixin.qq.com/profile?src=3&timestamp=1498315966&ver=1&signature=kunGP5euNMnoXuK5Lcm4454q-6xOljtoszEcL0*BIvsFf*4Yorcry28iWD61soGkO8HbSvm*tXaDds*VQJPahw==')}
           leftIcon={{ name: 'code' }}
           subtitle={'phodal-weixin'}
         />
