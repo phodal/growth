@@ -1,4 +1,4 @@
-package ren.growth.rn.util;
+package ren.growth.util;
 
 import android.content.Context;
 import android.content.SharedPreferences;

@@ -1,4 +1,4 @@
-package ren.growth.rn;
+package ren.growth;
 
 import android.app.Application;
 import android.content.Context;
@@ -10,8 +10,8 @@ import com.rnziparchive.RNZipArchivePackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import com.github.yamill.orientation.OrientationPackage;
 import com.idehub.GoogleAnalyticsBridge.GoogleAnalyticsBridgePackage;
-import ren.growth.rn.util.AppUtil;
-import ren.growth.rn.util.FileUtils;
+import ren.growth.util.AppUtil;
+import ren.growth.util.FileUtils;
 import com.rnfs.RNFSPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
