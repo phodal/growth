@@ -55,12 +55,12 @@ class Home extends Component {
       <View style={{ paddingBottom: 20 }}>
         <GrowthImageCard
           imageUrl={require('../../../assets/growth-ui/img/home-5.jpg')}
-          actions={Actions.growthView}
+          action={Actions.growthView}
           text={'Growth 指南'}
         />
         <GrowthImageCard
           imageUrl={require('../../../assets/growth-ui/img/home-6.jpg')}
-          actions={Actions.skillTree}
+          action={Actions.skillTree}
           text={'Growth 技能树'}
         />
 
@@ -73,7 +73,7 @@ class Home extends Component {
           <Text style={{ paddingLeft: 20 }}>今日精选</Text>
           <GrowthCard
             imageUrl={require('../../../assets/growth-ui/img/home-4.jpg')}
-            actions={Actions.leetCodeView}
+            action={Actions.leetCodeView}
             title={'LeetCode'}
             intro={'LeetCode 是一些经典的公司用来面试应聘者的面试题。在 Growth 3.0 中，您可以下载 LeetCode 的题目在本地练习。'}
           />
@@ -82,7 +82,7 @@ class Home extends Component {
           <Text style={{ paddingLeft: 20 }}>为您推荐</Text>
           <GrowthCard
             imageUrl={require('../../../assets/growth-ui/img/home-5.jpg')}
-            actions={Actions.awesomeLists}
+            action={Actions.awesomeLists}
             title={'Awesome'}
             intro={'Awesome Awesome 项目集合了不同语言、工具的列表。在 Growth 3.0 中，可以查看所有的项目。'}
           />

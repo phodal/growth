@@ -15,7 +15,7 @@ const GrowthCard = props => (
     <Button
       icon={{ name: 'code' }}
       backgroundColor="#03A9F4"
-      onPress={() => props.actions()}
+      onPress={() => props.action()}
       buttonStyle={{ borderRadius: 2, marginLeft: 0, marginRight: 0, marginBottom: 0 }}
       title="查看"
     />
@@ -26,7 +26,7 @@ GrowthCard.propTypes = {
   imageUrl: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   intro: PropTypes.string.isRequired,
-  actions: PropTypes.func.isRequired,
+  action: PropTypes.func.isRequired,
 };
 
 export default GrowthCard;

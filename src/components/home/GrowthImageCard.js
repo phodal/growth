@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const GrowthImageCard = props => (
   <TouchableHighlight
     activeOpacity={1}
-    onPress={() => props.actions()}
+    onPress={() => props.action()}
   >
     <Image
       source={props.imageUrl}
@@ -24,7 +24,7 @@ const GrowthImageCard = props => (
 GrowthImageCard.propTypes = {
   imageUrl: PropTypes.number.isRequired,
   text: PropTypes.string.isRequired,
-  actions: PropTypes.func.isRequired,
+  action: PropTypes.func.isRequired,
 };
 
 export default GrowthImageCard;
