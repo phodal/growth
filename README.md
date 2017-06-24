@@ -5,18 +5,13 @@
 [![Code Climate](https://codeclimate.com/github/phodal/growth-ng/badges/gpa.svg)](https://codeclimate.com/github/phodal/growth-ng)
 [![Gitter](https://img.shields.io/gitter/room/phodal/growth-ng.svg)](https://gitter.im/phodal/growth-ng)
 
+Growth 1.0, 2.0 版本代码见：https://github.com/phodal/growth-v2
 
 TODO List
 ---
 
- - 开源书列表
- - APP 介绍页面：https://github.com/FuYaoDe/react-native-app-intro
- - Awesome 项目列表
  - 点击图片进入全屏： https://github.com/oblador/react-native-lightbox
- - 双击退出
- - LeetCode
  - BackGround Image: [trianglify](https://github.com/qrohlf/trianglify)
- - 动态更新练习内容：[http://www.jianshu.com/p/2cb3eb9604ca](http://www.jianshu.com/p/2cb3eb9604ca)
  - 练习页面
    - 算法和数据结构练习
    — 可视化算法
