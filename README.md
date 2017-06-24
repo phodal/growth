@@ -7,6 +7,25 @@
 
 Growth 1.0, 2.0 版本代码见：https://github.com/phodal/growth-v2
 
+下载：
+
+<a href="https://play.google.com/store/apps/details?id=ren.growth&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge-border.png" width="180"/></a>
+<a href="https://itunes.apple.com/cn/app/growth/id1078807522?l=zh&ls=1&mt=8"><img src="./docs/apple.png" width="180" alt="Get it from Apple Store" /></a>
+
+从腾讯应用宝下载：[http://a.app.qq.com/o/simple.jsp?pkgname=ren.growth](http://a.app.qq.com/o/simple.jsp?pkgname=ren.growth)
+
+Growth是一款专注于Web开发者成长的应用，涵盖Web开发的流程及技术栈，Web开发的学习路线、成长衡量等各方面。
+
+在这里你可以get到：
+
+ - 不同阶段所需的不同技能
+ - 相关书单推荐
+ - 获取不同的学习路线
+ - 寻找合适的练手项目
+ - 在工具箱里找到合适的工具
+ - Web应用解决方案
+ - 阅读在线文章和电子书
+
 TODO List
 ---
 
