@@ -6,6 +6,7 @@ import { Button, Card } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
 import GrowthImageCard from '../../components/home/GrowthImageCard';
 import GrowthSlider from '../../components/home/GrowthSlider';
+import GrowthCard from "../../components/home/GrowthCard";
 
 class Home extends Component {
   static componentName = 'Home';
@@ -70,39 +71,21 @@ class Home extends Component {
 
         <View style={{ paddingTop: 20 }}>
           <Text style={{ paddingLeft: 20 }}>今日精选</Text>
-          <Card
-            title="LeetCode"
-            image={require('../../../assets/growth-ui/img/home-4.jpg')}
-          >
-            <Text style={{ marginBottom: 10 }}>
-              LeetCode 是一些经典的公司用来面试应聘者的面试题。在 Growth 3.0 中，您可以下载 LeetCode 的题目在本地练习。
-            </Text>
-            <Button
-              icon={{ name: 'code' }}
-              backgroundColor="#03A9F4"
-              onPress={() => Actions.leetCodeView()}
-              buttonStyle={{ borderRadius: 2, marginLeft: 0, marginRight: 0, marginBottom: 0 }}
-              title="查看"
-            />
-          </Card>
+          <GrowthCard
+            imageUrl={require('../../../assets/growth-ui/img/home-4.jpg')}
+            actions={Actions.leetCodeView}
+            title={'LeetCode'}
+            intro={'LeetCode 是一些经典的公司用来面试应聘者的面试题。在 Growth 3.0 中，您可以下载 LeetCode 的题目在本地练习。'}
+          />
         </View>
         <View style={{ paddingTop: 20 }}>
           <Text style={{ paddingLeft: 20 }}>为您推荐</Text>
-          <Card
-            title="Awesome"
-            image={require('../../../assets/growth-ui/img/home-5.jpg')}
-          >
-            <Text style={{ marginBottom: 10 }}>
-              Awesome Awesome 项目集合了不同语言、工具的列表。在 Growth 3.0 中，可以查看所有的项目。
-            </Text>
-            <Button
-              icon={{ name: 'code' }}
-              backgroundColor="#03A9F4"
-              onPress={() => Actions.awesomeLists()}
-              buttonStyle={{ borderRadius: 2, marginLeft: 0, marginRight: 0, marginBottom: 0 }}
-              title="查看"
-            />
-          </Card>
+          <GrowthCard
+            imageUrl={require('../../../assets/growth-ui/img/home-5.jpg')}
+            actions={Actions.awesomeLists}
+            title={'Awesome'}
+            intro={'Awesome Awesome 项目集合了不同语言、工具的列表。在 Growth 3.0 中，可以查看所有的项目。'}
+          />
         </View>
       </View>
       );
