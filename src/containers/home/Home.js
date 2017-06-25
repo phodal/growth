@@ -75,7 +75,7 @@ class Home extends Component {
             imageUrl={require('../../../assets/growth-ui/img/home-4.jpg')}
             action={Actions.leetCodeView}
             title={'LeetCode'}
-            intro={'LeetCode 是一些经典的公司用来面试应聘者的面试题。在 Growth 3.0 中，您可以下载 LeetCode 的题目在本地练习。'}
+            intro={'LeetCode 包含了很多公司面试应聘者的算法题。在 Growth 3.0 中，您可以下载 LeetCode 的题目在本地练习。'}
           />
         </View>
         <View style={{ paddingTop: 20 }}>
@@ -84,7 +84,7 @@ class Home extends Component {
             imageUrl={require('../../../assets/growth-ui/img/home-5.jpg')}
             action={Actions.awesomeLists}
             title={'Awesome'}
-            intro={'Awesome Awesome 项目集合了不同语言、工具的列表。在 Growth 3.0 中，可以查看所有的项目。'}
+            intro={'Awesome 项目集合了不同语言、工具的列表。在 Growth 3.0 中，可以查看所有的项目。'}
           />
         </View>
       </View>
