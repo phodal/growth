@@ -2,11 +2,10 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView, ActivityIndicator } from 'react-native';
 import Search from 'react-native-search-box';
-import { Button, Card } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
 import GrowthImageCard from '../../components/home/GrowthImageCard';
 import GrowthSlider from '../../components/home/GrowthSlider';
-import GrowthCard from "../../components/home/GrowthCard";
+import GrowthCard from '../../components/home/GrowthCard';
 
 class Home extends Component {
   static componentName = 'Home';
