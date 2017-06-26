@@ -25,6 +25,7 @@ const AboutUs = () => (
       />
       <ListItem
         title={'论坛: https://forum.growth.ren'}
+        rightIcon={{ name: 'open-in-new' }}
         onPress={() => Linking.openURL('https://forum.growth.ren')}
         hideChevron
       />
