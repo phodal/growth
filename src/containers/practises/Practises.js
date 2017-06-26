@@ -9,7 +9,7 @@ class Practises extends Component {
   render() {
     return (
       <ScrollView>
-        <List>
+        <List containerStyle={{ borderTopWidth: 0 }}>
           <ListItem
             title={'LeetCode'}
             onPress={() => Actions.leetCodeView()}

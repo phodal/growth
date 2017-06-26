@@ -49,7 +49,7 @@ class RecommendSimpleItem extends Component {
             <Text style={{ color: '#999' }}>{this.state.name}</Text>
           </View> : null
         }
-        <List>
+        <List containerStyle={{ borderTopWidth: 0 }}>
           {rows}
         </List>
       </View>

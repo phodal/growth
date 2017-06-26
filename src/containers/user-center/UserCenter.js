@@ -45,7 +45,7 @@ class UserCenter extends Component {
 
   render = () => (
     <ScrollView>
-      <List>
+      <List containerStyle={{ borderTopWidth: 0 }}>
         <ListItem
           title={'我的书签'}
           leftIcon={{ name: 'bookmark' }}
@@ -57,7 +57,7 @@ class UserCenter extends Component {
           onPress={() => Actions.comingSoon('我的技能分布')}
         />
       </List>
-      <List>
+      <List containerStyle={{ borderTopWidth: 0 }}>
         <ListItem
           title={'关于'}
           leftIcon={{ name: 'info' }}
@@ -84,7 +84,7 @@ class UserCenter extends Component {
           leftIcon={{ name: 'feedback' }}
         />
       </List>
-      <List>
+      <List containerStyle={{ borderTopWidth: 0 }}>
         <ListItem
           title={'版权声明'}
           leftIcon={{ name: 'copyright' }}

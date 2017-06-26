@@ -33,7 +33,7 @@ class SectionArticleTab extends Component {
         <View style={{ backgroundColor: '#2d89ef' }}>
           <Text style={{ margin: 10, color: '#fff', textAlign: 'center' }}>了解优秀软件工程实践所需的信息</Text>
         </View>
-        <List>
+        <List containerStyle={{ borderTopWidth: 0 }}>
           {articleViewComponent}
         </List>
       </View>

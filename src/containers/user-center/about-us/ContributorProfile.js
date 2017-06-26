@@ -46,7 +46,7 @@ const genProfileItems = (profile) => {
 const ContributorProfile = props => (
   <ScrollView style={AppStyle.userCenterBasisStyle}>
     <Label text={props.contributor.duty} />
-    <List>
+    <List containerStyle={{ borderTopWidth: 0 }}>
       {genProfileItems(props.contributor.profile)}
     </List>
   </ScrollView>

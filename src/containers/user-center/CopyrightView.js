@@ -131,7 +131,7 @@ class CopyrightView extends Component {
     return (
       <ScrollView>
         <Label text="MIT" />
-        <List>
+        <List containerStyle={{ borderTopWidth: 0 }}>
           {mitProjects.map(project =>
             <ListItem
               key={project.link}
@@ -141,7 +141,7 @@ class CopyrightView extends Component {
           )}
         </List>
         <Label text="BSD" />
-        <List>
+        <List containerStyle={{ borderTopWidth: 0 }}>
           {bsdProjects.map(project =>
             <ListItem
               key={project.link}

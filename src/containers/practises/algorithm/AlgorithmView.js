@@ -8,7 +8,7 @@ class AlgorithmView extends Component {
   render() {
     return (
       <ScrollView>
-        <List>
+        <List containerStyle={{ borderTopWidth: 0 }}>
           <ListItem
             title={'快速排序'}
           />

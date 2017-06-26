@@ -36,7 +36,7 @@ class SkillDetailView extends Component {
     if (skillData.links) {
       skillLinkList = (<View>
         <Text style={{ paddingTop: 15, paddingLeft: 15, fontSize: AppFonts.h4.size }}>扩展资料</Text>
-        <List>
+        <List containerStyle={{ borderTopWidth: 0 }}>
           {
             skillData.links.map(link => (
               <ListItem

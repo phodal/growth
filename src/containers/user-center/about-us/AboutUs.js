@@ -13,7 +13,7 @@ const AboutUs = () => (
   <ScrollView style={AppStyle.userCenterBasisStyle}>
 
     <Label text="Growth" />
-    <List>
+    <List containerStyle={{ borderTopWidth: 0 }}>
       <ListItem
         title={'开源 - GitHub'}
         rightIcon={{ name: 'github', type: 'font-awesome' }}
@@ -31,7 +31,7 @@ const AboutUs = () => (
     </List>
 
     <Label text="贡献者 3.0" />
-    <List>
+    <List containerStyle={{ borderTopWidth: 0 }}>
       {CONTRIBUTORS.latest.contributors.map(contributor =>
         <ListItem
           key={contributor.nickname}
@@ -50,7 +50,7 @@ const AboutUs = () => (
     </List>
 
     <Label text="贡献者 1.0 2.0" />
-    <List>
+    <List containerStyle={{ borderTopWidth: 0 }}>
       {CONTRIBUTORS.old.contributors.map(contributor =>
         <ListItem
           key={contributor.nickname}

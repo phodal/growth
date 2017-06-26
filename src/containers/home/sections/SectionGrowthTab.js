@@ -43,7 +43,7 @@ class SectionGrowthTab extends Component {
     const todoView = this.props.sectionInfo.todoView;
 
     const growthViewComponent = growthView ?
-      (<List>
+      (<List containerStyle={{ borderTopWidth: 0 }}>
         {
           growthView[0].sections.map(section => (
             <ListItem
@@ -58,7 +58,7 @@ class SectionGrowthTab extends Component {
     const todoViewComponent = todoView && todoView.length > 0 ? (
       <View>
         <Text style={{ marginTop: 15, textAlign: 'center' }}>TODO</Text>
-        <List>
+        <List containerStyle={{ borderTopWidth: 0 }}>
           {
             todoView.map(todo => (
               <ListItem
