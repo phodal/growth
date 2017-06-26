@@ -33,7 +33,6 @@
 		72147925D7A9460B9F4085ED /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC1CB817C4814C578F9095DF /* Octicons.ttf */; };
 		80828C925C7B4BF9B55B82AC /* libRCTGoogleAnalyticsBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7539D1D02F4046F19A20634A /* libRCTGoogleAnalyticsBridge.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		8B027A14BC124168958582F6 /* libRNFileSystem.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E56732AEE784297A2B2E2D7 /* libRNFileSystem.a */; };
 		8E70E16A45FA4B9B9988BCBA /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00D0AB02F2B74331966473F2 /* Ionicons.ttf */; };
 		91F5964A1A914CE8B6DE6C8D /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEBB2045ECB4D9E9C1A5440 /* libRNDeviceInfo.a */; };
 		A3F79F5637B147C1AE16A524 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 308ED30318764F3A8C9F8744 /* MaterialCommunityIcons.ttf */; };
@@ -250,13 +249,6 @@
 			remoteGlobalIDString = 58B5119B1A9E6C1200147676;
 			remoteInfo = RCTText;
 		};
-		BFB0135A1ED790A700F321A4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CF575B4241D44AFE9CC41C6C /* RNFileSystem.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 25BF7C2E1DC139EC00CB3A3E;
-			remoteInfo = RNFileSystem;
-		};
 		BFB013911ED79D8A00F321A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C9417199316640CEB1836D1A /* RNFS.xcodeproj */;
@@ -363,7 +355,6 @@
 		4EBDC0CCEBAF4593BB7144F8 /* libRNFetchBlob.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFetchBlob.a; sourceTree = "<group>"; };
 		57C10180B0194A97B2DCEBA5 /* RCTGoogleAnalyticsBridge.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTGoogleAnalyticsBridge.xcodeproj; path = "../node_modules/react-native-google-analytics-bridge/ios/RCTGoogleAnalyticsBridge/RCTGoogleAnalyticsBridge.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
-		6E56732AEE784297A2B2E2D7 /* libRNFileSystem.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFileSystem.a; sourceTree = "<group>"; };
 		73C468D5CADA4C15881F42A5 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		7407FD5446BE40DEBDBE2C48 /* LRDRCTSimpleToast.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = LRDRCTSimpleToast.xcodeproj; path = "../node_modules/react-native-simple-toast/ios/LRDRCTSimpleToast.xcodeproj"; sourceTree = "<group>"; };
 		7539D1D02F4046F19A20634A /* libRCTGoogleAnalyticsBridge.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTGoogleAnalyticsBridge.a; sourceTree = "<group>"; };
@@ -380,7 +371,6 @@
 		BFB013971ED7A0F300F321A4 /* growth-content */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "growth-content"; path = "../assets/growth-content"; sourceTree = "<group>"; };
 		BFE01B131EC45DDE00116316 /* growth.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = growth.ttf; path = ../assets/fonts/growth.ttf; sourceTree = "<group>"; };
 		C9417199316640CEB1836D1A /* RNFS.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFS.xcodeproj; path = "../node_modules/react-native-fs/RNFS.xcodeproj"; sourceTree = "<group>"; };
-		CF575B4241D44AFE9CC41C6C /* RNFileSystem.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFileSystem.xcodeproj; path = "../node_modules/react-native-filesystem/ios/RNFileSystem.xcodeproj"; sourceTree = "<group>"; };
 		CFBB2E7F15B64A279467D928 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
 		D348E3ACB737425FB308673E /* libSplashScreen.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSplashScreen.a; sourceTree = "<group>"; };
 		D73137E1B8284AFD9BB5CCF1 /* RNShare.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNShare.xcodeproj; path = "../node_modules/react-native-share/ios/RNShare.xcodeproj"; sourceTree = "<group>"; };
@@ -421,7 +411,6 @@
 				91F5964A1A914CE8B6DE6C8D /* libRNDeviceInfo.a in Frameworks */,
 				35D47CC9E23C4AE69F5D36E2 /* libRNShare.a in Frameworks */,
 				D3D3C651AC9B472C94FA8D93 /* libSplashScreen.a in Frameworks */,
-				8B027A14BC124168958582F6 /* libRNFileSystem.a in Frameworks */,
 				33D054F289E848519D9FDBCE /* libRNFS.a in Frameworks */,
 				80828C925C7B4BF9B55B82AC /* libRCTGoogleAnalyticsBridge.a in Frameworks */,
 				5F9F4102A07A458FB768AE51 /* libRNStoreReview.a in Frameworks */,
@@ -621,7 +610,6 @@
 				CFBB2E7F15B64A279467D928 /* RNDeviceInfo.xcodeproj */,
 				D73137E1B8284AFD9BB5CCF1 /* RNShare.xcodeproj */,
 				87A0B48AD5C3489DA52F37EE /* SplashScreen.xcodeproj */,
-				CF575B4241D44AFE9CC41C6C /* RNFileSystem.xcodeproj */,
 				C9417199316640CEB1836D1A /* RNFS.xcodeproj */,
 				57C10180B0194A97B2DCEBA5 /* RCTGoogleAnalyticsBridge.xcodeproj */,
 				0BB952AFDA07460EACECF67E /* RNStoreReview.xcodeproj */,
@@ -660,14 +648,6 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* growth.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BFB0133D1ED790A700F321A4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BFB0135B1ED790A700F321A4 /* libRNFileSystem.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -877,10 +857,6 @@
 				{
 					ProductGroup = E89A2A491EF653430002BBF1 /* Products */;
 					ProjectRef = B6C7115399BD415D812398C4 /* RNFetchBlob.xcodeproj */;
-				},
-				{
-					ProductGroup = BFB0133D1ED790A700F321A4 /* Products */;
-					ProjectRef = CF575B4241D44AFE9CC41C6C /* RNFileSystem.xcodeproj */;
 				},
 				{
 					ProductGroup = BFB013731ED79D8A00F321A4 /* Products */;
@@ -1115,13 +1091,6 @@
 			remoteRef = 832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BFB0135B1ED790A700F321A4 /* libRNFileSystem.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRNFileSystem.a;
-			remoteRef = BFB0135A1ED790A700F321A4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		BFB013921ED79D8A00F321A4 /* libRNFS.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1262,7 +1231,6 @@
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-share/ios",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
-					"$(SRCROOT)/../node_modules/react-native-filesystem/ios/RNFileSystem",
 					"$(SRCROOT)/../node_modules/react-native-fs/**",
 					"$(SRCROOT)/../node_modules/react-native-google-analytics-bridge/ios/RCTGoogleAnalyticsBridge/**",
 					"$(SRCROOT)/../node_modules/react-native-store-review/ios",
@@ -1309,7 +1277,6 @@
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-share/ios",
 					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
-					"$(SRCROOT)/../node_modules/react-native-filesystem/ios/RNFileSystem",
 					"$(SRCROOT)/../node_modules/react-native-fs/**",
 					"$(SRCROOT)/../node_modules/react-native-google-analytics-bridge/ios/RCTGoogleAnalyticsBridge/**",
 					"$(SRCROOT)/../node_modules/react-native-store-review/ios",
