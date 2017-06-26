@@ -218,9 +218,10 @@ export default class LeetCodeView extends Component {
         >
           <Text style={styles.text}>正在为您下载</Text>
           <Progress.Circle
-            style={styles.progress}
+            textStyle={{ color: '#03a9f4' }}
             progress={this.state.progress}
             indeterminate
+            showsText
             size={80}
           />
         </Modal>
