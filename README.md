@@ -25,16 +25,26 @@ Growth是一款专注于Web开发者成长的应用，涵盖Web开发的流程�
  - Web应用解决方案
  - 阅读在线文章和电子书
 
-TODO List
+TODO
 ---
 
+功能：
+
+ - 技术点数
+ - 社区
+ - 练习页面
+   - 算法和数据结构
+   — 可视化算法
+   - 代码收集
+   - 正则表达式：[Regex Hub](https://github.com/lukehaas/RegexHub) [regexper-static](https://github.com/javallone/regexper-static) [RegExr](https://github.com/gskinner/regexr)
+
+
+优化：
+
+ - 新版技能树
  - 点击图片进入全屏： https://github.com/oblador/react-native-lightbox
  - BackGround Image: [trianglify](https://github.com/qrohlf/trianglify)
- - 练习页面
-   - 算法和数据结构练习
-   — 可视化算法
-   - 可练习算法
-   - 正则表达式：[Regex Hub](https://github.com/lukehaas/RegexHub) [regexper-static](https://github.com/javallone/regexper-static) [RegExr](https://github.com/gskinner/regexr)
+
 
 技术栈
 ---
