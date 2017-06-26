@@ -33,7 +33,9 @@ exports[`renders correctly 1`] = `
           "borderTopWidth": 0.5,
           "marginTop": 20,
         },
-        undefined,
+        Object {
+          "borderTopWidth": 0,
+        },
       ]
     }
   >
@@ -401,7 +403,9 @@ exports[`renders correctly 1`] = `
             "borderTopWidth": 0.5,
             "marginTop": 20,
           },
-          undefined,
+          Object {
+            "borderTopWidth": 0,
+          },
         ]
       }
     >

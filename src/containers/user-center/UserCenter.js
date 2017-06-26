@@ -75,11 +75,13 @@ class UserCenter extends Component {
         />
         <ListItem
           title={'发现Bug'}
+          rightIcon={{ name: 'open-in-new' }}
           onPress={() => Helper.openLink('https://github.com/phodal/growth/issues')}
           leftIcon={{ name: 'bug-report' }}
         />
         <ListItem
           title={'功能反馈'}
+          rightIcon={{ name: 'open-in-new' }}
           onPress={() => Helper.openLink('https://jinshuju.net/f/aZ4CAS')}
           leftIcon={{ name: 'feedback' }}
         />

@@ -70,6 +70,7 @@ class AwesomeLists extends Component {
                       <View style={{ backgroundColor: 'white' }}>
                         <ListItem
                           title={item.title}
+                          rightIcon={{ name: 'open-in-new' }}
                           subtitle={`类型：${item.type}`}
                         />
                       </View>
