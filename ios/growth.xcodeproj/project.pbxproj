@@ -1257,8 +1257,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = growth.ren;
+				PRODUCT_BUNDLE_IDENTIFIER = ren.growth;
 				PRODUCT_NAME = growth;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1303,8 +1304,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = growth.ren;
+				PRODUCT_BUNDLE_IDENTIFIER = ren.growth;
 				PRODUCT_NAME = growth;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
