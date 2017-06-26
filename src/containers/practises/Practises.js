@@ -30,6 +30,10 @@ class Practises extends Component {
             title={'正则表达式'}
             onPress={() => Actions.comingSoon('正则表达式')}
           />
+          <ListItem
+            title={'代码之美'}
+            onPress={() => Actions.comingSoon('代码之美')}
+          />
         </List>
       </ScrollView>
     );
