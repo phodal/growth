@@ -1,9 +1,8 @@
 # Growth NG
 
-[![Build Status](https://travis-ci.org/phodal/growth-ng.svg?branch=master)](https://travis-ci.org/phodal/growth-ng) 
-[![Coverage Status](https://coveralls.io/repos/github/phodal/growth-ng/badge.svg?branch=master)](https://coveralls.io/github/phodal/growth-ng?branch=master)
-[![Code Climate](https://codeclimate.com/github/phodal/growth-ng/badges/gpa.svg)](https://codeclimate.com/github/phodal/growth-ng)
-[![Gitter](https://img.shields.io/gitter/room/phodal/growth-ng.svg)](https://gitter.im/phodal/growth-ng)
+[![Build Status](https://travis-ci.org/phodal/growth.svg?branch=master)](https://travis-ci.org/phodal/growth) 
+[![Coverage Status](https://coveralls.io/repos/github/phodal/growth/badge.svg?branch=master)](https://coveralls.io/github/phodal/growth?branch=master)
+[![Code Climate](https://codeclimate.com/github/phodal/growth/badges/gpa.svg)](https://codeclimate.com/github/phodal/growth)
 
 Growth 1.0, 2.0 版本代码见：https://github.com/phodal/growth-v2
 
@@ -186,4 +185,4 @@ License
 
 [![Phodal's Idea](http://brand.phodal.com/shields/idea-small.svg)](http://ideas.phodal.com/)
 
-© 2016~2017 A [Phodal Huang](https://www.phodal.com)'s [Idea](http://github.com/phodal/ideas).  This code is distributed under the MIT license. See `LICENSE` in this directory.
+© 2015~2017 A [Phodal Huang](https://www.phodal.com)'s [Idea](http://github.com/phodal/ideas).  This code is distributed under the MIT license. See `LICENSE` in this directory.
