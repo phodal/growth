@@ -435,6 +435,8 @@ export default Actions.create(
       key={'freeBookList'}
       title={'在线电子书'}
       rightTitle={'访问 GitHub'}
+      rightButtonTextStyle={AppStyles.navbarTitle}
+      onRight={() => Helper.openFreeBookGitHub()}
       component={FreeBookList}
       analyticsDesc={' FreeBookList '}
     />

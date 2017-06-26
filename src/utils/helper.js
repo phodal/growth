@@ -31,6 +31,10 @@ class Helper {
     Helper.openLink('https://github.com/phodal/growth-ng/issues');
   }
 
+  static openFreeBookGitHub() {
+    Helper.openLink('https://github.com/justjavac/free-programming-books-zh_CN');
+  }
+
   static gotoUserCenter() {
     return (
       <Icon
