@@ -2,8 +2,11 @@
 import React from 'react';
 import { View, Dimensions, StyleSheet } from 'react-native';
 import Carousel from 'react-native-snap-carousel';
+import { Actions } from 'react-native-router-flux';
+
 import GridItem from '../discover/view/DiscoverGridItem';
 import Launch from '../discover/Launch';
+
 
 const sliderWidth = Dimensions.get('window').width;
 
@@ -36,6 +39,9 @@ const GrowthSlider = () => (
     </View>
     <View style={styles.item}>
       <GridItem title="读书路线" iconName="explore-2-3" position={'left'} onclick={() => { Launch.thoughtworksBooks(); }} />
+    </View>
+    <View style={styles.item}>
+      <GridItem title="更多" iconName="explore-2-1" position={'left'} onclick={() => { Actions.discover(); }} />
     </View>
   </Carousel>
 );

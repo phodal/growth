@@ -63,12 +63,12 @@ class Home extends Component {
           text={'Growth 技能树'}
         />
 
-        <View style={{ paddingTop: 20 }}>
+        <View style={{ paddingTop: 40 }}>
           <Text style={{ paddingLeft: 20, paddingBottom: 10 }}>探索</Text>
           <GrowthSlider />
         </View>
 
-        <View style={{ paddingTop: 20 }}>
+        <View style={{ paddingTop: 40 }}>
           <Text style={{ paddingLeft: 20 }}>今日精选</Text>
           <GrowthCard
             imageUrl={require('../../../assets/growth-ui/img/home-4.jpg')}
@@ -77,7 +77,7 @@ class Home extends Component {
             intro={'LeetCode 包含了很多公司面试应聘者的算法题。在 Growth 3.0 中，您可以下载 LeetCode 的题目在本地练习。'}
           />
         </View>
-        <View style={{ paddingTop: 20 }}>
+        <View style={{ paddingTop: 40 }}>
           <Text style={{ paddingLeft: 20 }}>为您推荐</Text>
           <GrowthCard
             imageUrl={require('../../../assets/growth-ui/img/home-5.jpg')}
