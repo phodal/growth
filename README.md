@@ -28,7 +28,7 @@ Growth是一款专注于Web开发者成长的应用，涵盖Web开发的流程�
 TODO
 ---
 
-功能：
+等实现：
 
  - 技术点数
  - 社区
@@ -39,7 +39,7 @@ TODO
    - 正则表达式：[Regex Hub](https://github.com/lukehaas/RegexHub) [regexper-static](https://github.com/javallone/regexper-static) [RegExr](https://github.com/gskinner/regexr)
 
 
-优化：
+待优化：
 
  - 新版技能树
  - 点击图片进入全屏： https://github.com/oblador/react-native-lightbox
