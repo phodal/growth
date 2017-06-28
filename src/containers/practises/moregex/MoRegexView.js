@@ -1,6 +1,6 @@
 /* eslint-disable global-require,no-unused-vars,class-methods-use-this */
 import React, { Component } from 'react';
-import { WebView, StyleSheet, Platform } from 'react-native';
+import { Dimensions, WebView, StyleSheet, Platform } from 'react-native';
 
 import AppSizes from '../../../theme/sizes';
 import AppStyles from '../../../theme/styles';
@@ -20,6 +20,8 @@ const styles = StyleSheet.create({
     color: '#FFF',
   },
 });
+
+const webViewWidth = Dimensions.get('window').width;
 
 class MoRegexView extends Component {
   static componentName = 'MoRegexView';
@@ -51,7 +53,7 @@ class MoRegexView extends Component {
         source={source}
         onMessage={this.handleMessage}
         automaticallyAdjustContentInsets={false}
-        style={[AppStyles.container, styles.container]}
+        style={[AppStyles.container, styles.container, { width: webViewWidth }]}
       />
     );
   }
