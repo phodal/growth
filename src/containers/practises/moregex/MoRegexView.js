@@ -39,9 +39,9 @@ class MoRegexView extends Component {
   render = () => {
     let source;
     if (__DEV__) {
-      source = require('./build/index.html');
+      source = require('./www/index.html');
     } else {
-      source = Platform.OS === 'ios' ? require('./build/index.html') : { uri: 'file:///android_asset/moregex/index.html' };
+      source = Platform.OS === 'ios' ? require('./www/index.html') : { uri: 'file:///android_asset/www/index.html' };
     }
 
     return (

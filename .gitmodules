@@ -4,3 +4,6 @@
 [submodule "assets/growth-content"]
 	path = assets/growth-content
 	url = https://github.com/GrowthStudio/growth-content.git
+[submodule "src/containers/practises/moregex/www"]
+	path = src/containers/practises/moregex/www
+	url = https://github.com/phodal/moregex
