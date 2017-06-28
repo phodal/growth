@@ -56,6 +56,7 @@ import CopyrightView from '../containers/user-center/CopyrightView';
 import GrowthView from '../containers/home/GrowthView';
 import AwesomesDetail from '../containers/discover/awesomes/AwesomesDetail';
 import MoRegexView from '../containers/practises/moregex/MoRegexView';
+import RegexListView from '../containers/practises/moregex/RegexListView';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -437,9 +438,17 @@ export default Actions.create(
       title={' Mo正则表达式工具 '}
       rightTitle={'正则示例'}
       rightButtonTextStyle={AppStyles.navbarTitle}
-      onRight={() => Actions.comingSoon()}
+      onRight={() => Actions.regexListView()}
       component={MoRegexView}
       analyticsDesc={' MoRegexView '}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      title={'正则示例'}
+      key={'regexListView'}
+      component={RegexListView}
+      analyticsDesc={' RegexListView '}
     />
 
     <Scene
