@@ -28,7 +28,7 @@ class Practises extends Component {
           />
           <ListItem
             title={'正则表达式'}
-            onPress={() => Actions.comingSoon('正则表达式')}
+            onPress={() => Actions.moRegexView('')}
           />
           <ListItem
             title={'代码之美'}

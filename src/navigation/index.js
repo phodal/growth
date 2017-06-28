@@ -55,6 +55,7 @@ import AwesomeLists from '../containers/discover/awesomes/AwesomeLists';
 import CopyrightView from '../containers/user-center/CopyrightView';
 import GrowthView from '../containers/home/GrowthView';
 import AwesomesDetail from '../containers/discover/awesomes/AwesomesDetail';
+import MoRegexView from '../containers/practises/moregex/MoRegexView';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -428,6 +429,13 @@ export default Actions.create(
       key={'leetCodeView'}
       component={LeetCodeView}
       analyticsDesc={' LeetCodeView '}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      key={'moRegexView'}
+      component={MoRegexView}
+      analyticsDesc={' MoRegexView '}
     />
 
     <Scene
