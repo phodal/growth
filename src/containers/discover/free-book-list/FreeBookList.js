@@ -2,7 +2,6 @@
 import React, { Component } from 'react';
 import { ScrollView, Text, View, ActivityIndicator, FlatList, TouchableHighlight } from 'react-native';
 import { ListItem } from 'react-native-elements';
-import * as shortid from 'shortid';
 import Helper from '../../../utils/helper';
 import AsyncStorageHelper from '../../../utils/AsyncStorageHelper';
 
@@ -41,6 +40,22 @@ class FreeBookList extends Component {
     });
   }
 
+  keyExtractor = (item, index) => `key${index}`;
+
+  renderList = ({ item }) => (
+    <TouchableHighlight
+      onPress={() => Helper.openLink(item.href)}
+    >
+      <View style={{ backgroundColor: 'white' }}>
+        <ListItem
+          title={item.title}
+          rightIcon={{ name: 'open-in-new' }}
+          subtitle={`类型：${item.type}`}
+        />
+      </View>
+    </TouchableHighlight>
+  );
+
   render() {
     const { loading, rowData } = this.state;
 
@@ -58,31 +73,20 @@ class FreeBookList extends Component {
 
     return (
       <ScrollView containerStyle={{ marginBottom: 20 }}>
-        {
-          rowData.map(sections => (
-            <View
-              key={shortid.generate()}
-            >
-              <View style={{ padding: 10 }}><Text style={{ textAlign: 'center' }}>{sections.heading}</Text></View>
+        <FlatList
+          data={rowData}
+          keyExtractor={this.keyExtractor}
+          renderItem={({ item }) => (
+            <View>
+              <View style={{ padding: 10 }}><Text style={{ textAlign: 'center' }}>{item.heading}</Text></View>
               <FlatList
-                data={sections.childrens}
-                renderItem={({ item }) => (
-                  <TouchableHighlight
-                    onPress={() => Helper.openLink(item.href)}
-                  >
-                    <View style={{ backgroundColor: 'white' }}>
-                      <ListItem
-                        title={item.title}
-                        rightIcon={{ name: 'open-in-new' }}
-                        subtitle={`类型：${item.type}`}
-                      />
-                    </View>
-                  </TouchableHighlight>
-                )}
+                keyExtractor={this.keyExtractor}
+                data={item.childrens}
+                renderItem={this.renderList}
               />
             </View>
-          ))
-        }
+            )}
+        />
       </ScrollView>
     );
   }
