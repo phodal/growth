@@ -1,0 +1,291 @@
+<table class="fullwidth-table">
+  <caption> MDN 正则表达式特殊字符</caption>
+  <thead>
+  <tr>
+    <th scope="col">字符</th>
+    <th scope="col">含义</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-backslash" id="special-backslash" name="special-backslash"><code>\</code></a></td>
+    <td>
+      <p>匹配将依照下列规则：</p>
+
+      <p>在非特殊字符之前的反斜杠表示下一个字符是特殊的，不能从字面上解释。例如，没有前面'\'的'b'通常匹配小写'b'，无论它们出现在哪里。如果加了'\',这个字符变成了一个特殊意义的字符，意思是匹配一个<a href="#note" title="#special-word-boundary">字符边界</a>。</p>
+
+      <p>反斜杠也可以将其后的特殊字符，转义为字面量。例如，模式 /a*/ 代表会匹配 0 个或者多个 a。相反，模式 /a\*/ 将 '*' 的特殊性移除，从而可以匹配像 "a*" 这样的字符串。</p>
+
+      <p>使用 new RegExp("pattern") 的时候不要忘记将 \ 进行转义，因为 \ 在字符串里面也是一个转义字符。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-caret" id="special-caret" name="special-caret"><code>^</code></a></td>
+    <td>
+      <p>匹配输入的开始。如果多行标志被设置为true，那么也匹配换行符后紧跟的位置。</p>
+
+      <p>例如，/^A/ 并不会匹配 "an A"&nbsp;中的 'A'，但是会匹配 "An E"&nbsp;中的 'A'。</p>
+
+      <p>当 '^'&nbsp;作为第一个字符出现在一个字符集合模式时，它将会有不同的含义。<a href="#note">补充字符集合</a> 一节有详细介绍和示例。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-dollar" id="special-dollar" name="special-dollar"><code>$</code></a></td>
+    <td>
+      <p>匹配输入的结束。如果多行标示被设置为true，那么也匹配换行符前的位置。</p>
+
+      <p>例如，/t$/ 并不会匹配 "eater"&nbsp;中的 't'，但是会匹配 "eat"&nbsp;中的 't'。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-asterisk" id="special-asterisk" name="special-asterisk"><code>*</code></a></td>
+    <td>
+      <p>匹配前一个表达式0次或多次。等价于 {0,}。</p>
+
+      <p>例如，/bo*/会匹配 "A ghost boooooed"&nbsp;中的 'booooo' 和 "A bird warbled" 中的 'b'，但是在 "A goat grunted" 中将不会匹配任何东西。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-plus" id="special-plus" name="special-plus"><code>+</code></a></td>
+    <td>
+      <p>匹配前面一个表达式1次或者多次。等价于 {1,}。</p>
+
+      <p>例如，/a+/匹配了在 "candy"&nbsp;中的 'a'，和在 "caaaaaaandy" 中所有的 'a'。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-questionmark" id="special-questionmark" name="special-questionmark"><code>?</code></a></td>
+    <td>
+      <p>匹配前面一个表达式0次或者1次。等价于 {0,1}。</p>
+
+      <p>例如，/e?le?/ 匹配 "angel"&nbsp;中的 'el'，和 "angle" 中的 'le'&nbsp;以及"oslo'&nbsp;中的'l'。</p>
+
+      <p>如果<strong>紧跟在任何量词 *、 +、?&nbsp;或 {} 的后面</strong>，将会使量词变为<strong>非贪婪</strong>的（匹配尽量少的字符），和缺省使用的<strong>贪婪模式</strong>（匹配尽可能多的字符）正好相反。</p>
+
+      <p>例如，对 "123abc" 应用&nbsp;/\d+/&nbsp;将会返回 "123"，如果使用 /\d+?/,那么就只会匹配到 "1"。</p>
+
+      <p>还可以运用于先行断言，如本表的 <code>x(?=y)</code>&nbsp;和&nbsp;<code>x(?!y)</code> 条目中所述。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-dot" id="special-dot" name="special-dot"><code>.</code></a></td>
+    <td>
+      <p>（小数点）匹配除换行符之外的任何单个字符。</p>
+
+      <p>例如，/.n/将会匹配 "nay, an apple is on the tree" 中的 'an'&nbsp;和 'on'，但是不会匹配 'nay'。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-capturing-parentheses" id="special-capturing-parentheses" name="special-capturing-parentheses"><code>(x)</code></a></td>
+    <td>
+      <p>匹配 'x'&nbsp;并且记住匹配项，就像下面的例子展示的那样。括号被称为&nbsp;<em>捕获括号</em>。</p>
+
+      <p>模式 /(foo) (bar) \1 \2/ 中的 '(foo)' 和 '(bar)' 匹配并记住字符串 "foo bar foo bar" 中前两个单词。模式中的 \1 和 \2 匹配字符串的后两个单词。注意 \1、\2、\n 是用在正则表达式的匹配环节。在正则表达式的替换环节，则要使用像 $1、$2、$n 这样的语法，例如，'bar foo'.replace( /(...) (...)/, '$2 $1' )。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-non-capturing-parentheses" id="special-non-capturing-parentheses" name="special-non-capturing-parentheses"><code>(?:x)</code></a></td>
+    <td>
+      <p>匹配 'x' 但是不记住匹配项。这种叫作非捕获括号，使得你能够定义为与正则表达式运算符一起使用的子表达式。来看示例表达式&nbsp;/(?:foo){1,2}/。如果表达式是&nbsp;/foo{1,2}/，{1,2}将只对 ‘foo’ 的最后一个字符 ’o‘ 生效。如果使用非捕获括号，则{1,2}会匹配整个 ‘foo’ 单词。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-lookahead" id="special-lookahead" name="special-lookahead"><code>x(?=y)</code></a></td>
+    <td>
+      <p>匹配'x'仅仅当'x'后面跟着'y'.这种叫做正向肯定查找。</p>
+
+      <p>例如，/Jack(?=Sprat)/会匹配到'Jack'仅仅当它后面跟着'Sprat'。/Jack(?=Sprat|Frost)/匹配‘Jack’仅仅当它后面跟着'Sprat'或者是‘Frost’。但是‘Sprat’和‘Frost’都不是匹配结果的一部分。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-negated-look-ahead" id="special-negated-look-ahead" name="special-negated-look-ahead"><code>x(?!y)</code></a></td>
+    <td>
+      <p>匹配'x'仅仅当'x'后面不跟着'y',这个叫做正向否定查找。</p>
+
+      <p>例如，/\d+(?!\.)/匹配一个数字仅仅当这个数字后面没有跟小数点的时候。正则表达式/\d+(?!\.)/.exec("3.141")匹配‘141’但是不是‘3.141’</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-or" id="special-or" name="special-or"><code>x|y</code></a></td>
+    <td>
+      <p>匹配‘x’或者‘y’。</p>
+
+      <p>例如，/green|red/匹配“green apple”中的‘green’和“red apple”中的‘red’</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-quantifier" id="special-quantifier" name="special-quantifier"><code>{n}</code></a></td>
+    <td>
+      <p>n是一个正整数，匹配了前面一个字符刚好发生了n次。</p>
+
+      <p>比如，/a{2}/不会匹配“candy”中的'a',但是会匹配“caandy”中所有的a，以及“caaandy”中的前两个'a'。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-quantifier-range" id="special-quantifier-range" name="special-quantifier-range"><code>{n,m}</code></a></td>
+    <td>
+      <p>n 和 m 都是正整数。匹配前面的字符至少n次，最多m次。如果 n 或者 m 的值是0， 这个值被忽略。</p>
+
+      <p>例如，/a{1, 3}/ 并不匹配“cndy”中得任意字符，匹配“candy”中得a，匹配“caandy”中得前两个a，也匹配“caaaaaaandy”中得前三个a。注意，当匹配”caaaaaaandy“时，匹配的值是“aaa”，即使原始的字符串中有更多的a。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-character-set" id="special-character-set" name="special-character-set"><code>[xyz]</code></a></td>
+    <td>
+      <p>一个字符集合。匹配方括号的中任意字符，包括<a href="/zh-CN/docs/Web/JavaScript/Guide/Grammar_and_types">转义序列</a>。你可以使用破折号（-）来指定一个字符范围。对于点（.）和星号（*）这样的特殊符号在一个字符集中没有特殊的意义。他们不必进行转义，不过转义也是起作用的。</p>
+
+      <p>例如，[abcd] 和[a-d]是一样的。他们都匹配"brisket"中得‘b’,也都匹配“city”中的‘c’。/[a-z.]+/ 和/[\w.]+/都匹配“test.i.ng”中得所有字符。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-negated-character-set" id="special-negated-character-set" name="special-negated-character-set"><code>[^xyz]</code></a></td>
+    <td>
+      <p>一个反向字符集。也就是说， 它匹配任何没有包含在方括号中的字符。你可以使用破折号（-）来指定一个字符范围。任何普通字符在这里都是起作用的。</p>
+
+      <p>例如，[^abc] 和 [^a-c] 是一样的。他们匹配"brisket"中得‘r’，也匹配“chop”中的‘h’。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-backspace" id="special-backspace" name="special-backspace"><code>[\b]</code></a></td>
+    <td>
+      <p>匹配一个退格(U+0008)。（不要和\b混淆了。）</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-word-boundary" id="special-word-boundary" name="special-word-boundary"><code>\b</code></a></td>
+    <td>
+      <p>匹配一个词的边界。一个词的边界就是一个词不被另外一个词跟随的位置或者不是另一个词汇字符前边的位置。注意，一个匹配的词的边界并不包含在匹配的内容中。换句话说，一个匹配的词的边界的内容的长度是0。（不要和[\b]混淆了）</p>
+
+      <p>例子：</p>
+
+      <p>/\bm/匹配“moon”中得‘m’；</p>
+
+      <p>/oo\b/并不匹配"moon"中得'oo'，因为'oo'被一个词汇字符'n'紧跟着。</p>
+
+      <p>/oon\b/匹配"moon"中得'oon'，因为'oon'是这个字符串的结束部分。这样他没有被一个词汇字符紧跟着。</p>
+
+      <p>/\w\b\w/将不能匹配任何字符串，因为一个单词中的字符永远也不可能被一个非词汇字符和一个词汇字符同时紧跟着。</p>
+
+      <div class="note">
+        <p><strong><a name="note" id="note"></a>注意:</strong>&nbsp;JavaScript的正则表达式引擎将<a href="http://www.ecma-international.org/ecma-262/5.1/#sec-15.10.2.6" class="external external-icon">特定的字符集</a>定义为“字”字符。不在该集合中的任何字符都被认为是一个断词。这组字符相当有限：它只包括大写和小写的罗马字母，小数位数和下划线字符。不幸的是，重要的字符，例如“<a name="none" id="none"></a>é”或“ü”，被视为断词。</p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-non-word-boundary" id="special-non-word-boundary" name="special-non-word-boundary"><code>\B</code></a></td>
+    <td>
+      <p>匹配一个非单词边界。他匹配一个前后字符都是相同类型的位置：都是单词或者都不是单词。一个字符串的开始和结尾都被认为是非单词。</p>
+
+      <p>例如，/\B../匹配"noonday"中得'oo', 而/y\B./匹配"possibly yesterday"中得’ye‘</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-control" id="special-control" name="special-control"><code>\c<em>X</em></code></a></td>
+    <td>
+      <p>当X是处于A到Z之间的字符的时候，匹配字符串中的一个控制符。</p>
+
+      <p>例如，<code>/\cM/</code> 匹配字符串中的 control-M (U+000D)。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-digit" id="special-digit" name="special-digit"><code>\d</code></a></td>
+    <td>
+      <p>匹配一个数字<code>。</code></p>
+
+      <p><code>等价于[0-9]</code>。</p>
+
+      <p>例如， <code>/\d/</code> 或者 <code>/[0-9]/</code> 匹配"B2 is the suite number."中的'2'。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-non-digit" id="special-non-digit" name="special-non-digit"><code>\D</code></a></td>
+    <td>
+      <p>匹配一个非数字字符<code>。</code></p>
+
+      <p><code>等价于[^0-9]</code>。</p>
+
+      <p>例如， <code>/\D/</code> 或者 <code>/[^0-9]/</code> 匹配"B2 is the suite number."中的'B' 。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-form-feed" id="special-form-feed" name="special-form-feed"><code>\f</code></a></td>
+    <td>匹配一个换页符 (U+000C)。</td>
+  </tr>
+  <tr>
+    <td><a href="#special-line-feed" id="special-line-feed" name="special-line-feed"><code>\n</code></a></td>
+    <td>匹配一个换行符 (U+000A)。</td>
+  </tr>
+  <tr>
+    <td><a href="#special-carriage-return" id="special-carriage-return" name="special-carriage-return"><code>\r</code></a></td>
+    <td>匹配一个回车符 (U+000D)。</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-white-space" id="special-white-space" name="special-white-space"><code>\s</code></a></td>
+    <td>
+      <p>匹配一个空白字符，包括空格、制表符、换页符和换行符。</p>
+
+      <p>等价于[ \f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]。</p>
+
+      <p>例如, <code>/\s\w*/</code> 匹配"foo bar."中的' bar'。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-non-white-space" id="special-non-white-space" name="special-non-white-space"><code>\S</code></a></td>
+    <td>
+      <p>匹配一个非空白字符。</p>
+
+      <p>等价于<code>[^ </code>\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff<code>]</code>。</p>
+
+      <p>例如， <code>/\S\w*/</code> 匹配"foo bar."中的'foo'。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-tab" id="special-tab" name="special-tab"><code>\t</code></a></td>
+    <td>匹配一个水平制表符 (U+0009)。</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-vertical-tab" id="special-vertical-tab" name="special-vertical-tab"><code>\v</code></a></td>
+    <td>匹配一个垂直制表符 (U+000B)。</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-word" id="special-word" name="special-word"><code>\w</code></a></td>
+    <td>
+      <p>匹配一个单字字符（字母、数字或者下划线）。</p>
+
+      <p>等价于<code>[A-Za-z0-9_]</code>。</p>
+
+      <p>例如, <code>/\w/</code> 匹配 "apple," 中的 'a'，"$5.28,"中的 '5' 和 "3D." 中的 '3'。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-non-word" id="special-non-word" name="special-non-word"><code>\W</code></a></td>
+    <td>
+      <p>匹配一个非单字字符。</p>
+
+      <p>等价于<code>[^A-Za-z0-9_]</code>。</p>
+
+      <p>例如, <code>/\W/</code> 或者 <code>/[^A-Za-z0-9_]/</code> 匹配 "50%." 中的 '%'。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-backreference" id="special-backreference" name="special-backreference"><code>\<em>n</em></code></a></td>
+    <td>
+      <p>当 n 是一个正整数，一个返回引用到最后一个与有n插入的正值表达式(counting left parentheses)匹配的副字符串。</p>
+
+      <p>比如&nbsp;<code>/apple(,)\sorange\1/</code> 匹配"apple, orange, cherry, peach."中的'apple, orange,' 。</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-null" id="special-null" name="special-null"><code>\0</code></a></td>
+    <td>匹配 NULL (U+0000) 字符， 不要在这后面跟其它小数，因为&nbsp;<code>\0&lt;digits&gt;</code> 是一个八进制转义序列。</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-hex-escape" id="special-hex-escape" name="special-hex-escape"><code>\xhh</code></a></td>
+    <td>与代码 hh 匹配字符（两个十六进制数字）</td>
+  </tr>
+  <tr>
+    <td style="vertical-align: middle;"><a href="#special-unicode-escape" id="special-unicode-escape" name="special-unicode-escape"><code>\uhhhh</code></a></td>
+    <td>与代码 hhhh 匹配字符（四个十六进制数字）。</td>
+  </tr>
+  </tbody>
+</table>
