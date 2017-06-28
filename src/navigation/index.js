@@ -434,6 +434,10 @@ export default Actions.create(
     <Scene
       {...AppConfig.navbarProps}
       key={'moRegexView'}
+      title={' Mo正则表达式工具 '}
+      rightTitle={'正则示例'}
+      rightButtonTextStyle={AppStyles.navbarTitle}
+      onRight={() => Actions.comingSoon()}
       component={MoRegexView}
       analyticsDesc={' MoRegexView '}
     />
