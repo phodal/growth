@@ -1,12 +1,17 @@
 /* eslint-disable global-require,no-unused-vars,class-methods-use-this */
 import React, { Component } from 'react';
-import { Dimensions, WebView, StyleSheet, Platform } from 'react-native';
+import { Dimensions, View, WebView, StyleSheet, Platform } from 'react-native';
+import ActionButton from 'react-native-action-button';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import AppSizes from '../../../theme/sizes';
 import AppStyles from '../../../theme/styles';
 
 
 const styles = StyleSheet.create({
+  container: {
+
+  },
   background: {
     backgroundColor: 'transparent',
     height: AppSizes.screen.height,
@@ -45,16 +50,23 @@ class MoRegexView extends Component {
     }
 
     return (
-      <WebView
-        ref={(webview) => {
-          this.webview = webview;
-        }}
-        startInLoadingState
-        source={source}
-        onMessage={this.handleMessage}
-        automaticallyAdjustContentInsets={false}
-        style={[AppStyles.container, styles.container, { width: webViewWidth }]}
-      />
+      <View style={{ flex: 1, backgroundColor: '#f3f3f3' }}>
+        <WebView
+          ref={(webview) => {
+            this.webview = webview;
+          }}
+          startInLoadingState
+          source={source}
+          onMessage={this.handleMessage}
+          automaticallyAdjustContentInsets={false}
+          style={[styles.container, { height: Dimensions.get('window').height, width: webViewWidth }]}
+        />
+        <ActionButton buttonColor="rgba(231,76,60,1)">
+          <ActionButton.Item buttonColor="#9b59b6" title="资料" onPress={() => console.log('notes tsapped!')}>
+            <Icon name="md-information" style={styles.actionButtonIcon} />
+          </ActionButton.Item>
+        </ActionButton>
+      </View>
     );
   }
 }

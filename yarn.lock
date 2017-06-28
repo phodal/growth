@@ -3908,6 +3908,10 @@ react-dom@16.0.0-alpha.6:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
 
+react-native-action-button@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/react-native-action-button/-/react-native-action-button-2.7.1.tgz#89a0380fb91150b89ca21f3a5ea33d28b068ba7a"
+
 react-native-animatable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/react-native-animatable/-/react-native-animatable-1.2.0.tgz#fd279c6ee4b49161c6cc3b951ed7765b35a73467"
