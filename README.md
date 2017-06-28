@@ -186,9 +186,6 @@ Thanks to
 ---
 
  - [React Native Stater APP](https://github.com/mcnamee/react-native-starter-app)
- - [https://github.com/Nightonke/LeeCo](https://github.com/Nightonke/LeeCo)
- - [https://github.com/hanzichi/leetcode](https://github.com/hanzichi/leetcode)
- - [https://github.com/haoel/leetcode](https://github.com/haoel/leetcode)
 
 License
 ---
