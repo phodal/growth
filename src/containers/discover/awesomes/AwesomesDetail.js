@@ -22,7 +22,6 @@ class AwesomeLists extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props.path);
     fetch(`https://phodal.github.io/growth-api-awesome/api/${this.props.path}`)
     .then(response => response.json())
     .then((data) => {
@@ -35,6 +34,23 @@ class AwesomeLists extends Component {
       });
     });
   }
+
+  renderList = ({ item }) => (
+    <TouchableHighlight
+      key={shortid.generate()}
+      onPress={() => Helper.openLink(item.href)}
+    >
+      <View style={{ backgroundColor: 'white' }}>
+        <ListItem
+          title={item.title}
+          rightIcon={{ name: 'open-in-new' }}
+          subtitle={`类型：${item.type}`}
+        />
+      </View>
+    </TouchableHighlight>
+  );
+
+  keyExtractor = (item, index) => `key${index}`;
 
   render() {
     const { loading, rowData } = this.state;
@@ -53,34 +69,20 @@ class AwesomeLists extends Component {
 
     return (
       <ScrollView>
-        <View containerStyle={{ marginBottom: 20 }}>
-          {
-            rowData.map((sections, index) => (
-              <View
-                key={'key'.concat(index)}
-              >
-                <View style={{ padding: 10 }}><Text style={{ textAlign: 'center' }}>{sections.heading}</Text></View>
-                <FlatList
-                  data={sections.childrens}
-                  renderItem={({ item }) => (
-                    <TouchableHighlight
-                      key={shortid.generate()}
-                      onPress={() => Helper.openLink(item.href)}
-                    >
-                      <View style={{ backgroundColor: 'white' }}>
-                        <ListItem
-                          title={item.title}
-                          rightIcon={{ name: 'open-in-new' }}
-                          subtitle={`类型：${item.type}`}
-                        />
-                      </View>
-                    </TouchableHighlight>
-                  )}
-                />
-              </View>
-            ))
-          }
-        </View>
+        <FlatList
+          data={rowData}
+          keyExtractor={this.keyExtractor}
+          renderItem={({ item }) => (
+            <View>
+              <View style={{ padding: 10 }}><Text style={{ textAlign: 'center' }}>{item.heading}</Text></View>
+              <FlatList
+                keyExtractor={this.keyExtractor}
+                data={item.childrens}
+                renderItem={this.renderList}
+              />
+            </View>
+          )}
+        />
       </ScrollView>
     );
   }
