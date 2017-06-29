@@ -11,7 +11,7 @@ class RegexListView extends Component {
 
   render() {
     return (
-      <View>
+      <View style={{ backgroundColor: '#fff' }}>
         <FlatList
           data={REGEX_HUB_PATTERNS}
           keyExtractor={this.keyExtractor}
