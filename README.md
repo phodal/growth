@@ -42,7 +42,6 @@ TODO
 
  - 新版技能树
  - 点击图片进入全屏： https://github.com/oblador/react-native-lightbox
- - BackGround Image: [trianglify](https://github.com/qrohlf/trianglify)
 
 
 技术栈
