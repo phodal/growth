@@ -36,8 +36,7 @@ TODO
    - 算法和数据结构
    — 可视化算法
    - 代码收集
-   - 正则表达式：[Regex Hub](https://github.com/lukehaas/RegexHub) [regexper-static](https://github.com/javallone/regexper-static) [RegExr](https://github.com/gskinner/regexr)
-
+   - 正则表达式：[RegExr](https://github.com/gskinner/regexr)
 
 待优化：
 
@@ -186,6 +185,9 @@ Thanks to
 ---
 
  - [React Native Stater APP](https://github.com/mcnamee/react-native-starter-app)
+ - [免费的编程中文书籍索引](https://github.com/justjavac/free-programming-books-zh_CN)
+ - [Regex Hub](https://github.com/lukehaas/RegexHub)
+ - [regexper-static](https://github.com/javallone/regexper-static)
 
 License
 ---
