@@ -4,6 +4,7 @@ import { ScrollView, Text, View, ActivityIndicator, FlatList, TouchableHighlight
 import { ListItem } from 'react-native-elements';
 import * as shortid from 'shortid';
 import { Actions } from 'react-native-router-flux';
+import AsyncStorageHelper from '../../../utils/AsyncStorageHelper';
 
 class AwesomeLists extends Component {
   static componentName = 'AwesomeLists';
@@ -17,16 +18,26 @@ class AwesomeLists extends Component {
   }
 
   componentDidMount() {
-    fetch('https://phodal.github.io/growth-api-awesome/api/awesomes.json')
-    .then(response => response.json())
-    .then((data) => {
-      const rowData = Array.from(new Array(data.length))
-      .map((val, index) => (data[index]));
+    AsyncStorageHelper.get('discover.awesomes', (result) => {
+      if (result) {
+        this.setState({
+          loading: false,
+          rowData: JSON.parse(result),
+        });
+      }
 
-      this.setState({
-        loading: false,
-        rowData,
-      });
+      fetch('https://phodal.github.io/growth-api-awesome/api/awesomes.json')
+        .then(response => response.json())
+        .then((data) => {
+          const rowData = Array.from(new Array(data.length))
+            .map((val, index) => (data[index]));
+
+          AsyncStorageHelper.set('discover.awesomes', JSON.stringify(data));
+          this.setState({
+            loading: false,
+            rowData,
+          });
+        });
     });
   }
 
