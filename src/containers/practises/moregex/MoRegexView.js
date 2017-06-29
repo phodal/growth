@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 import { Dimensions, View, WebView, StyleSheet, Platform } from 'react-native';
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { Actions } from 'react-native-router-flux';
 
 import AppSizes from '../../../theme/sizes';
-import AppStyles from '../../../theme/styles';
 
 
 const styles = StyleSheet.create({
@@ -62,7 +62,7 @@ class MoRegexView extends Component {
           style={[styles.container, { height: Dimensions.get('window').height, width: webViewWidth }]}
         />
         <ActionButton buttonColor="rgba(231,76,60,1)">
-          <ActionButton.Item buttonColor="#9b59b6" title="资料" onPress={() => console.log('notes tsapped!')}>
+          <ActionButton.Item buttonColor="#9b59b6" title="资料" onPress={() => Actions.moRegexInfoView()}>
             <Icon name="md-information" style={styles.actionButtonIcon} />
           </ActionButton.Item>
         </ActionButton>

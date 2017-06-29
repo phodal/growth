@@ -57,6 +57,7 @@ import GrowthView from '../containers/home/GrowthView';
 import AwesomesDetail from '../containers/discover/awesomes/AwesomesDetail';
 import MoRegexView from '../containers/practises/moregex/MoRegexView';
 import RegexListView from '../containers/practises/moregex/RegexListView';
+import MoRegexInfoView from '../containers/practises/moregex/MoRegexInfoView';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -449,6 +450,14 @@ export default Actions.create(
       key={'regexListView'}
       component={RegexListView}
       analyticsDesc={' RegexListView '}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      title={'正则列表'}
+      key={'moRegexInfoView'}
+      component={MoRegexInfoView}
+      analyticsDesc={' MoRegexInfoView '}
     />
 
     <Scene
