@@ -34,7 +34,6 @@ class ArticleList extends Component {
           .map((val, index) => (response.data.content[index])) }));
   }
 
-
   keyExtractor = (item, index) => `key${index}`;
 
   renderList = ({ item, index }) => (
