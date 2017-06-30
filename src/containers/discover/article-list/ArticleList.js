@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ScrollView } from 'react-native';
+import { FlatList, ScrollView } from 'react-native';
+import { List, ListItem } from 'react-native-elements';
 import AppStyle from '../../../theme/styles';
 import Api from '../../../utils/api';
 import Dialog from '../../../components/dialog';
-import SimpleListItem from '../../../components/discover/view/SimpleListItem';
 import Launch from '../../../components/discover/Launch';
 
 class ArticleList extends Component {
@@ -34,14 +34,28 @@ class ArticleList extends Component {
           .map((val, index) => (response.data.content[index])) }));
   }
 
+
+  keyExtractor = (item, index) => `key${index}`;
+
+  renderList = ({ item, index }) => (
+    <ListItem
+      title={item.title}
+      key={'key'.concat(index)}
+      onPress={() => Launch.articleDetail(item.path)}
+    />
+  );
+
   render() {
-    const rows = this.state.rowData.map((val, index) => (
-      <SimpleListItem text={val.title} click={() => Launch.articleDetail(val.path)} key={'key'.concat(index)} />
-    ));
     return (
       <ScrollView style={AppStyle.detailBasisStyle}>
         <Dialog show={this.state.loading} content={this.props.dialogContent} />
-        {rows}
+        <List containerStyle={{ borderTopWidth: 0, marginTop: 0 }}>
+          <FlatList
+            keyExtractor={this.keyExtractor}
+            data={this.state.rowData}
+            renderItem={this.renderList}
+          />
+        </List>
       </ScrollView>);
   }
 }

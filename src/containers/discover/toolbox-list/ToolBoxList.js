@@ -35,7 +35,6 @@ class ToolBoxList extends Component {
             response.data.content[index]) }));
   }
 
-
   keyExtractor = (item, index) => `key${index}`;
 
   renderList = ({ item, index }) => (
