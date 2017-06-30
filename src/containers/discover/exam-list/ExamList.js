@@ -33,7 +33,6 @@ class ExamList extends Component {
     };
   }
 
-
   keyExtractor = (item, index) => `key${index}`;
 
   renderList = ({ item, index }) => (

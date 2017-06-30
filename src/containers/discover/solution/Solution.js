@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
+import { FlatList, ScrollView } from 'react-native';
+
 import AppStyle from '../../../theme/styles';
 import ContentIten from '../../../components/discover/solution/view/SolutionContentItem';
 import SOLUTIONS from '../../../constants/SOLUTIONS';
@@ -15,20 +16,26 @@ class Solution extends Component {
     };
   }
 
+  keyExtractor = (item, index) => `key${index}`;
+
+  renderList = ({ item, index }) => (
+    <ContentIten
+      name={item.name}
+      description={item.description}
+      stack={item.stacks}
+      click={() => Launch.solutionDetail(item.slug)}
+      key={item.name.concat(index)}
+    />
+  );
+
   render() {
-    const rows = this.state.rowData
-      .map((val, index) => (
-        <ContentIten
-          name={val.name}
-          description={val.description}
-          stack={val.stacks}
-          click={() => Launch.solutionDetail(val.slug)}
-          key={val.name.concat(index)}
-        />
-      ));
     return (
       <ScrollView style={AppStyle.detailBasisStyle}>
-        {rows}
+        <FlatList
+          keyExtractor={this.keyExtractor}
+          data={this.state.rowData}
+          renderItem={this.renderList}
+        />
       </ScrollView>
     );
   }
