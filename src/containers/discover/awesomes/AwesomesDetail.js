@@ -35,6 +35,8 @@ class AwesomeLists extends Component {
     });
   }
 
+  keyExtractor = (item, index) => `key${index}`;
+
   renderList = ({ item }) => (
     <TouchableHighlight
       key={shortid.generate()}
@@ -49,8 +51,6 @@ class AwesomeLists extends Component {
       </View>
     </TouchableHighlight>
   );
-
-  keyExtractor = (item, index) => `key${index}`;
 
   render() {
     const { loading, rowData } = this.state;
