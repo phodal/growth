@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Text, View, TouchableHighlight, FlatList } from 'react-native';
+import { Text, View, FlatList } from 'react-native';
+import { List, ListItem } from 'react-native-elements';
 import AppStyle from '../../../../theme/styles';
 import Launch from '../../Launch';
 import Line from '../../../../components/Line';
-import { List, ListItem } from 'react-native-elements';
 
 class ProjectListItem extends Component {
   static componentName = 'ProjectListItem';

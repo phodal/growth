@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { ScrollView } from 'react-native';
+import { FlatList, ScrollView } from 'react-native';
+import { List, ListItem } from 'react-native-elements';
 import Api from '../../../utils/api';
 import AppStyle from '../../../theme/styles';
-import SimpleListItem from '../../../components/discover/view/SimpleListItem';
 import Dialog from '../../../components/dialog';
 import Launch from '../../../components/discover/Launch';
 
@@ -40,20 +40,30 @@ class ChapterList extends Component {
             .map((val, index) => (response.data.content[index])) })));
   }
 
+  keyExtractor = (item, index) => `key${index}`;
+
+  renderList = ({ item, index }) => (
+    <ListItem
+      title={item.title}
+      key={item.title.concat(index)}
+      onPress={() => (
+        Launch.chapterListArticle(this.state.baseUrl.concat(item.path), this.props.dialogContent,
+        )
+      )}
+    />
+  );
+
   render() {
-    const rows = this.state.data
-      .map((val, index) => (
-        <SimpleListItem
-          text={val.title}
-          click={() => (
-            Launch.chapterListArticle(
-              this.state.baseUrl.concat(val.path), this.props.dialogContent))}
-          key={val.title.concat(index)}
-        />));
     return (
       <ScrollView style={AppStyle.detailBasisStyle}>
         <Dialog show={this.state.visible} content={this.props.dialogContent} />
-        {rows}
+        <List containerStyle={{ borderTopWidth: 0, marginTop: 0 }}>
+          <FlatList
+            keyExtractor={this.keyExtractor}
+            data={this.state.data}
+            renderItem={this.renderList}
+          />
+        </List>
       </ScrollView>);
   }
 }
