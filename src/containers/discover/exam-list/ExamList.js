@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
+import { FlatList, ScrollView } from 'react-native';
+import { List, ListItem } from 'react-native-elements';
 import AppStyle from '../../../theme/styles';
-import SimpleListItem from '../../../components/discover/view/SimpleListItem';
 import Launch from '../../../components/discover/Launch';
 import QUIZS from '../../../constants/QUIZS';
 import EXAM_LIST from '../../../constants/EXAM_LIST';
@@ -33,18 +33,28 @@ class ExamList extends Component {
     };
   }
 
-  render() {
-    const rows = this.state.rowData
-        .map((val, index) => (
-          <SimpleListItem
-            text={val}
-            click={() => (Launch.examDetail(swtichQuiz(val)))}
-            key={val.concat(index)}
-          />));
 
+  keyExtractor = (item, index) => `key${index}`;
+
+  renderList = ({ item, index }) => (
+    <ListItem
+      title={item}
+      key={item.concat(index)}
+      onPress={() => (Launch.examDetail(swtichQuiz(item)))}
+    />
+  );
+
+  render() {
     return (
       <ScrollView style={AppStyle.detailBasisStyle}>
-        {rows}
+        <List containerStyle={{ borderTopWidth: 0, marginTop: 0 }}>
+          <FlatList
+            keyExtractor={this.keyExtractor}
+            data={this.state.rowData}
+            renderItem={this.renderList}
+          />
+        </List>
+
       </ScrollView>);
   }
 }
