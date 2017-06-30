@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
+import { FlatList, ScrollView } from 'react-native';
+import { List, ListItem } from 'react-native-elements';
 import AppStyle from '../../../theme/styles';
 import TODO_LISTS_ITEM from '../../../constants/TODO_LISTS_ITEM';
-import SimpleListItem from '../../../components/discover/view/SimpleListItem';
 import Launch from '../../../components/discover/Launch';
 
 class TodoLists extends Component {
@@ -14,14 +14,29 @@ class TodoLists extends Component {
       data: TODO_LISTS_ITEM,
     };
   }
+
+  keyExtractor = (item, index) => `key${index}`;
+
+  renderList = ({ item, index }) => (
+    <ListItem
+      title={item.name}
+      key={item.name.concat(index)}
+      onPress={() => Launch.todoList(item)}
+    />
+  );
+
   render() {
-    const rows = this.state.data.map((val, index) => (
-      <SimpleListItem
-        text={val.name}
-        click={() => Launch.todoList(val)}
-        key={val.name.concat(index)}
-      />));
-    return <ScrollView style={AppStyle.detailBasisStyle}>{rows}</ScrollView>;
+    return (
+      <ScrollView style={AppStyle.detailBasisStyle}>
+        <List containerStyle={{ borderTopWidth: 0, marginTop: 0 }}>
+          <FlatList
+            keyExtractor={this.keyExtractor}
+            data={this.state.data}
+            renderItem={this.renderList}
+          />
+        </List>
+      </ScrollView>
+    );
   }
 }
 export default TodoLists;
