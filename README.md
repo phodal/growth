@@ -47,7 +47,7 @@ TODO
 技术栈
 ---
 
- - [React Native](http://reactnative.cn/)
+ - [React Native](https://facebook.github.io/react-native/)
  - [React Native Elements](https://react-native-training.github.io/react-native-elements/)：UI 框架
  - [React Native Router Flux](https://www.npmjs.com/package/react-native-router-flux)：路由控制
  - [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)：图标组件 
