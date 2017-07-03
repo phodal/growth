@@ -313,6 +313,17 @@ export default Actions.create(
       duration={0}
       title={'文章'}
       component={LocalArticleView}
+      renderRightButton={() => (
+        <View>
+          <TouchableOpacity
+            onPress={() => {
+            }}
+          >
+            <Icon name="bookmark" size={24} color="#fff" />
+          </TouchableOpacity>
+        </View>
+      )
+      }
       analyticsDesc={' LocalArticleView '}
     />
 
