@@ -453,10 +453,12 @@ export default Actions.create(
     />
 
     <Scene
-      {...AppConfig.navbarProps}
-      title={'正则列表'}
+      title={'正则资料（MDN)'}
       key={'moRegexInfoView'}
       component={MoRegexInfoView}
+      rightTitle={'访问 MDN'}
+      rightButtonTextStyle={AppStyles.navbarTitle}
+      onRight={() => Helper.openMDNRegex()}
       analyticsDesc={' MoRegexInfoView '}
     />
 

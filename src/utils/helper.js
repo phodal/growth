@@ -35,13 +35,8 @@ class Helper {
     Helper.openLink('https://github.com/justjavac/free-programming-books-zh_CN');
   }
 
-  static gotoUserCenter() {
-    return (
-      <Icon
-        name={'md-color-palette'} type={'ionicon'} color={'#fff'}
-        onPress={() => Actions.userCenter()}
-      />
-    );
+  static openMDNRegex() {
+    Helper.openLink('https://github.com/justjavac/free-programming-books-zh_CN');
   }
 
   static gotoLogin() {
