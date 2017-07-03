@@ -47,12 +47,12 @@ TODO
 技术栈
 ---
 
- - React Native
- - React Native Elements：UI 框架
- - React Native Router Flux：路由控制
- - React Native Vector Icons：图标组件 
- - Jest：单元测试框架
- - React Test Renderer：UI 测试框架
+ - [React Native](http://reactnative.cn/)
+ - [React Native Elements](https://react-native-training.github.io/react-native-elements/)：UI 框架
+ - [React Native Router Flux](https://www.npmjs.com/package/react-native-router-flux)：路由控制
+ - [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)：图标组件 
+ - [Jest](http://facebook.github.io/jest/)：单元测试框架
+ - [React Test Renderer](https://github.com/pselden/react-render-test)：UI 测试框架
 
 ESLint Style: [Airbnb](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) 
 
