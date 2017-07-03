@@ -1,9 +1,11 @@
 /* eslint-disable global-require,no-unused-vars,class-methods-use-this */
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { Dimensions, View, WebView, StyleSheet, Platform } from 'react-native';
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Actions } from 'react-native-router-flux';
+import { connect } from 'react-redux';
 
 import AppSizes from '../../../theme/sizes';
 
@@ -30,6 +32,23 @@ const webViewWidth = Dimensions.get('window').width;
 
 class MoRegexView extends Component {
   static componentName = 'MoRegexView';
+  static propTypes = {
+    regex: React.PropTypes.shape({
+      name: PropTypes.string,
+      regex: PropTypes.string,
+      description: PropTypes.string,
+      tags: PropTypes.string,
+    }),
+  };
+
+  static defaultProps = {
+    regex: {
+      name: '',
+      regex: '/1-9{1,5}/',
+      descriptions: '',
+      tag: '',
+    },
+  };
 
   constructor() {
     super();
@@ -38,8 +57,10 @@ class MoRegexView extends Component {
 
   handleMessage = (event: Object) => {
     const message = JSON.parse(event.nativeEvent.data);
-    console.log(message);
-  }
+    if (message.status && message.status === 'ready') {
+      this.webview.postMessage(this.prop.regex.regex);
+    }
+  };
 
   render = () => {
     let source;
@@ -71,4 +92,11 @@ class MoRegexView extends Component {
   }
 }
 
-export default MoRegexView;
+const mapStateToProps = state => ({
+  regex: state.regex,
+});
+
+const mapDispatchToProps = {
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(MoRegexView);
