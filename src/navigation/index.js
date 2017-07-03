@@ -446,7 +446,7 @@ export default Actions.create(
 
     <Scene
       {...AppConfig.navbarProps}
-      title={'正则示例'}
+      title={'示例'}
       key={'regexListView'}
       component={RegexListView}
       analyticsDesc={' RegexListView '}
