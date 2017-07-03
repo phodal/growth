@@ -1,7 +1,12 @@
 import { CHOICE_REGEX } from './actions';
 
 const initialState = {
-  regex: {},
+  regex: {
+    name: '',
+    regex: /1-9a-Z/,
+    descriptions: '',
+    tag: '',
+  },
 };
 
 export default function reducer(state = initialState, action = {}) {

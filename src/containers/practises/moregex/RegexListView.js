@@ -18,7 +18,7 @@ class RegexListView extends Component {
 
   onPress(regex) {
     this.props.dispatch(choiceRegex(regex));
-    Actions.pop();
+    Actions.pop({ regex });
   }
 
   keyExtractor = (item, index) => `key${index}`;

@@ -32,10 +32,11 @@ const webViewWidth = Dimensions.get('window').width;
 
 class MoRegexView extends Component {
   static componentName = 'MoRegexView';
+
   static propTypes = {
     regex: React.PropTypes.shape({
       name: PropTypes.string,
-      regex: PropTypes.string,
+      regex: PropTypes.instanceOf(RegExp),
       description: PropTypes.string,
       tags: PropTypes.string,
     }),
@@ -44,7 +45,7 @@ class MoRegexView extends Component {
   static defaultProps = {
     regex: {
       name: '',
-      regex: '/1-9{1,5}/',
+      regex: /1-9a-Z/,
       descriptions: '',
       tag: '',
     },
@@ -55,10 +56,18 @@ class MoRegexView extends Component {
     this.webview = null;
   }
 
+  componentWillReceiveProps() {
+    if (this.webview) {
+      this.webview.postMessage(JSON.stringify({ action: 'trigger' }));
+    }
+  }
+
   handleMessage = (event: Object) => {
     const message = JSON.parse(event.nativeEvent.data);
-    if (message.status && message.status === 'ready') {
-      this.webview.postMessage(this.prop.regex.regex);
+    const regex = this.props.regex;
+    if (regex.name !== '' && message.status && message.status === 'ready') {
+      regex.regex = this.props.regex.regex.toString();
+      this.webview.postMessage(JSON.stringify(regex));
     }
   };
 
@@ -93,7 +102,7 @@ class MoRegexView extends Component {
 }
 
 const mapStateToProps = state => ({
-  regex: state.regex,
+  regex: state.regex.regex,
 });
 
 const mapDispatchToProps = {
