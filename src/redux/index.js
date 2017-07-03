@@ -2,11 +2,13 @@ import { combineReducers } from 'redux';
 import routes from './routes/reducer';
 import sections from './section/reducer';
 import regex from './regex/reducer';
+import article from './article/reducer';
 
 const appReducer = combineReducers({
   routes,
   sections,
   regex,
+  article,
   // ... other reducers
 });
 
