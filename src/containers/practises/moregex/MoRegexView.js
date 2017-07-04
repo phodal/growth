@@ -142,7 +142,7 @@ class MoRegexView extends Component {
           <Interactable.View
             verticalOnly
             snapPoints={[{ y: 40 }, { y: Screen.height - 200 }, { y: Screen.height - 100 }]}
-            boundaries={{ top: -200 }}
+            boundaries={{ top: - 200 }}
             initialPosition={{ y: Screen.height - 100 }}
             animatedValueY={this.deltaY}
           >
