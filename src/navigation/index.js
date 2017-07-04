@@ -58,6 +58,7 @@ import AwesomesDetail from '../containers/discover/awesomes/AwesomesDetail';
 import MoRegexView from '../containers/practises/moregex/MoRegexView';
 import RegexListView from '../containers/practises/moregex/RegexListView';
 import MoRegexInfoView from '../containers/practises/moregex/MoRegexInfoView';
+import BookmarkHelper from '../utils/BookmarkHelper';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -313,16 +314,30 @@ export default Actions.create(
       duration={0}
       title={'文章'}
       component={LocalArticleView}
-      renderRightButton={() => (
-        <View>
-          <TouchableOpacity
-            onPress={() => {
-            }}
-          >
-            <Icon name="bookmark" size={24} color="#fff" />
-          </TouchableOpacity>
-        </View>
-      )
+      renderRightButton={() => {
+        let isRead = false;
+        BookmarkHelper.isArticleRead((result) => {
+          if (result) {
+            isRead = true;
+          }
+        });
+
+        return (
+          <View>
+            <TouchableOpacity
+              onPress={() => {
+                BookmarkHelper.makeBookmark();
+              }}
+            >
+              {
+                isRead
+                  ? <Icon name="bookmark" size={24} color="#fff" />
+                  : <Icon name="bookmark-border" size={24} color="#fff" />
+              }
+            </TouchableOpacity>
+          </View>
+        );
+      }
       }
       analyticsDesc={' LocalArticleView '}
     />
