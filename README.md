@@ -34,15 +34,13 @@ TODO
  - 社区
  - 练习页面
    - 算法和数据结构
-   — 可视化算法
-   - 代码收集
-   - 正则表达式：[RegExr](https://github.com/gskinner/regexr)
-
+   — 可视化算法 [Algorithm Visualizer](https://github.com/parkjs814/AlgorithmVisualizer) [Vamonos](https://github.com/rosulek/vamonos)
+   - 代码收集 [Beautiful Code](https://github.com/phodal/beacode)
+   
 待优化：
 
  - 新版技能树
  - 点击图片进入全屏： https://github.com/oblador/react-native-lightbox
-
 
 技术栈
 ---
