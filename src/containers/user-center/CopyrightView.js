@@ -134,6 +134,7 @@ class CopyrightView extends Component {
         <List containerStyle={{ borderTopWidth: 0 }}>
           {mitProjects.map(project =>
             <ListItem
+              rightIcon={{ name: 'open-in-new' }}
               key={project.link}
               title={project.name}
               onPress={() => { Helper.openLink(project.link); }}
@@ -144,6 +145,7 @@ class CopyrightView extends Component {
         <List containerStyle={{ borderTopWidth: 0 }}>
           {bsdProjects.map(project =>
             <ListItem
+              rightIcon={{ name: 'open-in-new' }}
               key={project.link}
               title={project.name}
               onPress={() => { Helper.openLink(project.link); }}
