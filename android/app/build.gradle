@@ -138,6 +138,7 @@ apply from: "../../fonts.gradle"
 apply from: "../../growth-content.gradle"
 
 dependencies {
+    compile project(':react-native-interactable')
     compile project(':react-native-zip-archive')
     compile project(':react-native-fetch-blob')
     compile project(':react-native-orientation')

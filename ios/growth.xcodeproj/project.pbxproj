@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -50,6 +49,7 @@
 		E885A05D1ED8780D00EE64E1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E885A05C1ED8780D00EE64E1 /* SystemConfiguration.framework */; };
 		ED59FA1803464715B5F231E8 /* libLRDRCTSimpleToast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0102CDF72AB74EB49C3E4F8A /* libLRDRCTSimpleToast.a */; };
 		F88237F1F1704CFBA3713715 /* libRNFetchBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EBDC0CCEBAF4593BB7144F8 /* libRNFetchBlob.a */; };
+		B0A546D4000E4C90A667579A /* libInteractable.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9947D31D94DA4C7C86B2888B /* libInteractable.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -383,6 +383,8 @@
 		E885A05C1ED8780D00EE64E1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EA29257687E6472BB458970D /* libRNFS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFS.a; sourceTree = "<group>"; };
 		F6E3BD4648794DD7A9565C73 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		545243E08915410A9F6E439A /* Interactable.xcodeproj */ = {isa = PBXFileReference; name = "Interactable.xcodeproj"; path = "../node_modules/react-native-interactable/ios/Interactable.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		9947D31D94DA4C7C86B2888B /* libInteractable.a */ = {isa = PBXFileReference; name = "libInteractable.a"; path = "libInteractable.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +420,7 @@
 				2FFB42EB3D9E4C7F8CFA0D84 /* libRCTOrientation.a in Frameworks */,
 				F88237F1F1704CFBA3713715 /* libRNFetchBlob.a in Frameworks */,
 				B9E7608D45D14DE1B338BF96 /* libRNZipArchive.a in Frameworks */,
+				B0A546D4000E4C90A667579A /* libInteractable.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +620,7 @@
 				2697D7C34D20461CB39F6202 /* RCTOrientation.xcodeproj */,
 				B6C7115399BD415D812398C4 /* RNFetchBlob.xcodeproj */,
 				8F4FD725663B476C9FDD70C4 /* RNZipArchive.xcodeproj */,
+				545243E08915410A9F6E439A /* Interactable.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1238,11 +1242,13 @@
 					"$(SRCROOT)/../node_modules/react-native-orientation/iOS/RCTOrientation/**",
 					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-zip-archive/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-interactable/ios/Interactable",
 				);
 				INFOPLIST_FILE = growth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
@@ -1285,11 +1291,13 @@
 					"$(SRCROOT)/../node_modules/react-native-orientation/iOS/RCTOrientation/**",
 					"$(SRCROOT)/../node_modules/react-native-fetch-blob/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-zip-archive/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-interactable/ios/Interactable",
 				);
 				INFOPLIST_FILE = growth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
 					"\"$(SRCROOT)/growth\"",
