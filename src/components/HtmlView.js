@@ -6,11 +6,10 @@ import Api from '../utils/api';
 import AppStyle from '../theme/styles';
 import Dialog from './dialog';
 import CustomWebView from './CustomWebView';
+import MarkdownHelper from '../utils/MarkdownHelper';
 
 export const NATIVE = 'native';
 export const NET = 'net';
-
-const marked = require('marked');
 
 class HtmlView extends Component {
   static componentName = 'HtmlView';
@@ -46,7 +45,7 @@ class HtmlView extends Component {
       Api.get(this.props.url)
         .then(response => this.setState({
           visible: false,
-          html: marked(response.data) }))
+          html: MarkdownHelper.convert(response.data) }))
         .catch(err => this.setState({
           visible: false,
           html: err.message,
