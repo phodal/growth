@@ -14,7 +14,7 @@ class AlgorithmListView extends Component {
 
   renderList = ({ item }) => (
     <TouchableHighlight
-      onPress={() => Actions.algorithmDetailView(item)}
+      onPress={() => Actions.algorithmDetailView({ item, title: item })}
     >
       <View style={{ backgroundColor: 'white' }}>
         <ListItem
