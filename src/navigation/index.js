@@ -61,6 +61,7 @@ import MoRegexInfoView from '../containers/practises/moregex/MoRegexInfoView';
 import BookmarkHelper from '../utils/BookmarkHelper';
 import PatternsView from '../containers/practises/patterns/PatternsView';
 import PatternDetailView from '../containers/practises/patterns/PatternDetailView';
+import AlgorithmDetailView from '../containers/practises/algorithm/AlgorithmDetailView';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -437,6 +438,13 @@ export default Actions.create(
       key={'algorithmListView'}
       component={AlgorithmListView}
       analyticsDesc={' AlgorithmListView '}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      key={'algorithmDetailView'}
+      component={AlgorithmDetailView}
+      analyticsDesc={' AlgorithmDetailView '}
     />
 
     <Scene

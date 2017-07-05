@@ -1,6 +1,8 @@
+/* eslint-disable no-undef */
 import React, { Component } from 'react';
 import { FlatList, ScrollView, Text, TouchableHighlight, View } from 'react-native';
 import { ListItem } from 'react-native-elements';
+import { Actions } from 'react-native-router-flux';
 
 const values = require('lodash.values');
 const algorithmList = values(require('./growth-algorithm-api/category.json'));
@@ -11,7 +13,9 @@ class AlgorithmListView extends Component {
   keyExtractor = (item, index) => `key${index}`;
 
   renderList = ({ item }) => (
-    <TouchableHighlight>
+    <TouchableHighlight
+      onPress={() => Actions.algorithmDetailView(item)}
+    >
       <View style={{ backgroundColor: 'white' }}>
         <ListItem
           title={item}
