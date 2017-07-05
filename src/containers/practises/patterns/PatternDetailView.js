@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import HTMLView from 'react-native-htmlview';
+import { WebView, Dimensions } from 'react-native';
+import HtmlHelper from '../../../utils/HtmlHelper';
+import Helper from '../../../utils/helper';
 
 const MarkdownIt = require('markdown-it');
 
@@ -22,10 +24,21 @@ class PatternDetailView extends Component {
     const content = md.render(this.props.item.pattern);
 
     return (
-      <HTMLView
-        value={content}
-        addLineBreaks={false}
-        style={{ padding: 10, borderBottomWidth: 1, backgroundColor: '#fff', borderBottomColor: '#ddd' }}
+      <WebView
+        ref={(webview) => {
+          this.webview = webview;
+        }}
+        scalesPageToFit
+        startInLoadingState
+        source={{ html: HtmlHelper.getHtml(content) }}
+        style={{ height: Dimensions.get('window').height, backgroundColor: 'white' }}
+        onNavigationStateChange={(event) => {
+          if (event.url.startsWith('http')) {
+            Helper.openLink(event.url);
+            this.webview.stopLoading();
+          }
+        }}
+        injectedJavaScript=""
       />
     );
   }
