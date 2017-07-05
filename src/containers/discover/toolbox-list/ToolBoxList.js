@@ -9,7 +9,7 @@ import Launch from '../../../components/discover/Launch';
 
 class ToolBoxList extends Component {
   static componentName = 'ToolBoxList';
-e
+
   static propTypes = {
     dialogContent: PropTypes.string,
   };
