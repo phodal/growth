@@ -15,7 +15,7 @@ class Practises extends Component {
             onPress={() => Actions.leetCodeView()}
           />
           <ListItem
-            title={'算法'}
+            title={'算法与数据结构'}
             onPress={() => Actions.algorithmListView()}
           />
           <ListItem
