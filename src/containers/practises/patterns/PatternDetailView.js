@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 import { WebView, Dimensions } from 'react-native';
 import HtmlHelper from '../../../utils/HtmlHelper';
 import Helper from '../../../utils/helper';
-
-const MarkdownIt = require('markdown-it');
-
-const md = new MarkdownIt();
+import MarkdownHelper from '../../../utils/MarkdownHelper';
 
 class PatternDetailView extends Component {
   static componentName = 'PatternDetailView';
@@ -21,7 +18,7 @@ class PatternDetailView extends Component {
   };
 
   render() {
-    const content = md.render(this.props.item.pattern);
+    const content = MarkdownHelper.convert(this.props.item.pattern);
 
     return (
       <WebView
