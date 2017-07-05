@@ -59,6 +59,8 @@ import MoRegexView from '../containers/practises/moregex/MoRegexView';
 import RegexListView from '../containers/practises/moregex/RegexListView';
 import MoRegexInfoView from '../containers/practises/moregex/MoRegexInfoView';
 import BookmarkHelper from '../utils/BookmarkHelper';
+import PatternsView from '../containers/practises/patterns/PatternsView';
+import PatternDetailView from '../containers/practises/patterns/PatternDetailView';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -497,6 +499,21 @@ export default Actions.create(
       onRight={() => Helper.openFreeBookGitHub()}
       component={FreeBookList}
       analyticsDesc={' FreeBookList '}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      title={'设计模式'}
+      key={'patternsView'}
+      component={PatternsView}
+      analyticsDesc={' PatternsView '}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      key={'patternDetailView'}
+      component={PatternDetailView}
+      analyticsDesc={' PatternDetailView '}
     />
 
     <Scene

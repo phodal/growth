@@ -24,7 +24,7 @@ class Practises extends Component {
           />
           <ListItem
             title={'设计模式'}
-            onPress={() => Actions.comingSoon('设计模式')}
+            onPress={() => Actions.patternsView()}
           />
           <ListItem
             title={'正则表达式'}
