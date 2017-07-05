@@ -7,3 +7,6 @@
 [submodule "src/containers/practises/moregex/www"]
 	path = src/containers/practises/moregex/www
 	url = https://github.com/phodal/moregex
+[submodule "src/containers/practises/algorithm/growth-algorithm-api"]
+	path = src/containers/practises/algorithm/growth-algorithm-api
+	url = https://github.com/phodal/growth-algorithm-api.git
