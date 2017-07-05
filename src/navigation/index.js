@@ -505,6 +505,9 @@ export default Actions.create(
       {...AppConfig.navbarProps}
       title={'设计模式'}
       key={'patternsView'}
+      rightTitle={'访问 GitHub'}
+      rightButtonTextStyle={AppStyles.navbarTitle}
+      onRight={() => Helper.openDPGitHub()}
       component={PatternsView}
       analyticsDesc={' PatternsView '}
     />

@@ -39,6 +39,10 @@ class Helper {
     Helper.openLink('https://github.com/justjavac/free-programming-books-zh_CN');
   }
 
+  static openDPGitHub() {
+    Helper.openLink('https://github.com/kamranahmedse/design-patterns-for-humans');
+  }
+
   static gotoLogin() {
     return (
       <Icon
