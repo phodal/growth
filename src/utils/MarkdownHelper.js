@@ -18,7 +18,6 @@ const md = require('markdown-it')({
 
 export default class MarkdownHelper {
   static convert(str) {
-    console.log(md.render(str));
     return md.render(str);
   }
 }

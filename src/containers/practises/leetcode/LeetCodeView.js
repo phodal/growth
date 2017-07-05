@@ -16,10 +16,8 @@ import RNFS from 'react-native-fs';
 import HTMLView from 'react-native-htmlview';
 
 import AsyncStorageHelper from '../../../utils/AsyncStorageHelper';
+import MarkdownHelper from '../../../utils/MarkdownHelper';
 
-const MarkdownIt = require('markdown-it');
-
-const md = new MarkdownIt();
 const DIR = RNFetchBlob.fs.dirs;
 const LEETCODE_PATH = '/growth-leetcode-api-master';
 const LeetCodeUrl = 'https://github.com/phodal/growth-leetcode-api/archive/master.zip';
@@ -167,7 +165,7 @@ export default class LeetCodeView extends Component {
     RNFS.readFile(questionPath, 'utf8')
       .then((question) => {
         this.setState({
-          question: md.render(question),
+          question: MarkdownHelper.convert(question),
         });
       }).catch((error) => {
         Toast.show(error);
@@ -179,7 +177,7 @@ export default class LeetCodeView extends Component {
     RNFS.readFile(NextQuestionPath, 'utf8')
       .then((nextQuestion) => {
         this.setState({
-          nextQuestion: md.render(nextQuestion),
+          nextQuestion: MarkdownHelper.convert(nextQuestion),
         });
       }).catch((error) => {
         Toast.show(error);
@@ -198,7 +196,7 @@ export default class LeetCodeView extends Component {
     RNFS.readFile(NextQuestionPath, 'utf8')
       .then((nextQuestion) => {
         this.setState({
-          nextQuestion: md.render(nextQuestion),
+          nextQuestion: MarkdownHelper.convert(nextQuestion),
         });
       }).catch((error) => {
         Toast.show(error);
