@@ -19,10 +19,6 @@ class Practises extends Component {
             onPress={() => Actions.algorithmListView()}
           />
           <ListItem
-            title={'数据结构'}
-            onPress={() => Actions.comingSoon('数据结构')}
-          />
-          <ListItem
             title={'设计模式'}
             onPress={() => Actions.patternsView()}
           />

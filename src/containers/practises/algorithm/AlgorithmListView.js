@@ -1,44 +1,44 @@
 import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
-import { ListItem, List } from 'react-native-elements';
-import Helper from '../../../utils/helper';
-import Label from '../../../components/Label';
+import { FlatList, ScrollView, Text, TouchableHighlight, View } from 'react-native';
+import { ListItem } from 'react-native-elements';
+
+const values = require('lodash.values');
+const algorithmList = values(require('./growth-algorithm-api/category.json'));
 
 class AlgorithmListView extends Component {
   static componentName = 'AlgorithmListView';
 
+  keyExtractor = (item, index) => `key${index}`;
+
+  renderList = ({ item }) => (
+    <TouchableHighlight>
+      <View style={{ backgroundColor: 'white' }}>
+        <ListItem
+          title={item}
+        />
+      </View>
+    </TouchableHighlight>
+  );
+
   render() {
     return (
       <ScrollView>
-        <Label text="资源推荐" />
-        <List containerStyle={{ borderTopWidth: 0 }}>
-          <ListItem
-            title={'VisuAlgo'}
-            onPress={() => Helper.openLink('https://visualgo.net/zh')}
-          />
-        </List>
-
-        <Label text="图说" />
-        <List containerStyle={{ borderTopWidth: 0 }}>
-          <ListItem
-            title={'快速排序'}
-          />
-          <ListItem
-            title={'梳排序'}
-          />
-          <ListItem
-            title={'地精排序'}
-          />
-          <ListItem
-            title={'选择排序'}
-          />
-          <ListItem
-            title={'冒泡排序'}
-          />
-          <ListItem
-            title={'Bogo排序'}
-          />
-        </List>
+        <FlatList
+          data={algorithmList}
+          keyExtractor={this.keyExtractor}
+          renderItem={({ item }) => (
+            <View>
+              <View style={{ padding: 10 }}>
+                <Text style={{ textAlign: 'center' }}>{item.zh_name}</Text>
+              </View>
+              <FlatList
+                keyExtractor={this.keyExtractor}
+                data={Object.values(item.list)}
+                renderItem={this.renderList}
+              />
+            </View>
+            )}
+        />
       </ScrollView>
     );
   }
