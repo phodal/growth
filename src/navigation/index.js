@@ -44,7 +44,7 @@ import GrEditor from '../components/GrEditor';
 import SectionPage from '../containers/home/sections/SectionPage';
 import HtmlView from '../components/HtmlView';
 import SectionIntro from '../containers/home/sections/SectionIntro';
-import AlgorithmView from '../containers/practises/algorithm/AlgorithmView';
+import AlgorithmListView from '../containers/practises/algorithm/AlgorithmListView';
 import PaperIntroView from '../containers/home/paper/PaperIntroView';
 import SectionPageHelper from '../utils/SectionPageHelper';
 import ForumDetail from '../containers/community/forum/ForumDetail';
@@ -434,9 +434,9 @@ export default Actions.create(
 
     <Scene
       {...AppConfig.navbarProps}
-      key={'algorithmView'}
-      component={AlgorithmView}
-      analyticsDesc={' AlgorithmView '}
+      key={'algorithmListView'}
+      component={AlgorithmListView}
+      analyticsDesc={' AlgorithmListView '}
     />
 
     <Scene

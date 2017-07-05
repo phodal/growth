@@ -16,7 +16,7 @@ class Practises extends Component {
           />
           <ListItem
             title={'算法'}
-            onPress={() => Actions.algorithmView()}
+            onPress={() => Actions.algorithmListView()}
           />
           <ListItem
             title={'数据结构'}

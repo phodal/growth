@@ -4,8 +4,8 @@ import { ListItem, List } from 'react-native-elements';
 import Helper from '../../../utils/helper';
 import Label from '../../../components/Label';
 
-class AlgorithmView extends Component {
-  static componentName = 'AlgorithmView';
+class AlgorithmListView extends Component {
+  static componentName = 'AlgorithmListView';
 
   render() {
     return (
@@ -44,4 +44,4 @@ class AlgorithmView extends Component {
   }
 }
 
-export default AlgorithmView;
+export default AlgorithmListView;
