@@ -30,6 +30,14 @@ class Practises extends Component {
             title={'代码之美'}
             onPress={() => Actions.comingSoon('代码之美')}
           />
+          <ListItem
+            title={'练手项目'}
+            onPress={() => Actions.projectList()}
+          />
+          <ListItem
+            title={'技能测验'}
+            onPress={() => Actions.examList()}
+          />
         </List>
       </ScrollView>
     );
