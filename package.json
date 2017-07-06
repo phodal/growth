@@ -46,6 +46,8 @@
     "react-native-spinkit": "^1.0.2",
     "react-native-splash-screen": "^2.0.0",
     "react-native-store-review": "^0.1.2",
+    "react-native-swipe-gestures": "^1.0.2",
+    "react-native-swiper": "^1.5.4",
     "react-native-tab-view": "^0.0.65",
     "react-native-timeago": "^0.3.0",
     "react-native-vector-icons": "~4.2.0",
