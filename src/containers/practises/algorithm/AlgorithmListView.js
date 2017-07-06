@@ -10,17 +10,31 @@ const algorithmList = values(require('./growth-algorithm-api/category.json'));
 class AlgorithmListView extends Component {
   static componentName = 'AlgorithmListView';
 
-  constructor(props) {
-    super(props);
+  static getCategoryByTitle(title) {
+    let category = '';
+
+    algorithmList.forEach((element) => {
+      const list = element.list;
+      list.forEach((algorithm) => {
+        if (algorithm.title === title) {
+          category = element.slug;
+        }
+      });
+    });
+
+    return category;
   }
 
   keyExtractor = (item, index) => `key${index}`;
 
   renderList = ({ item }) => (
     <TouchableHighlight
-      onPress={() => Actions.algorithmDetailView({
-        item,
-        title: item.title })}
+      onPress={() => {
+        Actions.algorithmDetailView({
+          category: AlgorithmListView.getCategoryByTitle(item.title),
+          item,
+          title: item.title });
+      }}
     >
       <View style={{ backgroundColor: 'white' }}>
         <ListItem
