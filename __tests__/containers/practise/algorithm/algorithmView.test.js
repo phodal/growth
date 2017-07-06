@@ -2,11 +2,11 @@ import 'react-native';
 import React from 'react';
 
 import renderer from 'react-test-renderer';
-import AlgorithmView from '../../../../src/containers/practises/algorithm/AlgorithmView';
+import AlgorithmListView from '../../../../src/containers/practises/algorithm/AlgorithmListView';
 
 it('renders correctly', () => {
   const tree = renderer.create(
-    <AlgorithmView />,
+    <AlgorithmListView />,
   );
 
   const treeJson = tree.toJSON();
