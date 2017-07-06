@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import { Tabs, Tab, Icon } from 'react-native-elements';
 
 
@@ -22,7 +22,7 @@ class AlgorithmDetailView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: 'profile',
+      selectedTab: 'detail',
     };
   }
 
@@ -34,7 +34,7 @@ class AlgorithmDetailView extends Component {
     const { selectedTab } = this.state;
 
     return (
-      <View>
+      <View style={{ flex: 1, flexDirection: 'column' }}>
         <Text style={{ padding: 20, textAlign: 'center' }}> 这个功能在 TODO List 里，如果你需要请点个赞</Text>
 
         <Tabs>
@@ -47,9 +47,9 @@ class AlgorithmDetailView extends Component {
             renderSelectedIcon={() => <Icon color={'#6296f9'} name="device-hub" size={30} />}
             onPress={() => this.changeTab('detail')}
           >
-            <View>
+            <ScrollView>
               <Text>DETAIL</Text>
-            </View>
+            </ScrollView>
           </Tab>
           <Tab
             titleStyle={{ fontWeight: 'bold', fontSize: 10 }}
@@ -60,9 +60,9 @@ class AlgorithmDetailView extends Component {
             renderSelectedIcon={() => <Icon color={'#6296f9'} name="assessment" size={30} />}
             onPress={() => this.changeTab('execution')}
           >
-            <View>
+            <ScrollView>
               <Text>DETAIL</Text>
-            </View>
+            </ScrollView>
           </Tab>
           <Tab
             titleStyle={{ fontWeight: 'bold', fontSize: 10 }}
@@ -73,9 +73,9 @@ class AlgorithmDetailView extends Component {
             renderSelectedIcon={() => <Icon color={'#6296f9'} name="code" size={30} />}
             onPress={() => this.changeTab('code')}
           >
-            <View>
+            <ScrollView>
               <Text>CODE</Text>
-            </View>
+            </ScrollView>
           </Tab>
         </Tabs>
 
