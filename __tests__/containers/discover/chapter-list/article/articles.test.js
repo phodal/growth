@@ -9,7 +9,7 @@ jest.mock('react-native-fs', () => ({
   ExternalStorageDirectoryPath: 'package-path',
 }));
 
-it('renders correctly', () => {
+xit('renders correctly', () => {
   const article = renderer.create(
     <Article
       url={'https://phodal.coding.me/growth/growth-in-action/chapters/chapter1.txt'}
