@@ -27,8 +27,8 @@ class Practises extends Component {
             onPress={() => Actions.moRegexView('')}
           />
           <ListItem
-            title={'代码之美'}
-            onPress={() => Actions.comingSoon('代码之美')}
+            title={'Cookbook'}
+            onPress={() => Actions.comingSoon('Cookbook')}
           />
           <ListItem
             title={'练手项目'}
