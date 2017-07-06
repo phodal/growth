@@ -1,3 +1,4 @@
+/* eslint-disable import/no-dynamic-require */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -53,8 +54,19 @@ class AlgorithmDetailView extends Component {
     super(props);
     this.swiper = null;
     this.state = {
+      algorithmInfo: null,
       selectedTab: 'detail',
     };
+  }
+
+  componentWillMount() {
+    const path = `./growth-algorithm-api/${this.props.category}/${this.props.item.key}/desc.json`;
+// eslint-disable-next-line global-require
+    const algorithmInfo = require(path);
+    this.setState({
+      algorithmInfo,
+    });
+    console.log(algorithmInfo);
   }
 
   render() {
