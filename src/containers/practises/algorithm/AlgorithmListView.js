@@ -12,9 +12,6 @@ class AlgorithmListView extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      category: '',
-    };
   }
 
   keyExtractor = (item, index) => `key${index}`;
@@ -22,7 +19,6 @@ class AlgorithmListView extends Component {
   renderList = ({ item }) => (
     <TouchableHighlight
       onPress={() => Actions.algorithmDetailView({
-        category: this.state.category,
         item,
         title: item.title })}
     >
@@ -40,21 +36,18 @@ class AlgorithmListView extends Component {
         <FlatList
           data={algorithmList}
           keyExtractor={this.keyExtractor}
-          renderItem={({ item }) => {
-            this.state.category = item.slug;
-            return (
-              <View>
-                <View style={{ padding: 10 }}>
-                  <Text style={{ textAlign: 'center' }}>{item.zh_name}</Text>
-                </View>
-                <FlatList
-                  keyExtractor={this.keyExtractor}
-                  data={item.list}
-                  renderItem={this.renderList}
-                />
+          renderItem={({ item }) => (
+            <View>
+              <View style={{ padding: 10 }}>
+                <Text style={{ textAlign: 'center' }}>{item.zh_name}</Text>
               </View>
-            );
-          }}
+              <FlatList
+                keyExtractor={this.keyExtractor}
+                data={item.list}
+                renderItem={this.renderList}
+              />
+            </View>
+            )}
         />
       </ScrollView>
     );
