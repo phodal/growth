@@ -4,32 +4,37 @@ import {
   StyleSheet, Text, View, ScrollView, TouchableOpacity,
 } from 'react-native';
 import Swiper from 'react-native-swiper';
+import { Icon } from 'react-native-elements';
 
 
 const styles = StyleSheet.create({
-  tabbar: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 12,
-  },
   wrapper: {
+    height: 160,
+    backgroundColor: '#fff',
   },
   slide: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  tabar: {
+  tabbar: {
     position: 'absolute',
     bottom: 0,
     left: 0,
     right: 0,
-    height: 44,
+    height: 60,
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#fff',
+    borderTopWidth: 1,
+    borderColor: '#ddd',
+  },
+  childBar: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
@@ -42,6 +47,7 @@ class AlgorithmDetailView extends Component {
 
   constructor(props) {
     super(props);
+    this.swiper = null;
     this.state = {
       selectedTab: 'detail',
     };
@@ -54,8 +60,11 @@ class AlgorithmDetailView extends Component {
           <Text style={{ padding: 20, textAlign: 'center' }}> 这个功能在 TODO List 里，如果你需要请点个赞</Text>
         </View>
 
-        <View style={{ height: 200 }}>
-          <Swiper style={styles.wrapper}>
+        <View>
+          <Swiper
+            style={styles.wrapper}
+            ref={(swiper) => { this.swiper = swiper; }}
+          >
             <ScrollView contentContainerStyle={styles.slide}>
               <Text style={styles.text}>Hello Swiper</Text>
             </ScrollView>
@@ -68,20 +77,32 @@ class AlgorithmDetailView extends Component {
           </Swiper>
         </View>
 
-        <View style={styles.tabar}>
-          <TouchableOpacity>
+        <View style={styles.tabbar}>
+          <TouchableOpacity
+            style={styles.childBar}
+            onPress={() => { this.swiper.scrollBy(1); }}
+          >
             <View>
-              <Text>Detail</Text>
+              <Icon name={'device-hub'} color={'#666'} size={28} />
+              <Text style={{ paddingTop: 6 }}>介绍</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity
+            style={styles.childBar}
+            onPress={() => { this.swiper.scrollBy(2); }}
+          >
             <View>
-              <Text>Detail</Text>
+              <Icon name={'assessment'} color={'#666'} size={28} />
+              <Text style={{ paddingTop: 6 }}>执行</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity
+            style={styles.childBar}
+            onPress={() => { this.swiper.scrollBy(3); }}
+          >
             <View>
-              <Text>Detail</Text>
+              <Icon name={'code'} color={'#666'} size={28} />
+              <Text style={{ paddingTop: 6 }}>代码</Text>
             </View>
           </TouchableOpacity>
         </View>
