@@ -14,11 +14,11 @@ class AlgorithmListView extends Component {
 
   renderList = ({ item }) => (
     <TouchableHighlight
-      onPress={() => Actions.algorithmDetailView({ item, title: item })}
+      onPress={() => Actions.algorithmDetailView({ item, title: item.title })}
     >
       <View style={{ backgroundColor: 'white' }}>
         <ListItem
-          title={item}
+          title={item.title}
         />
       </View>
     </TouchableHighlight>
@@ -37,7 +37,7 @@ class AlgorithmListView extends Component {
               </View>
               <FlatList
                 keyExtractor={this.keyExtractor}
-                data={Object.values(item.list)}
+                data={item.list}
                 renderItem={this.renderList}
               />
             </View>
