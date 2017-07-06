@@ -10,11 +10,21 @@ const algorithmList = values(require('./growth-algorithm-api/category.json'));
 class AlgorithmListView extends Component {
   static componentName = 'AlgorithmListView';
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      category: '',
+    };
+  }
+
   keyExtractor = (item, index) => `key${index}`;
 
   renderList = ({ item }) => (
     <TouchableHighlight
-      onPress={() => Actions.algorithmDetailView({ item, title: item.title })}
+      onPress={() => Actions.algorithmDetailView({
+        category: this.state.category,
+        item,
+        title: item.title })}
     >
       <View style={{ backgroundColor: 'white' }}>
         <ListItem
@@ -30,18 +40,21 @@ class AlgorithmListView extends Component {
         <FlatList
           data={algorithmList}
           keyExtractor={this.keyExtractor}
-          renderItem={({ item }) => (
-            <View>
-              <View style={{ padding: 10 }}>
-                <Text style={{ textAlign: 'center' }}>{item.zh_name}</Text>
+          renderItem={({ item }) => {
+            this.state.category = item.slug;
+            return (
+              <View>
+                <View style={{ padding: 10 }}>
+                  <Text style={{ textAlign: 'center' }}>{item.zh_name}</Text>
+                </View>
+                <FlatList
+                  keyExtractor={this.keyExtractor}
+                  data={item.list}
+                  renderItem={this.renderList}
+                />
               </View>
-              <FlatList
-                keyExtractor={this.keyExtractor}
-                data={item.list}
-                renderItem={this.renderList}
-              />
-            </View>
-            )}
+            );
+          }}
         />
       </ScrollView>
     );

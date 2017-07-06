@@ -42,7 +42,11 @@ class AlgorithmDetailView extends Component {
   static componentName = 'AlgorithmDetailView';
 
   static propTypes = {
-    name: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    item: React.PropTypes.shape({
+      key: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    }).isRequired,
   };
 
   constructor(props) {
