@@ -3,9 +3,7 @@ import React, { Component } from 'react';
 import { FlatList, ScrollView, Text, TouchableHighlight, View } from 'react-native';
 import { ListItem } from 'react-native-elements';
 import { Actions } from 'react-native-router-flux';
-
-const values = require('lodash.values');
-const algorithmList = values(require('./growth-algorithm-api/category.json'));
+import ALGORITHMS_CATEGORY from './ALGORITHMS_CATEGORY';
 
 class AlgorithmListView extends Component {
   static componentName = 'AlgorithmListView';
@@ -13,7 +11,7 @@ class AlgorithmListView extends Component {
   static getCategoryByTitle(title) {
     let category = '';
 
-    algorithmList.forEach((element) => {
+    ALGORITHMS_CATEGORY.forEach((element) => {
       const list = element.list;
       list.forEach((algorithm) => {
         if (algorithm.title === title) {
@@ -48,7 +46,7 @@ class AlgorithmListView extends Component {
     return (
       <ScrollView>
         <FlatList
-          data={algorithmList}
+          data={ALGORITHMS_CATEGORY}
           keyExtractor={this.keyExtractor}
           renderItem={({ item }) => (
             <View>

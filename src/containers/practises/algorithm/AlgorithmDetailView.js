@@ -6,6 +6,7 @@ import {
 } from 'react-native';
 import Swiper from 'react-native-swiper';
 import { Icon } from 'react-native-elements';
+import ALGORITHMS from './ALGORITHMS';
 
 
 const styles = StyleSheet.create({
@@ -60,13 +61,10 @@ class AlgorithmDetailView extends Component {
   }
 
   componentWillMount() {
-    const path = `./growth-algorithm-api/${this.props.category}/${this.props.item.key}/desc.json`;
-// eslint-disable-next-line global-require
-    const algorithmInfo = require(path);
+    const algorithmInfo = ALGORITHMS[this.props.category][this.props.item.key];
     this.setState({
       algorithmInfo,
     });
-    console.log(algorithmInfo);
   }
 
   render() {
