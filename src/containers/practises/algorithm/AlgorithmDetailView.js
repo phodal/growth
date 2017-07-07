@@ -16,7 +16,7 @@ const height = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
   wrapper: {
-    backgroundColor: '#fff',
+    backgroundColor: '#eee',
   },
   slide: {
     flex: 1,
@@ -83,7 +83,16 @@ class AlgorithmDetailView extends Component {
     return (
       <View style={{ flex: 1, flexDirection: 'column' }}>
         <View style={styles.viewHeight}>
-          <Text style={{ textAlign: 'center' }}> 这个功能在 TODO List 里，如果你需要请点个赞</Text>
+          <WebView
+            ref={(webview) => {
+              this.webview = webview;
+            }}
+            scalesPageToFit
+            startInLoadingState
+            source={{ html: HtmlHelper.getHtml(code) }}
+            style={[styles.viewHeight, { backgroundColor: '#ddd' }]}
+            injectedJavaScript=""
+          />
         </View>
 
         <View style={styles.viewHeight}>
