@@ -2,13 +2,15 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
-  StyleSheet, View, ScrollView, TouchableOpacity, Dimensions,
+  StyleSheet, View, ScrollView, TouchableOpacity, Dimensions, WebView,
 } from 'react-native';
 import Swiper from 'react-native-swiper';
-import { Divider, Icon, Text } from 'react-native-elements';
+import {
+  Icon, Text } from 'react-native-elements';
 import ALGORITHMS from './ALGORITHMS';
 import AppSizes from '../../../theme/sizes';
-
+import MarkdownHelper from '../../../utils/MarkdownHelper';
+import HtmlHelper from '../../../utils/HtmlHelper';
 
 const height = Dimensions.get('window').height;
 
@@ -62,18 +64,22 @@ class AlgorithmDetailView extends Component {
     this.state = {
       algorithmInfo: null,
       selectedTab: 'detail',
+      code: '',
     };
   }
 
   componentWillMount() {
     const algorithmInfo = ALGORITHMS[this.props.category][this.props.item.key];
+    const code = MarkdownHelper.convert(`\`\`\`js \n ${algorithmInfo.code}`);
     this.setState({
       algorithmInfo,
+      code,
     });
   }
 
   render() {
-    const { algorithmInfo } = this.state;
+    const { algorithmInfo, code } = this.state;
+
     return (
       <View style={{ flex: 1, flexDirection: 'column' }}>
         <View style={styles.viewHeight}>
@@ -82,6 +88,7 @@ class AlgorithmDetailView extends Component {
 
         <View style={styles.viewHeight}>
           <Swiper
+            loop={false}
             style={styles.wrapper}
             height={styles.viewHeight}
             ref={(swiper) => { this.swiper = swiper; }}
@@ -100,8 +107,17 @@ class AlgorithmDetailView extends Component {
             <ScrollView contentContainerStyle={[styles.viewHeight, styles.slide]}>
               <Text style={styles.text}>Beautiful</Text>
             </ScrollView>
-            <ScrollView contentContainerStyle={[styles.viewHeight, styles.slide]}>
-              <Text style={styles.text}>And simple</Text>
+            <ScrollView>
+              <WebView
+                ref={(webview) => {
+                  this.webview = webview;
+                }}
+                scalesPageToFit
+                startInLoadingState
+                source={{ html: HtmlHelper.getHtml(code) }}
+                style={[styles.viewHeight, { backgroundColor: 'white' }]}
+                injectedJavaScript=""
+              />
             </ScrollView>
           </Swiper>
         </View>
@@ -118,7 +134,7 @@ class AlgorithmDetailView extends Component {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.childBar}
-            onPress={() => { this.swiper.scrollBy(2); }}
+            onPress={() => { this.swiper.scrollBy(1); }}
           >
             <View>
               <Icon name={'assessment'} color={'#666'} size={28} />
@@ -127,7 +143,7 @@ class AlgorithmDetailView extends Component {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.childBar}
-            onPress={() => { this.swiper.scrollBy(3); }}
+            onPress={() => { this.swiper.scrollBy(1); }}
           >
             <View>
               <Icon name={'code'} color={'#666'} size={28} />

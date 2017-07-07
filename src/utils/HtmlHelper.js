@@ -1,5 +1,6 @@
 class HtmlHelper {
   static getHtml(html) {
+    console.log(html);
     if (html) {
       return (`
       <!DOCTYPE html>
