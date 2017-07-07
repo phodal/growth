@@ -64,6 +64,7 @@ class AlgorithmDetailView extends Component {
     this.state = {
       algorithmInfo: null,
       selectedTab: 'detail',
+      swiperIndex: 0,
       code: '',
     };
   }
@@ -74,6 +75,15 @@ class AlgorithmDetailView extends Component {
     this.setState({
       algorithmInfo,
       code,
+    });
+  }
+
+  updateSwiper(index) {
+    const currentIndex = this.state.swiperIndex;
+    this.swiper.scrollBy(index - currentIndex);
+
+    this.setState({
+      swiperIndex: index,
     });
   }
 
@@ -99,7 +109,7 @@ class AlgorithmDetailView extends Component {
           <Swiper
             loop={false}
             style={styles.wrapper}
-            height={styles.viewHeight}
+            height={{ height: styles.viewHeight}}
             ref={(swiper) => { this.swiper = swiper; }}
           >
             <ScrollView contentContainerStyle={[styles.slide]}>
@@ -134,7 +144,7 @@ class AlgorithmDetailView extends Component {
         <View style={styles.tabbar}>
           <TouchableOpacity
             style={styles.childBar}
-            onPress={() => { this.swiper.scrollBy(1); }}
+            onPress={() => { this.updateSwiper(0); }}
           >
             <View>
               <Icon name={'device-hub'} color={'#666'} size={28} />
@@ -143,7 +153,7 @@ class AlgorithmDetailView extends Component {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.childBar}
-            onPress={() => { this.swiper.scrollBy(1); }}
+            onPress={() => { this.updateSwiper(1); }}
           >
             <View>
               <Icon name={'assessment'} color={'#666'} size={28} />
@@ -152,7 +162,7 @@ class AlgorithmDetailView extends Component {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.childBar}
-            onPress={() => { this.swiper.scrollBy(1); }}
+            onPress={() => { this.updateSwiper(2); }}
           >
             <View>
               <Icon name={'code'} color={'#666'} size={28} />
