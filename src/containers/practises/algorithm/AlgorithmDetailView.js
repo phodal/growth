@@ -2,16 +2,18 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
-  StyleSheet, Text, View, ScrollView, TouchableOpacity,
+  StyleSheet, View, ScrollView, TouchableOpacity, Dimensions,
 } from 'react-native';
 import Swiper from 'react-native-swiper';
-import { Icon } from 'react-native-elements';
+import { Divider, Icon, Text } from 'react-native-elements';
 import ALGORITHMS from './ALGORITHMS';
+import AppSizes from '../../../theme/sizes';
 
+
+const height = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
   wrapper: {
-    height: 160,
     backgroundColor: '#fff',
   },
   slide: {
@@ -24,7 +26,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    height: 60,
+    height: AppSizes.navbarHeight,
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'center',
@@ -37,6 +39,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  viewHeight: {
+    height: (height - AppSizes.tabbarHeight - AppSizes.navbarHeight) / 2,
   },
 });
 
@@ -68,24 +73,34 @@ class AlgorithmDetailView extends Component {
   }
 
   render() {
+    const { algorithmInfo } = this.state;
     return (
       <View style={{ flex: 1, flexDirection: 'column' }}>
-        <View>
-          <Text style={{ padding: 20, textAlign: 'center' }}> 这个功能在 TODO List 里，如果你需要请点个赞</Text>
+        <View style={styles.viewHeight}>
+          <Text style={{ textAlign: 'center' }}> 这个功能在 TODO List 里，如果你需要请点个赞</Text>
         </View>
 
-        <View>
+        <View style={styles.viewHeight}>
           <Swiper
             style={styles.wrapper}
+            height={styles.viewHeight}
             ref={(swiper) => { this.swiper = swiper; }}
           >
-            <ScrollView contentContainerStyle={styles.slide}>
-              <Text style={styles.text}>Hello Swiper</Text>
+            <ScrollView contentContainerStyle={[styles.slide]}>
+              <Text>{algorithmInfo.name}</Text>
+              <Text style={styles.text}>{algorithmInfo.description}</Text>
+
+              <Text>复杂度</Text>
+              <Text style={styles.text}>时间：{algorithmInfo.complexity.time}</Text>
+              <Text style={styles.text}>空间：{algorithmInfo.complexity.space}</Text>
+
+              <Text>参考资料</Text>
+              <Text style={styles.text}>{algorithmInfo.references[0]}</Text>
             </ScrollView>
-            <ScrollView contentContainerStyle={styles.slide}>
+            <ScrollView contentContainerStyle={[styles.viewHeight, styles.slide]}>
               <Text style={styles.text}>Beautiful</Text>
             </ScrollView>
-            <ScrollView contentContainerStyle={styles.slide}>
+            <ScrollView contentContainerStyle={[styles.viewHeight, styles.slide]}>
               <Text style={styles.text}>And simple</Text>
             </ScrollView>
           </Swiper>

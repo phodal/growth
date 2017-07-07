@@ -4,7 +4,7 @@ const { width, height } = Dimensions.get('window');
 const screenHeight = width < height ? height : width;
 const screenWidth = width < height ? width : height;
 
-export default {
+const AppSizes = {
   // Window Dimensions
   screen: {
     height: screenHeight,
@@ -26,3 +26,5 @@ export default {
 
   borderRadius: 2,
 };
+
+export default AppSizes;
