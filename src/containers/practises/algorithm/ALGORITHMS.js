@@ -1,6 +1,6 @@
 const ALGORITHMS = {
-  backtracking: [
-    {
+  backtracking: {
+    "knight's_tour": {
       files: {
         basic: 'Solving the Knight’s tour problem using Backtracking & Recursion',
       },
@@ -15,7 +15,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Knight%27s_tour'>Wikipedia</a>",
       ],
     },
-    {
+    n_queens: {
       files: {
         n_queens: 'Solving the N Queens Puzzle using Backtracking & Recursion',
       },
@@ -34,9 +34,9 @@ const ALGORITHMS = {
         "<a href='http://www.geeksforgeeks.org/backtracking-set-3-n-queen-problem/'>geeksforgeeks</a>",
       ],
     },
-  ],
-  cryptography: [
-    {
+  },
+  cryptography: {
+    affine_cipher: {
       files: {
         basic: 'Encrypting and Decrypting a string using affine functions',
       },
@@ -55,7 +55,7 @@ const ALGORITHMS = {
         "<a href='http://practicalcryptography.com/ciphers/affine-cipher/'>Practicalcryptography</a>",
       ],
     },
-    {
+    caesar_cipher: {
       files: {
         basic: 'Encrypting and Decrypting a string using character rotation',
       },
@@ -73,9 +73,9 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Caesar_cipher'>Wikipedia</a>",
       ],
     },
-  ],
-  dp: [
-    {
+  },
+  dp: {
+    catalan_number: {
       files: {
         catalan_number: 'Catalan Number',
       },
@@ -96,7 +96,7 @@ const ALGORITHMS = {
         "<a href='http://oldweb.sbc.edu/sites/default/files/Honors/XiaotongJiang.July20_0.pdf'>Sweet Briar College",
       ],
     },
-    {
+    fibonacci: {
       files: {
         basic: 'Fibonacci Sequence',
       },
@@ -111,7 +111,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Dynamic_programming#Fibonacci_sequence'>Wikipedia</a>",
       ],
     },
-    {
+    integer_partition: {
       files: {
         basic: 'Integer partition',
       },
@@ -126,7 +126,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Partition_(number_theory)'>Wikipedia</a>",
       ],
     },
-    {
+    knapsack_problem: {
       files: {
         basic: 'Knapsack problem',
       },
@@ -141,7 +141,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Knapsack_problem'>Wikipedia</a>",
       ],
     },
-    {
+    longest_common_subsequence: {
       files: {
         basic: 'Longest common subsequence',
       },
@@ -156,7 +156,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Longest_common_subsequence_problem'>Wikipedia</a>",
       ],
     },
-    {
+    longest_increasing_subsequence: {
       files: {
         basic: 'Longest increasing subsequence',
       },
@@ -171,7 +171,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Longest_increasing_subsequence'>Wikipedia</a>",
       ],
     },
-    {
+    longest_palindromic_subsequence: {
       files: {
         basic: 'Longest Palindromic Subsequence',
       },
@@ -186,7 +186,7 @@ const ALGORITHMS = {
         "<a href='http://www.geeksforgeeks.org/dynamic-programming-set-12-longest-palindromic-subsequence/'>GeeksForGeeks</a>",
       ],
     },
-    {
+    max_subarray: {
       files: {
         basic: 'Maximum subarray',
       },
@@ -201,7 +201,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Maximum_subarray_problem'>Wikipedia</a>",
       ],
     },
-    {
+    max_sum_path: {
       files: {
         basic: 'Maximum sum path',
       },
@@ -214,7 +214,7 @@ const ALGORITHMS = {
       },
       references: [],
     },
-    {
+    pascal_triangle: {
       files: {
         pascal_triangle: "Pascal's Triangle",
       },
@@ -233,7 +233,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Pascal%27s_triangle'>Wikipedia</a>",
       ],
     },
-    {
+    shortest_common_supersequence: {
       files: {
         basic: 'Shortest common supersequence',
       },
@@ -248,7 +248,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Shortest_common_supersequence_problem'>Wikipedia</a>",
       ],
     },
-    {
+    sliding_window: {
       files: {
         basic: 'Sliding window',
       },
@@ -261,7 +261,7 @@ const ALGORITHMS = {
       },
       references: [],
     },
-    {
+    ugly_numbers: {
       files: {
         basic: 'Ugly Numbers',
       },
@@ -276,9 +276,9 @@ const ALGORITHMS = {
         "<a href='http://www.algorithmist.com/index.php/UVa_136'>Algorithmist</a>",
       ],
     },
-  ],
-  etc: [
-    {
+  },
+  etc: {
+    cellular_automata: {
       files: {
         cellular_automata: '',
       },
@@ -289,7 +289,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Cellular_automaton'>Wikipedia</a>",
       ],
     },
-    {
+    create_maze: {
       files: {
         create_maze: '',
       },
@@ -300,7 +300,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Disjoint-set_data_structure'>Disjoint Sets Wikipedia</a>",
       ],
     },
-    {
+    flood_fill: {
       files: {
         flood_fill: '',
       },
@@ -311,7 +311,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Flood_fill'>Wikipedia</a>",
       ],
     },
-    {
+    magic_square: {
       files: {
         basic: 'Magic Square',
       },
@@ -326,7 +326,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Magic_square'>Wikipedia</a>",
       ],
     },
-    {
+    stable_matching: {
       files: {
         basic: 'Stable Matching',
       },
@@ -340,9 +340,9 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Stable_marriage_problem'>Wikipedia</a>",
       ],
     },
-  ],
-  graph_search: [
-    {
+  },
+  graph_search: {
+    bellman_ford: {
       files: {
         shortest_path: 'Finding the shortest path',
       },
@@ -360,7 +360,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm'>Wikipedia</a>",
       ],
     },
-    {
+    bfs: {
       files: {
         tree: 'Searching a tree',
         shortest_path: 'Finding the shortest path',
@@ -386,7 +386,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Breadth-first_search'>Wikipedia</a>",
       ],
     },
-    {
+    bridges: {
       files: {
         naive: 'Find all the bridges in an Undirected Graph',
         efficient: 'Efficiently find all the bridges in an Undirected Graph',
@@ -405,7 +405,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Bridge_(graph_theory)'>Wikipedia</a>",
       ],
     },
-    {
+    dfs: {
       files: {
         tree: 'Searching a tree',
         all_paths: 'Going through all possible paths without making any circuit',
@@ -437,7 +437,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Depth-first_search'>Wikipedia</a>",
       ],
     },
-    {
+    dijkstra: {
       files: {
         shortest_path: 'Finding the shortest path between two nodes',
       },
@@ -455,7 +455,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm'>Wikipedia</a>",
       ],
     },
-    {
+    dls: {
       files: {
         tree: 'Searching a tree (limited depth)',
         count_descendant: 'Count all descendant of root within some depth',
@@ -472,7 +472,7 @@ const ALGORITHMS = {
         "<a href='http://www.cs.colostate.edu/~anderson/cs440/index.html/doku.php?id=notes:week2b'>Colorado State University Lecture Notes</a>",
       ],
     },
-    {
+    floyd_warshall: {
       files: {
         shortest_paths: 'Finding the shortest path between all nodes',
       },
@@ -490,7 +490,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Floyd–Warshall_algorithm'>Wikipedia</a>",
       ],
     },
-    {
+    page_rank: {
       files: {
         basic: 'Version #1 of PageRank Algorithm (does not take into account the total number of nodes in the graph, i.e., number of pages on web).',
         v2: 'Version #2 divides (1 - D), where D = damping factor, by N, the total no. of documents on internet (nodes in Graph). The resultant Page Ranks form a probability distribution.',
@@ -510,7 +510,7 @@ const ALGORITHMS = {
         "<a href='http://pr.efactory.de/e-pagerank-algorithm.shtml'>E-Factory</a>",
       ],
     },
-    {
+    tarjan: {
       files: {
         basic: 'Find the strongly connected components of a graph',
       },
@@ -524,7 +524,7 @@ const ALGORITHMS = {
         "<a href='https://www.wikiwand.com/en/Tarjan%27s_strongly_connected_components_algorithm'>Wikipedia</a>",
       ],
     },
-    {
+    topological_sort: {
       files: {
         kahn_algorithm: 'Performing Topological Sort using Queue Data Structure & an array of In-degrees',
       },
@@ -547,9 +547,9 @@ const ALGORITHMS = {
         "<a href='http://www.geeksforgeeks.org/topological-sorting/'>GeeksForGeeks</a>",
       ],
     },
-  ],
-  greedy: [
-    {
+  },
+  greedy: {
+    job_scheduling: {
       files: {
         job_scheduling: 'Job Scheduling Algorithm',
       },
@@ -565,7 +565,7 @@ const ALGORITHMS = {
         "<a href='http://ocw.mit.edu/courses/civil-and-environmental-engineering/1-204-computer-algorithms-in-systems-engineering-spring-2010/lecture-notes/MIT1_204S10_lec10.pdf'>mit.edu</a>",
       ],
     },
-    {
+    majority_element: {
       files: {
         basic: 'Find majority element in array using Boyer–Moore majority vote algorithm',
       },
@@ -580,9 +580,9 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm'>Wikipedia</a>",
       ],
     },
-  ],
-  mst: [
-    {
+  },
+  mst: {
+    kruskal: {
       files: {
         normal: 'Finds minimum spanning tree of a given graph.',
       },
@@ -597,7 +597,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Kruskal%27s_algorithm'>Wikipedia</a>",
       ],
     },
-    {
+    prim: {
       files: {
         normal: 'Finds minimum spanning tree of a given graph.',
       },
@@ -612,9 +612,9 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Prim%27s_algorithm'>Wikipedia</a>",
       ],
     },
-  ],
-  number_theory: [
-    {
+  },
+  number_theory: {
+    euclidean_algorithm: {
       files: {
         basic: 'Euclidean Algorithm',
       },
@@ -629,7 +629,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Euclidean_algorithm'>Wikipedia</a>",
       ],
     },
-    {
+    freivalds_algorithm: {
       files: {
         basic: 'Freivalds Algorithm',
       },
@@ -643,7 +643,7 @@ const ALGORITHMS = {
         "<a href='https://www.wikiwand.com/en/Freivalds%27_algorithm'>Wikipedia</a>",
       ],
     },
-    {
+    miller_rabin_primality_test: {
       files: {
         basic: 'Miller Rabin primality test',
       },
@@ -658,7 +658,7 @@ const ALGORITHMS = {
         "<a href='https://www.wikiwand.com/en/Miller%E2%80%93Rabin_primality_test'>Wikipedia</a>",
       ],
     },
-    {
+    sieve_of_eratosthenes: {
       files: {
         basic: 'Sieve of Eratosthenes',
       },
@@ -673,9 +673,9 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes'>Wikipedia</a>",
       ],
     },
-  ],
-  scratch_paper: [
-    {
+  },
+  scratch_paper: {
+    '': {
       'Code written in the ...': {
         '... top editor': 'predefines data variables that will be shown in a visualizing module.',
         '... bottom editor': 'actually implements and visualizes the algorithm.',
@@ -688,9 +688,9 @@ const ALGORITHMS = {
       category: 'scratch_paper',
       key: '',
     },
-  ],
-  search: [
-    {
+  },
+  search: {
+    binary_search: {
       files: {
         recursive: 'Recursively searching a sorted array',
         iterative: 'Iteratively searching a sorted array',
@@ -710,9 +710,9 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Binary_search_algorithm'>Wikipedia</a>",
       ],
     },
-  ],
-  sorting: [
-    {
+  },
+  sorting: {
+    bubble: {
       files: {
         basic: 'Bubble sort',
       },
@@ -727,7 +727,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Bubble_sort'>Wikipedia</a>",
       ],
     },
-    {
+    bucket: {
       files: {
         basic: 'Bucket sort',
       },
@@ -742,7 +742,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Bucket_sort'>Wikipedia</a>",
       ],
     },
-    {
+    comb: {
       files: {
         basic: 'Bubble sort',
       },
@@ -757,7 +757,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Comb_sort'>Wikipedia</a>",
       ],
     },
-    {
+    counting: {
       files: {
         basic: 'Counting sort',
       },
@@ -772,7 +772,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Counting_sort'>Wikipedia</a>",
       ],
     },
-    {
+    cycle: {
       files: {
         basic: 'Cycle Sort',
       },
@@ -787,7 +787,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Cycle_sort'>Wikipedia</a>",
       ],
     },
-    {
+    heap: {
       files: {
         basic: 'Heap sort',
       },
@@ -802,7 +802,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Heapsort'>Wikipedia</a>",
       ],
     },
-    {
+    insertion: {
       files: {
         basic: 'Insertion sort',
       },
@@ -817,7 +817,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Insertion_sort'>Wikipedia</a>",
       ],
     },
-    {
+    merge: {
       files: {
         bottom_up: 'Bottom-up implementation',
         top_down_list: 'Top-down implementation using lists',
@@ -833,7 +833,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Merge_sort'>Wikipedia</a>",
       ],
     },
-    {
+    pancake: {
       files: {
         basic: 'Pancake sort',
       },
@@ -849,7 +849,7 @@ const ALGORITHMS = {
         "<a href='http://www.geeksforgeeks.org/pancake-sorting/'>Geeksforgeeks</a>",
       ],
     },
-    {
+    pigeonhole: {
       files: {
         basic: 'Pigeonhole Sort',
       },
@@ -864,7 +864,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Pigeonhole_sort'>Wikipedia</a>",
       ],
     },
-    {
+    quick: {
       files: {
         basic: 'Quicksort',
       },
@@ -879,7 +879,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Quicksort'>Wikipedia</a>",
       ],
     },
-    {
+    radix: {
       files: {
         lsd: 'LSD Radix sort',
       },
@@ -894,7 +894,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Radix_sort'>Wikipedia</a>",
       ],
     },
-    {
+    selection: {
       files: {
         basic: 'Selection sort',
       },
@@ -909,7 +909,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Selection_sort'>Wikipedia</a>",
       ],
     },
-    {
+    shell: {
       files: {
         basic: 'Shellsort',
       },
@@ -924,9 +924,9 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Shellsort'>Wikipedia</a>",
       ],
     },
-  ],
-  string: [
-    {
+  },
+  string: {
+    edit_distance: {
       files: {
         dynamic_programming: 'Distance from str1 to str2 using Dynamic Programming (2D Array method)',
       },
@@ -946,7 +946,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Edit_distance'>Wikipedia</a>",
       ],
     },
-    {
+    knuth_morris_pratt: {
       files: {
         substring_search: "Efficiently find is A is a substring of B (and A's position(s))",
       },
@@ -964,7 +964,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Knuth%E2%80%93Morris%E2%80%93Pratt_algorithm'>Wikipedia</a>",
       ],
     },
-    {
+    rabin_karp_algorithm: {
       files: {
         basic: 'Rabin-Karp Algorithm',
       },
@@ -982,7 +982,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Rabin%E2%80%93Karp_algorithm'>Wikipedia</a>",
       ],
     },
-    {
+    suffix_array: {
       files: {
         construction_naive: 'Suffix Array inefficient construction',
       },
@@ -1002,7 +1002,7 @@ const ALGORITHMS = {
         "<a href='https://discuss.codechef.com/questions/21385/a-tutorial-on-suffix-arrays'>Codechef</a>",
       ],
     },
-    {
+    z_algorithm: {
       files: {
         pattern_search: 'Find the occurances and position of a pattern in a text',
       },
@@ -1020,9 +1020,9 @@ const ALGORITHMS = {
         "<a href='http://www.geeksforgeeks.org/z-algorithm-linear-time-pattern-searching-algorithm/'>GeeksForGeeks</a>",
       ],
     },
-  ],
-  tree: [
-    {
+  },
+  tree: {
+    binary_search_tree: {
       files: {
         bst_search: 'Search in Binary Search Tree',
         bst_insert: 'Insert in Binary Search Tree',
@@ -1041,7 +1041,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Binary_search_tree'>Wikipedia</a>",
       ],
     },
-    {
+    binary_tree_traversal: {
       files: {
         in_order: 'Traverse Binary Tree In-order',
         post_order: 'Traverse Binary Tree Post-order',
@@ -1065,7 +1065,7 @@ const ALGORITHMS = {
         "<a href='https://en.wikipedia.org/wiki/Tree_traversal'>Wikipedia</a>",
       ],
     },
-    {
+    lowest_common_ancestor: {
       files: {
         binary_tree: 'LCA in a Binary Tree',
       },
@@ -1081,7 +1081,7 @@ const ALGORITHMS = {
         "<a href='http://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/'>GeeksForGeeks</a>",
       ],
     },
-  ],
+  },
 };
 
 export default ALGORITHMS;
