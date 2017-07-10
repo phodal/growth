@@ -109,7 +109,7 @@ class AlgorithmDetailView extends Component {
           <Swiper
             loop={false}
             style={styles.wrapper}
-            height={{ height: styles.viewHeight}}
+            height={(height - AppSizes.tabbarHeight - AppSizes.navbarHeight) / 2}
             ref={(swiper) => { this.swiper = swiper; }}
           >
             <ScrollView contentContainerStyle={[styles.slide]}>
