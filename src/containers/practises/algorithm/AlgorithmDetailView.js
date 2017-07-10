@@ -78,21 +78,29 @@ class AlgorithmDetailView extends Component {
       algorithmInfo,
       code,
     });
-    if (this.webview || MoregexWebViewServices.getWebView()) {
+  }
+
+  componentDidMount() {
+    if (this.webview) {
+      this.webview.postMessage();
+    }
+    MoregexWebViewServices.setWebView(this.webview);
+  }
+
+  handleMessage = (event: Object) => {
+    const message = JSON.parse(event.nativeEvent.data);
+    console.log(message);
+    if (message.status && message.status === 'ready') {
       this.webview.postMessage(JSON.stringify({
         action: 'algorithm',
         data: {
-          algorithm: algorithmInfo.key,
-          category: algorithmInfo.category,
+          algorithm: this.state.algorithmInfo.key,
+          category: this.state.algorithmInfo.category,
           basic: 'file',
         },
       }));
     }
-  }
-
-  componentDidMount() {
-    MoregexWebViewServices.setWebView(this.webview);
-  }
+  };
 
   updateSwiper(index) {
     const currentIndex = this.state.swiperIndex;
@@ -122,6 +130,7 @@ class AlgorithmDetailView extends Component {
             scalesPageToFit
             startInLoadingState
             source={source}
+            onMessage={this.handleMessage}
             style={[styles.viewHeight, { backgroundColor: '#ddd' }]}
             injectedJavaScript=""
           />
