@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
-  StyleSheet, View, ScrollView, TouchableOpacity, Dimensions, WebView,
+  StyleSheet, View, ScrollView, TouchableOpacity, Dimensions, WebView, Platform
 } from 'react-native';
 import Swiper from 'react-native-swiper';
 import {
@@ -11,7 +11,6 @@ import ALGORITHMS from './ALGORITHMS';
 import AppSizes from '../../../theme/sizes';
 import MarkdownHelper from '../../../utils/MarkdownHelper';
 import HtmlHelper from '../../../utils/HtmlHelper';
-import * as Platform from 'react-native';
 
 const height = Dimensions.get('window').height;
 
