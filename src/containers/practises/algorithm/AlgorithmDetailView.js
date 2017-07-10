@@ -78,26 +78,24 @@ class AlgorithmDetailView extends Component {
       algorithmInfo,
       code,
     });
+
+    if (!this.webview) {
+      MoregexWebViewServices.getWebView();
+    }
   }
 
   componentDidMount() {
-    if (this.webview) {
-      this.webview.postMessage();
-    }
     MoregexWebViewServices.setWebView(this.webview);
   }
 
   handleMessage = (event: Object) => {
     const message = JSON.parse(event.nativeEvent.data);
-    console.log(message);
     if (message.status && message.status === 'ready') {
+      const algorithmInfo = this.state.algorithmInfo;
+      const file = Object.keys(algorithmInfo.files)[0];
       this.webview.postMessage(JSON.stringify({
         action: 'algorithm',
-        data: {
-          algorithm: this.state.algorithmInfo.key,
-          category: this.state.algorithmInfo.category,
-          basic: 'file',
-        },
+        path: `#path=${algorithmInfo.key}/${algorithmInfo.category}/${file}`,
       }));
     }
   };
