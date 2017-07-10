@@ -11,6 +11,7 @@ import ALGORITHMS from './ALGORITHMS';
 import AppSizes from '../../../theme/sizes';
 import MarkdownHelper from '../../../utils/MarkdownHelper';
 import HtmlHelper from '../../../utils/HtmlHelper';
+import MoregexWebViewServices from '../../../utils/MoregexWebViewServices';
 
 const height = Dimensions.get('window').height;
 
@@ -61,6 +62,7 @@ class AlgorithmDetailView extends Component {
   constructor(props) {
     super(props);
     this.swiper = null;
+    this.webview = null;
     this.state = {
       algorithmInfo: null,
       selectedTab: 'detail',
@@ -76,6 +78,20 @@ class AlgorithmDetailView extends Component {
       algorithmInfo,
       code,
     });
+    if (this.webview || MoregexWebViewServices.getWebView()) {
+      this.webview.postMessage(JSON.stringify({
+        action: 'algorithm',
+        data: {
+          algorithm: algorithmInfo.key,
+          category: algorithmInfo.category,
+          basic: 'file',
+        },
+      }));
+    }
+  }
+
+  componentDidMount() {
+    MoregexWebViewServices.setWebView(this.webview);
   }
 
   updateSwiper(index) {
@@ -136,9 +152,6 @@ class AlgorithmDetailView extends Component {
             </ScrollView>
             <ScrollView>
               <WebView
-                ref={(webview) => {
-                  this.webview = webview;
-                }}
                 scalesPageToFit
                 startInLoadingState
                 source={{ html: HtmlHelper.getHtml(code) }}
