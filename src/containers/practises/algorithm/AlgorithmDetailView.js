@@ -1,4 +1,4 @@
-/* eslint-disable import/no-dynamic-require */
+/* eslint-disable import/no-dynamic-require,global-require */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -11,6 +11,7 @@ import ALGORITHMS from './ALGORITHMS';
 import AppSizes from '../../../theme/sizes';
 import MarkdownHelper from '../../../utils/MarkdownHelper';
 import HtmlHelper from '../../../utils/HtmlHelper';
+import * as Platform from 'react-native';
 
 const height = Dimensions.get('window').height;
 
@@ -89,6 +90,12 @@ class AlgorithmDetailView extends Component {
 
   render() {
     const { algorithmInfo, code } = this.state;
+    let source;
+    if (__DEV__) {
+      source = require('./algorithm-webview/index.html');
+    } else {
+      source = Platform.OS === 'ios' ? require('./algorithm-webview/index.html') : { uri: 'file:///android_asset/algorithm-webview/index.html' };
+    }
 
     return (
       <View style={{ flex: 1, flexDirection: 'column' }}>
@@ -99,7 +106,7 @@ class AlgorithmDetailView extends Component {
             }}
             scalesPageToFit
             startInLoadingState
-            source={{ html: HtmlHelper.getHtml(code) }}
+            source={source}
             style={[styles.viewHeight, { backgroundColor: '#ddd' }]}
             injectedJavaScript=""
           />

@@ -3,3 +3,4 @@ src/lib/*.js
 src/components/GrEditor
 src/containers/practises/moregex/www/**/*.js
 src/containers/practises/algorithm/growth-algorithm-api
+src/containers/practises/algorithm/algorithm-webview
