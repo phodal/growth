@@ -8,6 +8,7 @@ import { Actions } from 'react-native-router-flux';
 import { connect } from 'react-redux';
 
 import AppSizes from '../../../theme/sizes';
+import MoregexWebViewServices from '../../../utils/MoregexWebViewServices';
 
 
 const styles = StyleSheet.create({
@@ -56,8 +57,12 @@ class MoRegexView extends Component {
     this.webview = null;
   }
 
+  componentDidMount() {
+    MoregexWebViewServices.setWebView(this.webview);
+  }
+
   componentWillReceiveProps() {
-    if (this.webview) {
+    if (this.webview || MoregexWebViewServices.getWebView()) {
       this.webview.postMessage(JSON.stringify({ action: 'trigger' }));
     }
   }
