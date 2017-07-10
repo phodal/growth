@@ -156,3 +156,4 @@ ENV/
 .mypy_cache/
 android/app/src/main/assets/GrEditor/
 android/app/src/main/assets/www/
+android/app/src/main/assets/moregex/
