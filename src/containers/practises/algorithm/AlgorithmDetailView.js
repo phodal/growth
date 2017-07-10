@@ -109,6 +109,8 @@ class AlgorithmDetailView extends Component {
           <Swiper
             loop={false}
             style={styles.wrapper}
+            dot={(<View />)}
+            activeDot={(<View />)}
             height={(height - AppSizes.tabbarHeight - AppSizes.navbarHeight) / 2}
             ref={(swiper) => { this.swiper = swiper; }}
           >
