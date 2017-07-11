@@ -5,8 +5,9 @@ import {
   StyleSheet, View, ScrollView, TouchableOpacity, Dimensions, WebView, Platform,
 } from 'react-native';
 import Swiper from 'react-native-swiper';
-import {
-  Icon, Text } from 'react-native-elements';
+import { Icon, Text } from 'react-native-elements';
+import * as shortid from 'shortid';
+
 import ALGORITHMS from './ALGORITHMS';
 import AppSizes from '../../../theme/sizes';
 import MarkdownHelper from '../../../utils/MarkdownHelper';
@@ -121,6 +122,8 @@ class AlgorithmDetailView extends Component {
     }
   };
 
+  keyExtractor = (item, index) => `key${index}`;
+
   updateSwiper(index) {
     const currentIndex = this.state.swiperIndex;
     this.swiper.scrollBy(index - currentIndex);
@@ -182,7 +185,11 @@ class AlgorithmDetailView extends Component {
             <ScrollView contentContainerStyle={[styles.viewHeight, styles.slide]}>
               {
                 trace ? trace.map(message =>
-                (<Text style={styles.text}>{message} </Text>)) : null
+                (<View key={shortid.generate()}>
+                  <Text style={styles.text}>
+                    {message}
+                  </Text>
+                </View>)) : null
               }
             </ScrollView>
             <ScrollView>
