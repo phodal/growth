@@ -148,9 +148,12 @@ class AlgorithmDetailView extends Component {
               <Text style={styles.text}>{algorithmInfo.description}</Text>
 
               <Text>复杂度</Text>
-              <Text style={styles.text}>时间：{algorithmInfo.complexity.time}</Text>
-              <Text style={styles.text}>空间：{algorithmInfo.complexity.space}</Text>
-
+              { algorithmInfo.complexity.time ?
+                <Text style={styles.text}>时间：{algorithmInfo.complexity.time}</Text> : null
+              }
+              { algorithmInfo.complexity.space ?
+                <Text style={styles.text}>空间：{algorithmInfo.complexity.space}</Text> : null
+              }
               <Text>参考资料</Text>
               <Text style={styles.text}>{algorithmInfo.references[0]}</Text>
             </ScrollView>
