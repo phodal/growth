@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
-  StyleSheet, View, ScrollView, TouchableOpacity, Dimensions, WebView, Platform
+  StyleSheet, View, ScrollView, TouchableOpacity, Dimensions, WebView, Platform,
 } from 'react-native';
 import Swiper from 'react-native-swiper';
 import {
@@ -67,6 +67,7 @@ class AlgorithmDetailView extends Component {
       algorithmInfo: null,
       selectedTab: 'detail',
       swiperIndex: 0,
+      trace: [],
       code: '',
     };
   }
@@ -88,15 +89,35 @@ class AlgorithmDetailView extends Component {
     MoregexWebViewServices.setWebView(this.webview);
   }
 
+  onNavigationStateChange() {
+    if (this.webview) {
+      this.webview.postMessage(JSON.stringify({
+        action: 'run',
+      }));
+    }
+  }
+
   handleMessage = (event: Object) => {
     const message = JSON.parse(event.nativeEvent.data);
+    console.log(message);
     if (message.status && message.status === 'ready') {
       const algorithmInfo = this.state.algorithmInfo;
       const file = Object.keys(algorithmInfo.files)[0];
       this.webview.postMessage(JSON.stringify({
         action: 'algorithm',
+        algorithm: {
+          category: algorithmInfo.category,
+          algorithm: algorithmInfo.key,
+          file,
+        },
         path: `#path=${algorithmInfo.key}/${algorithmInfo.category}/${file}`,
       }));
+    } else if (message.action && message.action === 'trace') {
+      const trace = this.state.trace;
+      trace.push(message.message);
+      this.setState({
+        trace,
+      });
     }
   };
 
@@ -110,7 +131,7 @@ class AlgorithmDetailView extends Component {
   }
 
   render() {
-    const { algorithmInfo, code } = this.state;
+    const { algorithmInfo, code, trace } = this.state;
     let source;
     if (__DEV__) {
       source = require('./algorithm-webview/index.html');
@@ -131,6 +152,7 @@ class AlgorithmDetailView extends Component {
             onMessage={this.handleMessage}
             style={[styles.viewHeight, { backgroundColor: '#ddd' }]}
             injectedJavaScript=""
+            onNavigationStateChange={this.onNavigationStateChange}
           />
         </View>
 
@@ -158,7 +180,10 @@ class AlgorithmDetailView extends Component {
               <Text style={styles.text}>{algorithmInfo.references[0]}</Text>
             </ScrollView>
             <ScrollView contentContainerStyle={[styles.viewHeight, styles.slide]}>
-              <Text style={styles.text}>Beautiful</Text>
+              {
+                trace ? trace.map(message =>
+                (<Text style={styles.text}>{message} </Text>)) : null
+              }
             </ScrollView>
             <ScrollView>
               <WebView
