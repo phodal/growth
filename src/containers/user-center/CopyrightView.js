@@ -126,6 +126,18 @@ class CopyrightView extends Component {
         name: 'Tcomb Form Native',
         link: 'https://github.com/gcanti/tcomb-form-native',
       },
+      {
+        name: 'AlgorithmVisualizer',
+        link: 'https://github.com/parkjs814/AlgorithmVisualizer',
+      },
+      {
+        name: 'Regexper',
+        link: 'https://github.com/javallone/regexper-static',
+      },
+      {
+        name: 'Design Patterns for Humans',
+        link: 'https://github.com/kamranahmedse/design-patterns-for-humans',
+      },
     ];
 
     return (

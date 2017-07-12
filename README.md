@@ -192,3 +192,7 @@ License
 [![Phodal's Idea](http://brand.phodal.com/shields/idea-small.svg)](http://ideas.phodal.com/)
 
 © 2015~2017 A [Phodal Huang](https://www.phodal.com)'s [Idea](http://github.com/phodal/ideas).  This code is distributed under the MIT license. See `LICENSE` in this directory.
+
+[AlgorithmVisualizer](https://github.com/parkjs814/AlgorithmVisualizer) Copyright (c) 2016 Jason Park
+[Regexper](https://github.com/javallone/regexper-static) Copyright (c) 2014 Jeffrey Avallone
+[Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans) Copyright 2017 Kamran Ahmed
