@@ -209,7 +209,7 @@ class AlgorithmDetailView extends Component {
                 </View>)) : null
               }
             </ScrollView>
-            <ScrollView>
+            <ScrollView contentContainerStyle={styles.viewHeight}>
               <WebView
                 scalesPageToFit
                 startInLoadingState
