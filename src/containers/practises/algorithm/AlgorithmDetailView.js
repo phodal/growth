@@ -76,6 +76,7 @@ class AlgorithmDetailView extends Component {
     this.swiper = null;
     this.webview = null;
     this.state = {
+      canPause: false,
       algorithmInfo: null,
       selectedTab: 'detail',
       swiperIndex: 0,
@@ -111,7 +112,19 @@ class AlgorithmDetailView extends Component {
 
   handleMessage = (event: Object) => {
     const message = JSON.parse(event.nativeEvent.data);
-    if (message.action && message.action === 'trace') {
+    console.log(message);
+    if (message.action && message.action === 'ready') {
+      const algorithmInfo = this.state.algorithmInfo;
+      const file = Object.keys(algorithmInfo.files)[0];
+      this.webview.postMessage(JSON.stringify({
+        action: 'algorithm',
+        algorithm: {
+          category: algorithmInfo.category,
+          algorithm: algorithmInfo.key,
+          file,
+        },
+      }));
+    } else if (message.action && message.action === 'trace') {
       const trace = this.state.trace;
       trace.push(message.message);
       this.setState({
@@ -121,16 +134,20 @@ class AlgorithmDetailView extends Component {
   };
 
   runCode() {
-    const algorithmInfo = this.state.algorithmInfo;
-    const file = Object.keys(algorithmInfo.files)[0];
+    this.setState({
+      canPause: true,
+    });
     this.webview.postMessage(JSON.stringify({
-      action: 'algorithm',
-      algorithm: {
-        category: algorithmInfo.category,
-        algorithm: algorithmInfo.key,
-        file,
-      },
-      path: `#path=${algorithmInfo.key}/${algorithmInfo.category}/${file}`,
+      action: 'run',
+    }));
+  }
+
+  pauseRun() {
+    this.setState({
+      canPause: false,
+    });
+    this.webview.postMessage(JSON.stringify({
+      action: 'pause',
     }));
   }
 
@@ -181,11 +198,19 @@ class AlgorithmDetailView extends Component {
             injectedJavaScript=""
             onNavigationStateChange={this.onNavigationStateChange}
           />
-          <ActionButton
-            buttonColor="#00a300"
-            icon={<Icon name={'play-arrow'} color={'#fff'} size={28} />}
-            onPress={() => this.runCode()}
-          />
+          {
+            this.state.canPause ?
+              <ActionButton
+                buttonColor="#ee1111"
+                icon={<Icon name={'pause'} color={'#fff'} size={28} />}
+                onPress={() => this.pauseRun()}
+              /> :
+              <ActionButton
+                buttonColor="#00a300"
+                icon={<Icon name={'play-arrow'} color={'#fff'} size={28} />}
+                onPress={() => this.runCode()}
+              />
+          }
         </View>
 
         <View style={styles.viewHeight}>
