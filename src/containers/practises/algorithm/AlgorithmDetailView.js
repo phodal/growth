@@ -112,8 +112,7 @@ class AlgorithmDetailView extends Component {
 
   handleMessage = (event: Object) => {
     const message = JSON.parse(event.nativeEvent.data);
-    console.log(message);
-    if (message.action && message.action === 'ready') {
+    if (message.status && message.status === 'ready') {
       const algorithmInfo = this.state.algorithmInfo;
       const file = Object.keys(algorithmInfo.files)[0];
       this.webview.postMessage(JSON.stringify({
