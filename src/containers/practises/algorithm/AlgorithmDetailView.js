@@ -7,6 +7,7 @@ import {
 import Swiper from 'react-native-swiper';
 import { Icon, Text } from 'react-native-elements';
 import * as shortid from 'shortid';
+import ActionButton from 'react-native-action-button';
 
 import ALGORITHMS from './ALGORITHMS';
 import AppSizes from '../../../theme/sizes';
@@ -110,20 +111,7 @@ class AlgorithmDetailView extends Component {
 
   handleMessage = (event: Object) => {
     const message = JSON.parse(event.nativeEvent.data);
-    console.log(message);
-    if (message.status && message.status === 'ready') {
-      const algorithmInfo = this.state.algorithmInfo;
-      const file = Object.keys(algorithmInfo.files)[0];
-      this.webview.postMessage(JSON.stringify({
-        action: 'algorithm',
-        algorithm: {
-          category: algorithmInfo.category,
-          algorithm: algorithmInfo.key,
-          file,
-        },
-        path: `#path=${algorithmInfo.key}/${algorithmInfo.category}/${file}`,
-      }));
-    } else if (message.action && message.action === 'trace') {
+    if (message.action && message.action === 'trace') {
       const trace = this.state.trace;
       trace.push(message.message);
       this.setState({
@@ -131,6 +119,20 @@ class AlgorithmDetailView extends Component {
       });
     }
   };
+
+  runCode() {
+    const algorithmInfo = this.state.algorithmInfo;
+    const file = Object.keys(algorithmInfo.files)[0];
+    this.webview.postMessage(JSON.stringify({
+      action: 'algorithm',
+      algorithm: {
+        category: algorithmInfo.category,
+        algorithm: algorithmInfo.key,
+        file,
+      },
+      path: `#path=${algorithmInfo.key}/${algorithmInfo.category}/${file}`,
+    }));
+  }
 
   keyExtractor = (item, index) => `key${index}`;
 
@@ -178,6 +180,11 @@ class AlgorithmDetailView extends Component {
             style={[styles.viewHeight, { backgroundColor: '#ddd' }]}
             injectedJavaScript=""
             onNavigationStateChange={this.onNavigationStateChange}
+          />
+          <ActionButton
+            buttonColor="#00a300"
+            icon={<Icon name={'play-arrow'} color={'#fff'} size={28} />}
+            onPress={() => this.runCode()}
           />
         </View>
 
