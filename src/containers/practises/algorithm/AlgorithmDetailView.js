@@ -51,6 +51,12 @@ const styles = StyleSheet.create({
   viewHeight: {
     height: (height - AppSizes.tabbarHeight - AppSizes.navbarHeight) / 2,
   },
+  trace: {
+    backgroundColor: '#50616D',
+  },
+  traceText: {
+    color: '#30ea30',
+  },
 });
 
 class AlgorithmDetailView extends Component {
@@ -193,11 +199,11 @@ class AlgorithmDetailView extends Component {
               <Text style={styles.heading}>参考资料</Text>
               <Text style={styles.text}>{algorithmInfo.references[0]}</Text>
             </ScrollView>
-            <ScrollView contentContainerStyle={[styles.viewHeight, styles.slide]}>
+            <ScrollView contentContainerStyle={[styles.viewHeight, styles.slide, styles.trace]}>
               {
                 trace ? trace.map(message =>
                 (<View key={shortid.generate()}>
-                  <Text style={styles.text}>
+                  <Text style={styles.traceText}>
                     {message}
                   </Text>
                 </View>)) : null
