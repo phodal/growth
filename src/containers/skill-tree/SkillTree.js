@@ -37,7 +37,7 @@ class SkillTree extends Component {
     if (__DEV__) {
       source = require('./www/index.html');
     } else {
-      source = Platform.OS === 'ios' ? require('./www/index.html') : { uri: 'file:///android_asset/www/index.html' };
+      source = Platform.OS === 'ios' ? require('./www/index.html') : { uri: 'file:///android_asset/skilltree/index.html' };
     }
 
     return (
