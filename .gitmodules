@@ -10,3 +10,6 @@
 [submodule "src/containers/practises/algorithm/growth-algorithm-api"]
 	path = src/containers/practises/algorithm/growth-algorithm-api
 	url = https://github.com/phodal/growth-algorithm-api.git
+[submodule "src/containers/practises/algorithm/algorithm-webview"]
+	path = src/containers/practises/algorithm/algorithm-webview
+	url = https://github.com/GrowthStudio/AlgorithmVisualizer
