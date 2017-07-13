@@ -43,6 +43,10 @@ class Helper {
     Helper.openLink('https://github.com/kamranahmedse/design-patterns-for-humans');
   }
 
+  static openAlgorithmGitHub() {
+    Helper.openLink('https://github.com/parkjs814/AlgorithmVisualizer');
+  }
+
   static gotoLogin() {
     return (
       <Icon

@@ -436,6 +436,9 @@ export default Actions.create(
     <Scene
       {...AppConfig.navbarProps}
       key={'algorithmListView'}
+      rightTitle={'访问原作者 GitHub'}
+      rightButtonTextStyle={AppStyles.navbarTitle}
+      onRight={() => Helper.openAlgorithmGitHub()}
       component={AlgorithmListView}
       analyticsDesc={' AlgorithmListView '}
     />
@@ -502,7 +505,7 @@ export default Actions.create(
       {...AppConfig.navbarProps}
       key={'freeBookList'}
       title={'在线电子书'}
-      rightTitle={'访问 GitHub'}
+      rightTitle={'访问原作者 GitHub'}
       rightButtonTextStyle={AppStyles.navbarTitle}
       onRight={() => Helper.openFreeBookGitHub()}
       component={FreeBookList}
@@ -513,7 +516,7 @@ export default Actions.create(
       {...AppConfig.navbarProps}
       title={'设计模式'}
       key={'patternsView'}
-      rightTitle={'访问 GitHub'}
+      rightTitle={'访问原作者 GitHub'}
       rightButtonTextStyle={AppStyles.navbarTitle}
       onRight={() => Helper.openDPGitHub()}
       component={PatternsView}
