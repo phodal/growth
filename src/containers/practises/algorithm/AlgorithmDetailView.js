@@ -235,7 +235,7 @@ class AlgorithmDetailView extends Component {
             height={(height - AppSizes.tabbarHeight - AppSizes.navbarHeight) / 2}
             ref={(swiper) => { this.swiper = swiper; }}
           >
-            <ScrollView contentContainerStyle={[styles.slide]}>
+            <ScrollView contentContainerStyle={[styles.viewHeight, styles.slide]}>
               <Text style={styles.heading}>{algorithmInfo.name}</Text>
               <Text style={styles.text}>{algorithmInfo.description}</Text>
               <Text style={styles.heading}>复杂度</Text>
