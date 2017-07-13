@@ -25,6 +25,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    paddingLeft: 6,
+    paddingRight: 6,
   },
   tabbar: {
     position: 'absolute',
@@ -184,18 +186,6 @@ class AlgorithmDetailView extends Component {
       source = Platform.OS === 'ios' ? require('./algorithm-webview/index.html') : { uri: 'file:///android_asset/algorithm-webview/index.html' };
     }
 
-    let timeComplexity = null;
-// eslint-disable-next-line no-prototype-builtins
-    if (algorithmInfo.complexity && algorithmInfo.complexity.hasOwnProperty('time')) {
-      timeComplexity = <Text style={styles.text}>时间：{algorithmInfo.complexity.time}</Text>;
-    }
-
-    let spaceComplexity = null;
-// eslint-disable-next-line no-prototype-builtins
-    if (algorithmInfo.complexity && algorithmInfo.complexity.hasOwnProperty('space')) {
-      spaceComplexity = <Text style={styles.text}>空间：{algorithmInfo.complexity.space}</Text>;
-    }
-
     return (
       <View style={{ flex: 1, flexDirection: 'column' }}>
         <View style={styles.viewHeight}>
@@ -238,11 +228,6 @@ class AlgorithmDetailView extends Component {
             <ScrollView contentContainerStyle={[styles.viewHeight, styles.slide]}>
               <Text style={styles.heading}>{algorithmInfo.name}</Text>
               <Text style={styles.text}>{algorithmInfo.description}</Text>
-              <Text style={styles.heading}>复杂度</Text>
-              {timeComplexity}
-              {spaceComplexity}
-              <Text style={styles.heading}>参考资料</Text>
-              <Text style={styles.text}>{algorithmInfo.references[0]}</Text>
             </ScrollView>
             <ScrollView contentContainerStyle={[styles.viewHeight, styles.slide, styles.trace]}>
               {
