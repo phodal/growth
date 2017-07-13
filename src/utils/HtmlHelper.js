@@ -588,7 +588,7 @@ class HtmlHelper {
       </head>
       <body>
         <div class="markdown">
-          ${html}
+          ${html.replace(/\n/g, '<br>')}
         </div>
       </body>
       </html>`);
