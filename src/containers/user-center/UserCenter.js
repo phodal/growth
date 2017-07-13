@@ -94,7 +94,7 @@ class UserCenter extends Component {
         />
         <ListItem
           title={'微信公众号'}
-          onPress={() => Helper.openLink('http://mp.weixin.qq.com/profile?src=3&timestamp=1498315966&ver=1&signature=kunGP5euNMnoXuK5Lcm4454q-6xOljtoszEcL0*BIvsFf*4Yorcry28iWD61soGkO8HbSvm*tXaDds*VQJPahw==')}
+          onPress={() => Helper.openLink('http://mp.weixin.qq.com/s/0qM0xD8PrcGv9T7v8jYt4w')}
           leftIcon={{ name: 'code' }}
           rightIcon={{ name: 'open-in-new' }}
           subtitle={'phodal-weixin'}
