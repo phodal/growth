@@ -12,7 +12,6 @@ const validEmail = FormValidation.refinement(
 const User = FormValidation.struct({
   email: validEmail,
   password: FormValidation.String,
-  rememberMe: FormValidation.Boolean,
 });
 
 const options = {
@@ -28,9 +27,6 @@ const options = {
       error: '密码应该太于六位',
       clearButtonMode: 'while-editing',
       secureTextEntry: true,
-    },
-    rememberMe: {
-      label: '保持登录',
     },
   },
 };
@@ -70,12 +66,20 @@ class ForumUserCenter extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      form_values: {},
+      form: null,
+      formValues: {},
     };
   }
 
+  onChange(formValues) {
+    this.setState({ formValues });
+  }
+
   onPress() {
-    console.log(this.state);
+    const value = this.form.getValue();
+    if (value) {
+      console.log(value);
+    }
   }
 
   render() {
@@ -87,10 +91,11 @@ class ForumUserCenter extends Component {
         <Form
           ref={(form) => { this.form = form; }}
           type={User}
-          value={this.state.form_values}
+          value={this.state.formValues}
+          onChange={(values) => { this.onChange(values); }}
           options={options}
         />
-        <TouchableHighlight style={styles.button} onPress={this.onPress} underlayColor={'#99d9f4'}>
+        <TouchableHighlight style={styles.button} onPress={ () => this.onPress() } underlayColor={'#99d9f4'}>
           <Text style={styles.buttonText}>登录</Text>
         </TouchableHighlight>
       </View>
