@@ -6,7 +6,7 @@ const md = require('markdown-it')({
       try {
         return `<pre class="hljs"><code>${
           hljs.highlight(lang, str, true).value
-          }</code></pre>`;
+          }</code></pre>`.replace(/\n/g, '<br>');
       } catch (__) {
         console.error(__);
       }
