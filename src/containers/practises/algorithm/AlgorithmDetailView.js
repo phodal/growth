@@ -1,4 +1,4 @@
-/* eslint-disable import/no-dynamic-require,global-require */
+/* eslint-disable import/no-dynamic-require,global-require,no-undef */
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -59,6 +59,20 @@ const styles = StyleSheet.create({
     color: '#30ea30',
   },
 });
+
+const patchPostMessageFunction = () => {
+  const originalPostMessage = window.postMessage;
+
+  const patchedPostMessage = (message, targetOrigin, transfer) => {
+    originalPostMessage(message, targetOrigin, transfer);
+  };
+
+  patchedPostMessage.toString = () => String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');
+
+  window.postMessage = patchedPostMessage;
+};
+
+const patchPostMessageJsCode = `(${String(patchPostMessageFunction)})();`;
 
 class AlgorithmDetailView extends Component {
   static componentName = 'AlgorithmDetailView';
@@ -194,7 +208,7 @@ class AlgorithmDetailView extends Component {
             source={source}
             onMessage={this.handleMessage}
             style={[styles.viewHeight, { backgroundColor: '#ddd' }]}
-            injectedJavaScript=""
+            injectedJavaScript={patchPostMessageJsCode}
             onNavigationStateChange={this.onNavigationStateChange}
           />
           {
