@@ -195,6 +195,7 @@ class AlgorithmDetailView extends Component {
             }}
             scalesPageToFit
             startInLoadingState
+            allowUniversalAccessFromFileURLs
             source={source}
             onMessage={this.handleMessage}
             style={[styles.viewHeight, { backgroundColor: '#ddd' }]}
