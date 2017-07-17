@@ -80,7 +80,7 @@ class UserCenter extends Component {
           leftIcon={{ name: 'bug-report' }}
         />
         <ListItem
-          title={'功能反馈'}
+          title={'我想要个功能'}
           rightIcon={{ name: 'open-in-new' }}
           onPress={() => Helper.openLink('https://jinshuju.net/f/aZ4CAS')}
           leftIcon={{ name: 'feedback' }}
@@ -90,6 +90,11 @@ class UserCenter extends Component {
         <ListItem
           title={'版权声明'}
           leftIcon={{ name: 'copyright' }}
+          onPress={() => Actions.copyrightView()}
+        />
+        <ListItem
+          title={'新功能一揽'}
+          leftIcon={{ name: 'autorenew' }}
           onPress={() => Actions.copyrightView()}
         />
         <ListItem
