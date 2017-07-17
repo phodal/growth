@@ -62,7 +62,7 @@ import BookmarkHelper from '../utils/BookmarkHelper';
 import PatternsView from '../containers/practises/patterns/PatternsView';
 import PatternDetailView from '../containers/practises/patterns/PatternDetailView';
 import AlgorithmDetailView from '../containers/practises/algorithm/AlgorithmDetailView';
-import HelpUs from "../containers/home/HelpUs";
+import HelpUs from '../containers/home/HelpUs';
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,

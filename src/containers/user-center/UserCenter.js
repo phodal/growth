@@ -93,11 +93,6 @@ class UserCenter extends Component {
           onPress={() => Actions.copyrightView()}
         />
         <ListItem
-          title={'新功能一揽'}
-          leftIcon={{ name: 'autorenew' }}
-          onPress={() => Actions.copyrightView()}
-        />
-        <ListItem
           title={'微信公众号'}
           onPress={() => Helper.openLink('https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5Mjg4NDMwMA==&scene=124')}
           leftIcon={{ name: 'code' }}

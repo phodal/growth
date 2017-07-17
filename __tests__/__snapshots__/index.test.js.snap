@@ -244,6 +244,62 @@ exports[`test index renders correctly 1`] = `
                       style={
                         Object {
                           "height": 37,
+                          "left": 2,
+                          "opacity": 1,
+                          "padding": 8,
+                          "position": "absolute",
+                          "top": 20,
+                        }
+                      }
+                      testID="leftNavButton"
+                      tvParallaxProperties={undefined}
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Array [
+                            Object {
+                              "color": "rgb(0, 122, 255)",
+                              "fontSize": 17,
+                              "textAlign": "left",
+                            },
+                            Object {
+                              "color": "#ffffff",
+                              "fontFamily": "HelveticaNeue",
+                              "fontSize": 14,
+                              "fontWeight": "bold",
+                            },
+                            Object {
+                              "color": "#ffffff",
+                              "fontFamily": "HelveticaNeue",
+                              "fontSize": 14,
+                              "fontWeight": "bold",
+                            },
+                          ]
+                        }
+                      >
+                        帮助我们
+                      </Text>
+                    </View>
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "height": 37,
                           "opacity": 1,
                           "padding": 8,
                           "position": "absolute",

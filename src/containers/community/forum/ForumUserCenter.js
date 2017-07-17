@@ -95,7 +95,7 @@ class ForumUserCenter extends Component {
           onChange={(values) => { this.onChange(values); }}
           options={options}
         />
-        <TouchableHighlight style={styles.button} onPress={ () => this.onPress() } underlayColor={'#99d9f4'}>
+        <TouchableHighlight style={styles.button} onPress={() => this.onPress()} underlayColor={'#99d9f4'}>
           <Text style={styles.buttonText}>登录</Text>
         </TouchableHighlight>
       </View>

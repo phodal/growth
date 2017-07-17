@@ -175,52 +175,6 @@ exports[`test user center renders correctly 1`] = `
         />
       </View>
     </View>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#000000",
-            "fontSize": 17,
-            "fontWeight": "500",
-            "marginBottom": 7,
-          }
-        }
-      >
-        保持登录
-      </Text>
-      <RCTSwitch
-        accessibilityLabel="保持登录"
-        disabled={false}
-        onChange={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        onTintColor={undefined}
-        onValueChange={[Function]}
-        style={
-          Array [
-            Object {
-              "height": 31,
-              "width": 51,
-            },
-            Object {
-              "marginBottom": 4,
-            },
-          ]
-        }
-        thumbTintColor={undefined}
-        tintColor={undefined}
-        value={false}
-      />
-    </View>
   </View>
   <View
     accessibilityComponentType={undefined}
