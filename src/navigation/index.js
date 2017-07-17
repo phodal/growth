@@ -80,6 +80,9 @@ export default Actions.create(
         title={'首页'}
         iconName={'md-home'}
         iconType={'ionicon'}
+        leftTitle={'支持我们'}
+        onLeft={() => Actions.paperIntroView()}
+        leftButtonTextStyle={AppStyles.navbarTitle}
         rightTitle={'购买纸质版'}
         onRight={() => Actions.paperIntroView()}
         rightButtonTextStyle={AppStyles.navbarTitle}

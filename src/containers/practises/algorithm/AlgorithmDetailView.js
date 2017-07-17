@@ -194,6 +194,7 @@ class AlgorithmDetailView extends Component {
               this.webview = webview;
             }}
             scalesPageToFit
+            javaScriptEnabled
             startInLoadingState
             allowUniversalAccessFromFileURLs
             source={source}
