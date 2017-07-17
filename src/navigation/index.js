@@ -62,6 +62,7 @@ import BookmarkHelper from '../utils/BookmarkHelper';
 import PatternsView from '../containers/practises/patterns/PatternsView';
 import PatternDetailView from '../containers/practises/patterns/PatternDetailView';
 import AlgorithmDetailView from '../containers/practises/algorithm/AlgorithmDetailView';
+import HelpUs from "../containers/home/HelpUs";
 
 const navbarPropsTabs = {
   ...AppConfig.navbarProps,
@@ -80,8 +81,8 @@ export default Actions.create(
         title={'首页'}
         iconName={'md-home'}
         iconType={'ionicon'}
-        leftTitle={'支持我们'}
-        onLeft={() => Actions.paperIntroView()}
+        leftTitle={'帮助我们'}
+        onLeft={() => Actions.helpUs()}
         leftButtonTextStyle={AppStyles.navbarTitle}
         rightTitle={'购买纸质版'}
         onRight={() => Actions.paperIntroView()}
@@ -554,6 +555,14 @@ export default Actions.create(
       key={'copyrightView'}
       component={CopyrightView}
       analyticsDesc={' CopyrightView '}
+    />
+
+    <Scene
+      {...AppConfig.navbarProps}
+      title={'帮助我们'}
+      key={'helpUs'}
+      component={HelpUs}
+      analyticsDesc={' HelpUs '}
     />
 
     <Scene
