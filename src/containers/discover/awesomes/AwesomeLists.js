@@ -5,6 +5,7 @@ import { ListItem } from 'react-native-elements';
 import * as shortid from 'shortid';
 import { Actions } from 'react-native-router-flux';
 import AsyncStorageHelper from '../../../utils/AsyncStorageHelper';
+import Api from '../../../utils/api';
 
 class AwesomeLists extends Component {
   static componentName = 'AwesomeLists';
@@ -26,8 +27,8 @@ class AwesomeLists extends Component {
         });
       }
 
-      fetch('https://phodal.github.io/growth-api-awesome/api/awesomes.json')
-        .then(response => response.json())
+      Api.get(Api.AWESOMES)
+        .then((response) => response.data)
         .then((data) => {
           const rowData = Array.from(new Array(data.length))
             .map((val, index) => (data[index]));

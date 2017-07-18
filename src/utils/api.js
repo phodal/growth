@@ -14,6 +14,8 @@ class Api {
   static GROWTH_IN_ACTION = 'growth-in-action/api/all.json';
   static IDEA_BOOK = 'ideabook/api/all.json';
   static FE = 'fe/api/all.json';
+  static GITBOOK = 'gitbook/api.json';
+  static AWESOMES = 'awesomes/api/awesomes.json';
 
   static get = url => axios.get(url);
 

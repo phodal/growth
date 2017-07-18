@@ -22,7 +22,7 @@ class AwesomeLists extends Component {
   }
 
   componentDidMount() {
-    fetch(`https://phodal.github.io/growth-api-awesome/api/${this.props.path}`)
+    fetch(`https://phodal.coding.me/growth/awesomes/api/${this.props.path}`)
     .then(response => response.json())
     .then((data) => {
       const rowData = Array.from(new Array(data.length))
