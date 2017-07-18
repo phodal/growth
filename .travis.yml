@@ -36,6 +36,7 @@ before_deploy:
 - cd android && ./gradlew assembleRelease
 
 notifications:
+  email: false
   webhooks:
     urls:
     - https://webhooks.gitter.im/e/8deddc25942881f178e4
