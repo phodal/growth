@@ -45,6 +45,7 @@
 		DB579A327F3A47818669B396 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E75DAB1FA373449188E6EEC4 /* Foundation.ttf */; };
 		E1E1C82199574F798A20249E /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 921F5F3745644F9397A0F972 /* SimpleLineIcons.ttf */; };
 		E860B54B1EF78DAE00B80662 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E860B5241EF78DA600B80662 /* libART.a */; };
+		E87FE1E91F1E563400D8B8F8 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = E87FE1E81F1E563400D8B8F8 /* assets */; };
 		E885A0571ED877F800EE64E1 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E885A0561ED877F800EE64E1 /* libsqlite3.0.tbd */; };
 		E885A0591ED877FF00EE64E1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E885A0581ED877FF00EE64E1 /* libz.tbd */; };
 		E885A05B1ED8780700EE64E1 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E885A05A1ED8780700EE64E1 /* CoreData.framework */; };
@@ -387,6 +388,7 @@
 		DD934D8BE15C43C9A98C89F0 /* libRNStoreReview.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNStoreReview.a; sourceTree = "<group>"; };
 		E75DAB1FA373449188E6EEC4 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		E860B51F1EF78DA500B80662 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
+		E87FE1E81F1E563400D8B8F8 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		E885A0561ED877F800EE64E1 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		E885A0581ED877FF00EE64E1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		E885A05A1ED8780700EE64E1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -645,6 +647,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				E87FE1E81F1E563400D8B8F8 /* assets */,
 				13B07FAE1A68108700A75B9A /* growth */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* growthTests */,
@@ -1199,6 +1202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E87FE1E91F1E563400D8B8F8 /* assets in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				23F648F8A86244E8BFC9082E /* Entypo.ttf in Resources */,
 				38D38E6722454BF7B17A364C /* EvilIcons.ttf in Resources */,
