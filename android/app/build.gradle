@@ -90,8 +90,8 @@ android {
         applicationId "ren.growth"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 299000
-        versionName "2.9.9"
+        versionCode 300000
+        versionName "3.0.0"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
@@ -106,9 +106,9 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file("my-release-key.ks")
+            storeFile file("my-release-key.keystore")
             storePassword "phodal"
-            keyAlias "my-key-alias"
+            keyAlias "alias_name"
             keyPassword "phodal"
         }
     }
