@@ -106,9 +106,9 @@ android {
     }
     signingConfigs {
         release {
-            storeFile file("my-release-key.keystore")
+            storeFile file("phodal.keystore")
             storePassword "phodal"
-            keyAlias "alias_name"
+            keyAlias "phodal"
             keyPassword "phodal"
         }
     }

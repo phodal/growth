@@ -4,7 +4,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import AlgorithmListView from '../../../../src/containers/practises/algorithm/AlgorithmListView';
 
-it('renders correctly', () => {
+xit('renders correctly', () => {
   const tree = renderer.create(
     <AlgorithmListView />,
   );
