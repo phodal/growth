@@ -28,7 +28,7 @@ class AwesomeLists extends Component {
       }
 
       Api.get(Api.AWESOMES)
-        .then((response) => response.data)
+        .then(response => response.data)
         .then((data) => {
           const rowData = Array.from(new Array(data.length))
             .map((val, index) => (data[index]));
