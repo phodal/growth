@@ -4,83 +4,69 @@
 [![Coverage Status](https://coveralls.io/repos/github/phodal/growth/badge.svg?branch=master)](https://coveralls.io/github/phodal/growth?branch=master)
 [![Code Climate](https://codeclimate.com/github/phodal/growth/badges/gpa.svg)](https://codeclimate.com/github/phodal/growth)
 
-Growth 1.0, 2.0 版本代码见：https://github.com/phodal/growth-v2
+Growth 1.0, 2.0：https://github.com/phodal/growth-v2
 
-下载：
+Download：
 
 <a href="https://play.google.com/store/apps/details?id=ren.growth&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge-border.png" width="180"/></a>
 <a href="https://itunes.apple.com/cn/app/growth/id1078807522?l=zh&ls=1&mt=8"><img src="./docs/apple.png" width="180" alt="Get it from Apple Store" /></a>
 
-从腾讯应用宝下载：[http://a.app.qq.com/o/simple.jsp?pkgname=ren.growth](http://a.app.qq.com/o/simple.jsp?pkgname=ren.growth)
+应用宝：[http://a.app.qq.com/o/simple.jsp?pkgname=ren.growth](http://a.app.qq.com/o/simple.jsp?pkgname=ren.growth)
 
-Growth是一款专注于Web开发者成长的应用，涵盖Web开发的流程及技术栈，Web开发的学习路线、成长衡量等各方面。
+Growth is a app to help you **Be Awesome Developer** & **Awesome Hacker**:
 
-在这里你可以get到：
-
- - 不同阶段所需的不同技能
- - 相关书单推荐
- - 获取不同的学习路线
- - 寻找合适的练手项目
- - 在工具箱里找到合适的工具
- - Web应用解决方案
- - 阅读在线文章和电子书
-
-
-算法动画学习
+Features
 ---
 
-基于 [AlgorithmVisualizer](https://github.com/parkjs814/AlgorithmVisualizer)
+### Algorithm Visualizer
+
+base on [AlgorithmVisualizer](https://github.com/parkjs814/AlgorithmVisualizer)
 
 ![Algorithm](https://phodal.github.io/growth-materials/algorithm.png)
 
-正则表达式练习
----
+### Regexper
 
-基于 [Regexper](https://github.com/javallone/regexper-static)
+base on [Regexper](https://github.com/javallone/regexper-static)
 
 ![Regex](https://phodal.github.io/growth-materials/regex.png)
 
-内置 VS Code 同款编辑器
----
+### inside VS Code Editor: Monaco Editor
 
-基于 [Monaco Editor](https://github.com/Microsoft/monaco-editor)
+base on [Monaco Editor](https://github.com/Microsoft/monaco-editor)
 
 ![Code](https://phodal.github.io/growth-materials/code.png)
 
-技能树
----
+### FullStack SkillTree
 
 ![SkillTree](https://phodal.github.io/growth-materials/skilltree.png)
 
-成长路线
----
+### Developer Roadmap
 
 ![Roadmap](https://phodal.github.io/growth-materials/roadmap.png)
 
-LeetCode 试题，适合于地铁思考模式
----
+### LeetCode for Offline
 
 ![LeetCode](https://phodal.github.io/growth-materials/leetcode.png)
 
-Growth 资料，带你成长顶尖开发者
----
+### Growth - be awesome developer
 
 ![Growth](https://phodal.github.io/growth-materials/growth.png)
 
-开源电子书与 Awesome
----
+### Free Book Lists & Awesome awesome
+
+base on [免费的编程中文书籍索引](https://github.com/justjavac/free-programming-books-zh_CN)
+
+base on [Awesome](https://github.com/sindresorhus/awesome)
 
 ![Extends](https://phodal.github.io/growth-materials/extends.png)
 
-Discover 探索更多内容
----
+### Discover
 
 ![Discover](https://phodal.github.io/growth-materials/discover.png)
 
-设计模式学习
----
+### Design Pattern
 
-基于 [Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
+base on [Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans)
 
 ![Design Pattern](https://phodal.github.io/growth-materials/dp.png)
 
@@ -90,10 +76,10 @@ TODO
 等实现：
 
  - 技术点数
- - 社区
-   
+
 待优化：
 
+ - 社区
  - 新版技能树
  - 点击图片进入全屏： https://github.com/oblador/react-native-lightbox
 
@@ -249,5 +235,7 @@ License
 © 2015~2017 A [Phodal Huang](https://www.phodal.com)'s [Idea](http://github.com/phodal/ideas).  This code is distributed under the MIT license. See `LICENSE` in this directory.
 
 [AlgorithmVisualizer](https://github.com/parkjs814/AlgorithmVisualizer) Copyright (c) 2016 Jason Park
+
 [Regexper](https://github.com/javallone/regexper-static) Copyright (c) 2014 Jeffrey Avallone
+
 [Design Patterns for Humans](https://github.com/kamranahmedse/design-patterns-for-humans) Copyright 2017 Kamran Ahmed
