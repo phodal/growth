@@ -1,4 +1,4 @@
-# Growth NG
+# Growth - a app to help you **Be Awesome Developer** 
 
 [![Build Status](https://travis-ci.org/phodal/growth.svg?branch=master)](https://travis-ci.org/phodal/growth) 
 [![Coverage Status](https://coveralls.io/repos/github/phodal/growth/badge.svg?branch=master)](https://coveralls.io/github/phodal/growth?branch=master)
@@ -13,7 +13,13 @@ Download：
 
 应用宝：[http://a.app.qq.com/o/simple.jsp?pkgname=ren.growth](http://a.app.qq.com/o/simple.jsp?pkgname=ren.growth)
 
-Growth is a app to help you **Be Awesome Developer** & **Awesome Hacker**:
+**QQ交流群: 529600394，我的微信公众号: phodal**
+
+![QRCode](https://phodal.github.io/growth-materials/wp.jpg)
+
+有钱捧个钱场:
+
+![Alipay](https://phodal.github.io/growth-materials/alipay.png)![Wechat](https://phodal.github.io/growth-materials/wechat.png)
 
 Features
 ---
