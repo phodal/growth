@@ -113,7 +113,8 @@ Join us
 3. 安装依赖： ``yarn install``
 4. 链接原生库：``react-native link``
 5. 添加子模块：``git submodule init && git submodule update``
-6. 运行 Demo：``react-native run-ios``
+6. 执行 package 来复制 WebView 内容：``./e2e/ios-package.sh``
+7. 运行 Demo：``react-native run-ios``
 
 ### Workflow
 
