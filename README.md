@@ -229,7 +229,7 @@ Awesome 项目列表   | https://phodal.github.io/growth-api-awesome/api/awesome
 Thanks to
 ---
 
- - [React Native Stater APP](https://github.com/mcnamee/react-native-starter-app)
+ - [React Native Starter APP](https://github.com/mcnamee/react-native-starter-app)
  - [免费的编程中文书籍索引](https://github.com/justjavac/free-programming-books-zh_CN)
  - [Regex Hub](https://github.com/lukehaas/RegexHub)
  - [regexper-static](https://github.com/javallone/regexper-static)
