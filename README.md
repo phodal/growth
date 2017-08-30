@@ -1,4 +1,4 @@
-# Growth - a app to help you **Be Awesome Developer** 
+# Growth - an app to help you **Be Awesome Developer** 
 
 [![Build Status](https://travis-ci.org/phodal/growth.svg?branch=master)](https://travis-ci.org/phodal/growth) 
 [![Coverage Status](https://coveralls.io/repos/github/phodal/growth/badge.svg?branch=master)](https://coveralls.io/github/phodal/growth?branch=master)
