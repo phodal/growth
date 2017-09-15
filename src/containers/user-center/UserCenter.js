@@ -29,7 +29,7 @@ class UserCenter extends Component {
         return StoreReview.requestReview();
       }
 
-      link = 'itms://itunes.apple.com/us/app/apple-store/myiosappid?mt=8';
+      link = 'itms://itunes.apple.com/cn/app/apple-store/id1078807522?mt=8';
     }
 
     return Helper.openLink(link);
